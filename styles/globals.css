@@ -1,0 +1,70 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body,
+main {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
+#ES:after {
+  content: 'Spain';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.country text {
+  display: none;
+}
+
+g {
+  cursor: pointer;
+}
+
+g > path:hover {
+  fill: #36454f !important;
+}
+
+path:hover ~ text > tspan {
+  fill: white !important;
+}
+
+g > circle {
+  display: none;
+}
+
+circle + text {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
