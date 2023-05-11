@@ -115,7 +115,7 @@ const SignUp = ({ providers, csrfToken }: Props) => {
                 onClick={(e) => {
                   e.preventDefault();
                   signIn(providers.signup.id, {
-                    callbackUrl: '/home',
+                    callbackUrl: '/map',
                     email: email,
                     password: password,
                   });
@@ -132,7 +132,7 @@ const SignUp = ({ providers, csrfToken }: Props) => {
                     className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200"
                     onClick={(e) => {
                       signIn('Github', {
-                        callbackUrl: '/home',
+                        callbackUrl: '/map',
                         email: email,
                       });
                     }}
