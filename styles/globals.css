@@ -43,9 +43,41 @@ g {
   cursor: pointer;
 }
 
-g > path:hover {
+path:hover {
   fill: #36454f !important;
 }
+
+path text:hover {
+  fill: #36454f !important;
+}
+
+path:hover ~ text {
+  fill: #36454f !important;
+}
+
+text:hover ~ path {
+  fill: #36454f !important;
+}
+
+/* path:has(+ text) {
+  fill: #36454f !important;
+}
+
+text:has(+ path) {
+  fill: #36454f !important;
+} */
+
+/* g > path:hover {
+  fill: #36454f !important;
+}
+
+g > text:hover {
+  fill: #36454f !important;
+}
+
+g > tspan:hover {
+  fill: #36454f !important;
+} */
 
 path:hover ~ text > tspan {
   fill: white !important;
