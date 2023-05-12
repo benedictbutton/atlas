@@ -3,13 +3,9 @@ import Layout from '../components/Layout';
 import MyMap3 from '../components/MyMap3';
 
 const Map = () => {
-  return (
-    <Layout>
-      <MyMap3 />
-    </Layout>
-  );
+  return <MyMap3 />;
 };
 
-Map.auth = false;
+Map.auth = true;
 
 export default Map;
