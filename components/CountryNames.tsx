@@ -1,39 +1,43 @@
-import React, { useState, useCallback } from 'react';
-
-// const CountryNames = (props) => {
-//   const [hideName, setHideName] = useState(true);
-
-//   const handleName = (e, name) => {
-//     debugger;
-//     setHideName(!name);
-//   };
-//   const renderChildren = () => {
-//     return React.Children.map(props.children, (child) => {
-//       return React.cloneElement(child, {
-//         key: props.id,
-//         setHideName: setHideName,
-//         hideName: hideName,
-//       });
-//     });
-//   };
-
-//   return <>{renderChildren()}</>;
-// };
+import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
+import useMountTransition from '../utils/useMountTransition';
 
 const CountryNames = (props) => {
   const [hideName, setHideName] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [zoomIn, setZoomIn] = useState('scale(1)');
+  const [isMounted, setIsMounted] = useState(true);
+  const [isMountedPortal, setIsMountedPortal] = useState(false);
+  const hasTransitionedIn = useMountTransition(isMounted, 1000);
+  const hasTransitionedInPortal = useMountTransition(
+    isMountedPortal,
+    1000,
+  );
 
   const handleName = () => {
     setHideName((prevState) => !prevState);
   };
+
+  console.log('isOpen: ', isOpen);
+  console.log('isMounted: ', isMounted);
+  console.log('hasTransitionedIn: ', hasTransitionedIn);
 
   const renderChildren = () => {
     const cloned = React.Children.map(props.children, (child) => {
       if (child.type === 'g') {
         return React.cloneElement(child, {
           key: child.props.id,
-          onClick: handleName,
-          className: hideName ? 'country' : '',
+          onClick: () => {
+            handleName();
+            setIsOpen(!isOpen);
+            setIsMounted(!isMounted);
+            setIsMountedPortal(!isMountedPortal);
+          },
+          className: `${isOpen ? 'non-portal' : 'portal'} ${
+            isMounted && hasTransitionedIn && 'zoom-out'
+          } ${
+            isMountedPortal && hasTransitionedInPortal && 'zoom-in'
+          } `,
         });
       }
       return child;
@@ -42,21 +46,16 @@ const CountryNames = (props) => {
     return cloned;
   };
 
-  return <>{renderChildren()}</>;
+  return (
+    <>
+      {isOpen && <>{renderChildren()}</>}
+      {!isOpen &&
+        createPortal(
+          <>{renderChildren()}</>,
+          props.lastChild.current,
+        )}
+    </>
+  );
 };
-
-// const CountryNames = ({ id, children }) => {
-//   const [hideName, setHideName] = useState(false);
-
-//   return (
-//     <g
-//       key={id}
-//       className={hideName ? 'country' : ''}
-//       onClick={() => setHideName(!hideName)}
-//     >
-//       {children}
-//     </g>
-//   );
-// };
 
 export default CountryNames;

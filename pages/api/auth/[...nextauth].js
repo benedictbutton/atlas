@@ -17,7 +17,7 @@ export const authOptions = {
   },
   session: {
     strategy: 'jwt',
-    maxAge: 3000,
+    maxAge: 30 * 24 * 60 * 60, // 30 days
   },
   adapter: PrismaAdapter(prisma),
   // Configure one or more authentication providers

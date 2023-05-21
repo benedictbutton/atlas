@@ -1,9 +1,26 @@
+import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
+import { motion } from 'framer-motion';
 import Countries from './Countries';
+import World from './World';
 
 const MyMap3 = () => {
+  const [selectedRegion, setSelectedRegion] = useState(-1);
+  const [zoomIn, setZoomIn] = useState('scale(1)');
+  const [zoomItem, setZoomItem] = useState('');
+
+  const handleZoomItem = useCallback(
+    (id) => {
+      setZoomItem('#' + id);
+      if (zoomIn === 'scale(1)')
+        setZoomIn('scale(2.5) translateY(-15%)');
+      else setZoomIn('scale(1)');
+    },
+    [zoomIn],
+  );
+
   return (
-    <div className="relative h-full">
+    <>
       <button
         className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
         onClick={() => signOut()}
@@ -1239,8 +1256,14 @@ const MyMap3 = () => {
               }}
             ></path>
           </g>
-          {/* number is 1219 */}
-          <Countries />
+          {/* <World> */}
+          <Countries
+            selectedRegion={selectedRegion}
+            setSelectedRegion={setSelectedRegion}
+            zoomItem={zoomItem}
+            handleZoomItem={handleZoomItem}
+          />
+          {/* </World> */}
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"
             id="city_labels"
@@ -5426,7 +5449,7 @@ const MyMap3 = () => {
           ></polyline>
         </>
       </svg>
-    </div>
+    </>
   );
 };
 

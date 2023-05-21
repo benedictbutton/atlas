@@ -35,9 +35,13 @@ const SignUp = ({ providers, csrfToken }: Props) => {
     <section className="relative bg-white overflow-hidden h-full">
       <div className="relative z-10 flex flex-wrap h-full">
         <div className="relative w-full md:w-1/2 p-8">
+          <h1 className="text-8xl text-white text-center mt-6">
+            ATLAS
+          </h1>
           <Image
             src="/../public/globe.jpg"
             alt=""
+            className="globe"
             layout={'fill'}
             objectPosition={'center'}
           />
