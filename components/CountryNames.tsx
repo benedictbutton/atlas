@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import useMountTransition from '../utils/useMountTransition';
 
-const CountryNames = (props) => {
+const CountryNames = ({ children, lastChild }) => {
   const [hideName, setHideName] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-  const [zoomIn, setZoomIn] = useState('scale(1)');
   const [isMounted, setIsMounted] = useState(true);
   const [isMountedPortal, setIsMountedPortal] = useState(false);
   const hasTransitionedIn = useMountTransition(isMounted, 1000);
@@ -23,7 +22,7 @@ const CountryNames = (props) => {
   console.log('hasTransitionedIn: ', hasTransitionedIn);
 
   const renderChildren = () => {
-    const cloned = React.Children.map(props.children, (child) => {
+    const cloned = React.Children.map(children, (child) => {
       if (child.type === 'g') {
         return React.cloneElement(child, {
           key: child.props.id,
@@ -50,10 +49,7 @@ const CountryNames = (props) => {
     <>
       {isOpen && <>{renderChildren()}</>}
       {!isOpen &&
-        createPortal(
-          <>{renderChildren()}</>,
-          props.lastChild.current,
-        )}
+        createPortal(<>{renderChildren()}</>, lastChild.current)}
     </>
   );
 };

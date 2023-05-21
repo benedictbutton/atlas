@@ -1,24 +1,7 @@
-import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
-import { motion } from 'framer-motion';
 import Countries from './Countries';
-import World from './World';
 
 const MyMap3 = () => {
-  const [selectedRegion, setSelectedRegion] = useState(-1);
-  const [zoomIn, setZoomIn] = useState('scale(1)');
-  const [zoomItem, setZoomItem] = useState('');
-
-  const handleZoomItem = useCallback(
-    (id) => {
-      setZoomItem('#' + id);
-      if (zoomIn === 'scale(1)')
-        setZoomIn('scale(2.5) translateY(-15%)');
-      else setZoomIn('scale(1)');
-    },
-    [zoomIn],
-  );
-
   return (
     <>
       <button
@@ -1256,14 +1239,7 @@ const MyMap3 = () => {
               }}
             ></path>
           </g>
-          {/* <World> */}
-          <Countries
-            selectedRegion={selectedRegion}
-            setSelectedRegion={setSelectedRegion}
-            zoomItem={zoomItem}
-            handleZoomItem={handleZoomItem}
-          />
-          {/* </World> */}
+          <Countries />
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"
             id="city_labels"
