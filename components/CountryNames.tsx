@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import useMountTransition from '../utils/useMountTransition';
 
-const CountryNames = ({ children, lastChild }) => {
+const CountryNames = ({ children, lastChild, zoomSetting }) => {
   const [hideName, setHideName] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
   const [isMounted, setIsMounted] = useState(true);
@@ -32,11 +32,14 @@ const CountryNames = ({ children, lastChild }) => {
             setIsMounted(!isMounted);
             setIsMountedPortal(!isMountedPortal);
           },
-          className: `${isOpen ? 'non-portal' : 'portal'} ${
-            isMounted && hasTransitionedIn && 'zoom-out'
-          } ${
-            isMountedPortal && hasTransitionedInPortal && 'zoom-in'
-          } `,
+          style: {
+            transform:
+              (isMounted && hasTransitionedIn && 'scale(1)') ||
+              (isMountedPortal &&
+                hasTransitionedInPortal &&
+                zoomSetting),
+          },
+          className: `${isOpen ? 'non-portal' : 'portal'}`,
         });
       }
       return child;
