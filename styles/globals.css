@@ -46,11 +46,11 @@ a {
 }
 
 .africa-zoom-in {
-  animation: zoom-in ease 3s;
+  animation: africa-zoom-in ease 3s;
   animation-fill-mode: forwards;
 }
 
-@keyframes zoom-in {
+@keyframes africa-zoom-in {
   from {
     transform: scale(1);
   }
@@ -60,11 +60,11 @@ a {
 }
 
 .africa-zoom-out {
-  animation: zoom-out ease 3s;
+  animation: africa-zoom-out ease 3s;
   animation-fill-mode: forwards;
 }
 
-@keyframes zoom-out {
+@keyframes africa-zoom-out {
   from {
     transform: scale(2.5) translate(-33%, -38%);
   }
@@ -73,23 +73,32 @@ a {
   }
 }
 
-.africa-portal {
-  transition: all 2s ease-in-out 2s;
-  transform: scale(1);
+.na-zoom-in {
+  animation: na-zoom-in ease 3s;
+  animation-fill-mode: forwards;
 }
 
-.africa-non-portal {
-  transition: all 2s ease-in-out 2s;
-  transform: scale(2.5) translate(-33%, -38%);
+@keyframes na-zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2) translateX(5%);
+  }
 }
 
-.us-portal {
-  transition: all 2s ease-in-out 2s;
-  transform: scale(1);
+.na-zoom-out {
+  animation: na-zoom-out ease 3s;
+  animation-fill-mode: forwards;
 }
-.us-non-portal {
-  transition: all 2s ease-in-out 2s;
-  transform: scale(2.5) translateY(-15%);
+
+@keyframes na-zoom-out {
+  from {
+    transform: scale(2) translateX(5%);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 g {
