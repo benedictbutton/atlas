@@ -45,21 +45,51 @@ a {
   display: none;
 }
 
-.portal {
+.africa-zoom-in {
+  animation: zoom-in ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.5) translate(-33%, -38%);
+  }
+}
+
+.africa-zoom-out {
+  animation: zoom-out ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(2.5) translate(-33%, -38%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.africa-portal {
   transition: all 2s ease-in-out 2s;
   transform: scale(1);
 }
-.non-portal {
+
+.africa-non-portal {
+  transition: all 2s ease-in-out 2s;
+  transform: scale(2.5) translate(-33%, -38%);
+}
+
+.us-portal {
+  transition: all 2s ease-in-out 2s;
+  transform: scale(1);
+}
+.us-non-portal {
   transition: all 2s ease-in-out 2s;
   transform: scale(2.5) translateY(-15%);
-}
-
-.portal.zoom-in {
-  transform: scale(2.5) translateY(-15%);
-}
-
-.non-portal.zoom-out {
-  transform: scale(1);
 }
 
 g {
