@@ -46,7 +46,7 @@ a {
 }
 
 .africa-zoom-in {
-  animation: africa-zoom-in ease 3s;
+  animation: africa-zoom-in 1s ease-in 3s;
   animation-fill-mode: forwards;
 }
 
@@ -74,7 +74,7 @@ a {
 }
 
 .na-zoom-in {
-  animation: na-zoom-in ease 3s;
+  animation: na-zoom-in 1s ease-in 3s;
   animation-fill-mode: forwards;
 }
 
@@ -83,7 +83,7 @@ a {
     transform: scale(1);
   }
   to {
-    transform: scale(2) translateX(5%);
+    transform: scale(1.5) translateX(5%);
   }
 }
 
@@ -94,7 +94,35 @@ a {
 
 @keyframes na-zoom-out {
   from {
-    transform: scale(2) translateX(5%);
+    transform: scale(1.5) translateX(5%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.middle-east-zoom-in {
+  animation: middle-east-zoom-in 1s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-east-zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3) translate(-47%, -30%);
+  }
+}
+
+.middle-east-zoom-out {
+  animation: middle-east-zoom-out ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-east-zoom-out {
+  from {
+    transform: scale(3) translate(-47%, -30%);
   }
   to {
     transform: scale(1);

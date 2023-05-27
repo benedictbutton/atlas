@@ -1,8 +1,115 @@
 import CountryNames from './CountryNames';
 
-const Africa = ({ handleZoom, lastChild, className }) => {
+const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
   return (
-    <g id="africa" className={className} onClick={handleZoom}>
+    <g
+      id="africa"
+      className={className}
+      onClick={handleZoom}
+      opacity={zoomIn && zoomIn !== 'africa' ? '0.5' : '1'}
+    >
+      <CountryNames lastChild={lastChild}>
+        <g id="g3414" fill-opacity="1">
+          <path
+            d="m523.98 298.97-.12.16-.1.3-.12.14.06.1.18-.04-.16.2v.1l-.1.16.2.23.13-.12.22.13v.06h.12l.1.04.2-.02-.04.2.08.1.04.18-.05.11-.04.15-.22.06-.17.08-.09.1.09.05-.07.12-.1.06-.16.11h-.1l-.1.13v.1l-.1.2-.03.1.02.17-.11-.05-.07.05-.09.16-.17.18-.03.18-.11.22-.07.09-.17.14-.12.23-.17.1-.1.09-.15.06-.09-.02-.12.13-.06.1-.19-.01v-.14l-.16-.17-.08-.15-.05-.17-.08-.1-.02-.14-.15-.2v-.11l-.15-.23v-.08l-.1-.23.03-.9-.05-.1-.07-.06h-.23l.02-.12.07-.06-.06-.07v-.17l.06-.15-.02-.16-.06-.05-.13-.05-.05-.13-.11-.07-.11-.23-.14-.04v-.14l.06-.1.04-.24.06-.06h.18l.21.08.16.02.07.05.08.19-.05.07.06.15.21-.05.2.05.28-.09.2.05.07-.02.05-.1h.19l.1-.07.1-.2v-.28l.07-.2-.02-.19.02-.16.22.1.18.16.11.03.16-.18.01-.06.18.05.14-.04.1-.1.12.04.16.16z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Burundi"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: 'rgb(209, 219, 221)',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Burundi_label"
+            y="315.286"
+            x="504.489"
+            fontSize="1.059"
+            strokeWidth=".087"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="315.286"
+              x="504.489"
+              id="tspan152"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="1.762"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".087"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              BURUNDI
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3449" fill-opacity="1">
+          <path
+            d="m555.24 261.21-.54.22-.13.02-.05.14-.11.1.02.23-.11.02-.18.15-.38-.34-.23-.07-.13.14-.12-.12-.2-.28-.17-.28-.1-.1-.3-.13-.2-.13-.11-.18-.2-.41-.09-.14-.18-.21-.44-.37-.77-.48-.08-.08-.37-.65-.52-.6-.15-.11-.17-.06-.3-.05-.4-.2-.36-.34-.2-.09-.23-.06-.17.04-.15-.01-.16.09-.1-.04-.12-.11-.14-.07-.23.04-.19-.05-.08-.09-.13-.05-.07.1-.3.12-.25-.02-.08.11h-.06l-.12-.3-.09-.1-.12-.1-.17-.02-.08.2-.14.08-.14.12h-.11l-.24.07-.13-.02-.16.1-.28.04h-.17l-.08-.12-.17-.1-.1-.22-.08-.08-.06-.16h-.28l-.27-.1-.1-.12-.2-.28-.8 1.94-.1-.03-.02-.14-.1-.04-.06-.16-.14-.1v-.11l-.15-.2-.12-.08-.25.02-.16.07-.07.1v.17l-.05.07-.17.06-.15-.11-.25-.06h-.24l-.1.02-.15.02-.21.05-.1.08-.25-2.16.02-.1.18-.18.05-.06.13-.37.12-.14-.02-.22.14-.49.22-.29.3-.9.15-.16.02-.12-.05-.15v-.15l-.12-.19v-.09l.05-.34.15-.1.05-.17.02-.38-.05-.09.05-.08-.04-.16.07-.07.33.14.24-.02.19-.08.24.06.14-.16.1-.26.01-.31.53-.17.11-.19.1-.06.17.12.12-.06.07-.1.17-.11h.14v.15l.12-.09v-.07l.1-.04.11.1.12-.05v-.16l.23-.13.07-.12.14-.39.07-.11.36-.28.05.13.1.15.09.22.22.36.18.4.17.3.09.27-.03.09.1.15.09.26.06.16.04.2.06.23.08.18.06.2.03.22-.04.05.08.22.03.34.03.11v.12l.06.34.02.15.06.13.09.34.04.08.3.19-.02.13.07.2.07.07.01.11-.13.04.06.2h.16l.03-.03h.14l.05.1.14.41.07.04.06.14-.03.14-.01.22.04.08.14.06.1-.03.02-.1.08-.13-.07-.25-.1-.08-.03-.22.26-.3.09.12.22.2.18.07v.11l-.11.18.11.17.07.14v.1l.09.05.05.19.25.09.11.08.12-.07.06-.11.2-.05.08.12.06-.1.11.02.04.11h.1l.04.13.11.04.15.16-.02.15.1.11.11.03.2-.02.14.08.23.03.3.06.13.2.18.12.05.08.08.22.16.14.03.1.23.22.09.23.2.17.14.3.15.05.17-.02.1.13h.15l.19.1.03.14.1.08.14.17.02.08h.1l.08.08.03.1.1-.06.16.08.01.17.12.22.04.3.06.2.13.06.11.02.12-.12.1.17.13.11.1.15.11.04.08.1.1.39.05.03.11-.04.08.1.22.04.07-.08.04-.15.2.2zm-6.8-7.44.07.11-.05.06-.1-.04-.17.04-.2-.07-.12.02-.09-.05-.05.05h-.1l-.24-.09v-.13l.16.08.13-.04-.1-.14-.17-.07-.1.01v-.09l.1-.1.15-.02-.02-.15.17.08v.15h.1v.2l.08.18.16.04.05-.11.09-.08.11.09zm-.72-1.05-.14.12h-.11v-.12l.12-.03v-.11l.16.08z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Eritrea"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: 'rgb(209, 219, 221)',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Eritrea_label"
+            y="262.761"
+            x="516.092"
+            fontSize="1.945"
+            strokeWidth=".164"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="262.761"
+              x="516.092"
+              id="tspan198"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="3.235"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".164"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              ERITREA
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
       <CountryNames lastChild={lastChild}>
         <g id="g3548" fill-opacity="1">
           <path
@@ -282,7 +389,6 @@ const Africa = ({ handleZoom, lastChild, className }) => {
             style={{
               lineHeight: '95',
               textAlign: 'start',
-              display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
@@ -564,7 +670,6 @@ const Africa = ({ handleZoom, lastChild, className }) => {
             style={{
               lineHeight: '95',
               textAlign: 'start',
-              display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
@@ -1714,7 +1819,6 @@ const Africa = ({ handleZoom, lastChild, className }) => {
             style={{
               lineHeight: '95',
               textAlign: 'center',
-              display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
@@ -1995,7 +2099,6 @@ const Africa = ({ handleZoom, lastChild, className }) => {
             style={{
               lineHeight: '95',
               textAlign: 'center',
-              display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
@@ -2405,7 +2508,6 @@ const Africa = ({ handleZoom, lastChild, className }) => {
             style={{
               lineHeight: '95',
               textAlign: 'end',
-              display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
