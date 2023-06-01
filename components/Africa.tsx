@@ -9,28 +9,28 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
       opacity={zoomIn && zoomIn !== 'africa' ? '0.5' : '1'}
     >
       <CountryNames lastChild={lastChild}>
-        <g id="g3414" fill-opacity="1">
+        <g id="g4036" fill-opacity="1">
           <path
-            d="m523.98 298.97-.12.16-.1.3-.12.14.06.1.18-.04-.16.2v.1l-.1.16.2.23.13-.12.22.13v.06h.12l.1.04.2-.02-.04.2.08.1.04.18-.05.11-.04.15-.22.06-.17.08-.09.1.09.05-.07.12-.1.06-.16.11h-.1l-.1.13v.1l-.1.2-.03.1.02.17-.11-.05-.07.05-.09.16-.17.18-.03.18-.11.22-.07.09-.17.14-.12.23-.17.1-.1.09-.15.06-.09-.02-.12.13-.06.1-.19-.01v-.14l-.16-.17-.08-.15-.05-.17-.08-.1-.02-.14-.15-.2v-.11l-.15-.23v-.08l-.1-.23.03-.9-.05-.1-.07-.06h-.23l.02-.12.07-.06-.06-.07v-.17l.06-.15-.02-.16-.06-.05-.13-.05-.05-.13-.11-.07-.11-.23-.14-.04v-.14l.06-.1.04-.24.06-.06h.18l.21.08.16.02.07.05.08.19-.05.07.06.15.21-.05.2.05.28-.09.2.05.07-.02.05-.1h.19l.1-.07.1-.2v-.28l.07-.2-.02-.19.02-.16.22.1.18.16.11.03.16-.18.01-.06.18.05.14-.04.1-.1.12.04.16.16z"
+            d="m555.54 264.29-.79 1.23-.12.06-.26-.05-.11-.18-.27-.05h-.11l-.23.06-.22.14-.13-.02-.34.07-.14-.02-.2.03-.07.08-.22.03-.38-.08-.1-.06.06-.18.02-.5-.04-.26-.07-.3v-.13l.08-.22.04-.2.03-.08.14-.07.04-.07.15-.09.3-.42.1-.2.08-.05.06-.11.33-.46.08-.17.15-.2.12-.14.22.07.4.34.18-.15.1-.02-.01-.23.1-.11.06-.12.12-.01.55-.24.1.17.38.41.11.24.04.22.1.14v.46l-.1.13-.22.1-.2.03-.08.05-.19.23-.13.11h-.14l-.11.07-.11-.03-.24.1-.12.1-.17.31-.11.06h-.16l-.12-.06.02.2.13.08.14-.04.11-.15.11-.05.34-.04h.63l.09-.05.05.2z"
             fill="#d1dbdd"
             stroke="#000"
             strokeWidth=".15"
-            id="Burundi"
+            id="Djibouti"
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#cc0b20',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
           <text
-            id="Burundi_label"
-            y="315.286"
-            x="504.489"
-            fontSize="1.059"
-            strokeWidth=".087"
+            id="Djibouti_label"
+            y="274.046"
+            x="535.147"
+            fontSize="1.098"
+            strokeWidth=".096"
             font-style="normal"
             font-variant="normal"
             font-stretch="normal"
@@ -40,72 +40,21 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             fill="#6a0707"
           >
             <tspan
-              y="315.286"
-              x="504.489"
-              id="tspan152"
+              y="274.046"
+              x="535.147"
+              id="tspan153"
               font-style="normal"
               font-variant="normal"
               font-weight="400"
               font-stretch="normal"
-              fontSize="1.762"
+              fontSize="1.829"
               font-family="Arial"
               fill="#6a0707"
               fill-opacity="1"
-              strokeWidth=".087"
+              strokeWidth=".096"
               style={{ fill: 'rgb(106, 7, 7)' }}
             >
-              BURUNDI
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
-        <g id="g3449" fill-opacity="1">
-          <path
-            d="m555.24 261.21-.54.22-.13.02-.05.14-.11.1.02.23-.11.02-.18.15-.38-.34-.23-.07-.13.14-.12-.12-.2-.28-.17-.28-.1-.1-.3-.13-.2-.13-.11-.18-.2-.41-.09-.14-.18-.21-.44-.37-.77-.48-.08-.08-.37-.65-.52-.6-.15-.11-.17-.06-.3-.05-.4-.2-.36-.34-.2-.09-.23-.06-.17.04-.15-.01-.16.09-.1-.04-.12-.11-.14-.07-.23.04-.19-.05-.08-.09-.13-.05-.07.1-.3.12-.25-.02-.08.11h-.06l-.12-.3-.09-.1-.12-.1-.17-.02-.08.2-.14.08-.14.12h-.11l-.24.07-.13-.02-.16.1-.28.04h-.17l-.08-.12-.17-.1-.1-.22-.08-.08-.06-.16h-.28l-.27-.1-.1-.12-.2-.28-.8 1.94-.1-.03-.02-.14-.1-.04-.06-.16-.14-.1v-.11l-.15-.2-.12-.08-.25.02-.16.07-.07.1v.17l-.05.07-.17.06-.15-.11-.25-.06h-.24l-.1.02-.15.02-.21.05-.1.08-.25-2.16.02-.1.18-.18.05-.06.13-.37.12-.14-.02-.22.14-.49.22-.29.3-.9.15-.16.02-.12-.05-.15v-.15l-.12-.19v-.09l.05-.34.15-.1.05-.17.02-.38-.05-.09.05-.08-.04-.16.07-.07.33.14.24-.02.19-.08.24.06.14-.16.1-.26.01-.31.53-.17.11-.19.1-.06.17.12.12-.06.07-.1.17-.11h.14v.15l.12-.09v-.07l.1-.04.11.1.12-.05v-.16l.23-.13.07-.12.14-.39.07-.11.36-.28.05.13.1.15.09.22.22.36.18.4.17.3.09.27-.03.09.1.15.09.26.06.16.04.2.06.23.08.18.06.2.03.22-.04.05.08.22.03.34.03.11v.12l.06.34.02.15.06.13.09.34.04.08.3.19-.02.13.07.2.07.07.01.11-.13.04.06.2h.16l.03-.03h.14l.05.1.14.41.07.04.06.14-.03.14-.01.22.04.08.14.06.1-.03.02-.1.08-.13-.07-.25-.1-.08-.03-.22.26-.3.09.12.22.2.18.07v.11l-.11.18.11.17.07.14v.1l.09.05.05.19.25.09.11.08.12-.07.06-.11.2-.05.08.12.06-.1.11.02.04.11h.1l.04.13.11.04.15.16-.02.15.1.11.11.03.2-.02.14.08.23.03.3.06.13.2.18.12.05.08.08.22.16.14.03.1.23.22.09.23.2.17.14.3.15.05.17-.02.1.13h.15l.19.1.03.14.1.08.14.17.02.08h.1l.08.08.03.1.1-.06.16.08.01.17.12.22.04.3.06.2.13.06.11.02.12-.12.1.17.13.11.1.15.11.04.08.1.1.39.05.03.11-.04.08.1.22.04.07-.08.04-.15.2.2zm-6.8-7.44.07.11-.05.06-.1-.04-.17.04-.2-.07-.12.02-.09-.05-.05.05h-.1l-.24-.09v-.13l.16.08.13-.04-.1-.14-.17-.07-.1.01v-.09l.1-.1.15-.02-.02-.15.17.08v.15h.1v.2l.08.18.16.04.05-.11.09-.08.11.09zm-.72-1.05-.14.12h-.11v-.12l.12-.03v-.11l.16.08z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            id="Eritrea"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="Eritrea_label"
-            y="262.761"
-            x="516.092"
-            fontSize="1.945"
-            strokeWidth=".164"
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            font-family="Arial"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="262.761"
-              x="516.092"
-              id="tspan198"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              fontSize="3.235"
-              font-family="Arial"
-              fill="#6a0707"
-              fill-opacity="1"
-              strokeWidth=".164"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-            >
-              ERITREA
+              DJIBOUTI
             </tspan>
           </text>
         </g>
@@ -123,7 +72,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#90288f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -174,7 +123,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#463b38',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -225,7 +174,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e95d0f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -275,7 +224,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fcf1b2',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -352,7 +301,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f7a631',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -403,7 +352,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#faa433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -454,7 +403,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -504,7 +453,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#705348',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -581,7 +530,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#705348',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -632,7 +581,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#05922a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -683,7 +632,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -734,7 +683,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#ee0891',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -785,7 +734,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e3106f',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -837,7 +786,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0f72b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -888,7 +837,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#df001d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -939,7 +888,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -990,7 +939,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1041,7 +990,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e95d0f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1092,7 +1041,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1143,7 +1092,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0f72b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1194,7 +1143,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e85e11',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1245,7 +1194,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#de1c33',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1296,7 +1245,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#df001c',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1347,7 +1296,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e95d0f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1398,7 +1347,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#8cc740',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1449,7 +1398,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#525b61',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1500,7 +1449,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#059031',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1550,7 +1499,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1627,7 +1576,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1678,7 +1627,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0fa89c',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1729,7 +1678,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#92268f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1780,7 +1729,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e3106f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1830,7 +1779,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e75f0e',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1907,7 +1856,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f9a433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1958,7 +1907,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#d21c5b',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1997,84 +1946,6 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
         </g>
       </CountryNames>
       <CountryNames lastChild={lastChild}>
-        <g id="g3533" fill-opacity="1" stroke-opacity="1">
-          <path
-            d="M415.2 222.32h-.01l-.08.22-.1.38-.15.37-.2.3-.05.1-.07.34-.08.15-.1.36-.15.3-.14.16-.3.2-.45.3-.32.15-.27.02-.05.04-.1.12-.2.2-.28.11-.14.17-.07.17.03.11-.03.23-.06.22-.06.11-.2.26-.1.25-.05.26-.08.18-.17.2-.09.31-.08.3.03.31.03.18-.03.11.02.2-.14.39-.04.22-.18.11-.1.15v.07l-.13.09-.15.03-.11.06-.14.14-.17.25-.13.14-.23.18-.04.08-.14.11-.25.33-.16.04-.23.13-.16.16-.25.33-.18.32.04.02.12-.1.13-.3.08-.1h.08l.15-.1v.23l-.12.16-.03.1-.2.21-.14.25-.03.18-.11.19-.1.08-.19.41-.14.16-.06.13.15-.02v.18l-.04.11-.16.16-.12.03-.02.17-.08.11-.03.16-.01.23-.04.16-.18.2-.09.33-.13.17-.28.11-.07-.05-.11.04-.07.14-.21.24-.26.52-.11.4.04.05-.04.17v.27l-.11.38v.06l-.14 1.01-.05.18-.04.33.11.18-.05-.28.08-.4.1-.29.1-.48.02-.02h9.81l-.11-1.72-.08-1.31-.03-.17-.13-.34-.02-.16.04-.18.07-.17.26-.34.99-.67.15-.06.42-.06.1-.02.53-.26.26-.06.04-.13v-6.62h8.23l.07-.04v-4.48z"
-            id="Western_Sahara"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth="0.15"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-              strokeWidth: '0.15',
-            }}
-          ></path>
-          <text
-            id="Western_Sahara_label"
-            y="236.378"
-            x="377.505"
-            style={{
-              lineHeight: '95',
-              textAlign: 'start',
-              display: 'none',
-            }}
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            fontSize="3.774"
-            font-family="Arial"
-            letter-spacing="0"
-            word-spacing="0"
-            writing-mode="lr-tb"
-            text-anchor="start"
-            stroke="none"
-            strokeWidth=".472"
-            stroke-linecap="butt"
-            stroke-linejoin="miter"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
-              y="236.378"
-              x="377.505"
-              id="tspan6774"
-              strokeWidth=".472"
-              fill="#6a0707"
-              fill-opacity="1"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              font-family="Arial"
-            >
-              WESTERN
-            </tspan>
-            <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
-              id="tspan6778"
-              y="239.97"
-              x="377.505"
-              strokeWidth=".472"
-              fill="#6a0707"
-              fill-opacity="1"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              font-family="Arial"
-            >
-              SAHARA
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
         <g id="g3491" fill-opacity="1">
           <path
             d="m414.86 270.44-.05-.12.11-.09v-.1l-.1-.04-.01-.42-.1.05-.04.13-.07-.03-.06-.21.07-.12h-.16l-.11-.08-.03-.1-.1-.04-.06-.16-.23.11h-.07l.14-.18.07-.12v-.19l.06-.08-.12-.19v.14l-.11.08-.14-.06.01-.16.12-.13-.23.07-.14-.02-.12-.13-.09-.06-.04-.08-.28-.14.02-.14-.11-.14-.02.2h-.13l-.06-.1-.12-.03-.1-.13-.21-.17-.07-.02-.21.02v-.26l-.18-.19-.03-.05v-.2l-.1.06h-.17v-.16l.1-.12-.04-.07.04-.18.1-.1.13-.3-.12.1-.11.21-.17.2-.1-.13-.17-.11.11-.18-.13-.11-.05-.14.02-.06.2-.07-.2-.1-.07.1-.15-.07-.05.23-.1.06-.03.15.03.13-.18-.06-.09-.12-.03-.1.12-.1.03-.12.15-.17.24-.46.09-.3.25-.36.1-.08.31.01.11-.01.45-.25.07-.11.08-.03h.3l.1.06h.25l.18-.09.06.03.1-.07.09-.11.07.12h.12l.1-.06.02-.18-.03-.3.02-.26-.06-.04-.15-.06-.08-.11-.2-.11-.1-.04v-.1l.04-.08.26-.14.08.04.24-.02.07-.18v-.16l.05-.19-.15-.2-.03-.13.02-.16.8.02.19.06.09-.04.22.06.15-.03.16.02.05.08-.06.22.08.11.18.02.08-.17h.09l.16.1.04.08.15.06h.21l.1.03.2.15.15-.06.25.09.1.12.42-.11.18-.11.12-.04.22.06.12-.08.25.08h.2l.28-.08.32-.03.32.06-.1.06-.05.08v.15l-.15.25.09.15.16.06.14.17.2.12.2-.05.07-.16.23-.19.04-.13.2-.04.16.05.1.16.16.1v.19l.06.07.11.19.07.07.15-.04.08-.16.14-.06-.01-.06.12-.1.01-.16h.17l.16-.15h.06l.23-.1.21.1h.11l.18.08.25.13.09.02.13.09h.1l.13.07h.15l.1-.14v-.1l.13-.12.28-.1.1-.07.14-.06.14.04.14-.26-.26-.27.03-.05.2-.06h.13l.3.08.37.2.08.15-.08.16.06.2.08-.03.06.07.03.11-.06.16.06.08h.17l.04.04.01.15.05.1-.13.65.17.05h.17l.08.27.05.08.14.07.13-.05.06.17.25.06.02.19h.11l-.08.11h-.19l-.03.1-.15.07-.04.14-.14.09-.02.13-.16.18.05.11.22-.02.11-.06.1-.17.23.03.11-.04.15.14.01.32-.09.28.08.07.03.5.17.29.05.02.19-.03.04.16.05.04.2.02.09.08.04.11v.14l-.06.1-.12.2-.18.09-.1.11.04.1-.1.07.06.19.06.05-.1.67.03.17.16.23.14.08h.1l.15-.07h.17l-.08.27-.09.23v.08l.24.1.19.12-.01.08-.16.01-.23.11-.06.17-.06.34.02.08.32.09h.07l.28.34.03.26-.02.17.06.16h-.14l-.12-.04-.14-.22-.07.12h-.1l-.12-.14-.08-.02-.2.02-.06-.05-.19.05-.11-.01-.12.09.03.19-.03.22-.05.11.2.14.25.08.17-.06-.01.16.13.2-.26.02-.02.18-.11.2-.01.1.06.06-.05.26-.2.26v.08l-.06.07-.18-.1-.09-.03-.13.03-.06-.06-.18.13-.16-.11-.05-.11v-.1l-.28-.02-.1.13-.04.19.02.14-.13.14-.06.12-.06.04-.08.1v.2l-.16.06-.04-.08-.1.08-.12.02-.2.1-.01-.1-.23-.15-.06-.21-.16.01-.09-.1h-.11l-.07.11-.08-.11v-.1l.07-.17.15-.24-.06-.14.04-.16-.2-.31-.02-.2.06-.17-.1-.14-.05-.23-.11-.06.04-.2-.08-.13.12-.06-.2-.12h-.25l.08-.13-.1-.11-.16.04-.07-.23-.08.13-.17.02-.22.06-.2.13-.08-.04.02-.11-.05-.06-.23-.02-.09.08h-.16l-.15-.04-.12.03-.09.09-.05.1-.18.2-.16.07-.11-.06-.24.02.14-.2.03-.21.05-.1.18-.22.15-.04.05-.11-.3-.36-.02-.32.05-.23-.03-.07-.35-.05-.02-.1.07-.18.08-.04.05-.24-.23-.2-.11-.05-.11-.12v-.14l-.07-.13-.22-.23-.1-.23-.18-.2-.2-.11-.1-.28-.18-.04h-1.58l-.03.18-.54.12-.14-.03-.14-.1h-.06l-.38.08-.2.1-.07.35-.09.06-.07.1v.11l-.1.06-.06.14-.1.27-.15.12-.17.23-.3.02-.07.26-.11.2-.23.11-.22-.07z"
@@ -2087,7 +1958,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fb9521',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2138,7 +2009,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#cfde9e',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2189,7 +2060,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0d9445',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2239,7 +2110,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2316,7 +2187,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f3a853',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2369,7 +2240,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#901f5d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2403,6 +2274,108 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               style={{ fill: 'rgb(106, 7, 7)' }}
             >
               MALAWI
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3449" fill-opacity="1">
+          <path
+            d="m555.24 261.21-.54.22-.13.02-.05.14-.11.1.02.23-.11.02-.18.15-.38-.34-.23-.07-.13.14-.12-.12-.2-.28-.17-.28-.1-.1-.3-.13-.2-.13-.11-.18-.2-.41-.09-.14-.18-.21-.44-.37-.77-.48-.08-.08-.37-.65-.52-.6-.15-.11-.17-.06-.3-.05-.4-.2-.36-.34-.2-.09-.23-.06-.17.04-.15-.01-.16.09-.1-.04-.12-.11-.14-.07-.23.04-.19-.05-.08-.09-.13-.05-.07.1-.3.12-.25-.02-.08.11h-.06l-.12-.3-.09-.1-.12-.1-.17-.02-.08.2-.14.08-.14.12h-.11l-.24.07-.13-.02-.16.1-.28.04h-.17l-.08-.12-.17-.1-.1-.22-.08-.08-.06-.16h-.28l-.27-.1-.1-.12-.2-.28-.8 1.94-.1-.03-.02-.14-.1-.04-.06-.16-.14-.1v-.11l-.15-.2-.12-.08-.25.02-.16.07-.07.1v.17l-.05.07-.17.06-.15-.11-.25-.06h-.24l-.1.02-.15.02-.21.05-.1.08-.25-2.16.02-.1.18-.18.05-.06.13-.37.12-.14-.02-.22.14-.49.22-.29.3-.9.15-.16.02-.12-.05-.15v-.15l-.12-.19v-.09l.05-.34.15-.1.05-.17.02-.38-.05-.09.05-.08-.04-.16.07-.07.33.14.24-.02.19-.08.24.06.14-.16.1-.26.01-.31.53-.17.11-.19.1-.06.17.12.12-.06.07-.1.17-.11h.14v.15l.12-.09v-.07l.1-.04.11.1.12-.05v-.16l.23-.13.07-.12.14-.39.07-.11.36-.28.05.13.1.15.09.22.22.36.18.4.17.3.09.27-.03.09.1.15.09.26.06.16.04.2.06.23.08.18.06.2.03.22-.04.05.08.22.03.34.03.11v.12l.06.34.02.15.06.13.09.34.04.08.3.19-.02.13.07.2.07.07.01.11-.13.04.06.2h.16l.03-.03h.14l.05.1.14.41.07.04.06.14-.03.14-.01.22.04.08.14.06.1-.03.02-.1.08-.13-.07-.25-.1-.08-.03-.22.26-.3.09.12.22.2.18.07v.11l-.11.18.11.17.07.14v.1l.09.05.05.19.25.09.11.08.12-.07.06-.11.2-.05.08.12.06-.1.11.02.04.11h.1l.04.13.11.04.15.16-.02.15.1.11.11.03.2-.02.14.08.23.03.3.06.13.2.18.12.05.08.08.22.16.14.03.1.23.22.09.23.2.17.14.3.15.05.17-.02.1.13h.15l.19.1.03.14.1.08.14.17.02.08h.1l.08.08.03.1.1-.06.16.08.01.17.12.22.04.3.06.2.13.06.11.02.12-.12.1.17.13.11.1.15.11.04.08.1.1.39.05.03.11-.04.08.1.22.04.07-.08.04-.15.2.2zm-6.8-7.44.07.11-.05.06-.1-.04-.17.04-.2-.07-.12.02-.09-.05-.05.05h-.1l-.24-.09v-.13l.16.08.13-.04-.1-.14-.17-.07-.1.01v-.09l.1-.1.15-.02-.02-.15.17.08v.15h.1v.2l.08.18.16.04.05-.11.09-.08.11.09zm-.72-1.05-.14.12h-.11v-.12l.12-.03v-.11l.16.08z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Eritrea"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#1071b0',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Eritrea_label"
+            y="262.761"
+            x="516.092"
+            fontSize="1.945"
+            strokeWidth=".164"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="262.761"
+              x="516.092"
+              id="tspan198"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="3.235"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".164"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              ERITREA
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3414" fill-opacity="1">
+          <path
+            d="m523.98 298.97-.12.16-.1.3-.12.14.06.1.18-.04-.16.2v.1l-.1.16.2.23.13-.12.22.13v.06h.12l.1.04.2-.02-.04.2.08.1.04.18-.05.11-.04.15-.22.06-.17.08-.09.1.09.05-.07.12-.1.06-.16.11h-.1l-.1.13v.1l-.1.2-.03.1.02.17-.11-.05-.07.05-.09.16-.17.18-.03.18-.11.22-.07.09-.17.14-.12.23-.17.1-.1.09-.15.06-.09-.02-.12.13-.06.1-.19-.01v-.14l-.16-.17-.08-.15-.05-.17-.08-.1-.02-.14-.15-.2v-.11l-.15-.23v-.08l-.1-.23.03-.9-.05-.1-.07-.06h-.23l.02-.12.07-.06-.06-.07v-.17l.06-.15-.02-.16-.06-.05-.13-.05-.05-.13-.11-.07-.11-.23-.14-.04v-.14l.06-.1.04-.24.06-.06h.18l.21.08.16.02.07.05.08.19-.05.07.06.15.21-.05.2.05.28-.09.2.05.07-.02.05-.1h.19l.1-.07.1-.2v-.28l.07-.2-.02-.19.02-.16.22.1.18.16.11.03.16-.18.01-.06.18.05.14-.04.1-.1.12.04.16.16z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Burundi"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#bd517e',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Burundi_label"
+            y="315.286"
+            x="504.489"
+            fontSize="1.059"
+            strokeWidth=".087"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="315.286"
+              x="504.489"
+              id="tspan152"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="1.762"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".087"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              BURUNDI
             </tspan>
           </text>
         </g>

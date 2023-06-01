@@ -9,6 +9,84 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
       opacity={zoomIn && zoomIn !== 'middleEast' ? '0.5' : '1'}
     >
       <CountryNames lastChild={lastChild}>
+        <g id="g3533" fill-opacity="1" stroke-opacity="1">
+          <path
+            d="M415.2 222.32h-.01l-.08.22-.1.38-.15.37-.2.3-.05.1-.07.34-.08.15-.1.36-.15.3-.14.16-.3.2-.45.3-.32.15-.27.02-.05.04-.1.12-.2.2-.28.11-.14.17-.07.17.03.11-.03.23-.06.22-.06.11-.2.26-.1.25-.05.26-.08.18-.17.2-.09.31-.08.3.03.31.03.18-.03.11.02.2-.14.39-.04.22-.18.11-.1.15v.07l-.13.09-.15.03-.11.06-.14.14-.17.25-.13.14-.23.18-.04.08-.14.11-.25.33-.16.04-.23.13-.16.16-.25.33-.18.32.04.02.12-.1.13-.3.08-.1h.08l.15-.1v.23l-.12.16-.03.1-.2.21-.14.25-.03.18-.11.19-.1.08-.19.41-.14.16-.06.13.15-.02v.18l-.04.11-.16.16-.12.03-.02.17-.08.11-.03.16-.01.23-.04.16-.18.2-.09.33-.13.17-.28.11-.07-.05-.11.04-.07.14-.21.24-.26.52-.11.4.04.05-.04.17v.27l-.11.38v.06l-.14 1.01-.05.18-.04.33.11.18-.05-.28.08-.4.1-.29.1-.48.02-.02h9.81l-.11-1.72-.08-1.31-.03-.17-.13-.34-.02-.16.04-.18.07-.17.26-.34.99-.67.15-.06.42-.06.1-.02.53-.26.26-.06.04-.13v-6.62h8.23l.07-.04v-4.48z"
+            id="Western_Sahara"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth="0.15"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#e50e72',
+              stroke: 'rgb(0, 0, 0)',
+              strokeWidth: '0.15',
+            }}
+          ></path>
+          <text
+            id="Western_Sahara_label"
+            y="236.378"
+            x="377.505"
+            style={{
+              lineHeight: '95',
+              textAlign: 'start',
+              //   display: 'none',
+            }}
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            fontSize="3.774"
+            font-family="Arial"
+            letter-spacing="0"
+            word-spacing="0"
+            writing-mode="lr-tb"
+            text-anchor="start"
+            stroke="none"
+            strokeWidth=".472"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              y="236.378"
+              x="377.505"
+              id="tspan6774"
+              strokeWidth=".472"
+              fill="#6a0707"
+              fill-opacity="1"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              font-family="Arial"
+            >
+              WESTERN
+            </tspan>
+            <tspan
+              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              id="tspan6778"
+              y="239.97"
+              x="377.505"
+              strokeWidth=".472"
+              fill="#6a0707"
+              fill-opacity="1"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              font-family="Arial"
+            >
+              SAHARA
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
         <g id="g3548" fill-opacity="1">
           <path
             d="M476.58 207.31v.12l-.07.27v.2l-.05.18.02.3-.04.29v.16l.06.1.15.15.07.1v.12l-.11.15-.18.12-1.43.64-.06.06-.1.23-.08.08-.23.12-.13-.05-.06.06-.02.23-.03.09-.12.09-.05.14-.08.06-.14.05h-.28l-.13.1-.17.27-.19.23-.02.23.18.48.08.29.07.15v.25l.07.2-.04.2-.16.3-.22.24-.26.4-.32.39-.05.03-.26.04-.56.28-.63-2.72-.55-2.34-.07-.1-1.33-.9-.3-.2-.1-.15-.06-.67-.04-.1-.48-.71-.26-.07-.28-.18-.3-.07-.07-.06-.03-.14v-.38l-.05-.11-.33-.56-.06-.23-.07-.12-.07-.32.06-.28v-.2l.03-.08.3-.29.09-.04.15-.03.12-.1.08-.33.05-.1.1-.06.21-.1.12-.07.22-.1.18-.14.07-.1.11-.09-.07-.09.15-.23-.05-.4.08-.25.08-.3.11-.13.18-.27-.09-.07-.19-.06-.05-.12-.02-.2.12-.3-.04-.4-.17-.29-.03-.22.01-.23.07-.2v-.17l.06-.2.05-.11-.04-.15v-.12l.12-.3.02-.23-.02-.05-.13-.06-.23-.02-.09-.05v-.1l.14-.1.15-.05.3-.17.12-.16.02-.11-.13-.1.09-.07h.19l.26-.09.04-.07-.09-.11-.01-.15.22-.07.27-.02.26-.14.12-.14.08-.13.16-.11.27-.12.13-.1h.33l.2-.12.05.02.13-.03.15-.1.09.03.19-.1.19-.02.07.03h.22v.18l-.17.1-.05.06.1.18h.12l.1-.04.06-.14-.16-.06.06-.08.23.05.18-.06.07.06.17.02.08.08.19.06-.04.05-.15-.02-.12.06.08.07h.11l.05.05-.13.11.02.15.09.14.11.12.12.05.1.11-.1.14-.1-.06-.12.04-.08.1.15.04.05-.08.11.2.1.04h.2l.2-.07.05-.04.07-.26.1-.05h.11l.2-.05.13-.08.11-.12.15-.12.02-.09.07-.05h.13l.1-.08.1.07-.02.1.1.19.01.11.12.15-.06.09-.1.03-.13.11-.18.27-.17.3-.14.3-.06.09-.2.05-.25.11h-.1l-.07.05-.08.11-.11.34v.4l.1.28.17.17.06.18.22.2.1.05.17-.05.09.06-.05.09.05.1.33.12h.1l.1.12-.1.03.03.19.08.13-.04.15v.3l.15.18.14.08v.06l-.12.03-.24.32v.16l-.07.1-.17.12v.23l-.16.13.04.1-.14.08-.2.24-.08.07-.2.07-.06.24-.09.06-.24.03-.09.05-.12.2-.22.02-.08.12-.34.14-.22.4-.07.03.03.27.07.26.06.1.22.31.07.04.36.33.29.14.11.02.35-.08.21-.09.06.1-.01.2-.11.06-.05.09.11.17h.16l.18-.11.13-.05.06-.09-.06-.11.17-.08.17.07.16.19.02.17-.07.1.06.17.15.16-.1.06-.03.09.11.11.04.08.17-.02.31.1h.11l.06-.07zm-1.28-1.84.18.11-.27.23-.15.18-.09-.15-.12-.07-.07.1-.11-.04-.02-.2.04-.07-.02-.2.09-.04.31.05.08-.05zm-.07-2.28.06-.04h.29l-.11.14zm.75-.34.08.14-.24.09-.18.09-.02-.05.13-.13.13-.06-.01-.1.09-.11.11.02z"
@@ -21,7 +99,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -72,7 +150,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#a6a9ac',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -123,7 +201,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f9a433',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -175,7 +253,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#009330',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -227,7 +305,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -279,7 +357,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#059031',
               stroke: 'rgb(0, 0, 0)',
             }}
           />
@@ -330,7 +408,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#2dc4f4',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -381,7 +459,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#98fe01',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -420,57 +498,6 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
         </g>
       </CountryNames>
       <CountryNames lastChild={lastChild}>
-        <g id="g3594" fill-opacity="1">
-          <path
-            d="m567.26 216.09.07.13v.23l.1.22.09.1h.06l.1.24.15.24-.07.07-.16-.1-.16-.02-.15.02-.13.11-.15.1-.11.08-.11.15-.12.06.04.08.27-.06-.06.13.07.04.14-.04.22-.15.1.1h.18l-.01.13.03.26.05.11.07.42.17.27.14.06v.15l.11.21.17.05-.07.22.06.05v.13l.1.15-1.9.02-.01-.08-.16-.13-.1-.23-.02-.2-.14-.37-.15-.25-1.12-.13-1.13-.14.45-.47.16-.26.2-.22.07-.18.19-.3.08-.24.09-.16.21-.51.08-.11.13-.1.4-.15.14-.02h.65l.14.03zm.96 1.43v.12l-.16-.03.06-.1zm.04-.67-.11.18-.2.12h-.1l-.06-.07-.1-.2-.1-.19-.1-.07.17-.12.01-.09.12-.02.04-.15-.09-.02v-.14l.11.03.38.53.05.1zm-.68-.78-.12.07-.06-.04.12-.1z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            id="Kuwait"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="Kuwait_label"
-            y="228.02"
-            x="545.171"
-            fontSize="1.175"
-            strokeWidth=".096"
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            font-family="Arial"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="228.02"
-              x="545.171"
-              id="tspan204"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              fontSize="1.955"
-              font-family="Arial"
-              fill="#6a0707"
-              fill-opacity="1"
-              strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-            >
-              KUWAIT
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
         <g id="g3896" fill-opacity="1">
           <path
             d="m639.67 201.91-.07.07.02.14-.05.14-.23.19-.17-.07-.18.04-.07.1-.02.21-.22.2-.26.06-.19-.1-.19.03-.34.2-.27.06h-.08l-.15-.07-.1.02-.12.15-.09.03-.15.12-.15.14-.1.05-.16-.01-.24.02-.67-.16-.2-.11-.13-.14-.49.05-.87-.17-.63-.22-.16-.01h-.15l-.16.06-.26.16-.4.07-.1.06.02.23-.16.13-.04.17-.12.11-.06.13.08.12.1.06h.23l.04.05.1.26-.05.1-.14.07-.08.15.02.07.12.13.08.02.17-.04.2.04.26-.02.08.04.03.1-.09.17-.14.11-.1.05-.26.04-.15.2-.03.17.03.13.11.1.17.08.14.1.03.16-.04.2-.08.21-.13.15-.13.05-.03.18.03.08.24.2.13.18.1.06.23.03.1.1.02.34-.07.11.06.1.1.04.12-.07.1.02.16.1.22-.07.06-.15.12-.02v.1l-.09.2.03.22-.07.15.08.25.16.1.28-.04.16.08.3-.05.25.14.17.05.34.23.08.14-.11.14-.06.17h-.08l-.17.06-.22.14-.16-.05-.02.09h-.11l-.08.09h-.17l-.03.05-.12-.03-.1.22-.22-.02-.07.13-.26.18-.06.07v.1l-.13.18.17.27.07.26.08.11-.02.12-.1.13-.1.23v.19l-.05.17.02.08.09.1.11-.02.15.08-.14.08-.1.15-.11.1-.15.03-.09.06-.05.11-.18-.02-.06.08-.01.09-.11.06.02.07-.18.2-.07.15-.16.07-.1.12v.17l-.14.06-.16.23-.22.15-.02.04.12.07.11.19.02.2-.41.33-.1.04-.44.11-.44.18-.03.05-.34 1.06-.46.83-.22.3-.08.2-.07.07-1.29.64-.07.04-.19.22-.05.12-.15.54-.11.24-.11.1-.3.24-.2.25-.04.1-.04.33-.04.07-.74.21-.22.03-.19-.03-.22.03-.21.04-.18.06-.6.28-.2.04-.17-.02-.13-.08-.1-.13-.07-.18-.03-.2-.17-.18-.14-.08-.12-.04-.28.08-.2.18-.16.11-.25.25-.02.05-.2.51-.05.08-.21.2-.15.23-.29.28-.16.11-.22.21-.11.17-.07.2-.1.64.02.12.08.09.38.14.28.23.11.04.6-.02.18.07.08.07v.43l-.05.16.02.16-.04.2-.14.21-.03.32.12.25.25.26.06.15.06.09.24.06h.3l.28-.1.1.03.06.07v.12l-.02.52.02.1.14.16.03.13.11.14.16.14.07.1.09.37.1.29.17.22.07.23.07.11-.21.11-.06.15.07.15v.16l.23.08v.1l-.12.03-.07.07h-.2l-.19.14.02.11-.22.1-.34-.03-.15-.12-.04-.23.07-.08-.03-.05h-.1l-.26.05-.16.1h-.14l-.14.1-.33.06-.05.06-.1.21-.08.07-.12.02-.5.01-.14-.01-.1-.06-.2-.2-.07-.03-.7-.01-.18.06H620l-.14-.06h-.12l-.15.06-.08-.03-.1-.12h-.05l-.11.19-.07-.02-.04-.2H619l-.05.1v.85h-.73l-.24.06-.05.07-.15-.03v.07l-.11.06-.07.1-.09.16v.23l-.11-.12-.1.04.04-.23-.08-.29-.09-.06.12.3-.08.14-.07-.08h-.07l-.15-.07-.03-.1h-.09l-.05.12-.1.03-.17-.05v.1l-.25-.03-.04-.1-.23-.17-.07-.07.03-.1-.14-.04.04-.09.13-.06-.2-.06h-.22l-.13-.32-.01-.3-.11-.44-.1-.11-.07-.21-.08-.12.01-.07.11-.12.14-.09-.06-.07-.13.03-.1-.11h-.14l-.04.04-.25-.16-.06.08-.14-.1-.2.04-.06-.04-.25.06-.05-.08.1-.09-.05-.04.05-.46.08-.16v-.1l-.04-.14-.42-.35.07-.04.03-.11-.1-.1-.04-.16h-.1l-.13-.2h-.13l-.06-.05-.15.02-.11-.02-.18.08-.16.3.22-.05.12-.1v-.04l.2-.03.12.09.1.11.17.12-.03.08-.11-.08-.2-.09-.26-.02-.23.07h-.22l-.37.08h-.15l-.22.11-.25.08h-.1l-.4-.11-.17.05v-.06l-.16.02-.11.05-.15-.02-.13.18-.06.02-.28-.05h-.16l-.22-.04-.07.04-.13-.04-.23.05-.1.1-.03.11.09.15-.12.03-.13-.02.07-.15-.1-.09-.17-.03-.07.08-.2.01-.13-.11-.23-.05-.06-.04h-.14l-.23-.05.02-.13-.03-.13-.11-.04-.15.06.06.07.1-.04.07.13-.03.05-.31.03-.34-.1-.16-.03h-.17l-.25.05-.09.06-.12.16-.01.05.09.12-.05.06-.3-.09-.18.03-.32-.12-.17.03-.2.09-.22-.03-.43-.09h-.73l-.08.13-.2.09-.05.14.1.11-.23-.02.07-.13-.06-.11-.1-.07-.27-.02-.17.05v.26l-.37-.02h-.1l-.13.19-.2.07-.1-.07.04-.15.07-.05.05-.2-.09.03-.15-.07h-.23l.07-.22.06-.87.07-.11v-.1l-.03-.2.06-.07.14-.02.05-.1.12-.87.06-.16.06-.04.3-.09.09-.06.2-.04.08-.16.29.06.05-.02-.03-.16.11-.15v-.08l.13-.08h.1l.11-.08.4-.05.12-.07.07.03.14-.05.07-.08.6.01.36.05.1-.17v-.38l.07-.07.1-.01.05-.08-.08-.15v-.29l.07-.17h.14l-.09-.19-.08-.09-.21-.1-.14.04h-.14l-.34.08-.29-.03-.08-.13.01-.15-.04-.05.13-.28.01-.12-.09-.9-.1-.44.07-.58-.07-.13-.4.08-.21-.2-.07-.13-.11-.04-.14-.14-.34-.06-.2-.1-.24-.02-.2-.09-.19-.06-.23-.23-.11-.13-.25-.23-.15-.22-.08-.08-.03-.14-.1-.22-.1-.09.04-.11-.06-.05-.06-.1-.08-.04-.04-.16-.12-.13-.02-.12.04-.13-.03-.07-.14-.09-1.1-1.23.09.03 3.72 1.14.26.05 2.72-.24 1 .18.29.12.07-.03.14-.23.1-.05.67-.19h.85l.4.08h.13l2.88-.8.2-.13.17-.2-.29-.24.02-.18.17-.31v-.23l.05-.35-.02-.1-.12-.23v-.11l.25-.9.07-.05.39-.09.28-.29.09-.3.16-.06.19-.17.25-.1.2.01v.2l.14.02.2-.01.18.06h.3l.2-.06.15-.03.27-.07.23-.15h.14l.07-.08-.01-.11-.09-.02-.21.02-.14-.08v-.11l-.1-.14.03-.04.24.03.16-.03.13-.1.16-.16.07-.03h.21l.22-.15.04-.1.08-.07.08-.17.09-.04.1.05.13.12h.25l.36.12.05-.11h-.14l-.06-.1.23-.07.22.11.13.02.06.16.2.27.16.03.25-.1.15-.02.17-.12.11-.11.27-.4.18-.15.01-.06-.07-.23-.05-.24.04-.42v-.11l-.1-.28v-.11l.14-.2.2-.1.16-.28-.03-.15-.1-.08.03-.1.22-.2.03-.07-.05-.3.11-.17.08-.06.24-.02.1.01.12-.08.11-.01.16.08h.11l.18-.11.15-.05.08-.14.19-.02.42-.33.02-.1-.04-.08-.24-.24-.08-.11v-.1l.04-.18v-.08l-.1-.07-.06-.18-.1.02-.28-.1-.14-.26-.06-.15-.09-.11.08-.08.04-.17.28-.03.54.18h.15l.12.05.2.01.29.05.33-.05h.34l.18-.02.08-.13.14.02.06-.07.18-.04.04-.08v-.1l.1-.13.02-.1-.04-.21.07-.2v-.06l-.18-.1-.2-.22-.04-.17.07-.07h.2l.04-.13-.02-.12.02-.07.3-.23.14-.17.07-.18.1-.06.33-.13.14-.19v-.18l.05-.07.17-.1.08-.19-.08-.05-.18-.23v-.08l.2-.19.02-.09-.1-.18.04-.17-.07-.06-.14-.06-.07-.09.1-.16-.13-.2-.02-.11-.11-.2-.11-.06-.08-.18-.21-.07-.22-.15.01-.1.08-.08.05-.11.16-.08.07-.13.16-.05.25-.23.19-.08-.04-.09.07-.1.08-.15.07-.04.19.12.08.06.14-.03-.05-.11.04-.12.2-.03.1-.08.22-.13.13-.06v-.07l.11-.05.18-.05-.05-.1.15-.11.44-.08h.17l.16-.12.11-.07.34-.04.2.03.22-.01.2-.07.1.03.13-.06.37-.04.22.03.13-.04h.29l.16.01.32-.05h.34l.22.06.2.12.23.05.14-.04.05-.17.08-.03h.16l.45-.27.22-.01.14.1.02-.17.29-.1.15.12h.18l.07.06.17.21.05-.11.17-.07.3-.03.23.13.3.06.1.03.1.15.04.33.06.07h.14l.05-.07.15-.05.2.03.2.1.15.1.2.2.27.44.02.12-.05.22v.11l.12.2-.12.08.03.11-.16.12-.06.08.07.19.16.1h.19l.13.14.06.34.08.06.22-.04.14.02.09-.06h.13l.07-.08.18-.03.09-.1.07.12-.04.22.05.1.27.12.17.15.07.02.8.36zm-24.08 30.05.09.04.11-.04v.13l-.15-.03z"
@@ -483,7 +510,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#9a99ff',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -522,136 +549,6 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
         </g>
       </CountryNames>
       <CountryNames lastChild={lastChild}>
-        <g id="g3589" fill-opacity="1">
-          <path
-            id="Bahrain"
-            d="M573.22 225.372c-1.605 0-1.591 2.401.027 2.401v.016c1.604 0 1.591-2.417-.027-2.417z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            stroke-opacity="1"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="Bahrain_label"
-            y="233.858"
-            x="543.176"
-            fontSize="1.223"
-            strokeWidth=".106"
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            font-family="Arial"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="233.858"
-              x="543.176"
-              id="tspan214"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              fontSize="2.041"
-              font-family="Arial"
-              fill="#6a0707"
-              fill-opacity="1"
-              strokeWidth=".106"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-            >
-              BAHRAIN
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
-        <g id="g3574" fill-opacity="1" stroke-opacity="1">
-          <path
-            d="m587.98 227.83.16.05.06.22-.02.41.06.12-.05.3v.4l.05.22-.16.04-.01.15-.18.16-.18.05-.14.24h-.13l-.08-.05-.07-.18-.1-.09.04-.08.13.07-.05-.26-.18-.05-.1.02-.17.12-.1.18.02.2v.2l.05.16-.06.06-.08.17.03.17v.17l.1.1v.13l-.14.26.03.04.2.05.14-.06.06.02.08.22.1.15-.04.05-.16.03-.29.11-.11-.04-.08.02-.2-.02-.14.04-.22.12h-.11v.09l.18.15.02.27-.15.25-.09.34-.17.21-.07.34-.06.17-.24.4-.09.34.01.38-.02.38-.17.2h-.03l-6.29-.8-.1-.06-2.35-2.95-.05-.14v-.34l.05-.07v-.12l-.05-.09.06-.05.07.1.03.31.13-.02.05.03.08-.14.1.1-.02.17.03.3.06.16.3.03h.23l.12.07.38-.04.13-.06.16-.03.09-.07.17-.07.03-.06.3-.18v-.1l.14.01.09.12.12-.02.16.04.15-.04.27.04.12-.08.17.11.24-.11.13.07.1.1h.13l.32-.05.11.07h.09l.16.11h.19l.11-.04.08.02h.3l.24-.11.15-.02.27-.1.16-.14.17-.06.18-.12.14.05.16-.17.1-.2v-.1l.18-.07-.02-.07-.12-.01-.15-.1.09-.12.09.14.06.04.1-.02.14-.23.07-.23-.06-.13.04-.07.13-.11.08.03.05-.11.28-.16.24-.18.2-.09.08-.07.45-.52v-.08l.1-.03.02-.1.12-.14.12-.07.08-.11h.08l.13-.34.1.05.16-.04.07-.15.11-.1.08-.04.07-.09.2-.09.09-.06.13-.17.22-.2v-.08l.1-.22.05-.19.2-.03.06.16-.03.37-.07.1.06.15-.06.12v.18l.2.14zm-.05.78-.06.05v.11l-.07.05.08.1.27-.14zm-6.47 3.1-.08-.03.23-.16h.13l.17-.09.13.12.16.05.02.08-.11.08-.16-.04-.11.05h-.17zm1.32-.18-.02-.04-.17-.08-.03-.07.09-.08.13.14zm-4.02-.31.1-.08.08.07v.1l-.13.16-.1-.15zm1.87.22-.12-.08h-.1l.3-.15.1-.14.12.06-.05.13-.23.12zm2.63-.47-.1-.08.08-.09.2.14v.08zm-.29.38-.11.03-.09-.08.05-.1h.07zm.15-.2.02.06-.07.09-.06-.12zm-5.02-.45.08.11-.07.06-.08-.09z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            id="United_Arab_Emirates"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="United_Arab_Emirates_label"
-            y="241.953"
-            x="558.035"
-            style={{
-              lineHeight: '95',
-              textAlign: 'start',
-              display: 'none',
-            }}
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            fontSize="1.704"
-            font-family="Arial"
-            letter-spacing="-.125"
-            word-spacing="0"
-            writing-mode="lr-tb"
-            text-anchor="start"
-            stroke="none"
-            strokeWidth=".096"
-            stroke-linecap="butt"
-            stroke-linejoin="miter"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="241.953"
-              x="558.035"
-              id="tspan1294"
-              letter-spacing="-.125"
-              strokeWidth=".096"
-              fill="#6a0707"
-              fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              font-family="Arial"
-            >
-              UNITED ARAB
-            </tspan>
-            <tspan
-              id="tspan1298"
-              y="243.58"
-              x="558.035"
-              letter-spacing="-.125"
-              strokeWidth=".096"
-              fill="#6a0707"
-              fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              font-family="Arial"
-            >
-              EMIRATES
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
         <g id="g3579" fill-opacity="1">
           <path
             d="m574.36 230.16.12-.06.02-.07-.02-.25-.13-.26.02-.22-.09-.06-.04-.47.02-.19-.03-.2.07-.3.1-.03.03-.1-.09-.1.2-.03-.02.1.02.13.12-.18-.1-.15.04-.33.1-.04.02-.14.24-.52.22-.07.1-.12.2-.1.22.16v.17l.08.04.03.15.1.04.22.02.07.05.08.11.05.3-.1.04v.13l-.13.06.12.1v.05l-.12.04-.03.17-.05.08.12.25-.01.31.04.04.15.03.05.17v.22l-.02.27-.04.21-.23.26-.06.26-.04.04-.03.16-.16.11h-.39l-.02.04-.16.13-.14.05-.29-.03-.12-.05-.12-.13z"
@@ -664,7 +561,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#a5a9ac',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -715,7 +612,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#ee0891',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -766,7 +663,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#ffcc01',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -817,7 +714,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#df001c',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -868,7 +765,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#9a99ff',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -919,7 +816,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -970,7 +867,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1020,7 +917,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#026835',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1031,7 +928,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             style={{
               lineHeight: '90',
               textAlign: 'end',
-              display: 'none',
+              //   display: 'none',
             }}
             font-style="normal"
             font-variant="normal"
@@ -1100,7 +997,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e50e72',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1151,7 +1048,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f9a432',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1202,7 +1099,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#ff9966',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1236,6 +1133,187 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               style={{ fill: 'rgb(106, 7, 7)' }}
             >
               ISRAEL
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3594" fill-opacity="1">
+          <path
+            d="m567.26 216.09.07.13v.23l.1.22.09.1h.06l.1.24.15.24-.07.07-.16-.1-.16-.02-.15.02-.13.11-.15.1-.11.08-.11.15-.12.06.04.08.27-.06-.06.13.07.04.14-.04.22-.15.1.1h.18l-.01.13.03.26.05.11.07.42.17.27.14.06v.15l.11.21.17.05-.07.22.06.05v.13l.1.15-1.9.02-.01-.08-.16-.13-.1-.23-.02-.2-.14-.37-.15-.25-1.12-.13-1.13-.14.45-.47.16-.26.2-.22.07-.18.19-.3.08-.24.09-.16.21-.51.08-.11.13-.1.4-.15.14-.02h.65l.14.03zm.96 1.43v.12l-.16-.03.06-.1zm.04-.67-.11.18-.2.12h-.1l-.06-.07-.1-.2-.1-.19-.1-.07.17-.12.01-.09.12-.02.04-.15-.09-.02v-.14l.11.03.38.53.05.1zm-.68-.78-.12.07-.06-.04.12-.1z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Kuwait"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#df001c',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Kuwait_label"
+            y="228.02"
+            x="545.171"
+            fontSize="1.175"
+            strokeWidth=".096"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="228.02"
+              x="545.171"
+              id="tspan204"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="1.955"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".096"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              KUWAIT
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3589" fill-opacity="1">
+          <path
+            id="Bahrain"
+            d="M573.22 225.372c-1.605 0-1.591 2.401.027 2.401v.016c1.604 0 1.591-2.417-.027-2.417z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            stroke-opacity="1"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#803788',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Bahrain_label"
+            y="233.858"
+            x="543.176"
+            fontSize="1.223"
+            strokeWidth=".106"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="233.858"
+              x="543.176"
+              id="tspan214"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="2.041"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".106"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              BAHRAIN
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3574" fill-opacity="1" stroke-opacity="1">
+          <path
+            d="m587.98 227.83.16.05.06.22-.02.41.06.12-.05.3v.4l.05.22-.16.04-.01.15-.18.16-.18.05-.14.24h-.13l-.08-.05-.07-.18-.1-.09.04-.08.13.07-.05-.26-.18-.05-.1.02-.17.12-.1.18.02.2v.2l.05.16-.06.06-.08.17.03.17v.17l.1.1v.13l-.14.26.03.04.2.05.14-.06.06.02.08.22.1.15-.04.05-.16.03-.29.11-.11-.04-.08.02-.2-.02-.14.04-.22.12h-.11v.09l.18.15.02.27-.15.25-.09.34-.17.21-.07.34-.06.17-.24.4-.09.34.01.38-.02.38-.17.2h-.03l-6.29-.8-.1-.06-2.35-2.95-.05-.14v-.34l.05-.07v-.12l-.05-.09.06-.05.07.1.03.31.13-.02.05.03.08-.14.1.1-.02.17.03.3.06.16.3.03h.23l.12.07.38-.04.13-.06.16-.03.09-.07.17-.07.03-.06.3-.18v-.1l.14.01.09.12.12-.02.16.04.15-.04.27.04.12-.08.17.11.24-.11.13.07.1.1h.13l.32-.05.11.07h.09l.16.11h.19l.11-.04.08.02h.3l.24-.11.15-.02.27-.1.16-.14.17-.06.18-.12.14.05.16-.17.1-.2v-.1l.18-.07-.02-.07-.12-.01-.15-.1.09-.12.09.14.06.04.1-.02.14-.23.07-.23-.06-.13.04-.07.13-.11.08.03.05-.11.28-.16.24-.18.2-.09.08-.07.45-.52v-.08l.1-.03.02-.1.12-.14.12-.07.08-.11h.08l.13-.34.1.05.16-.04.07-.15.11-.1.08-.04.07-.09.2-.09.09-.06.13-.17.22-.2v-.08l.1-.22.05-.19.2-.03.06.16-.03.37-.07.1.06.15-.06.12v.18l.2.14zm-.05.78-.06.05v.11l-.07.05.08.1.27-.14zm-6.47 3.1-.08-.03.23-.16h.13l.17-.09.13.12.16.05.02.08-.11.08-.16-.04-.11.05h-.17zm1.32-.18-.02-.04-.17-.08-.03-.07.09-.08.13.14zm-4.02-.31.1-.08.08.07v.1l-.13.16-.1-.15zm1.87.22-.12-.08h-.1l.3-.15.1-.14.12.06-.05.13-.23.12zm2.63-.47-.1-.08.08-.09.2.14v.08zm-.29.38-.11.03-.09-.08.05-.1h.07zm.15-.2.02.06-.07.09-.06-.12zm-5.02-.45.08.11-.07.06-.08-.09z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="United_Arab_Emirates"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#05922a',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="United_Arab_Emirates_label"
+            y="241.953"
+            x="558.035"
+            style={{
+              lineHeight: '95',
+              textAlign: 'start',
+              //   display: 'none',
+            }}
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            fontSize="1.704"
+            font-family="Arial"
+            letter-spacing="-.125"
+            word-spacing="0"
+            writing-mode="lr-tb"
+            text-anchor="start"
+            stroke="none"
+            strokeWidth=".096"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="241.953"
+              x="558.035"
+              id="tspan1294"
+              letter-spacing="-.125"
+              strokeWidth=".096"
+              fill="#6a0707"
+              fill-opacity="1"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              font-family="Arial"
+            >
+              UNITED ARAB
+            </tspan>
+            <tspan
+              id="tspan1298"
+              y="243.58"
+              x="558.035"
+              letter-spacing="-.125"
+              strokeWidth=".096"
+              fill="#6a0707"
+              fill-opacity="1"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              font-family="Arial"
+            >
+              EMIRATES
             </tspan>
           </text>
         </g>

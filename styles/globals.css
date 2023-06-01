@@ -101,6 +101,34 @@ a {
   }
 }
 
+.ca-zoom-in {
+  animation: ca-zoom-in 1s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ca-zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3.5) translate(-12%, -40%);
+  }
+}
+
+.ca-zoom-out {
+  animation: ca-zoom-out ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ca-zoom-out {
+  from {
+    transform: scale(3.5) translate(-12%, -40%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .na-zoom-in {
   animation: na-zoom-in 1s ease-in 3s;
   animation-fill-mode: forwards;
@@ -167,7 +195,7 @@ a {
     transform: scale(1);
   }
   to {
-    transform: scale(2.3) translate(-30%, -5%);
+    transform: scale(2.5) translate(-33%, -5%);
   }
 }
 
@@ -178,7 +206,35 @@ a {
 
 @keyframes europe-zoom-out {
   from {
-    transform: scale(2.3) translate(-30%, -5%);
+    transform: scale(2.5) translate(-33%, -5%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.oceania-zoom-in {
+  animation: oceania-zoom-in 1s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oceania-zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2) translate(-60%, -50%);
+  }
+}
+
+.oceania-zoom-out {
+  animation: oceania-zoom-out ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oceania-zoom-out {
+  from {
+    transform: scale(2) translate(-60%, -50%);
   }
   to {
     transform: scale(1);
