@@ -19,7 +19,6 @@ const MyMap3 = () => {
   );
 
   const handleSearchValue = useCallback((event) => {
-    console.log(event.target.value);
     setSearchValue(() => event.target.value);
   });
 
@@ -31,28 +30,30 @@ const MyMap3 = () => {
       >
         Sign Out
       </button>
-      <div className="absolute bottom-5 right-5 w-96 h-80 bg-black overflow-y-auto">
-        <Input
-          searchValue={searchValue}
-          handleSearchValue={handleSearchValue}
-        />
-      </div>
       {zoomIn && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="absolute top-36 left-36 w-12 h-12"
-          onClick={() => setZoomIn('')}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
+        <>
+          <div className="absolute bottom-5 right-5 w-96 h-80 bg-black overflow-y-auto">
+            <Input
+              searchValue={searchValue}
+              handleSearchValue={handleSearchValue}
+            />
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="absolute top-36 left-36 w-12 h-12"
+            onClick={() => setZoomIn('')}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </>
       )}
       <svg
         className="bg-blue-300"
