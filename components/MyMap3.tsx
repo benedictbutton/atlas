@@ -16,10 +16,12 @@ const MyMap3 = () => {
     ) => {
       event?.stopPropagation();
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
-      else if (close) setZoomIn('');
-      else if (currentCountry === '')
-        setCurrentCountry(() => event.target?.parentNode?.id);
-      else setCurrentCountry('');
+      else if (close) {
+        setCurrentCountry('');
+        setZoomIn('');
+      } else if (currentCountry === event.target?.parentNode?.id)
+        setCurrentCountry('');
+      else setCurrentCountry(() => event.target?.parentNode?.id);
     },
     [zoomIn, currentCountry],
   );

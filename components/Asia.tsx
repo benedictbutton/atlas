@@ -75,7 +75,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f9a433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -126,7 +126,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#463b38',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -177,7 +177,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -229,7 +229,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#2dc4f4',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -331,7 +331,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#89bc3b',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -384,7 +384,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -490,7 +490,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0f72b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -543,7 +543,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f3f870',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -594,7 +594,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#e3106f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -645,7 +645,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#463b38',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -801,7 +801,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#89bc3b',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -954,7 +954,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#92268f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1005,7 +1005,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fbb34a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1107,7 +1107,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#2ec3f4',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1158,7 +1158,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#0d9445',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1209,7 +1209,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#a6a9ac',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
