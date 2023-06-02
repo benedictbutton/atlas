@@ -32,7 +32,7 @@ const MyMap3 = () => {
       </button>
       {zoomIn && (
         <>
-          <div className="absolute bottom-5 right-5 w-96 h-80 bg-black overflow-y-auto">
+          <div className="absolute bottom-5 right-5 w-96 h-80 bg-black border-[10px] border-indigo-300/100 border-double overflow-y-auto">
             <Input
               searchValue={searchValue}
               handleSearchValue={handleSearchValue}

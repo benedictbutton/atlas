@@ -3,9 +3,8 @@ import CountryList from './CountryList';
 const Input = ({ searchValue, handleSearchValue }) => {
   return (
     <div className="w-80 p-5">
-      <CountryList searchValue={searchValue} />
       <label className="block mb-4">
-        <p className="mb-2 text-blue-200 font-semibold leading-normal">
+        <p className="mb-2 text-indigo-600 font-semibold leading-normal">
           Country
         </p>
         <input
@@ -18,6 +17,7 @@ const Input = ({ searchValue, handleSearchValue }) => {
           value={searchValue}
         />
       </label>
+      <CountryList searchValue={searchValue} />
     </div>
   );
 };
