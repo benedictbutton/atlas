@@ -1041,7 +1041,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#009330',
+              fill: '#2ec3f4',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>

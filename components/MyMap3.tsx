@@ -1,4 +1,4 @@
-import { useState, useCallback, useLayoutEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input';
@@ -6,16 +6,22 @@ import Input from './Input';
 const MyMap3 = () => {
   const [zoomIn, setZoomIn] = useState('');
   // const [isMounted, setIsMounted] = useState(false, 1000);
+  const [currentCountry, setCurrentCountry] = useState('');
   const [searchValue, setSearchValue] = useState('');
 
   const handleZoom = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (
+      event: React.ChangeEvent<HTMLInputElement>,
+      close: string | undefined,
+    ) => {
       event?.stopPropagation();
-      // setIsMounted(!isMounted);
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
-      else setZoomIn('');
+      else if (close) setZoomIn('');
+      else if (currentCountry === '')
+        setCurrentCountry(() => event.target?.parentNode?.id);
+      else setCurrentCountry('');
     },
-    [zoomIn],
+    [zoomIn, currentCountry],
   );
 
   const handleSearchValue = useCallback(
@@ -31,6 +37,8 @@ const MyMap3 = () => {
     },
     [setSearchValue],
   );
+
+  console.log(zoomIn);
 
   return (
     <>
@@ -56,7 +64,7 @@ const MyMap3 = () => {
             strokeWidth={1.5}
             stroke="currentColor"
             className="absolute top-36 left-36 w-12 h-12"
-            onClick={() => setZoomIn('')}
+            onClick={(event) => handleZoom(event, 'close')}
           >
             <path
               strokeLinecap="round"
@@ -1295,7 +1303,11 @@ const MyMap3 = () => {
               }}
             ></path>
           </g>
-          <Countries zoomIn={zoomIn} handleZoom={handleZoom} />
+          <Countries
+            zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            currentCountry={currentCountry}
+          />
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"
             id="city_labels"

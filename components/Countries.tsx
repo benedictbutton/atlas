@@ -20,7 +20,7 @@ import useMountTransition from '../utils/useMountTransition';
 //   current: SVGGElement | null;
 // }
 
-const Countries = ({ zoomIn, handleZoom }) => {
+const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
   const lastChild = useRef<SVGGElement>(null);
 
   return (
@@ -267,6 +267,7 @@ const Countries = ({ zoomIn, handleZoom }) => {
           lastChild={lastChild}
           className="sa-zoom-out"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
       <CountryNames lastChild={lastChild}>
@@ -438,6 +439,7 @@ const Countries = ({ zoomIn, handleZoom }) => {
           lastChild={lastChild}
           className="sa-zoom-in"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
     </>

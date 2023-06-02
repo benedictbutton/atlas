@@ -177,7 +177,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#1071b0',
+              fill: 'rgb(209, 219, 221)',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>

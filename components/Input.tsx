@@ -7,7 +7,7 @@ const Input = ({
 }) => {
   return (
     <div className="w-80 p-5">
-      <label className="block mb-4">
+      <label className="mb-4">
         <p className="mb-2 text-indigo-600 font-semibold leading-normal">
           Country
         </p>
@@ -21,6 +21,9 @@ const Input = ({
           value={searchValue}
         />
       </label>
+      <button className="w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md">
+        Submit
+      </button>
       <CountryList
         searchValue={searchValue}
         handleSelectValue={handleSelectValue}
