@@ -9,57 +9,6 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
       opacity={zoomIn && zoomIn !== 'asia' ? '0.5' : '1'}
     >
       <CountryNames lastChild={lastChild}>
-        <g id="g3911" fill-opacity="1">
-          <path
-            d="M675.94 222.13v.1l-.12.18-.02.1.05.19.15.18.18.05.06.12.27-.07h.15l.14-.08.05.06.23.39-.02.08-.12.11-.1.2v.15l.01.08.13.12.09.24-.04.13-.09.1-.14.01-.13-.09-.07.07-.05.14-.08-.12-.12-.02-.23.14h-.16l-.12-.02-.18.04-.1-.18-.18-.01-.1.17-.09.05-.13.04-.2-.08h-.33l-.15.05-.71.04-.33-.04-.28-.13-.23-.16h-.13l-.11.1h-.18l-.1.06-.05.16-.15.07-.3.04-.2.04-.16-.03v.07h-.22l-.13-.07-.14.03-.08-.02.04-.11-.07-.06-.2-.05-.15.02-.26-.16-.17.03-.07.07-.15.02-.23-.03-.07-.16-.17-.1-.1.02-.07-.04v-.09l-.1-.04-.1.09v-.29l-.05-.13-.24-.13.06-.17.12-.12.15-.04.07-.11.06-.05.14.05.07-.05-.11-.28.04-.22.2-.25.18-.04.18-.29.07-.2.28-.17.08-.1.19-.33.17-.14.11-.14.1-.04.3-.05.1-.05.05-.11.12-.1.1-.08.12-.06.09.03.3-.12.26.07.12-.09.1.06v.1l.07.1.09.01.06-.11.25.04.13.1.2.04-.1.2h-.08l-.07.09-.03.13.25.03.27-.06.1.07.17.03.3.05.16.13.19.06.1-.04.21-.22.11-.05h.11l.18.12.2.1.2.02.3.09.08.1-.06.17z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            id="Bhutan"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: 'rgb(209, 219, 221)',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="Bhutan_label"
-            y="228.425"
-            x="642.219"
-            fontSize="1.608"
-            strokeWidth=".135"
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            font-family="Arial"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="228.425"
-              x="642.219"
-              id="tspan203"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              fontSize="2.677"
-              font-family="Arial"
-              fill="#6a0707"
-              fill-opacity="1"
-              strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-            >
-              BHUTAN
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
         <g id="g4006" fill-opacity="1">
           <path
             className="circle pr"
@@ -228,7 +177,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#1071b0',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -488,7 +437,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#90288f',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -747,7 +696,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#05922a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -798,7 +747,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#cc0b20',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -903,7 +852,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#f3f870',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -954,7 +903,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#9a99ff',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1107,7 +1056,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#faa433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1311,7 +1260,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1364,7 +1313,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: '#901f5d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1398,6 +1347,57 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               style={{ fill: 'rgb(106, 7, 7)' }}
             >
               BANGLADESH
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3911" fill-opacity="1">
+          <path
+            d="M675.94 222.13v.1l-.12.18-.02.1.05.19.15.18.18.05.06.12.27-.07h.15l.14-.08.05.06.23.39-.02.08-.12.11-.1.2v.15l.01.08.13.12.09.24-.04.13-.09.1-.14.01-.13-.09-.07.07-.05.14-.08-.12-.12-.02-.23.14h-.16l-.12-.02-.18.04-.1-.18-.18-.01-.1.17-.09.05-.13.04-.2-.08h-.33l-.15.05-.71.04-.33-.04-.28-.13-.23-.16h-.13l-.11.1h-.18l-.1.06-.05.16-.15.07-.3.04-.2.04-.16-.03v.07h-.22l-.13-.07-.14.03-.08-.02.04-.11-.07-.06-.2-.05-.15.02-.26-.16-.17.03-.07.07-.15.02-.23-.03-.07-.16-.17-.1-.1.02-.07-.04v-.09l-.1-.04-.1.09v-.29l-.05-.13-.24-.13.06-.17.12-.12.15-.04.07-.11.06-.05.14.05.07-.05-.11-.28.04-.22.2-.25.18-.04.18-.29.07-.2.28-.17.08-.1.19-.33.17-.14.11-.14.1-.04.3-.05.1-.05.05-.11.12-.1.1-.08.12-.06.09.03.3-.12.26.07.12-.09.1.06v.1l.07.1.09.01.06-.11.25.04.13.1.2.04-.1.2h-.08l-.07.09-.03.13.25.03.27-.06.1.07.17.03.3.05.16.13.19.06.1-.04.21-.22.11-.05h.11l.18.12.2.1.2.02.3.09.08.1-.06.17z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Bhutan"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#48bd44',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Bhutan_label"
+            y="228.425"
+            x="642.219"
+            fontSize="1.608"
+            strokeWidth=".135"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="228.425"
+              x="642.219"
+              id="tspan203"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="2.677"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".135"
+              style={{ fill: 'rgb(106, 7, 7)' }}
+            >
+              BHUTAN
             </tspan>
           </text>
         </g>

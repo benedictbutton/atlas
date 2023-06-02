@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { MutableRefObject, useState } from 'react';
 import { createPortal } from 'react-dom';
 
-const CountryNames = ({ children, lastChild }) => {
+type Props = {
+  children: React.ReactNode;
+  lastChild: MutableRefObject<SVGGElement>;
+};
+
+const CountryNames = ({ children, lastChild }: Props) => {
   const [hideName, setHideName] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
 

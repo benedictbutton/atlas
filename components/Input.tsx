@@ -1,6 +1,10 @@
 import CountryList from './CountryList';
 
-const Input = ({ searchValue, handleSearchValue }) => {
+const Input = ({
+  searchValue,
+  handleSearchValue,
+  handleSelectValue,
+}) => {
   return (
     <div className="w-80 p-5">
       <label className="block mb-4">
@@ -17,7 +21,10 @@ const Input = ({ searchValue, handleSearchValue }) => {
           value={searchValue}
         />
       </label>
-      <CountryList searchValue={searchValue} />
+      <CountryList
+        searchValue={searchValue}
+        handleSelectValue={handleSelectValue}
+      />
     </div>
   );
 };

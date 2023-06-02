@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useLayoutEffect } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input';
@@ -9,7 +9,7 @@ const MyMap3 = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const handleZoom = useCallback(
-    (event) => {
+    (event: React.ChangeEvent<HTMLInputElement>) => {
       event?.stopPropagation();
       // setIsMounted(!isMounted);
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
@@ -18,9 +18,19 @@ const MyMap3 = () => {
     [zoomIn],
   );
 
-  const handleSearchValue = useCallback((event) => {
-    setSearchValue(() => event.target.value);
-  });
+  const handleSearchValue = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchValue(() => event.target.value);
+    },
+    [setSearchValue],
+  );
+
+  const handleSelectValue = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchValue(() => event.target.value);
+    },
+    [setSearchValue],
+  );
 
   return (
     <>
@@ -36,6 +46,7 @@ const MyMap3 = () => {
             <Input
               searchValue={searchValue}
               handleSearchValue={handleSearchValue}
+              handleSelectValue={handleSelectValue}
             />
           </div>
           <svg

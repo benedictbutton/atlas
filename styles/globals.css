@@ -46,7 +46,7 @@ a {
 }
 
 .africa-zoom-in {
-  animation: africa-zoom-in 1s ease-in 3s;
+  animation: africa-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -60,7 +60,7 @@ a {
 }
 
 .africa-zoom-out {
-  animation: africa-zoom-out ease 3s;
+  animation: africa-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -74,7 +74,7 @@ a {
 }
 
 .asia-zoom-in {
-  animation: asia-zoom-in 1s ease-in 3s;
+  animation: asia-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -88,7 +88,7 @@ a {
 }
 
 .asia-zoom-out {
-  animation: asia-zoom-out ease 3s;
+  animation: asia-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -102,7 +102,7 @@ a {
 }
 
 .ca-zoom-in {
-  animation: ca-zoom-in 1s ease-in 3s;
+  animation: ca-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -116,7 +116,7 @@ a {
 }
 
 .ca-zoom-out {
-  animation: ca-zoom-out ease 3s;
+  animation: ca-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -130,7 +130,7 @@ a {
 }
 
 .na-zoom-in {
-  animation: na-zoom-in 1s ease-in 3s;
+  animation: na-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -144,7 +144,7 @@ a {
 }
 
 .na-zoom-out {
-  animation: na-zoom-out ease 3s;
+  animation: na-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -158,7 +158,7 @@ a {
 }
 
 .middle-east-zoom-in {
-  animation: middle-east-zoom-in 1s ease-in 3s;
+  animation: middle-east-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -172,7 +172,7 @@ a {
 }
 
 .middle-east-zoom-out {
-  animation: middle-east-zoom-out ease 3s;
+  animation: middle-east-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -186,7 +186,7 @@ a {
 }
 
 .europe-zoom-in {
-  animation: europe-zoom-in 1s ease-in 3s;
+  animation: europe-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -200,7 +200,7 @@ a {
 }
 
 .europe-zoom-out {
-  animation: europe-zoom-out ease 3s;
+  animation: europe-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -214,7 +214,7 @@ a {
 }
 
 .oceania-zoom-in {
-  animation: oceania-zoom-in 1s ease-in 3s;
+  animation: oceania-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -228,7 +228,7 @@ a {
 }
 
 .oceania-zoom-out {
-  animation: oceania-zoom-out ease 3s;
+  animation: oceania-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -242,7 +242,7 @@ a {
 }
 
 .sa-zoom-in {
-  animation: sa-zoom-in 1s ease-in 3s;
+  animation: sa-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -256,7 +256,7 @@ a {
 }
 
 .sa-zoom-out {
-  animation: sa-zoom-out ease 3s;
+  animation: sa-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 

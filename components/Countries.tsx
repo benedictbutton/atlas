@@ -1,4 +1,10 @@
-import { useState, useRef, useCallback } from 'react';
+import {
+  useState,
+  useRef,
+  useCallback,
+  useLayoutEffect,
+  MutableRefObject,
+} from 'react';
 import Africa from './Africa';
 import Asia from './Asia';
 import CentralAmerica from './CentralAmerica';
@@ -10,8 +16,12 @@ import Oceania from './Oceania';
 import SouthAmerica from './SouthAmerica';
 import useMountTransition from '../utils/useMountTransition';
 
+// export interface refObject {
+//   current: SVGGElement | null;
+// }
+
 const Countries = ({ zoomIn, handleZoom }) => {
-  const lastChild = useRef();
+  const lastChild = useRef<SVGGElement>(null);
 
   return (
     <>
