@@ -1,7 +1,28 @@
+import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
+import Input from './Input';
 
 const MyMap3 = () => {
+  const [zoomIn, setZoomIn] = useState('');
+  // const [isMounted, setIsMounted] = useState(false, 1000);
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleZoom = useCallback(
+    (event) => {
+      event?.stopPropagation();
+      // setIsMounted(!isMounted);
+      if (zoomIn === '') setZoomIn(event.currentTarget.id);
+      else setZoomIn('');
+    },
+    [zoomIn],
+  );
+
+  const handleSearchValue = useCallback((event) => {
+    console.log(event.target.value);
+    setSearchValue(() => event.target.value);
+  });
+
   return (
     <>
       <button
@@ -10,6 +31,29 @@ const MyMap3 = () => {
       >
         Sign Out
       </button>
+      <div className="absolute bottom-5 right-5 w-96 h-80 bg-black overflow-y-auto">
+        <Input
+          searchValue={searchValue}
+          handleSearchValue={handleSearchValue}
+        />
+      </div>
+      {zoomIn && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="absolute top-36 left-36 w-12 h-12"
+          onClick={() => setZoomIn('')}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      )}
       <svg
         className="bg-blue-300"
         version="1.2"
@@ -1239,7 +1283,7 @@ const MyMap3 = () => {
               }}
             ></path>
           </g>
-          <Countries />
+          <Countries zoomIn={zoomIn} handleZoom={handleZoom} />
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"
             id="city_labels"

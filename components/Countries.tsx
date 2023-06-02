@@ -10,20 +10,8 @@ import Oceania from './Oceania';
 import SouthAmerica from './SouthAmerica';
 import useMountTransition from '../utils/useMountTransition';
 
-const Countries = () => {
+const Countries = ({ zoomIn, handleZoom }) => {
   const lastChild = useRef();
-  const [zoomIn, setZoomIn] = useState('');
-  // const [isMounted, setIsMounted] = useState(false, 1000);
-
-  const handleZoom = useCallback(
-    (event) => {
-      event?.stopPropagation();
-      // setIsMounted(!isMounted);
-      if (zoomIn === '') setZoomIn(event.currentTarget.id);
-      else setZoomIn('');
-    },
-    [zoomIn],
-  );
 
   return (
     <>
