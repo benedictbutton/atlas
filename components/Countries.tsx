@@ -11,7 +11,7 @@ import SouthAmerica from './SouthAmerica';
 // import useMountTransition from '../utils/useMountTransition';
 
 type Props = {
-  zoomIn: boolean;
+  zoomIn: string;
   handleZoom: (
     event: React.MouseEvent<SVGElement>,
     close: string | undefined,
