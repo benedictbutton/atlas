@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 
 type Props = {
   children: React.ReactNode;
-  lastChild: MutableRefObject<SVGGElement>;
+  lastChild: SVGGElement | null;
 };
 
 const CountryNames = ({ children, lastChild }: Props) => {
