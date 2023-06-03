@@ -30,7 +30,7 @@ const MiddleEast = ({
                 currentCountry &&
                 currentCountry !== 'g3533'
                   ? '#36454f'
-                  : '#e50e72',
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -62,7 +62,7 @@ const MiddleEast = ({
             fill="#6a0707"
           >
             <tspan
-              style={{ lineHeight: '95', fill: '#000' }}
+              style={{ lineHeight: '95', fill: '#fff' }}
               y="236.378"
               x="377.505"
               id="tspan6774"
@@ -78,7 +78,7 @@ const MiddleEast = ({
               WESTERN
             </tspan>
             <tspan
-              style={{ lineHeight: '95', fill: '#000' }}
+              style={{ lineHeight: '95', fill: '#fff' }}
               id="tspan6778"
               y="239.97"
               x="377.505"

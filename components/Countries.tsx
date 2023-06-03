@@ -8,9 +8,18 @@ import MiddleEast from './MiddleEast';
 import NorthAmerica from './NorthAmerica';
 import Oceania from './Oceania';
 import SouthAmerica from './SouthAmerica';
-// import useMountTransition from '../utils/useMountTransition'
+// import useMountTransition from '../utils/useMountTransition';
 
-const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
+type Props = {
+  zoomIn: boolean;
+  handleZoom: (
+    event: React.MouseEvent<SVGElement>,
+    close: string | undefined,
+  ) => void;
+  currentCountry: string;
+};
+
+const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
   const lastChild = useRef<SVGGElement>(null);
 
   return (

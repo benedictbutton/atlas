@@ -583,7 +583,7 @@ const Africa = ({
                 currentCountry &&
                 currentCountry !== 'g3511'
                   ? '#36454f'
-                  : '#705348',
+                  : '#05922a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -614,7 +614,7 @@ const Africa = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: '#fff' }}
+              style={{ fill: '#000' }}
             >
               MALI
             </tspan>

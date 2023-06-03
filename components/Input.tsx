@@ -45,7 +45,7 @@ const Input = ({
   console.log('test');
   return (
     <div className="p-5">
-      <p className="text-3xl text-white">{findRegion}</p>
+      <p className="mb-3 text-3xl text-white">{findRegion}</p>
       <label className="mb-4">
         <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
           Country
