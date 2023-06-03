@@ -1,6 +1,12 @@
 import CountryNames from './CountryNames';
 
-const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
+const Africa = ({
+  handleZoom,
+  lastChild,
+  className,
+  zoomIn,
+  currentCountry,
+}) => {
   return (
     <g
       id="africa"
@@ -21,7 +27,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#cc0b20',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g4036'
+                  ? '#36454f'
+                  : '#cc0b20',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -52,7 +63,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               DJIBOUTI
             </tspan>
@@ -72,7 +83,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#90288f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3496'
+                  ? '#36454f'
+                  : '#90288f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -103,7 +119,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               GUINEA-BISSAU
             </tspan>
@@ -123,7 +139,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#463b38',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3469'
+                  ? '#36454f'
+                  : '#1b83ff',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -154,7 +175,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".125"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               GHANA
             </tspan>
@@ -172,9 +193,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             strokeWidth=".15"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e95d0f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3352'
+                  ? '#36454f'
+                  : '#ff9549',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -205,7 +230,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               MADAGASCAR
             </tspan>
@@ -222,9 +247,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="Cote_d_Ivoire"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#fcf1b2',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3475'
+                  ? '#36454f'
+                  : '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -276,7 +305,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".337"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -301,7 +330,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#f7a631',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3392'
+                  ? '#36454f'
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -332,7 +366,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               CAMEROON
             </tspan>
@@ -352,7 +386,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#faa433',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3332'
+                  ? '#36454f'
+                  : '#faa433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -403,7 +442,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g4041'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -434,7 +478,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".221"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               KENYA
             </tspan>
@@ -451,9 +495,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="South_Sudan"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#705348',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3404'
+                  ? '#36454f'
+                  : '#705348',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -489,7 +537,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".366"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -505,7 +553,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".366"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -530,7 +578,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#705348',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3511'
+                  ? '#36454f'
+                  : '#705348',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -561,7 +614,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MALI
             </tspan>
@@ -579,9 +632,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             strokeWidth=".15"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#05922a',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3429'
+                  ? '#36454f'
+                  : '#05922a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -612,7 +669,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".241"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               SOMALIA
             </tspan>
@@ -632,7 +689,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#009330',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3347'
+                  ? '#36454f'
+                  : '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -663,7 +725,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MOZAMBIQUE
             </tspan>
@@ -683,7 +745,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#ee0891',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3527'
+                  ? '#36454f'
+                  : '#e30088',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -714,7 +781,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MAURITANIA
             </tspan>
@@ -734,7 +801,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e3106f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3439'
+                  ? '#36454f'
+                  : '#e3106f',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -766,7 +838,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               SUDAN
             </tspan>
@@ -786,7 +858,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#0f72b3',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3317'
+                  ? '#36454f'
+                  : '#0f72b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -817,7 +894,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".27"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               SOUTH AFRICA
             </tspan>
@@ -837,7 +914,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#df001d',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3327'
+                  ? '#36454f'
+                  : '#df001d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -868,7 +950,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".106"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               LESOTHO
             </tspan>
@@ -888,7 +970,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#009330',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3322'
+                  ? '#36454f'
+                  : '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -919,7 +1006,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ESWATINI
             </tspan>
@@ -939,7 +1026,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3367'
+                  ? '#36454f'
+                  : '#df001d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -970,7 +1062,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ANGOLA
             </tspan>
@@ -990,7 +1082,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e95d0f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3362'
+                  ? '#36454f'
+                  : '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1021,7 +1118,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               ZAMBIA
             </tspan>
@@ -1041,7 +1138,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#2ec3f4',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3342'
+                  ? '#36454f'
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1072,7 +1174,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ZIMBABWE
             </tspan>
@@ -1092,7 +1194,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#0f72b3',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3372'
+                  ? '#36454f'
+                  : '#0f72b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1123,7 +1230,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               DR CONGO
             </tspan>
@@ -1143,7 +1250,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e85e11',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3377'
+                  ? '#36454f'
+                  : '#ff9549',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1174,7 +1286,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".164"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               CONGO
             </tspan>
@@ -1194,7 +1306,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#de1c33',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3382'
+                  ? '#36454f'
+                  : '#de1c33',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1225,7 +1342,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               GABON
             </tspan>
@@ -1245,7 +1362,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#df001c',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3424'
+                  ? '#36454f'
+                  : '#df001c',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1276,7 +1398,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               UGANDA
             </tspan>
@@ -1296,7 +1418,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e95d0f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3434'
+                  ? '#36454f'
+                  : '#ff9549',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1327,7 +1454,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               ETHIOPIA
             </tspan>
@@ -1347,7 +1474,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#8cc740',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3480'
+                  ? '#36454f'
+                  : '#1272b3',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1378,7 +1510,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               LIBERIA
             </tspan>
@@ -1398,7 +1530,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#525b61',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3387'
+                  ? '#36454f'
+                  : '#525b61',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1429,7 +1566,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               EQ. GUINEA
             </tspan>
@@ -1449,7 +1586,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#059031',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3419'
+                  ? '#36454f'
+                  : '#059031',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1480,7 +1622,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".087"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               RWANDA
             </tspan>
@@ -1497,9 +1639,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="Central_African_Republic"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#009330',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3398'
+                  ? '#36454f'
+                  : '#009330',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1529,7 +1675,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             fill="#6a0707"
           >
             <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              style={{ lineHeight: '95', fill: '#fff' }}
               y="287.054"
               x="480.966"
               id="tspan6602"
@@ -1545,7 +1691,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               CENTRAL AFRICAN
             </tspan>
             <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              style={{ lineHeight: '95', fill: '#fff' }}
               id="tspan6606"
               y="289.432"
               x="480.966"
@@ -1576,7 +1722,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e1021a',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3444'
+                  ? '#36454f'
+                  : '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1607,7 +1758,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               CHAD
             </tspan>
@@ -1627,7 +1778,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#0fa89c',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3522'
+                  ? '#36454f'
+                  : '#008479',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1658,7 +1814,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               NIGER
             </tspan>
@@ -1678,7 +1834,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#92268f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3454'
+                  ? '#36454f'
+                  : '#92268f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1709,7 +1870,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               NIGERIA
             </tspan>
@@ -1729,7 +1890,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e3106f',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3337'
+                  ? '#36454f'
+                  : '#e3106f',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1760,7 +1926,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               NAMIBIA
             </tspan>
@@ -1777,9 +1943,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="Burkina_Faso"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e75f0e',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3517'
+                  ? '#36454f'
+                  : '#ff9549',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1809,7 +1979,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             fill="#6a0707"
           >
             <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              style={{ lineHeight: '95', fill: '#000' }}
               y="273.786"
               x="425.514"
               id="tspan6690"
@@ -1856,7 +2026,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#f9a433',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3409'
+                  ? '#36454f'
+                  : '#f9a433',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1887,7 +2062,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               TANZANIA
             </tspan>
@@ -1907,7 +2082,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#d21c5b',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3459'
+                  ? '#36454f'
+                  : '#d21c5b',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1938,7 +2118,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               BENIN
             </tspan>
@@ -1958,7 +2138,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#fb9521',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3491'
+                  ? '#36454f'
+                  : '#fe9724',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1989,7 +2174,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".183"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               GUINEA
             </tspan>
@@ -2009,7 +2194,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#cfde9e',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3501'
+                  ? '#36454f'
+                  : '#cfde9e',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2040,7 +2230,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               THE GAMBIA
             </tspan>
@@ -2060,7 +2250,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#0d9445',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3506'
+                  ? '#36454f'
+                  : '#0d9445',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2091,7 +2286,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               SENEGAL
             </tspan>
@@ -2108,9 +2303,13 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="Sierra_Leone"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#fcf390',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3486'
+                  ? '#36454f'
+                  : '#fcf390',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2162,7 +2361,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".26"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -2187,7 +2386,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#f3a853',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3464'
+                  ? '#36454f'
+                  : '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2220,7 +2424,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               TOGO
             </tspan>
@@ -2240,7 +2444,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#901f5d',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3357'
+                  ? '#36454f'
+                  : '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2271,7 +2480,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               MALAWI
             </tspan>
@@ -2291,7 +2500,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#1071b0',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3449'
+                  ? '#36454f'
+                  : '#1071b0',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2322,7 +2536,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".164"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ERITREA
             </tspan>
@@ -2342,7 +2556,12 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#bd517e',
+              fill:
+                zoomIn === 'africa' &&
+                currentCountry &&
+                currentCountry !== 'g3414'
+                  ? '#36454f'
+                  : '#bd517e',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2373,7 +2592,7 @@ const Africa = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".087"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               BURUNDI
             </tspan>

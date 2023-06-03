@@ -36,45 +36,26 @@ const hasTransitionedInPortal = useMountTransition(
         }
       ></g></CountryGrouping
 
-'g4006'
-'g3941'
-'g3891'
-'g3986'
-'g3976'
-'g3951'
-'g3946'
-'g3956'
-'g4001'
-'g3936'
-'g3926'
-'g3921'
-'g3966'
-'g3996'
-'g3981'
-'g4011'
-'g3991'
-'g3906'
-'g3876'
-'g3971'
-'g3901'
-'g3886'
-'g3931'
-'g3871'
-'g4031'
-'g3916'
-'g3911'
+/* path:hover {
+  fill: #36454f !important;
+} */
 
+/* path text:hover {
+  fill: #36454f !important;
+}
 
-'g3238'
-'g3233'
-'g3208'
-'g3193'
-'g3223'
-'g3203'
-'g3198'
-'g3228'
-'g3218'
-'g3188'
-'g3183'
-'g3213'
-'g3244'
+path:hover ~ text {
+  fill: #36454f !important;
+}
+
+text:hover ~ path {
+  fill: #36454f !important;
+}
+
+path:hover ~ text > tspan {
+  fill: white !important;
+} */
+
+/* path ~ text > tspan {
+  mix-blend-mode: multiply;
+} */

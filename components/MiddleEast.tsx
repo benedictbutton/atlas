@@ -1,6 +1,12 @@
 import CountryNames from './CountryNames';
 
-const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
+const MiddleEast = ({
+  handleZoom,
+  lastChild,
+  className,
+  zoomIn,
+  currentCountry,
+}) => {
   return (
     <g
       id="middleEast"
@@ -18,9 +24,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             strokeWidth="0.15"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e50e72',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3533'
+                  ? '#36454f'
+                  : '#e50e72',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -52,7 +62,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             fill="#6a0707"
           >
             <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              style={{ lineHeight: '95', fill: '#000' }}
               y="236.378"
               x="377.505"
               id="tspan6774"
@@ -68,7 +78,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               WESTERN
             </tspan>
             <tspan
-              style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+              style={{ lineHeight: '95', fill: '#000' }}
               id="tspan6778"
               y="239.97"
               x="377.505"
@@ -97,9 +107,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e1021a',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3548'
+                  ? '#36454f'
+                  : '#e1021a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -130,7 +144,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               TUNISIA
             </tspan>
@@ -148,9 +162,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             strokeWidth=".15"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#a6a9ac',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3538'
+                  ? '#36454f'
+                  : '#737578',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -181,7 +199,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MOROCCO
             </tspan>
@@ -199,9 +217,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#f9a433',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3553'
+                  ? '#36454f'
+                  : '#f9a433',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -233,7 +255,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               LIBYA
             </tspan>
@@ -251,9 +273,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#009330',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3558'
+                  ? '#36454f'
+                  : '#009330',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -285,7 +311,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               EGYPT
             </tspan>
@@ -303,9 +329,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3543'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
               strokeWidth: '0.15',
             }}
@@ -337,7 +367,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ALGERIA
             </tspan>
@@ -355,9 +385,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#059031',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3635'
+                  ? '#36454f'
+                  : '#059031',
               stroke: 'rgb(0, 0, 0)',
             }}
           />
@@ -388,7 +422,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               stroke-width=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               TÜRKIYE
             </tspan>
@@ -406,9 +440,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#2dc4f4',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3861'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -439,7 +477,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               AZERBAIJAN
             </tspan>
@@ -457,9 +495,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#98fe01',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3615'
+                  ? '#36454f'
+                  : '#98fe01',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -490,7 +532,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".087"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               LEBANON
             </tspan>
@@ -508,9 +550,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#9a99ff',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3896'
+                  ? '#36454f'
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -541,7 +587,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               PAKISTAN
             </tspan>
@@ -559,9 +605,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#a5a9ac',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3579'
+                  ? '#36454f'
+                  : '#727578',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -592,7 +642,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               QATAR
             </tspan>
@@ -610,9 +660,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#ee0891',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3563'
+                  ? '#36454f'
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -643,7 +697,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               YEMEN
             </tspan>
@@ -661,9 +715,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#ffcc01',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3584'
+                  ? '#36454f'
+                  : '#ffcc01',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -694,60 +752,9 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               SAUDI ARABIA
-            </tspan>
-          </text>
-        </g>
-      </CountryNames>
-      <CountryNames lastChild={lastChild}>
-        <g id="g3599" fill-opacity="1">
-          <path
-            d="m536.44 209.52-.03-.14.07-.17-.04-.06.03-.15-.03-.2.12-.1h.06l.12-.09.18-.09.34.1.15.15h.11l.02.13.16.26.26-.03.27.19.23.2.25.07.44.04.1.07.1-.02.22.03.39-.26.38-.22 2.3-1.4 1.18-.69.6-.36.71 2.43-.2.06.13.4.04.06.47-.12.06.02.09.28-.07.08-.3.25v.02l-.07.04-.3.27-.08.03-2.53.7-2.47.7 1.3 1.32 1.25 1.39-.77.41-.1.1-.34.81-.06.05-1.77.36-.13.09-.57.92-1 .78-.14.04-2.66-.44.03-.02.01-.25.08-.23-.1-.06.08-.25.03-.23.12-.3v-.22l.09-.3.1-.15.05-.17-.05-.17.04-.27.05-.09-.06-.22.17-.52.15-.28.05-.2.06-.06.03-.2.16-.2.01-.17.11-.22v-.15l-.1-.27.07-.12-.01-.08.09-.2v-.25l.02-.2.04-.2.12-.26.07-.1-.04-.14.02-.05-.05-.23.03-.03-.04-.34.03-.16.05-.1.04-.23-.04-.26z"
-            fill="#d1dbdd"
-            stroke="#000"
-            strokeWidth=".15"
-            id="Jordan"
-            stroke-miterlimit="4"
-            stroke-dasharray="none"
-            stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
-            style={{
-              fill: '#df001c',
-              stroke: 'rgb(0, 0, 0)',
-            }}
-          ></path>
-          <text
-            id="Jordan_label"
-            y="222.898"
-            x="516.275"
-            fontSize="1.358"
-            strokeWidth=".116"
-            font-style="normal"
-            font-variant="normal"
-            font-stretch="normal"
-            font-family="Arial"
-            transform="scale(1.03856 .96288)"
-            font-weight="400"
-            fill="#6a0707"
-          >
-            <tspan
-              y="222.898"
-              x="516.275"
-              id="tspan69"
-              font-style="normal"
-              font-variant="normal"
-              font-weight="400"
-              font-stretch="normal"
-              fontSize="2.272"
-              font-family="Arial"
-              fill="#6a0707"
-              fill-opacity="1"
-              strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
-            >
-              JORDAN
             </tspan>
           </text>
         </g>
@@ -763,9 +770,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#9a99ff',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3620'
+                  ? '#36454f'
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -796,7 +807,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".193"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               SYRIA
             </tspan>
@@ -814,9 +825,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3568'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -844,10 +859,10 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               font-stretch="normal"
               fontSize="4.448"
               font-family="Arial"
-              fill="#6a0707"
+              fill="#fff"
               fill-opacity="1"
               strokeWidth=".221"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               OMAN
             </tspan>
@@ -865,9 +880,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3625'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -898,7 +917,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".221"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               IRAQ
             </tspan>
@@ -915,9 +934,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="Palestinian_Territories"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#026835',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3610'
+                  ? '#36454f'
+                  : '#026835',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -948,7 +971,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             fill="#6a0707"
           >
             <tspan
-              style={{ textAlign: 'end', fill: 'rgb(106, 7, 7)' }}
+              style={{ textAlign: 'end', fill: '#000' }}
               y="215.821"
               x="514.975"
               id="tspan7332"
@@ -965,7 +988,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               PALESTINIAN
             </tspan>
             <tspan
-              style={{ textAlign: 'end', fill: 'rgb(106, 7, 7)' }}
+              style={{ textAlign: 'end', fill: '#000' }}
               id="tspan7336"
               y="216.88"
               x="514.975"
@@ -995,9 +1018,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#e50e72',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3630'
+                  ? '#36454f'
+                  : '#e50e72',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1028,7 +1055,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               IRAN
             </tspan>
@@ -1046,9 +1073,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#f9a432',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3881'
+                  ? '#36454f'
+                  : '#f9a432',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1079,7 +1110,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".183"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               AFGHANISTAN
             </tspan>
@@ -1097,9 +1128,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#ff9966',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3604'
+                  ? '#36454f'
+                  : '#ff9966',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1130,7 +1165,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".067"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               ISRAEL
             </tspan>
@@ -1148,9 +1183,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-miterlimit="4"
             stroke-dasharray="none"
             stroke-opacity="1"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#df001c',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3594'
+                  ? '#36454f'
+                  : '#df001c',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1181,7 +1220,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               KUWAIT
             </tspan>
@@ -1199,9 +1238,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#803788',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3589'
+                  ? '#36454f'
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1232,7 +1275,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".106"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               BAHRAIN
             </tspan>
@@ -1249,9 +1292,13 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
             id="United_Arab_Emirates"
             stroke-miterlimit="4"
             stroke-dasharray="none"
-            data-originalStrokeWidth="0.15"
             style={{
-              fill: '#05922a',
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3574'
+                  ? '#36454f'
+                  : '#05922a',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1289,7 +1336,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".096"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -1306,7 +1353,7 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               strokeWidth=".096"
               fill="#6a0707"
               fill-opacity="1"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
               font-style="normal"
               font-variant="normal"
               font-weight="400"
@@ -1314,6 +1361,61 @@ const MiddleEast = ({ handleZoom, lastChild, className, zoomIn }) => {
               font-family="Arial"
             >
               EMIRATES
+            </tspan>
+          </text>
+        </g>
+      </CountryNames>
+      <CountryNames lastChild={lastChild}>
+        <g id="g3599" fill-opacity="1">
+          <path
+            d="m536.44 209.52-.03-.14.07-.17-.04-.06.03-.15-.03-.2.12-.1h.06l.12-.09.18-.09.34.1.15.15h.11l.02.13.16.26.26-.03.27.19.23.2.25.07.44.04.1.07.1-.02.22.03.39-.26.38-.22 2.3-1.4 1.18-.69.6-.36.71 2.43-.2.06.13.4.04.06.47-.12.06.02.09.28-.07.08-.3.25v.02l-.07.04-.3.27-.08.03-2.53.7-2.47.7 1.3 1.32 1.25 1.39-.77.41-.1.1-.34.81-.06.05-1.77.36-.13.09-.57.92-1 .78-.14.04-2.66-.44.03-.02.01-.25.08-.23-.1-.06.08-.25.03-.23.12-.3v-.22l.09-.3.1-.15.05-.17-.05-.17.04-.27.05-.09-.06-.22.17-.52.15-.28.05-.2.06-.06.03-.2.16-.2.01-.17.11-.22v-.15l-.1-.27.07-.12-.01-.08.09-.2v-.25l.02-.2.04-.2.12-.26.07-.1-.04-.14.02-.05-.05-.23.03-.03-.04-.34.03-.16.05-.1.04-.23-.04-.26z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Jordan"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                currentCountry &&
+                currentCountry !== 'g3599'
+                  ? '#36454f'
+                  : '#df001c',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            id="Jordan_label"
+            y="222.898"
+            x="516.275"
+            fontSize="1.358"
+            strokeWidth=".116"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+            fill="#6a0707"
+          >
+            <tspan
+              y="222.898"
+              x="516.275"
+              id="tspan69"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="2.272"
+              font-family="Arial"
+              fill="#6a0707"
+              fill-opacity="1"
+              strokeWidth=".116"
+              style={{ fill: '#fff' }}
+            >
+              JORDAN
             </tspan>
           </text>
         </g>

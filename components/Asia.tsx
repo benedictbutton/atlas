@@ -22,7 +22,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: 'rgb(209, 219, 221)',
+              fill: 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -55,7 +55,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               SINGAPORE
             </tspan>
@@ -106,7 +106,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               VIETNAM
             </tspan>
@@ -157,7 +157,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".106"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               TAJIKISTAN
             </tspan>
@@ -208,7 +208,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               SOUTH KOREA
             </tspan>
@@ -229,7 +229,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#2dc4f4',
+              fill: 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -260,7 +260,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".106"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               HONG KONG
             </tspan>
@@ -311,7 +311,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".125"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               BRUNEI
             </tspan>
@@ -364,7 +364,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               MALAYSIA
             </tspan>
@@ -417,7 +417,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               INDONESIA
             </tspan>
@@ -470,7 +470,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MONGOLIA
             </tspan>
@@ -523,7 +523,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               CAMBODIA
             </tspan>
@@ -574,7 +574,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               LAOS
             </tspan>
@@ -625,7 +625,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               MYANMAR
             </tspan>
@@ -676,7 +676,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               PHILIPPINES
             </tspan>
@@ -727,7 +727,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".221"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               JAPAN
             </tspan>
@@ -781,7 +781,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               CHINA
             </tspan>
@@ -832,7 +832,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               SRI LANKA
             </tspan>
@@ -883,7 +883,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               NORTH KOREA
             </tspan>
@@ -903,7 +903,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#9a99ff',
+              fill: 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -934,7 +934,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               NEPAL
             </tspan>
@@ -985,7 +985,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               TURKMENISTAN
             </tspan>
@@ -1036,7 +1036,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               TAIWAN
             </tspan>
@@ -1087,7 +1087,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               INDIA
             </tspan>
@@ -1107,7 +1107,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
             stroke-dasharray="none"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#2ec3f4',
+              fill: 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -1138,7 +1138,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               KYRGYZSTAN
             </tspan>
@@ -1189,7 +1189,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               THAILAND
             </tspan>
@@ -1240,7 +1240,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".193"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               UZBEKISTAN
             </tspan>
@@ -1293,7 +1293,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".241"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               KAZAKHSTAN
             </tspan>
@@ -1344,7 +1344,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               BANGLADESH
             </tspan>
@@ -1395,7 +1395,7 @@ const Asia = ({ handleZoom, lastChild, className, zoomIn }) => {
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               BHUTAN
             </tspan>

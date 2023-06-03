@@ -273,26 +273,6 @@ g {
   cursor: pointer;
 }
 
-path:hover {
-  fill: #36454f !important;
-}
-
-path text:hover {
-  fill: #36454f !important;
-}
-
-path:hover ~ text {
-  fill: #36454f !important;
-}
-
-text:hover ~ path {
-  fill: #36454f !important;
-}
-
-path:hover ~ text > tspan {
-  fill: white !important;
-}
-
 g > circle {
   display: none;
 }

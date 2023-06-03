@@ -11,14 +11,15 @@ const MyMap3 = () => {
 
   const handleZoom = useCallback(
     (
-      event: React.ChangeEvent<HTMLInputElement>,
+      event: React.MouseEvent<SVGElement>,
       close: string | undefined,
-    ) => {
+    ): void => {
       event?.stopPropagation();
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
       else if (close) {
         setCurrentCountry('');
         setZoomIn('');
+        setSearchValue('');
       } else if (currentCountry === event.target?.parentNode?.id)
         setCurrentCountry('');
       else setCurrentCountry(() => event.target?.parentNode?.id);
@@ -27,20 +28,18 @@ const MyMap3 = () => {
   );
 
   const handleSearchValue = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (event: React.ChangeEvent<HTMLInputElement>): void => {
       setSearchValue(() => event.target.value);
     },
     [setSearchValue],
   );
 
   const handleSelectValue = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (event: React.ChangeEvent<HTMLInputElement>): void => {
       setSearchValue(() => event.target.value);
     },
     [setSearchValue],
   );
-
-  console.log(zoomIn);
 
   return (
     <>
@@ -57,6 +56,7 @@ const MyMap3 = () => {
               searchValue={searchValue}
               handleSearchValue={handleSearchValue}
               handleSelectValue={handleSelectValue}
+              zoomIn={zoomIn}
             />
           </div>
           <svg
@@ -77,7 +77,7 @@ const MyMap3 = () => {
         </>
       )}
       <svg
-        className="bg-blue-300"
+        className="bg-[#80b6ec]"
         version="1.2"
         width="100%"
         height="auto"

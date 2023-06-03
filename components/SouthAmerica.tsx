@@ -32,7 +32,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3238'
                   ? '#36454f'
-                  : '#2dc4f4',
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -63,7 +63,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               SURINAME
             </tspan>
@@ -88,7 +88,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3233'
                   ? '#36454f'
-                  : '#88bb3c',
+                  : '#4f8400',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -119,7 +119,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               GUYANA
             </tspan>
@@ -144,7 +144,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3208'
                   ? '#36454f'
-                  : '#aa669d',
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -175,7 +175,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               CHILE
             </tspan>
@@ -200,7 +200,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3193'
                   ? '#36454f'
-                  : '#2dc4f4',
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -231,7 +231,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               PERU
             </tspan>
@@ -256,7 +256,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3223'
                   ? '#36454f'
-                  : '#c8cdbe',
+                  : '#4f8400',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -312,7 +312,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3203'
                   ? '#36454f'
-                  : '#2dc4f4',
+                  : 'blue',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -343,7 +343,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               URUGUAY
             </tspan>
@@ -368,7 +368,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3198'
                   ? '#36454f'
-                  : '#88bb3c',
+                  : '#4f8400',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -399,7 +399,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               ARGENTINA
             </tspan>
@@ -424,7 +424,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3228'
                   ? '#36454f'
-                  : '#f06357',
+                  : '#ce453e	',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -455,7 +455,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".193"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               VENEZUELA
             </tspan>
@@ -480,7 +480,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3218'
                   ? '#36454f'
-                  : '#aa669d',
+                  : '#803788',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -511,7 +511,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               COLOMBIA
             </tspan>
@@ -567,7 +567,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               BOLIVIA
             </tspan>
@@ -625,7 +625,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".327"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#000' }}
             >
               BRAZIL
             </tspan>
@@ -650,7 +650,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3213'
                   ? '#36454f'
-                  : '#f16357',
+                  : '#cf453e	',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -681,7 +681,7 @@ const SouthAmerica = ({
               fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".193"
-              style={{ fill: 'rgb(106, 7, 7)' }}
+              style={{ fill: '#fff' }}
             >
               PARAGUAY
             </tspan>
@@ -709,7 +709,7 @@ const SouthAmerica = ({
                 currentCountry &&
                 currentCountry !== 'g3244'
                   ? '#36454f'
-                  : '#f3f870',
+                  : '#4f8400',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>

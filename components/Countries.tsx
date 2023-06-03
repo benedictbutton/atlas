@@ -1,10 +1,4 @@
-import {
-  useState,
-  useRef,
-  useCallback,
-  useLayoutEffect,
-  MutableRefObject,
-} from 'react';
+import { useRef } from 'react';
 import Africa from './Africa';
 import Asia from './Asia';
 import CentralAmerica from './CentralAmerica';
@@ -14,11 +8,7 @@ import MiddleEast from './MiddleEast';
 import NorthAmerica from './NorthAmerica';
 import Oceania from './Oceania';
 import SouthAmerica from './SouthAmerica';
-import useMountTransition from '../utils/useMountTransition';
-
-// export interface refObject {
-//   current: SVGGElement | null;
-// }
+// import useMountTransition from '../utils/useMountTransition'
 
 const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
   const lastChild = useRef<SVGGElement>(null);
@@ -211,6 +201,7 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
           lastChild={lastChild}
           className="africa-zoom-out"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
       {zoomIn !== 'asia' && (
@@ -251,6 +242,7 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
           lastChild={lastChild}
           className="middle-east-zoom-out"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
       {zoomIn !== 'europe' && (
@@ -383,6 +375,7 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
           lastChild={lastChild}
           className="africa-zoom-in"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
       {zoomIn === 'asia' && (
@@ -415,6 +408,7 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }) => {
           lastChild={lastChild}
           className="middle-east-zoom-in"
           zoomIn={zoomIn}
+          currentCountry={currentCountry}
         />
       )}
       {zoomIn === 'europe' && (

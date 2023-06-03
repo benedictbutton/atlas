@@ -1,21 +1,24 @@
 import { countries } from '../data/countries';
 
 const CountryList = ({ searchValue, handleSelectValue }) => {
+  const lowerCaseSearchValue = searchValue.toLowerCase();
   return (
     <ul>
       {countries
         .filter(
           (country, idx) =>
-            country[0].toLowerCase() ===
-              searchValue[0]?.toLowerCase() &&
-            country.toLowerCase().includes(searchValue.toLowerCase()),
+            country[0].toLowerCase() === lowerCaseSearchValue[0] &&
+            country.toLowerCase().includes(lowerCaseSearchValue),
         )
         .map((countrySearch, idx) => (
           <li key={idx} className="text-white">
             <input
               type="radio"
-              value={countrySearch}
-              checked={searchValue === countrySearch}
+              value={countrySearch.toLowerCase()}
+              checked={
+                searchValue.toLowerCase() ===
+                countrySearch.toLowerCase()
+              }
               onChange={(event) => handleSelectValue(event)}
               className="mr-3"
             />
