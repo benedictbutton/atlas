@@ -52,7 +52,7 @@ const Input = ({
         region = 'Australia and Oceania';
         break;
       default:
-        region = 'Africa';
+        region = '';
         break;
     }
     return region;
@@ -60,7 +60,9 @@ const Input = ({
 
   return (
     <div className="p-5">
-      <p className="mb-3 text-3xl text-white">{findRegion}</p>
+      <p className="h-9 min-h-full mb-3 text-3xl text-white">
+        {findRegion}
+      </p>
       <label className="mb-4">
         <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
           Country

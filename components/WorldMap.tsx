@@ -62,45 +62,45 @@ const WorldMap = () => {
     [countryName, searchValue, answers, setAnswers],
   );
 
-  console.log(answers);
-
   return (
     <>
-      <button
-        className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
-        onClick={() => signOut()}
-      >
-        Sign Out
-      </button>
       {zoomIn && (
-        <>
-          <div className="absolute bottom-5 right-5 w-96 h-5/6 bg-black border-[10px] border-indigo-300/100 border-double overflow-y-auto">
-            <Input
-              searchValue={searchValue}
-              handleSearchValue={handleSearchValue}
-              handleSelectValue={handleSelectValue}
-              zoomIn={zoomIn}
-              handleSubmit={handleSubmit}
-              answers={answers}
-            />
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="absolute top-36 left-36 w-12 h-12"
-            onClick={(event) => handleZoom(event, 'close')}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </>
+        <button
+          className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
+          onClick={() => signOut()}
+        >
+          Sign Out
+        </button>
       )}
+      <div
+        className={`input ${
+          !zoomIn ? 'collapse' : ''
+        } absolute bottom-5 right-5 w-96 h-5/6 bg-black border-[10px] border-indigo-300/100 border-double`}
+      >
+        <Input
+          searchValue={searchValue}
+          handleSearchValue={handleSearchValue}
+          handleSelectValue={handleSelectValue}
+          zoomIn={zoomIn}
+          handleSubmit={handleSubmit}
+          answers={answers}
+        />
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="absolute top-36 left-36 w-12 h-12"
+        onClick={(event) => handleZoom(event, 'close')}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
       <svg
         className="bg-[#80b6ec]"
         version="1.2"

@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 const CountryList = ({ searchValue, handleSelectValue, answers }) => {
   const countries = useMemo(() => Object.keys(answers), [answers]);
   const lowerCaseSearchValue = searchValue.toLowerCase();
-  console.log(countries);
+
   return (
     <ul>
       {countries

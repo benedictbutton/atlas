@@ -13,6 +13,7 @@ const Africa = ({
       className={className}
       onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'africa' ? '0.5' : '1'}
+      style={{ willChange: 'transform' }}
     >
       <g id="g4036" fill-opacity="1">
         <path

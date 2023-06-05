@@ -223,19 +223,10 @@ const Countries = ({
           answers={answers}
         />
       )}
-      {zoomIn !== 'northAmerica' && (
-        <NorthAmerica
+      {zoomIn !== 'europe' && (
+        <Europe
           handleZoom={handleZoom}
-          className="na-zoom-out"
-          zoomIn={zoomIn}
-          countryId={countryId}
-          answers={answers}
-        />
-      )}
-      {zoomIn !== 'oceania' && (
-        <Oceania
-          handleZoom={handleZoom}
-          className="oceania-zoom-out"
+          className="europe-zoom-out"
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
@@ -250,10 +241,19 @@ const Countries = ({
           answers={answers}
         />
       )}
-      {zoomIn !== 'europe' && (
-        <Europe
+      {zoomIn !== 'northAmerica' && (
+        <NorthAmerica
           handleZoom={handleZoom}
-          className="europe-zoom-out"
+          className="na-zoom-out"
+          zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
+        />
+      )}
+      {zoomIn !== 'oceania' && (
+        <Oceania
+          handleZoom={handleZoom}
+          className="oceania-zoom-out"
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
@@ -398,10 +398,10 @@ const Countries = ({
           answers={answers}
         />
       )}
-      {zoomIn === 'northAmerica' && (
-        <NorthAmerica
+      {zoomIn === 'europe' && (
+        <Europe
           handleZoom={handleZoom}
-          className="na-zoom-in"
+          className="europe-zoom-in"
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
@@ -416,10 +416,10 @@ const Countries = ({
           answers={answers}
         />
       )}
-      {zoomIn === 'europe' && (
-        <Europe
+      {zoomIn === 'northAmerica' && (
+        <NorthAmerica
           handleZoom={handleZoom}
-          className="europe-zoom-in"
+          className="na-zoom-in"
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}

@@ -129,30 +129,28 @@ a {
   }
 }
 
-.na-zoom-in {
-  animation: na-zoom-in ease-in 1s;
+.europe-zoom-in {
+  animation: europe-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
-  /* transition: all 3s ease-in 3s; */
-  /* transform: scale(1.5) translateX(5%); */
 }
 
-@keyframes na-zoom-in {
+@keyframes europe-zoom-in {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.5) translateX(5%);
+    transform: scale(2.5) translate(-33%, -5%);
   }
 }
 
-.na-zoom-out {
-  animation: na-zoom-out ease-out 1s;
+.europe-zoom-out {
+  animation: europe-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes na-zoom-out {
+@keyframes europe-zoom-out {
   from {
-    transform: scale(1.5) translateX(5%);
+    transform: scale(2.5) translate(-33%, -5%);
   }
   to {
     transform: scale(1);
@@ -187,28 +185,30 @@ a {
   }
 }
 
-.europe-zoom-in {
-  animation: europe-zoom-in ease-in 1s;
+.na-zoom-in {
+  animation: na-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
+  /* transition: all 3s ease-in 3s; */
+  /* transform: scale(1.5) translateX(5%); */
 }
 
-@keyframes europe-zoom-in {
+@keyframes na-zoom-in {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(2.5) translate(-33%, -5%);
+    transform: scale(1.5) translateX(5%);
   }
 }
 
-.europe-zoom-out {
-  animation: europe-zoom-out ease-out 1s;
+.na-zoom-out {
+  animation: na-zoom-out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes europe-zoom-out {
+@keyframes na-zoom-out {
   from {
-    transform: scale(2.5) translate(-33%, -5%);
+    transform: scale(1.5) translateX(5%);
   }
   to {
     transform: scale(1);
@@ -272,8 +272,19 @@ a {
 }
 
 .input {
-  animation: input-expand ease 1s;
-  animation-fill-mode: forward;
+  transition: all 1s linear 1s;
+}
+
+.input.expand {
+  transform: scaleY(1);
+  transform-origin: top;
+  overflow: hidden;
+}
+
+.input.collapse {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  overflow: hidden;
 }
 
 @keyframes input-expand {
