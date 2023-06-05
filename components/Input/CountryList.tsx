@@ -1,15 +1,15 @@
-const CountryList = ({
-  searchValue,
-  handleSelectValue,
-  countries,
-}) => {
+import { useMemo } from 'react';
+
+const CountryList = ({ searchValue, handleSelectValue, answers }) => {
+  const countries = useMemo(() => Object.keys(answers), [answers]);
   const lowerCaseSearchValue = searchValue.toLowerCase();
+  console.log(countries);
   return (
     <ul>
       {countries
         .filter(
           (country, idx) =>
-            country[0].toLowerCase() === lowerCaseSearchValue[0] &&
+            country[0]?.toLowerCase() === lowerCaseSearchValue[0] &&
             country.toLowerCase().includes(lowerCaseSearchValue),
         )
         .map((countrySearch, idx) => (

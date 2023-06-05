@@ -20,7 +20,7 @@ const Input = ({
   handleSelectValue,
   zoomIn,
   handleSubmit,
-  countries,
+  answers,
 }: InputProps) => {
   const findRegion = useMemo(() => {
     const regions = [
@@ -84,7 +84,7 @@ const Input = ({
       <CountryList
         searchValue={searchValue}
         handleSelectValue={handleSelectValue}
-        countries={countries}
+        answers={answers}
       />
     </div>
   );

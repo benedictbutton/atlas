@@ -1,6 +1,12 @@
 import { RegionProps } from '../Countries';
 
-const Oceania = ({ handleZoom, className, zoomIn }: RegionProps) => {
+const Oceania = ({
+  handleZoom,
+  className,
+  zoomIn,
+  countryId,
+  answers,
+}: RegionProps) => {
   return (
     <g
       id="oceania"

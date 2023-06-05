@@ -5,6 +5,7 @@ const SouthAmerica = ({
   className,
   zoomIn,
   countryId,
+  answers,
 }: RegionProps) => {
   return (
     <g

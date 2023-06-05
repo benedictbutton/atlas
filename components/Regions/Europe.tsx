@@ -1,6 +1,12 @@
 import { RegionProps } from '../Countries';
 
-const Europe = ({ handleZoom, className, zoomIn }: RegionProps) => {
+const Europe = ({
+  handleZoom,
+  className,
+  zoomIn,
+  countryId,
+  answers,
+}: RegionProps) => {
   return (
     <g
       id="europe"
@@ -750,7 +756,7 @@ const Europe = ({ handleZoom, className, zoomIn }: RegionProps) => {
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e30088',
+            fill: '#0d9445',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -1494,7 +1500,7 @@ const Europe = ({ handleZoom, className, zoomIn }: RegionProps) => {
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#009330',
+            fill: '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -1525,7 +1531,7 @@ const Europe = ({ handleZoom, className, zoomIn }: RegionProps) => {
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#fff' }}
+            style={{ fill: '#000' }}
           >
             NORWAY
           </tspan>

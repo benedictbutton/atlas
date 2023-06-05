@@ -1375,10 +1375,69 @@ text:hover ~ path {
   fill: #36454f !important;
 }
 
-path:hover ~ text > tspan {
   fill: white !important;
 } */
 
-/* path ~ text > tspan {
   mix-blend-mode: multiply;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Djibouti"
+"Guinea_Bissau"
+"Ghana"
+"Madagascar"
+"Cote_d_Ivoire"
+"Cameroon"
+"Botswana"
+"Kenya"
+"South_Sudan"
+"Mali"
+"Somalia"
+"Mozambique"
+"Mauritania"
+"Sudan"
+"South_Africa"
+"Lesotho"
+"Eswatini"
+"Angola"
+"Zambia"
+"Zimbabwe"
+"DR_Congo"
+"Congo"
+"Gabon"
+"Uganda"
+"Ethiopia"
+"Liberia"
+"Equatorial_Guinea"
+"Rwanda"
+"Central_African_Republic"
+"Chad"
+"Niger"
+"Nigeria"
+"Namibia"
+"Burkina_Faso"
+"Tanzania"
+"Benin"
+"Guinea"
+"Gambia"
+"Senegal"
+"Sierra_Leone"
+"Togo"
+"Malawi"
+"Eritrea"
+"Burundi"

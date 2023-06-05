@@ -4,6 +4,8 @@ const CentralAmerica = ({
   handleZoom,
   className,
   zoomIn,
+  countryId,
+  answers,
 }: RegionProps) => {
   return (
     <g

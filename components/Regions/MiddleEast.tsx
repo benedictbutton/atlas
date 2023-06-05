@@ -5,6 +5,7 @@ const MiddleEast = ({
   className,
   zoomIn,
   countryId,
+  answers,
 }: RegionProps) => {
   return (
     <g

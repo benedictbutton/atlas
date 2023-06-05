@@ -12,10 +12,11 @@ import SouthAmerica from './Regions/SouthAmerica';
 export interface CountryProps {
   zoomIn: string;
   handleZoom: (
-    event: React.MouseEvent<SVGElement>,
+    event: React.MouseEventHandler<SVGGElement>,
     close: string | undefined,
   ) => void;
   countryId: string;
+  answers: { [key: string]: boolean | null };
 }
 
 export interface RegionProps extends CountryProps {
@@ -27,6 +28,7 @@ const Countries = ({
   zoomIn,
   handleZoom,
   countryId,
+  answers,
 }: CountryProps) => {
   // const lastChild = useRef<SVGGElement | null>(null);
 
@@ -199,6 +201,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="africa-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'asia' && (
@@ -206,6 +210,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="asia-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'centralAmerica' && (
@@ -213,6 +219,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="ca-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'northAmerica' && (
@@ -220,6 +228,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="na-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'oceania' && (
@@ -227,6 +237,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="oceania-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'middleEast' && (
@@ -235,6 +247,7 @@ const Countries = ({
           className="middle-east-zoom-out"
           zoomIn={zoomIn}
           countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'europe' && (
@@ -242,6 +255,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="europe-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn !== 'southAmerica' && (
@@ -249,6 +264,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="sa-zoom-out"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       <g id="g3961" fill-opacity="1">
@@ -313,7 +330,7 @@ const Countries = ({
           data-originalStrokeWidth="0.15"
           opacity={!zoomIn ? '1' : '0.5'}
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#90288f',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
@@ -347,7 +364,7 @@ const Countries = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".433"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#fff' }}
           >
             RUSSIA
           </tspan>
@@ -360,6 +377,7 @@ const Countries = ({
           className="africa-zoom-in"
           zoomIn={zoomIn}
           countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'asia' && (
@@ -367,6 +385,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="asia-zoom-in"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'centralAmerica' && (
@@ -374,6 +394,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="ca-zoom-in"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'northAmerica' && (
@@ -381,6 +403,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="na-zoom-in"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'middleEast' && (
@@ -389,6 +413,7 @@ const Countries = ({
           className="middle-east-zoom-in"
           zoomIn={zoomIn}
           countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'europe' && (
@@ -396,6 +421,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="europe-zoom-in"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'oceania' && (
@@ -403,6 +430,8 @@ const Countries = ({
           handleZoom={handleZoom}
           className="oceania-zoom-in"
           zoomIn={zoomIn}
+          countryId={countryId}
+          answers={answers}
         />
       )}
       {zoomIn === 'southAmerica' && (
@@ -411,6 +440,7 @@ const Countries = ({
           className="sa-zoom-in"
           zoomIn={zoomIn}
           countryId={countryId}
+          answers={answers}
         />
       )}
     </>

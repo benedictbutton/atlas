@@ -12,14 +12,11 @@ const WorldMap = () => {
   const [searchValue, setSearchValue] = useState('');
   const [answers, setAnswers] = useCountries();
 
-  const countries = useMemo(() => Object.keys(answers), [answers]);
-
   const handleZoom = useCallback(
     (
       event: React.MouseEventHandler<SVGGElement>,
       close: string | undefined,
     ): void => {
-      event?.stopPropagation();
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
       else if (close) {
         setCountryId('');
@@ -60,9 +57,12 @@ const WorldMap = () => {
 
       setCountryId('');
       setCountryName('');
+      setSearchValue('');
     },
     [countryName, searchValue, answers, setAnswers],
   );
+
+  console.log(answers);
 
   return (
     <>
@@ -81,7 +81,7 @@ const WorldMap = () => {
               handleSelectValue={handleSelectValue}
               zoomIn={zoomIn}
               handleSubmit={handleSubmit}
-              countries={countries}
+              answers={answers}
             />
           </div>
           <svg
@@ -1334,6 +1334,7 @@ const WorldMap = () => {
             zoomIn={zoomIn}
             handleZoom={handleZoom}
             countryId={countryId}
+            answers={answers}
           />
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"

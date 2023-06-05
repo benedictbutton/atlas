@@ -5,6 +5,7 @@ const Africa = ({
   className,
   zoomIn,
   countryId,
+  answers,
 }: RegionProps) => {
   return (
     <g
@@ -35,6 +36,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Djibouti'] ? 'none' : '' }}
           id="Djibouti_label"
           y="274.046"
           x="535.147"
@@ -80,7 +82,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Guinea_Bissau"
+          id="Guinea Bissau"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -96,6 +98,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Guinea Bissau'] ? 'none' : '',
+          }}
           id="Guinea_Bissau_label"
           y="275.134"
           x="373.114"
@@ -150,6 +155,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Ghana'] ? 'none' : '' }}
           id="Ghana_label"
           y="287.064"
           x="423.974"
@@ -210,6 +216,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Madagascar'] ? 'none' : '',
+          }}
           transform="matrix(.39828 -.88926 .95915 .36925 0 0)"
           id="Madagascar_label"
           y="640.242"
@@ -255,7 +264,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Cote_d_Ivoire"
+          id="Cote D’ivoire (Ivory Coast)"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -273,6 +282,9 @@ const Africa = ({
           y="284.859"
           x="413.353"
           style={{
+            display: !answers['Cote D’ivoire (Ivory Coast)']
+              ? 'none'
+              : '',
             lineHeight: '95',
             textAlign: 'start',
           }}
@@ -300,14 +312,21 @@ const Africa = ({
             strokeWidth=".337"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
             font-stretch="normal"
             font-family="Arial"
           >
-            COTE D'
+            COTE
           </tspan>
           <tspan
             id="tspan6090"
@@ -330,7 +349,7 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
           >
-            IVOIRE
+            D'IVOIRE
           </tspan>
         </text>
       </g>
@@ -356,6 +375,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Cameroon'] ? 'none' : '' }}
           transform="matrix(.74506 -.6708 .72352 .69076 0 0)"
           id="Cameroon_label"
           y="530.007"
@@ -410,6 +430,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Botswana'] ? 'none' : '' }}
           transform="matrix(.9803 -.31793 .34292 .90887 0 0)"
           id="Botswana_label"
           y="507.21"
@@ -471,6 +492,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Kenya'] ? 'none' : '' }}
           id="Kenya_label"
           y="304.617"
           x="514.638"
@@ -509,7 +531,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="South_Sudan"
+          id="South Sudan"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -527,6 +549,7 @@ const Africa = ({
           y="285.619"
           x="498.462"
           style={{
+            display: !answers['South Sudan'] ? 'none' : '',
             lineHeight: '95',
             textAlign: 'start',
           }}
@@ -603,6 +626,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Mali'] ? 'none' : '' }}
           id="Mali_label"
           y="259.073"
           x="421.711"
@@ -663,6 +687,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Somalia'] ? 'none' : '' }}
           id="Somalia_label"
           y="289.577"
           x="549.475"
@@ -724,6 +749,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Mozambique'] ? 'none' : '',
+          }}
           id="Mozambique_label"
           y="353.521"
           x="513.521"
@@ -778,6 +806,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Mauritania'] ? 'none' : '',
+          }}
           id="Mauritania_label"
           y="253.19"
           x="392.622"
@@ -833,6 +864,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Sudan'] ? 'none' : '' }}
           id="Sudan_label"
           y="268.288"
           x="493.426"
@@ -871,7 +903,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="South_Africa"
+          id="South Africa"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -887,6 +919,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['South Africa'] ? 'none' : '',
+          }}
           id="South_Africa_label"
           y="391.526"
           x="469.749"
@@ -941,6 +976,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Lesotho'] ? 'none' : '' }}
           id="Lesotho_label"
           y="381.31"
           x="487.109"
@@ -995,6 +1031,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Eswatini'] ? 'none' : '' }}
           id="Eswatini_label"
           y="378.133"
           x="507.859"
@@ -1049,6 +1086,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Angola'] ? 'none' : '' }}
           id="Angola_label"
           y="340.908"
           x="464.925"
@@ -1103,6 +1141,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Zambia'] ? 'none' : '' }}
           id="Zambia_label"
           y="342.441"
           x="485.774"
@@ -1164,6 +1203,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Zimbabwe'] ? 'none' : '' }}
           id="Zimbabwe_label"
           y="355.64"
           x="494.263"
@@ -1202,7 +1242,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="DR_Congo"
+          id="Democratic Republic Of The Congo"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -1218,6 +1258,11 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Democratic Republic Of The Congo']
+              ? 'none'
+              : '',
+          }}
           id="DR_Congo_label"
           y="315.488"
           x="472.974"
@@ -1272,6 +1317,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Congo'] ? 'none' : '' }}
           transform="matrix(.54604 -.81905 .88342 .50625 0 0)"
           id="Congo_label"
           y="562.267"
@@ -1333,6 +1379,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Gabon'] ? 'none' : '' }}
           id="Gabon_label"
           y="307.583"
           x="453.11"
@@ -1387,6 +1434,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Uganda'] ? 'none' : '' }}
           transform="matrix(.89328 -.49116 .52976 .82819 0 0)"
           id="Uganda_label"
           y="519.658"
@@ -1441,6 +1489,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Ethiopia'] ? 'none' : '' }}
           id="Ethiopia_label"
           y="285.205"
           x="515.399"
@@ -1502,6 +1551,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Liberia'] ? 'none' : '' }}
           transform="matrix(.88797 .49937 -.53862 .82326 0 0)"
           id="Liberia_label"
           y="35.227"
@@ -1540,7 +1590,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Equatorial_Guinea"
+          id="Equatorial Guinea"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -1556,6 +1606,9 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Equatorial Guinea'] ? 'none' : '',
+          }}
           id="Equatorial_Guinea_label"
           y="299.803"
           x="438.205"
@@ -1610,6 +1663,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Rwanda'] ? 'none' : '' }}
           id="Rwanda_label"
           y="308.314"
           x="494.668"
@@ -1648,7 +1702,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Central_African_Republic"
+          id="Central African Republic"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -1666,6 +1720,9 @@ const Africa = ({
           y="287.054"
           x="480.966"
           style={{
+            display: !answers['Central African Republic']
+              ? 'none'
+              : '',
             lineHeight: '95',
             textAlign: 'center',
           }}
@@ -1742,6 +1799,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Chad'] ? 'none' : '' }}
           id="Chad_label"
           y="266.246"
           x="469.778"
@@ -1796,6 +1854,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Niger'] ? 'none' : '' }}
           id="Niger_label"
           y="260.209"
           x="447.911"
@@ -1850,6 +1909,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Nigeria'] ? 'none' : '' }}
           id="Nigeria_label"
           y="284.907"
           x="440.198"
@@ -1904,6 +1964,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Namibia'] ? 'none' : '' }}
           id="Namibia_label"
           y="361.186"
           x="464.424"
@@ -1942,7 +2003,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Burkina_Faso"
+          id="Burkina Faso"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -1960,6 +2021,7 @@ const Africa = ({
           y="273.786"
           x="425.514"
           style={{
+            display: !answers['Burkina Faso'] ? 'none' : '',
             lineHeight: '95',
             textAlign: 'center',
           }}
@@ -2052,6 +2114,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Tanzania'] ? 'none' : '' }}
           id="Tanzania_label"
           y="325.059"
           x="505.173"
@@ -2113,6 +2176,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Benin'] ? 'none' : '' }}
           transform="matrix(.24104 -.93658 1.0102 .22347 0 0)"
           id="Benin_label"
           y="490.915"
@@ -2167,6 +2231,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Guinea'] ? 'none' : '' }}
           id="Guinea_label"
           y="277.579"
           x="397.61"
@@ -2228,6 +2293,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Gambia'] ? 'none' : '' }}
           id="Gambia_label"
           y="269.732"
           x="376.135"
@@ -2282,6 +2348,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Senegal'] ? 'none' : '' }}
           transform="matrix(.79184 .62303 -.672 .73414 0 0)"
           id="Senegal_label"
           y="-53.02"
@@ -2320,7 +2387,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Sierra_Leone"
+          id="Sierra Leone"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -2338,6 +2405,7 @@ const Africa = ({
           y="284.454"
           x="399.584"
           style={{
+            display: !answers['Sierra Leone'] ? 'none' : '',
             lineHeight: '95',
             textAlign: 'end',
           }}
@@ -2414,6 +2482,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Togo'] ? 'none' : '' }}
           transform="matrix(.20723 -.94351 1.01767 .19213 0 0)"
           id="Togo_label"
           y="482.33"
@@ -2470,6 +2539,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Malawi'] ? 'none' : '' }}
           id="Malawi_label"
           y="339.983"
           x="505.548"
@@ -2531,6 +2601,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Eritrea'] ? 'none' : '' }}
           id="Eritrea_label"
           y="262.761"
           x="516.092"
@@ -2585,6 +2656,7 @@ const Africa = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Burundi'] ? 'none' : '' }}
           id="Burundi_label"
           y="315.286"
           x="504.489"

@@ -1,6 +1,12 @@
 import { RegionProps } from '../Countries';
 
-const Asia = ({ handleZoom, className, zoomIn }: RegionProps) => {
+const Asia = ({
+  handleZoom,
+  className,
+  zoomIn,
+  countryId,
+  answers,
+}: RegionProps) => {
   return (
     <g
       id="asia"
@@ -420,7 +426,7 @@ const Asia = ({ handleZoom, className, zoomIn }: RegionProps) => {
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#90288f',
+            fill: '#0d9445',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
@@ -453,7 +459,7 @@ const Asia = ({ handleZoom, className, zoomIn }: RegionProps) => {
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#fff' }}
+            style={{ fill: '#000' }}
           >
             MONGOLIA
           </tspan>
