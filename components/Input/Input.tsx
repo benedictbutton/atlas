@@ -3,10 +3,14 @@ import CountryList from './CountryList';
 
 type InputProps = {
   searchValue: string;
-  handleSearchValue: () => void;
-  handleSelectValue: () => void;
+  handleSearchValue: (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => void;
+  handleSelectValue: (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => void;
   zoomIn: string;
-  handleSubmit: () => void;
+  handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
   countries: string[];
 };
 

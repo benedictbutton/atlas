@@ -61,7 +61,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             DJIBOUTI
           </tspan>
@@ -169,7 +176,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             GHANA
           </tspan>
@@ -222,7 +236,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MADAGASCAR
           </tspan>
@@ -295,7 +316,14 @@ const Africa = ({
             strokeWidth=".337"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -408,7 +436,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3332'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BOTSWANA
           </tspan>
@@ -594,7 +629,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MALI
           </tspan>
@@ -647,7 +689,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".241"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SOMALIA
           </tspan>
@@ -1080,7 +1129,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             ZAMBIA
           </tspan>
@@ -1242,7 +1298,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".164"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             CONGO
           </tspan>
@@ -1404,7 +1467,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             ETHIOPIA
           </tspan>
@@ -1911,7 +1981,15 @@ const Africa = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ lineHeight: '95', fill: '#000' }}
+            style={{
+              lineHeight: '95',
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3517'
+                  ? '#fff'
+                  : '#000',
+            }}
             y="273.786"
             x="425.514"
             id="tspan6690"
@@ -1927,7 +2005,15 @@ const Africa = ({
             BURKINA
           </tspan>
           <tspan
-            style={{ lineHeight: '95', fill: 'rgb(106, 7, 7)' }}
+            style={{
+              lineHeight: '95',
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3517'
+                  ? '#fff'
+                  : '#000',
+            }}
             id="tspan6694"
             y="275.904"
             x="425.514"
@@ -1992,7 +2078,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".202"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             TANZANIA
           </tspan>
@@ -2100,7 +2193,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             GUINEA
           </tspan>
@@ -2265,7 +2365,7 @@ const Africa = ({
             strokeWidth=".26"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -2396,7 +2496,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MALAWI
           </tspan>
@@ -2504,7 +2611,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".087"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3496'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BURUNDI
           </tspan>
