@@ -1,17 +1,16 @@
-import CountryNames from './CountryNames';
+import { RegionProps } from '../Countries';
 
 const MiddleEast = ({
   handleZoom,
-  lastChild,
   className,
   zoomIn,
-  currentCountry,
-}) => {
+  countryId,
+}: RegionProps) => {
   return (
     <g
       id="middleEast"
       className={className}
-      onClick={handleZoom}
+      onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'middleEast' ? '0.5' : '1'}
     >
       <g id="g3533" fill-opacity="1" stroke-opacity="1">
@@ -26,8 +25,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3533'
+              countryId &&
+              countryId !== 'g3533'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -107,8 +106,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3548'
+              countryId &&
+              countryId !== 'g3548'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -160,8 +159,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3538'
+              countryId &&
+              countryId !== 'g3538'
                 ? '#36454f'
                 : '#737578',
             stroke: 'rgb(0, 0, 0)',
@@ -213,8 +212,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3553'
+              countryId &&
+              countryId !== 'g3553'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -267,8 +266,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3558'
+              countryId &&
+              countryId !== 'g3558'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -321,8 +320,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3543'
+              countryId &&
+              countryId !== 'g3543'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -375,8 +374,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3635'
+              countryId &&
+              countryId !== 'g3635'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -428,8 +427,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3861'
+              countryId &&
+              countryId !== 'g3861'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -481,8 +480,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3615'
+              countryId &&
+              countryId !== 'g3615'
                 ? '#36454f'
                 : '#98fe01',
             stroke: 'rgb(0, 0, 0)',
@@ -534,8 +533,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3896'
+              countryId &&
+              countryId !== 'g3896'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -587,8 +586,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3579'
+              countryId &&
+              countryId !== 'g3579'
                 ? '#36454f'
                 : '#727578',
             stroke: 'rgb(0, 0, 0)',
@@ -640,8 +639,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3563'
+              countryId &&
+              countryId !== 'g3563'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -693,8 +692,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3584'
+              countryId &&
+              countryId !== 'g3584'
                 ? '#36454f'
                 : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
@@ -746,8 +745,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3620'
+              countryId &&
+              countryId !== 'g3620'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -799,8 +798,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3568'
+              countryId &&
+              countryId !== 'g3568'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -852,8 +851,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3625'
+              countryId &&
+              countryId !== 'g3625'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -904,8 +903,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3610'
+              countryId &&
+              countryId !== 'g3610'
                 ? '#36454f'
                 : '#026835',
             stroke: 'rgb(0, 0, 0)',
@@ -986,8 +985,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3630'
+              countryId &&
+              countryId !== 'g3630'
                 ? '#36454f'
                 : '#e50e72',
             stroke: 'rgb(0, 0, 0)',
@@ -1039,8 +1038,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3881'
+              countryId &&
+              countryId !== 'g3881'
                 ? '#36454f'
                 : '#f9a432',
             stroke: 'rgb(0, 0, 0)',
@@ -1092,8 +1091,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3604'
+              countryId &&
+              countryId !== 'g3604'
                 ? '#36454f'
                 : '#ff9966',
             stroke: 'rgb(0, 0, 0)',
@@ -1145,8 +1144,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3594'
+              countryId &&
+              countryId !== 'g3594'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1198,8 +1197,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3589'
+              countryId &&
+              countryId !== 'g3589'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -1250,8 +1249,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3574'
+              countryId &&
+              countryId !== 'g3574'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -1332,8 +1331,8 @@ const MiddleEast = ({
           style={{
             fill:
               zoomIn === 'middleEast' &&
-              currentCountry &&
-              currentCountry !== 'g3599'
+              countryId &&
+              countryId !== 'g3599'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',

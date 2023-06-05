@@ -1,30 +1,40 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
-import Input from './Input';
+import Input from './Input/Input';
+import useCountries from '../utils/useCountries';
 
-const MyMap3 = () => {
+const WorldMap = () => {
   const [zoomIn, setZoomIn] = useState('');
   // const [isMounted, setIsMounted] = useState(false, 1000);
-  const [currentCountry, setCurrentCountry] = useState('');
+  const [countryName, setCountryName] = useState('');
+  const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
+  const [answers, setAnswers] = useCountries();
+
+  const countries = useMemo(() => Object.keys(answers), [answers]);
 
   const handleZoom = useCallback(
     (
-      event: React.MouseEvent<SVGElement>,
+      event: React.MouseEventHandler<SVGGElement>,
       close: string | undefined,
     ): void => {
       event?.stopPropagation();
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
       else if (close) {
-        setCurrentCountry('');
+        setCountryId('');
+        setCountryName('');
         setZoomIn('');
         setSearchValue('');
-      } else if (currentCountry === event.target?.parentNode?.id)
-        setCurrentCountry('');
-      else setCurrentCountry(() => event.target?.parentNode?.id);
+      } else if (countryId === event.target.parentNode.id) {
+        setCountryId('');
+        setCountryName('');
+      } else {
+        setCountryId(() => event.target.parentNode.id);
+        setCountryName(() => event.target.id);
+      }
     },
-    [zoomIn, currentCountry],
+    [zoomIn, countryId],
   );
 
   const handleSearchValue = useCallback(
@@ -39,6 +49,19 @@ const MyMap3 = () => {
       setSearchValue(() => event.target.value);
     },
     [setSearchValue],
+  );
+
+  const handleSubmit = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>): void => {
+      event.preventDefault();
+      if (countryName.toLowerCase() === searchValue.toLowerCase())
+        setAnswers({ ...answers, [`${countryName}`]: true });
+      else setAnswers({ ...answers, [`${countryName}`]: false });
+
+      setCountryId('');
+      setCountryName('');
+    },
+    [countryName, searchValue, answers, setAnswers],
   );
 
   return (
@@ -57,6 +80,8 @@ const MyMap3 = () => {
               handleSearchValue={handleSearchValue}
               handleSelectValue={handleSelectValue}
               zoomIn={zoomIn}
+              handleSubmit={handleSubmit}
+              countries={countries}
             />
           </div>
           <svg
@@ -1308,7 +1333,7 @@ const MyMap3 = () => {
           <Countries
             zoomIn={zoomIn}
             handleZoom={handleZoom}
-            currentCountry={currentCountry}
+            countryId={countryId}
           />
           <g
             transform="matrix(1.12127 0 0 1.12235 -.47 -36.62)"
@@ -5450,4 +5475,4 @@ const MyMap3 = () => {
   );
 };
 
-export default MyMap3;
+export default WorldMap;

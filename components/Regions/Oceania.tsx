@@ -1,11 +1,11 @@
-import CountryNames from './CountryNames';
+import { RegionProps } from '../Countries';
 
-const Oceania = ({ handleZoom, lastChild, className, zoomIn }) => {
+const Oceania = ({ handleZoom, className, zoomIn }: RegionProps) => {
   return (
     <g
       id="oceania"
       className={className}
-      onClick={handleZoom}
+      onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'oceania' ? '0.5' : '1'}
     >
       <g id="g4282">

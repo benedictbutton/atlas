@@ -1,26 +1,34 @@
 import { useRef } from 'react';
-import Africa from './Africa';
-import Asia from './Asia';
-import CentralAmerica from './CentralAmerica';
-import CountryNames from './CountryNames';
-import Europe from './Europe';
-import MiddleEast from './MiddleEast';
-import NorthAmerica from './NorthAmerica';
-import Oceania from './Oceania';
-import SouthAmerica from './SouthAmerica';
+import Africa from './Regions/Africa';
+import Asia from './Regions/Asia';
+import CentralAmerica from './Regions/CentralAmerica';
+import Europe from './Regions/Europe';
+import MiddleEast from './Regions/MiddleEast';
+import NorthAmerica from './Regions/NorthAmerica';
+import Oceania from './Regions/Oceania';
+import SouthAmerica from './Regions/SouthAmerica';
 // import useMountTransition from '../utils/useMountTransition';
 
-type Props = {
+export interface CountryProps {
   zoomIn: string;
   handleZoom: (
     event: React.MouseEvent<SVGElement>,
     close: string | undefined,
   ) => void;
-  currentCountry: string;
-};
+  countryId: string;
+}
 
-const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
-  const lastChild = useRef<SVGGElement | null>(null);
+export interface RegionProps extends CountryProps {
+  countryId: string;
+  className: string;
+}
+
+const Countries = ({
+  zoomIn,
+  handleZoom,
+  countryId,
+}: CountryProps) => {
+  // const lastChild = useRef<SVGGElement | null>(null);
 
   return (
     <>
@@ -189,16 +197,13 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'africa' && (
         <Africa
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="africa-zoom-out"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
         />
       )}
       {zoomIn !== 'asia' && (
         <Asia
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="asia-zoom-out"
           zoomIn={zoomIn}
         />
@@ -206,7 +211,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'centralAmerica' && (
         <CentralAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="ca-zoom-out"
           zoomIn={zoomIn}
         />
@@ -214,7 +218,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'northAmerica' && (
         <NorthAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="na-zoom-out"
           zoomIn={zoomIn}
         />
@@ -222,7 +225,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'oceania' && (
         <Oceania
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="oceania-zoom-out"
           zoomIn={zoomIn}
         />
@@ -230,16 +232,14 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'middleEast' && (
         <MiddleEast
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="middle-east-zoom-out"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
+          countryId={countryId}
         />
       )}
       {zoomIn !== 'europe' && (
         <Europe
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="europe-zoom-out"
           zoomIn={zoomIn}
         />
@@ -247,10 +247,8 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn !== 'southAmerica' && (
         <SouthAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="sa-zoom-out"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
         />
       )}
       <g id="g3961" fill-opacity="1">
@@ -355,20 +353,18 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
           </tspan>
         </text>
       </g>
-      <g id="portal-container" ref={lastChild}></g>
+      {/* <g id="portal-container" ref={lastChild}></g> */}
       {zoomIn === 'africa' && (
         <Africa
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="africa-zoom-in"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
+          countryId={countryId}
         />
       )}
       {zoomIn === 'asia' && (
         <Asia
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="asia-zoom-in"
           zoomIn={zoomIn}
         />
@@ -376,7 +372,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn === 'centralAmerica' && (
         <CentralAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="ca-zoom-in"
           zoomIn={zoomIn}
         />
@@ -384,7 +379,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn === 'northAmerica' && (
         <NorthAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="na-zoom-in"
           zoomIn={zoomIn}
         />
@@ -392,16 +386,14 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn === 'middleEast' && (
         <MiddleEast
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="middle-east-zoom-in"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
+          countryId={countryId}
         />
       )}
       {zoomIn === 'europe' && (
         <Europe
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="europe-zoom-in"
           zoomIn={zoomIn}
         />
@@ -409,7 +401,6 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn === 'oceania' && (
         <Oceania
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="oceania-zoom-in"
           zoomIn={zoomIn}
         />
@@ -417,10 +408,9 @@ const Countries = ({ zoomIn, handleZoom, currentCountry }: Props) => {
       {zoomIn === 'southAmerica' && (
         <SouthAmerica
           handleZoom={handleZoom}
-          lastChild={lastChild}
           className="sa-zoom-in"
           zoomIn={zoomIn}
-          currentCountry={currentCountry}
+          countryId={countryId}
         />
       )}
     </>

@@ -1,16 +1,15 @@
-import CountryNames from './CountryNames';
+import { RegionProps } from '../Countries';
 
 const CentralAmerica = ({
   handleZoom,
-  lastChild,
   className,
   zoomIn,
-}) => {
+}: RegionProps) => {
   return (
     <g
       id="centralAmerica"
       className={className}
-      onClick={handleZoom}
+      onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'centralAmerica' ? '0.5' : '1'}
     >
       <g id="g3297" fill-opacity="1">

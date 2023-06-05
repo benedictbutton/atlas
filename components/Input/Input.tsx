@@ -1,12 +1,23 @@
 import { useMemo } from 'react';
 import CountryList from './CountryList';
 
+type InputProps = {
+  searchValue: string;
+  handleSearchValue: () => void;
+  handleSelectValue: () => void;
+  zoomIn: string;
+  handleSubmit: () => void;
+  countries: string[];
+};
+
 const Input = ({
   searchValue,
   handleSearchValue,
   handleSelectValue,
   zoomIn,
-}) => {
+  handleSubmit,
+  countries,
+}: InputProps) => {
   const findRegion = useMemo(() => {
     const regions = [
       'Middle East, North Africa, & Greater Arabia',
@@ -42,7 +53,7 @@ const Input = ({
     }
     return region;
   }, [zoomIn]);
-  console.log('test');
+
   return (
     <div className="p-5">
       <p className="mb-3 text-3xl text-white">{findRegion}</p>
@@ -56,16 +67,20 @@ const Input = ({
           type="text"
           placeholder="Country Name"
           name="country"
-          onChange={(event) => handleSearchValue(event)}
+          onChange={handleSearchValue}
           value={searchValue}
         />
       </label>
-      <button className="w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md">
+      <button
+        className="w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md"
+        onClick={handleSubmit}
+      >
         Submit
       </button>
       <CountryList
         searchValue={searchValue}
         handleSelectValue={handleSelectValue}
+        countries={countries}
       />
     </div>
   );

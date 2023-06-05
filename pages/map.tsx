@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import Layout from '../components/Layout';
-import MyMap3 from '../components/MyMap3';
+import WorldMap from '../components/WorldMap';
 
 const Map = () => {
-  return <MyMap3 />;
+  return <WorldMap />;
 };
 
 Map.auth = true;

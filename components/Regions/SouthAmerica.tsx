@@ -1,17 +1,16 @@
-import CountryNames from './CountryNames';
+import { RegionProps } from '../Countries';
 
 const SouthAmerica = ({
   handleZoom,
-  lastChild,
   className,
   zoomIn,
-  currentCountry,
-}) => {
+  countryId,
+}: RegionProps) => {
   return (
     <g
       id="southAmerica"
       className={className}
-      onClick={(event) => handleZoom(event)}
+      onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'southAmerica' ? '0.5' : '36454f'}
     >
       <g id="g3238" fill-opacity="1">
@@ -28,8 +27,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3238'
+              countryId &&
+              countryId !== 'g3238'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -82,8 +81,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3233'
+              countryId &&
+              countryId !== 'g3233'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -136,8 +135,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3208'
+              countryId &&
+              countryId !== 'g3208'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -190,8 +189,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3193'
+              countryId &&
+              countryId !== 'g3193'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -244,8 +243,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3223'
+              countryId &&
+              countryId !== 'g3223'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -298,8 +297,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3203'
+              countryId &&
+              countryId !== 'g3203'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -352,8 +351,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3198'
+              countryId &&
+              countryId !== 'g3198'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -406,8 +405,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3228'
+              countryId &&
+              countryId !== 'g3228'
                 ? '#36454f'
                 : '#ce453e	',
             stroke: 'rgb(0, 0, 0)',
@@ -460,8 +459,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3218'
+              countryId &&
+              countryId !== 'g3218'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -514,8 +513,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3188'
+              countryId &&
+              countryId !== 'g3188'
                 ? '#36454f'
                 : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
@@ -568,8 +567,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3183'
+              countryId &&
+              countryId !== 'g3183'
                 ? '#36454f'
                 : '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
@@ -624,8 +623,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3213'
+              countryId &&
+              countryId !== 'g3213'
                 ? '#36454f'
                 : '#cf453e	',
             stroke: 'rgb(0, 0, 0)',
@@ -667,7 +666,7 @@ const SouthAmerica = ({
       <g
         id="g3244"
         fill-opacity="1"
-        onClick={(event) => handleCurrentCountry(event)}
+        onClick={(event) => handlecountryId(event)}
       >
         <path
           d="m312.07 287.2.07-.05h.17l.06-.17.17-.04.16-.18.2-.43.17-.25.06-.15v-.15l.06-.18-.03-.19v-.17l-.09-.03.06-.13.19-.27.08-.05.06-.17.1-.1.03-.1v-.18l.03-.2-.07-.08h-.08l-.05-.1-.06-.16-.08-.11-.15-.06-.2-.27-.1-.18-.09-.08-.03-.1.05-.21-.12-.05-.06-.1.04-.09-.02-.16-.08-.16-.04-.27.06-.2-.03-.22v-.14l-.11-.11v-.4l.08-.06-.03-.14.08-.15.21-.25.03-.12.15-.16.25-.2.16-.08.11-.15.14-.3.04-.26.11-.2.23.02.19.05.2.13.28.11.17.09.17.06h.1l.26.05.13-.03.3.11.12.1.22.02.25.13.17.15.1.07.08.13.18.14.34.33.06.06.1.04.2.16.07.16.07-.09h.1l.11.13-.21.33h.08l.03-.13.13-.11.13.02.09.13.15.1.18.16.07.1.11.5-.02.11-.14.11.07.02.13-.09.03-.14-.02-.35.02-.09.07-.1.11.02.12.11.07.15.05.2.06.18.1.07-.06.1.02.08.1.14.05.13v.17l-.1.21-.24.15-.12.28-.17.18-.07.03-.05.15-.1.04-.06.22-.2.34-.33.55-.18.1-.06.1-.1.12.02.19-.16.32.03.07-.11.09-.2.43-.1.13.05.16-.17.28-.09.08-.13.18-.43.24-.07.14-.12.08-.26-.04-.18-.08-.29.06-.06-.06.1-.07-.27-.25-.08.11-.24.12-.14.03-.12-.07-.18-.01-.24-.11-.05-.12-.09.04-.08.11h-.09l-.08.11h-.09l-.02.11-.19.1-.11-.02-.08.15-.09.04-.13-.13-.2.03-.16-.03-.1-.08-.26-.04-.17-.14-.05-.11z"
@@ -681,8 +680,8 @@ const SouthAmerica = ({
           style={{
             fill:
               zoomIn === 'southAmerica' &&
-              currentCountry &&
-              currentCountry !== 'g3244'
+              countryId &&
+              countryId !== 'g3244'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',

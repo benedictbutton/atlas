@@ -132,6 +132,8 @@ a {
 .na-zoom-in {
   animation: na-zoom-in ease-in 1s;
   animation-fill-mode: forwards;
+  /* transition: all 3s ease-in 3s; */
+  /* transform: scale(1.5) translateX(5%); */
 }
 
 @keyframes na-zoom-in {
@@ -167,7 +169,7 @@ a {
     transform: scale(1);
   }
   to {
-    transform: scale(3) translate(-40%, -30%);
+    transform: scale(3) translate(-40%, -35%);
   }
 }
 
@@ -178,7 +180,7 @@ a {
 
 @keyframes middle-east-zoom-out {
   from {
-    transform: scale(3) translate(-40%, -30%);
+    transform: scale(3) translate(-40%, -35%);
   }
   to {
     transform: scale(1);
@@ -267,6 +269,14 @@ a {
   to {
     transform: scale(1);
   }
+}
+
+.input {
+  animation: input-expand ease 1s;
+  animation-fill-mode: forward;
+}
+
+@keyframes input-expand {
 }
 
 g {

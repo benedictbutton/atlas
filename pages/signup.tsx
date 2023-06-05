@@ -4,7 +4,7 @@ import {
   getCsrfToken,
 } from 'next-auth/react';
 import type { NextApiRequest } from 'next';
-import SignUp from '../components/SignUp';
+import SignUp from '../components/Authentication/SignUp';
 
 interface Provider {
   id: string;

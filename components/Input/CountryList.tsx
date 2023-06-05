@@ -1,6 +1,8 @@
-import { countries } from '../data/countries';
-
-const CountryList = ({ searchValue, handleSelectValue }) => {
+const CountryList = ({
+  searchValue,
+  handleSelectValue,
+  countries,
+}) => {
   const lowerCaseSearchValue = searchValue.toLowerCase();
   return (
     <ul>

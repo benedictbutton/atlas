@@ -1,15 +1,16 @@
+import { RegionProps } from '../Countries';
+
 const Africa = ({
   handleZoom,
-  lastChild,
   className,
   zoomIn,
-  currentCountry,
-}) => {
+  countryId,
+}: RegionProps) => {
   return (
     <g
       id="africa"
       className={className}
-      onClick={handleZoom}
+      onClick={(e) => handleZoom(e, '')}
       opacity={zoomIn && zoomIn !== 'africa' ? '0.5' : '1'}
     >
       <g id="g4036" fill-opacity="1">
@@ -26,8 +27,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g4036'
+              countryId &&
+              countryId !== 'g4036'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
@@ -80,8 +81,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3496'
+              countryId &&
+              countryId !== 'g3496'
                 ? '#36454f'
                 : '#90288f',
             stroke: 'rgb(0, 0, 0)',
@@ -134,8 +135,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3469'
+              countryId &&
+              countryId !== 'g3469'
                 ? '#36454f'
                 : '#1b83ff',
             stroke: 'rgb(0, 0, 0)',
@@ -187,8 +188,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3352'
+              countryId &&
+              countryId !== 'g3352'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -239,8 +240,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3475'
+              countryId &&
+              countryId !== 'g3475'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -319,8 +320,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3392'
+              countryId &&
+              countryId !== 'g3392'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -373,8 +374,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3332'
+              countryId &&
+              countryId !== 'g3332'
                 ? '#36454f'
                 : '#faa433',
             stroke: 'rgb(0, 0, 0)',
@@ -427,8 +428,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g4041'
+              countryId &&
+              countryId !== 'g4041'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -479,8 +480,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3404'
+              countryId &&
+              countryId !== 'g3404'
                 ? '#36454f'
                 : '#705348',
             stroke: 'rgb(0, 0, 0)',
@@ -559,8 +560,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3511'
+              countryId &&
+              countryId !== 'g3511'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -612,8 +613,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3429'
+              countryId &&
+              countryId !== 'g3429'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -666,8 +667,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3347'
+              countryId &&
+              countryId !== 'g3347'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -720,8 +721,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3527'
+              countryId &&
+              countryId !== 'g3527'
                 ? '#36454f'
                 : '#e30088',
             stroke: 'rgb(0, 0, 0)',
@@ -774,8 +775,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3439'
+              countryId &&
+              countryId !== 'g3439'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -829,8 +830,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3317'
+              countryId &&
+              countryId !== 'g3317'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -883,8 +884,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3327'
+              countryId &&
+              countryId !== 'g3327'
                 ? '#36454f'
                 : '#df001d',
             stroke: 'rgb(0, 0, 0)',
@@ -937,8 +938,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3322'
+              countryId &&
+              countryId !== 'g3322'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -991,8 +992,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3367'
+              countryId &&
+              countryId !== 'g3367'
                 ? '#36454f'
                 : '#df001d',
             stroke: 'rgb(0, 0, 0)',
@@ -1045,8 +1046,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3362'
+              countryId &&
+              countryId !== 'g3362'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -1099,8 +1100,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3342'
+              countryId &&
+              countryId !== 'g3342'
                 ? '#36454f'
                 : 'blue',
             stroke: 'rgb(0, 0, 0)',
@@ -1153,8 +1154,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3372'
+              countryId &&
+              countryId !== 'g3372'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1207,8 +1208,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3377'
+              countryId &&
+              countryId !== 'g3377'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1261,8 +1262,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3382'
+              countryId &&
+              countryId !== 'g3382'
                 ? '#36454f'
                 : '#de1c33',
             stroke: 'rgb(0, 0, 0)',
@@ -1315,8 +1316,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3424'
+              countryId &&
+              countryId !== 'g3424'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1369,8 +1370,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3434'
+              countryId &&
+              countryId !== 'g3434'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1423,8 +1424,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3480'
+              countryId &&
+              countryId !== 'g3480'
                 ? '#36454f'
                 : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1477,8 +1478,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3387'
+              countryId &&
+              countryId !== 'g3387'
                 ? '#36454f'
                 : '#525b61',
             stroke: 'rgb(0, 0, 0)',
@@ -1531,8 +1532,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3419'
+              countryId &&
+              countryId !== 'g3419'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -1583,8 +1584,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3398'
+              countryId &&
+              countryId !== 'g3398'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -1663,8 +1664,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3444'
+              countryId &&
+              countryId !== 'g3444'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -1717,8 +1718,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3522'
+              countryId &&
+              countryId !== 'g3522'
                 ? '#36454f'
                 : '#008479',
             stroke: 'rgb(0, 0, 0)',
@@ -1771,8 +1772,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3454'
+              countryId &&
+              countryId !== 'g3454'
                 ? '#36454f'
                 : '#92268f',
             stroke: 'rgb(0, 0, 0)',
@@ -1825,8 +1826,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3337'
+              countryId &&
+              countryId !== 'g3337'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -1877,8 +1878,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3517'
+              countryId &&
+              countryId !== 'g3517'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1957,8 +1958,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3409'
+              countryId &&
+              countryId !== 'g3409'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -2011,8 +2012,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3459'
+              countryId &&
+              countryId !== 'g3459'
                 ? '#36454f'
                 : '#d21c5b',
             stroke: 'rgb(0, 0, 0)',
@@ -2065,8 +2066,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3491'
+              countryId &&
+              countryId !== 'g3491'
                 ? '#36454f'
                 : '#fe9724',
             stroke: 'rgb(0, 0, 0)',
@@ -2119,8 +2120,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3501'
+              countryId &&
+              countryId !== 'g3501'
                 ? '#36454f'
                 : '#cfde9e',
             stroke: 'rgb(0, 0, 0)',
@@ -2173,8 +2174,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3506'
+              countryId &&
+              countryId !== 'g3506'
                 ? '#36454f'
                 : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
@@ -2225,8 +2226,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3486'
+              countryId &&
+              countryId !== 'g3486'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -2305,8 +2306,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3464'
+              countryId &&
+              countryId !== 'g3464'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2361,8 +2362,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3357'
+              countryId &&
+              countryId !== 'g3357'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2415,8 +2416,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3449'
+              countryId &&
+              countryId !== 'g3449'
                 ? '#36454f'
                 : '#1071b0',
             stroke: 'rgb(0, 0, 0)',
@@ -2469,8 +2470,8 @@ const Africa = ({
           style={{
             fill:
               zoomIn === 'africa' &&
-              currentCountry &&
-              currentCountry !== 'g3414'
+              countryId &&
+              countryId !== 'g3414'
                 ? '#36454f'
                 : '#bd517e',
             stroke: 'rgb(0, 0, 0)',
