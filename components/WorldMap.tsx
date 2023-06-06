@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input/Input';
-import useCountries from '../utils/useCountries';
+import { countries } from '../data/countries';
 import useZoom from '../utils/useZoom';
 
 const WorldMap = () => {
@@ -10,7 +10,7 @@ const WorldMap = () => {
   const [countryName, setCountryName] = useState('');
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
-  const [answers, setAnswers] = useCountries();
+  const [answers, setAnswers] = useState(countries);
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
 
   const handleZoom = useCallback(

@@ -1,4 +1,5 @@
 import CountryList from './CountryList';
+import Score from './Score';
 
 type InputProps = {
   searchValue: string;
@@ -47,16 +48,19 @@ const Input = ({
         />
       </label>
       <button
-        className="w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md"
+        className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md"
         onClick={handleSubmit}
       >
         Submit
       </button>
-      <CountryList
-        searchValue={searchValue}
-        handleSelectValue={handleSelectValue}
-        answers={answers}
-      />
+      {searchValue && (
+        <CountryList
+          searchValue={searchValue}
+          handleSelectValue={handleSelectValue}
+          answers={answers}
+        />
+      )}
+      {!searchValue && <Score answers={answers} />}
     </div>
   );
 };
