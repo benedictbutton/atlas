@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import CountryList from './CountryList';
 
 type InputProps = {
@@ -11,7 +10,8 @@ type InputProps = {
   ) => void;
   zoomIn: string;
   handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  countries: string[];
+  answers: string[];
+  regionHeader: string;
 };
 
 const Input = ({
@@ -21,49 +21,18 @@ const Input = ({
   zoomIn,
   handleSubmit,
   answers,
+  regionHeader,
 }: InputProps) => {
-  const findRegion = useMemo(() => {
-    const regions = [
-      'Middle East, North Africa, & Greater Arabia',
-      'Sub-Saharan Africa',
-      'South America',
-      'Europe',
-      'Australia and Oceania',
-    ];
-
-    let region = '';
-    switch (zoomIn) {
-      case 'asia':
-        region = 'Asia';
-        break;
-      case 'middleEast':
-        region = 'Middle East, North Africa, & Greater Arabia';
-        break;
-      case 'africa':
-        region = 'Sub-Saharan Africa';
-        break;
-      case 'southAmerica':
-        region = 'South America';
-        break;
-      case 'europe':
-        region = 'Europe';
-        break;
-      case 'oceania':
-        region = 'Australia and Oceania';
-        break;
-      default:
-        region = '';
-        break;
-    }
-    return region;
-  }, [zoomIn]);
-
   return (
-    <div className="p-5">
-      <p className="h-9 min-h-full mb-3 text-3xl text-white">
-        {findRegion}
+    <div className="flex flex-wrap p-5">
+      <p
+        className={`text ${
+          !zoomIn ? 'collapse' : ''
+        } w-full h-full mb-3 text-3xl text-white`}
+      >
+        {regionHeader}
       </p>
-      <label className="mb-4">
+      <label className="inline-block w-full mt-2 mb-4">
         <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
           Country
         </p>

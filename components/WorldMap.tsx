@@ -1,16 +1,17 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input/Input';
 import useCountries from '../utils/useCountries';
+import useZoom from '../utils/useZoom';
 
 const WorldMap = () => {
-  const [zoomIn, setZoomIn] = useState('');
   // const [isMounted, setIsMounted] = useState(false, 1000);
   const [countryName, setCountryName] = useState('');
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
   const [answers, setAnswers] = useCountries();
+  const [regionHeader, zoomIn, setZoomIn] = useZoom();
 
   const handleZoom = useCallback(
     (
@@ -64,14 +65,12 @@ const WorldMap = () => {
 
   return (
     <>
-      {zoomIn && (
-        <button
-          className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
-          onClick={() => signOut()}
-        >
-          Sign Out
-        </button>
-      )}
+      <button
+        className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
+        onClick={() => signOut()}
+      >
+        Sign Out
+      </button>
       <div
         className={`input ${
           !zoomIn ? 'collapse' : ''
@@ -84,23 +83,26 @@ const WorldMap = () => {
           zoomIn={zoomIn}
           handleSubmit={handleSubmit}
           answers={answers}
+          regionHeader={regionHeader}
         />
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="absolute top-36 left-36 w-12 h-12"
-        onClick={(event) => handleZoom(event, 'close')}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
+      {zoomIn && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="absolute top-36 left-36 w-12 h-12"
+          onClick={(event) => handleZoom(event, 'close')}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      )}
       <svg
         className="bg-[#80b6ec]"
         version="1.2"

@@ -98,7 +98,7 @@ const Oceania = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#faa433',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -149,7 +149,7 @@ const Oceania = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#059031',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>

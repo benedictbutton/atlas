@@ -1,0 +1,45 @@
+import { useState, useMemo, useEffect } from 'react';
+
+const useZoom = () => {
+  const [zoomIn, setZoomIn] = useState('');
+  const findRegion = useMemo(() => {
+    let region = '';
+    switch (zoomIn) {
+      case 'asia':
+        region = 'Asia';
+        break;
+      case 'middleEast':
+        region = 'Middle East, North Africa, & Greater Arabia';
+        break;
+      case 'africa':
+        region = 'Sub-Saharan Africa';
+        break;
+      case 'southAmerica':
+        region = 'South America';
+        break;
+      case 'europe':
+        region = 'Europe';
+        break;
+      case 'oceania':
+        region = 'Australia and Oceania';
+        break;
+      case 'northAmerica':
+        region = 'North America';
+        break;
+      default:
+        region = '';
+        break;
+    }
+    return region;
+  }, [zoomIn]);
+
+  const [regionHeader, setRegionHeader] = useState(findRegion);
+
+  useEffect(() => {
+    setRegionHeader(findRegion);
+  }, [zoomIn]);
+
+  return [regionHeader, zoomIn, setZoomIn];
+};
+
+export default useZoom;
