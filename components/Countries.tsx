@@ -203,7 +203,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'asia' && (
@@ -213,7 +212,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'centralAmerica' && (
@@ -223,7 +221,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'europe' && (
@@ -233,7 +230,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'middleEast' && (
@@ -243,7 +239,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'northAmerica' && (
@@ -253,7 +248,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'oceania' && (
@@ -263,7 +257,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn !== 'southAmerica' && (
@@ -273,7 +266,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       <g id="g3961" fill-opacity="1">
@@ -386,7 +378,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'asia' && (
@@ -396,7 +387,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'centralAmerica' && (
@@ -406,7 +396,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'europe' && (
@@ -416,7 +405,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'middleEast' && (
@@ -426,7 +414,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'northAmerica' && (
@@ -436,7 +423,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'oceania' && (
@@ -446,7 +432,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
       {zoomIn === 'southAmerica' && (
@@ -456,7 +441,6 @@ const Countries = ({
           zoomIn={zoomIn}
           countryId={countryId}
           answers={answers}
-          regionHeader={regionHeader}
         />
       )}
     </>
