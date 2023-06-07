@@ -13,8 +13,9 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
             country.toLowerCase().includes(lowerCaseSearchValue),
         )
         .map((countrySearch, idx) => (
-          <li key={idx} className="text-white">
+          <li key={idx} className="text-white cursor">
             <input
+              id={countrySearch}
               type="radio"
               value={countrySearch.toLowerCase()}
               checked={
@@ -24,7 +25,9 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
               onChange={(event) => handleSelectValue(event)}
               className="mr-3"
             />
-            {countrySearch}
+            <label htmlFor={countrySearch} className="cursor-pointer">
+              {countrySearch}
+            </label>
           </li>
         ))}
     </ul>

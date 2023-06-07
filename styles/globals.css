@@ -320,6 +320,10 @@ circle + text {
   display: none;
 }
 
+.score-text {
+  display: inline-block;
+}
+
 .image-container {
   position: relative;
   width: 100%;

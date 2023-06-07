@@ -1,17 +1,21 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const useScore = (answers) => {
-  const [score, setScore] = useState(0);
+  const [correct, setCorrect] = useState(0);
+  const [incorrect, setIncorrect] = useState(0);
 
   useEffect(() => {
-    let newScore = Object.values(answers);
-    console.log(newScore);
-    let newNewScore = newScore.filter((el) => el === true).length;
-    setScore(newNewScore);
-    console.log(newNewScore);
+    let currentCorrect = Object.values(answers).filter(
+      (el) => el === true,
+    ).length;
+    setCorrect(currentCorrect);
+    let currentIncorrect = Object.values(answers).filter(
+      (el) => el === false,
+    ).length;
+    setIncorrect(currentIncorrect);
   }, [answers]);
 
-  return [score];
+  return [correct, incorrect];
 };
 
 export default useScore;
