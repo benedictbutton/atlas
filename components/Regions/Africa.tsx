@@ -2381,7 +2381,14 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'africa' &&
+                countryId &&
+                countryId !== 'g3506'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SENEGAL
           </tspan>

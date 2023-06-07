@@ -3,10 +3,9 @@ import useScore from '../../utils/useScore';
 
 const Score = ({ answers }) => {
   const [correct, incorrect] = useScore(answers);
+  const numOfAnswers = Object.keys(answers).length;
 
-  console.log(incorrect);
-
-  const [radius, stroke] = [180, 8];
+  const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
@@ -26,7 +25,7 @@ const Score = ({ answers }) => {
         </linearGradient>
       </defs>
       <circle
-        stroke="white"
+        stroke="#dee1e1"
         fill="transparent"
         strokeWidth={stroke}
         strokeDasharray={0}

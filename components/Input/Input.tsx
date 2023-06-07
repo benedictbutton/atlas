@@ -13,6 +13,7 @@ type InputProps = {
   handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
   answers: string[];
   regionHeader: string;
+  countryName: string;
 };
 
 const Input = ({
@@ -23,6 +24,7 @@ const Input = ({
   handleSubmit,
   answers,
   regionHeader,
+  countryName,
 }: InputProps) => {
   return (
     <div className="flex flex-wrap p-5">
@@ -38,7 +40,7 @@ const Input = ({
           Country
         </p>
         <input
-          className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+          className="capitalize px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
           id="signInInput1-1"
           type="text"
           placeholder="Country Name"
@@ -48,7 +50,10 @@ const Input = ({
         />
       </label>
       <button
-        className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md"
+        className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
+        disabled={
+          answers[`${searchValue}`] === undefined || !countryName
+        }
         onClick={handleSubmit}
       >
         Submit

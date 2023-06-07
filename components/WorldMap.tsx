@@ -52,7 +52,9 @@ const WorldMap = () => {
   const handleSubmit = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>): void => {
       event.preventDefault();
-      if (countryName.toLowerCase() === searchValue.toLowerCase())
+      if (countryName !== searchValue && answers[`${searchValue}`])
+        setAnswers({ ...answers, [`${searchValue}`]: false });
+      else if (countryName === searchValue)
         setAnswers({ ...answers, [`${countryName}`]: true });
       else setAnswers({ ...answers, [`${countryName}`]: false });
 
@@ -84,6 +86,7 @@ const WorldMap = () => {
           handleSubmit={handleSubmit}
           answers={answers}
           regionHeader={regionHeader}
+          countryName={countryName}
         />
       </div>
       {zoomIn && (

@@ -1441,3 +1441,37 @@ text:hover ~ path {
 "Malawi"
 "Eritrea"
 "Burundi"
+
+
+
+
+
+
+
+Singapore
+Vietnam
+Tajikistan
+South Korea
+Hong Kong
+Brunei
+Malaysia
+Indonesia
+Mongolia
+Cambodia
+Laos
+Myanmar
+Philippines
+Japan
+China
+Sri_Lanka
+North_Korea
+Nepal
+Turkmenistan
+Taiwan
+India
+Kyrgyzstan
+Thailand
+Uzbekistan
+Kazakhstan
+Bangladesh
+Bhutan

@@ -20,18 +20,22 @@ const Asia = ({
           d="M706.237 291.377c2.163 0 2.144-3.257-.038-3.257-2.162 0-2.143 3.237.038 3.237"
           strokeWidth=".15"
           stroke-miterlimit="4"
-          stroke="#000"
           fill="#d1dbdd"
+          stroke="#000"
           id="Singapore"
           stroke-opacity="1"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'blue',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g4006'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Singapore'] ? 'none' : '' }}
           id="Singapore_label"
           y="302.402"
           x="680.994"
@@ -60,7 +64,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g4006'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SINGAPORE
           </tspan>
@@ -78,11 +89,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#f9a433',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3941'
+                ? '#36454f'
+                : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Vietnam'] ? 'none' : '' }}
           id="Vietnam_label"
           y="267.286"
           x="692.991"
@@ -109,7 +124,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3941'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             VIETNAM
           </tspan>
@@ -127,11 +149,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#463b38',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3891'
+                ? '#36454f'
+                : '#463b38',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Tajikistan'] ? 'none' : '' }}
           id="Tajikistan_label"
           y="199.192"
           x="596.107"
@@ -158,7 +184,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             TAJIKISTAN
           </tspan>
@@ -176,11 +204,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#803788',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3986'
+                ? '#36454f'
+                : '#803788',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['South Korea'] ? 'none' : '' }}
           id="South_Korea_label"
           y="204.67"
           x="735.185"
@@ -207,7 +239,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             SOUTH KOREA
           </tspan>
@@ -219,18 +253,22 @@ const Asia = ({
           d="M731.836 237.677c1.616 0 1.602-2.428-.028-2.428-1.615 0-1.587 2.428.028 2.428"
           strokeWidth=".15"
           stroke-miterlimit="4"
-          stroke="#000"
           fill="#d1dbdd"
+          stroke="#000"
           id="Hong_Kong"
           stroke-opacity="1"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'blue',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3976'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Hong Kong'] ? 'none' : '' }}
           id="Hong_Kong_label"
           y="246.69"
           x="706.03"
@@ -257,7 +295,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3976'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             HONG KONG
           </tspan>
@@ -275,11 +320,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3951'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Brunei'] ? 'none' : '' }}
           id="Brunei_label"
           y="290.492"
           x="697.315"
@@ -306,7 +355,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
-            style={{ fill: '#fff' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3951'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BRUNEI
           </tspan>
@@ -324,11 +380,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#89bc3b',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3946'
+                ? '#36454f'
+                : '#89bc3b',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Malaysia'] ? 'none' : '' }}
           id="Malaysia_label"
           y="298.358"
           x="675.207"
@@ -357,7 +417,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3946'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MALAYSIA
           </tspan>
@@ -375,11 +442,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3956'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Indonesia'] ? 'none' : '' }}
           id="Indonesia_label"
           y="313.735"
           x="690.613"
@@ -408,7 +479,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3956'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             INDONESIA
           </tspan>
@@ -426,12 +504,16 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0d9445',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g4001'
+                ? '#36454f'
+                : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
         ></path>
         <text
+          style={{ display: !answers['Mongolia'] ? 'none' : '' }}
           id="Mongolia_label"
           y="176.901"
           x="661.939"
@@ -459,7 +541,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g4001'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MONGOLIA
           </tspan>
@@ -477,11 +566,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0f72b3',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3936'
+                ? '#36454f'
+                : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Cambodia'] ? 'none' : '' }}
           id="Cambodia_label"
           y="270.599"
           x="677.065"
@@ -510,7 +603,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             CAMBODIA
           </tspan>
@@ -528,11 +623,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#f3f870',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3926'
+                ? '#36454f'
+                : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Laos'] ? 'none' : '' }}
           id="Laos_label"
           y="252.314"
           x="673.118"
@@ -559,7 +658,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3926'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             LAOS
           </tspan>
@@ -577,11 +683,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e3106f',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3921'
+                ? '#36454f'
+                : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Myanmar'] ? 'none' : '' }}
           id="Myanmar_label"
           y="249.579"
           x="655.314"
@@ -608,7 +718,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             MYANMAR
           </tspan>
@@ -626,11 +738,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#463b38',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3966'
+                ? '#36454f'
+                : '#463b38',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Philippines'] ? 'none' : '' }}
           id="Philippines_label"
           y="269.356"
           x="730.428"
@@ -657,7 +773,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3966'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             PHILIPPINES
           </tspan>
@@ -675,11 +798,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#05922a',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3996'
+                ? '#36454f'
+                : '#05922a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Japan'] ? 'none' : '' }}
           id="Japan_label"
           y="202.764"
           x="770.821"
@@ -706,7 +833,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".221"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3996'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             JAPAN
           </tspan>
@@ -724,12 +858,16 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#cc0b20',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3981'
+                ? '#36454f'
+                : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
         ></path>
         <text
+          style={{ display: !answers['China'] ? 'none' : '' }}
           id="China_label"
           y="213.038"
           x="654.64"
@@ -758,7 +896,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             CHINA
           </tspan>
@@ -776,11 +916,15 @@ const Asia = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#89bc3b',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g4011'
+                ? '#36454f'
+                : '#89bc3b',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Sri_Lanka'] ? 'none' : '' }}
           id="Sri_Lanka_label"
           y="290.482"
           x="625.571"
@@ -807,7 +951,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g4011'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SRI LANKA
           </tspan>
@@ -825,11 +976,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#f3f870',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3991'
+                ? '#36454f'
+                : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['North_Korea'] ? 'none' : '' }}
           id="North_Korea_label"
           y="195.263"
           x="733.143"
@@ -856,7 +1011,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3991'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             NORTH KOREA
           </tspan>
@@ -874,11 +1036,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'blue',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3906'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Nepal'] ? 'none' : '' }}
           transform="matrix(.96602 .35352 -.3813 .89563 0 0)"
           id="Nepal_label"
           y="-17.72"
@@ -905,7 +1071,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             NEPAL
           </tspan>
@@ -923,11 +1091,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#92268f',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3876'
+                ? '#36454f'
+                : '#92268f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Turkmenistan'] ? 'none' : '' }}
           id="Turkmenistan_label"
           y="198.595"
           x="560.702"
@@ -954,7 +1126,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             TURKMENISTAN
           </tspan>
@@ -972,11 +1146,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fbb34a',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3971'
+                ? '#36454f'
+                : '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Taiwan'] ? 'none' : '' }}
           id="Taiwan_label"
           y="242.473"
           x="722.783"
@@ -1003,7 +1181,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3971'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             TAIWAN
           </tspan>
@@ -1021,11 +1206,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#faa433',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3901'
+                ? '#36454f'
+                : '#faa433',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['India'] ? 'none' : '' }}
           id="India_label"
           y="253.045"
           x="613.91"
@@ -1052,7 +1241,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3901'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             INDIA
           </tspan>
@@ -1070,11 +1266,15 @@ const Asia = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'blue',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3886'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Kyrgyzstan'] ? 'none' : '' }}
           id="Kyrgyzstan_label"
           y="190.43"
           x="603.251"
@@ -1101,7 +1301,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             KYRGYZSTAN
           </tspan>
@@ -1119,11 +1321,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0d9445',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3931'
+                ? '#36454f'
+                : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Thailand'] ? 'none' : '' }}
           id="Thailand_label"
           y="264.677"
           x="668.361"
@@ -1150,7 +1356,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3931'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             THAILAND
           </tspan>
@@ -1168,11 +1381,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#a6a9ac',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3871'
+                ? '#36454f'
+                : '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Uzbekistan'] ? 'none' : '' }}
           transform="matrix(.88304 .50682 -.54666 .8187 0 0)"
           id="Uzbekistan_label"
           y="-143.294"
@@ -1199,7 +1416,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3871'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             UZBEKISTAN
           </tspan>
@@ -1217,11 +1441,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g4031'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Kazakhstan'] ? 'none' : '' }}
           id="Kazakhstan_label"
           y="170.305"
           x="576.801"
@@ -1250,7 +1478,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".241"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g4031'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             KAZAKHSTAN
           </tspan>
@@ -1268,11 +1503,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#901f5d',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3916'
+                ? '#36454f'
+                : '#901f5d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Bangladesh'] ? 'none' : '' }}
           id="Bangladesh_label"
           y="239.43"
           x="637.915"
@@ -1299,7 +1538,9 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             BANGLADESH
           </tspan>
@@ -1317,11 +1558,15 @@ const Asia = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#48bd44',
+            fill:
+              zoomIn === 'asia' && countryId && countryId !== 'g3911'
+                ? '#36454f'
+                : '#48bd44',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Bhutan'] ? 'none' : '' }}
           id="Bhutan_label"
           y="228.425"
           x="642.219"
@@ -1348,7 +1593,14 @@ const Asia = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'asia' &&
+                countryId &&
+                countryId !== 'g3911'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BHUTAN
           </tspan>
