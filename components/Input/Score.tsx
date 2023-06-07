@@ -63,14 +63,14 @@ const Score = ({ answers }) => {
         x={radius}
         y={radius}
         textAnchor="middle"
-        fontSize="9rem"
+        fontSize="7rem"
         stroke="transparent"
         stroke-width="2px"
         dy="3rem"
       >
-        <tspan fill="#df001d">0</tspan>
+        <tspan fill="#df001d">{incorrect}</tspan>
         <tspan fill="url('#myGradient')"> / </tspan>
-        <tspan fill="#1b83ff">0</tspan>
+        <tspan fill="#1b83ff">{correct}</tspan>
       </text>
     </svg>
   );

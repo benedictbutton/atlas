@@ -2381,7 +2381,7 @@ const Africa = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#fff' }}
+            style={{ fill: '#000' }}
           >
             SENEGAL
           </tspan>
