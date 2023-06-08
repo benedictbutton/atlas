@@ -40,7 +40,7 @@ const Input = ({
           Country
         </p>
         <input
-          className="capitalize px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+          className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
           id="signInInput1-1"
           type="text"
           placeholder="Country Name"

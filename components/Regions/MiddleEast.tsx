@@ -17,7 +17,7 @@ const MiddleEast = ({
       <g id="g3533" fill-opacity="1" stroke-opacity="1">
         <path
           d="M415.2 222.32h-.01l-.08.22-.1.38-.15.37-.2.3-.05.1-.07.34-.08.15-.1.36-.15.3-.14.16-.3.2-.45.3-.32.15-.27.02-.05.04-.1.12-.2.2-.28.11-.14.17-.07.17.03.11-.03.23-.06.22-.06.11-.2.26-.1.25-.05.26-.08.18-.17.2-.09.31-.08.3.03.31.03.18-.03.11.02.2-.14.39-.04.22-.18.11-.1.15v.07l-.13.09-.15.03-.11.06-.14.14-.17.25-.13.14-.23.18-.04.08-.14.11-.25.33-.16.04-.23.13-.16.16-.25.33-.18.32.04.02.12-.1.13-.3.08-.1h.08l.15-.1v.23l-.12.16-.03.1-.2.21-.14.25-.03.18-.11.19-.1.08-.19.41-.14.16-.06.13.15-.02v.18l-.04.11-.16.16-.12.03-.02.17-.08.11-.03.16-.01.23-.04.16-.18.2-.09.33-.13.17-.28.11-.07-.05-.11.04-.07.14-.21.24-.26.52-.11.4.04.05-.04.17v.27l-.11.38v.06l-.14 1.01-.05.18-.04.33.11.18-.05-.28.08-.4.1-.29.1-.48.02-.02h9.81l-.11-1.72-.08-1.31-.03-.17-.13-.34-.02-.16.04-.18.07-.17.26-.34.99-.67.15-.06.42-.06.1-.02.53-.26.26-.06.04-.13v-6.62h8.23l.07-.04v-4.48z"
-          id="Western_Sahara"
+          id="Western Sahara"
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth="0.15"
@@ -35,14 +35,14 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Western Sahara'] ? 'none' : '',
+            lineHeight: '95',
+            textAlign: 'start',
+          }}
           id="Western_Sahara_label"
           y="236.378"
           x="377.505"
-          style={{
-            lineHeight: '95',
-            textAlign: 'start',
-            //   display: 'none',
-          }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -115,6 +115,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Tunisia'] ? 'none' : '' }}
           id="Tunisia_label"
           y="212.874"
           x="451.204"
@@ -168,6 +169,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Morocco'] ? 'none' : '' }}
           transform="matrix(.87366 -.5206 .56153 .81 0 0)"
           id="Morocco_label"
           y="411.984"
@@ -222,6 +224,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Libya'] ? 'none' : '' }}
           id="Libya_label"
           y="233.682"
           x="465.955"
@@ -248,7 +251,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3553'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             LIBYA
           </tspan>
@@ -276,6 +286,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Egypt'] ? 'none' : '' }}
           id="Egypt_label"
           y="236.667"
           x="493.792"
@@ -330,6 +341,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Algeria'] ? 'none' : '' }}
           id="Algeria_label"
           y="231.727"
           x="426.853"
@@ -368,7 +380,7 @@ const MiddleEast = ({
           fill="#d1dbdd"
           stroke="#000"
           stroke-width=".15"
-          id="Türkiye"
+          id="Turkey"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -383,6 +395,7 @@ const MiddleEast = ({
           }}
         />
         <text
+          style={{ display: !answers['Turkey'] ? 'none' : '' }}
           id="Türkiye_label"
           y="199.394"
           x="504.72"
@@ -436,6 +449,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Azerbaijan'] ? 'none' : '' }}
           id="Azerbaijan_label"
           y="193.511"
           x="542.263"
@@ -489,6 +503,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Lebanon'] ? 'none' : '' }}
           id="Lebanon_label"
           y="213.856"
           x="508.129"
@@ -542,6 +557,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Pakistan'] ? 'none' : '' }}
           transform="matrix(.98637 -.30138 .32507 .9145 0 0)"
           id="Pakistan_label"
           y="404.601"
@@ -595,6 +611,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Qatar'] ? 'none' : '' }}
           id="Qatar_label"
           y="238.814"
           x="555.252"
@@ -648,6 +665,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Yemen'] ? 'none' : '' }}
           transform="matrix(1.01342 -.21054 .22708 .93958 0 0)"
           id="Yemen_label"
           y="377.553"
@@ -686,7 +704,7 @@ const MiddleEast = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Saudi_Arabia"
+          id="Saudi Arabia"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -701,6 +719,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Saudi Arabia'] ? 'none' : '' }}
           id="Saudi_Arabia_label"
           y="245.313"
           x="525.085"
@@ -727,7 +746,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3584'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SAUDI ARABIA
           </tspan>
@@ -754,6 +780,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Syria'] ? 'none' : '' }}
           id="Syria_label"
           y="210.39"
           x="518.547"
@@ -807,6 +834,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Oman'] ? 'none' : '' }}
           transform="matrix(.7857 -.62967 .67916 .72845 0 0)"
           id="Oman_label"
           y="562.34"
@@ -860,6 +888,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Iraq'] ? 'none' : '' }}
           id="Iraq_label"
           y="218.584"
           x="530.208"
@@ -898,7 +927,7 @@ const MiddleEast = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Palestinian_Territories"
+          id="Palestinian Territories"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -912,14 +941,16 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Palestinian Territories']
+              ? 'none'
+              : '',
+            lineHeight: '90',
+            textAlign: 'end',
+          }}
           id="Palestinian_Territories_label"
           y="215.821"
           x="514.975"
-          style={{
-            lineHeight: '90',
-            textAlign: 'end',
-            //   display: 'none',
-          }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -994,6 +1025,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Iran'] ? 'none' : '' }}
           id="Iran_label"
           y="213.683"
           x="554.559"
@@ -1047,6 +1079,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Afghanistan'] ? 'none' : '' }}
           transform="matrix(.94163 -.40617 .4381 .87302 0 0)"
           id="Afghanistan_label"
           y="440.366"
@@ -1073,7 +1106,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3881'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             AFGHANISTAN
           </tspan>
@@ -1100,6 +1140,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Israel'] ? 'none' : '' }}
           id="Israel_label"
           y="218.69"
           x="509.564"
@@ -1153,6 +1194,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Kuwait'] ? 'none' : '' }}
           id="Kuwait_label"
           y="228.02"
           x="545.171"
@@ -1206,6 +1248,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Bahrain'] ? 'none' : '' }}
           id="Bahrain_label"
           y="233.858"
           x="543.176"
@@ -1232,7 +1275,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3589'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BAHRAIN
           </tspan>
@@ -1244,7 +1294,7 @@ const MiddleEast = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="United_Arab_Emirates"
+          id="United Arab Emirates"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           style={{
@@ -1258,14 +1308,14 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['United Arab Emirates'] ? 'none' : '',
+            lineHeight: '95',
+            textAlign: 'start',
+          }}
           id="United_Arab_Emirates_label"
           y="241.953"
           x="558.035"
-          style={{
-            lineHeight: '95',
-            textAlign: 'start',
-            //   display: 'none',
-          }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -1340,6 +1390,7 @@ const MiddleEast = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Jordan'] ? 'none' : '' }}
           id="Jordan_label"
           y="222.898"
           x="516.275"

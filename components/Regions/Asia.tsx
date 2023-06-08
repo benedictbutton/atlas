@@ -152,7 +152,7 @@ const Asia = ({
             fill:
               zoomIn === 'asia' && countryId && countryId !== 'g3891'
                 ? '#36454f'
-                : '#463b38',
+                : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -198,7 +198,7 @@ const Asia = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="South_Korea"
+          id="South Korea (Republic Of Korea)"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -212,7 +212,11 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['South Korea'] ? 'none' : '' }}
+          style={{
+            display: !answers['South Korea (Republic Of Korea)']
+              ? 'none'
+              : '',
+          }}
           id="South_Korea_label"
           y="204.67"
           x="735.185"
@@ -741,7 +745,7 @@ const Asia = ({
             fill:
               zoomIn === 'asia' && countryId && countryId !== 'g3966'
                 ? '#36454f'
-                : '#463b38',
+                : '#803788',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -970,7 +974,7 @@ const Asia = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="North_Korea"
+          id="North Korea (Korea)"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -984,7 +988,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['North_Korea'] ? 'none' : '' }}
+          style={{
+            display: !answers['North Korea (Korea)'] ? 'none' : '',
+          }}
           id="North_Korea_label"
           y="195.263"
           x="733.143"
@@ -1140,7 +1146,7 @@ const Asia = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Taiwan"
+          id="Taiwan (Republic of China)"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -1154,7 +1160,11 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Taiwan'] ? 'none' : '' }}
+          style={{
+            display: !answers['Taiwan (Republic of China)']
+              ? 'none'
+              : '',
+          }}
           id="Taiwan_label"
           y="242.473"
           x="722.783"
@@ -1506,7 +1516,7 @@ const Asia = ({
             fill:
               zoomIn === 'asia' && countryId && countryId !== 'g3916'
                 ? '#36454f'
-                : '#901f5d',
+                : '#803788',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -1539,7 +1549,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".135"
             style={{
-              fill: '#fff',
+              fill: '#000',
             }}
           >
             BANGLADESH

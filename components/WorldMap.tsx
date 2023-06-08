@@ -37,7 +37,10 @@ const WorldMap = () => {
 
   const handleSearchValue = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>): void => {
-      setSearchValue(() => event.target.value);
+      let word = event.target.value;
+      let capitalizedWord =
+        word.charAt(0).toUpperCase() + word.slice(1);
+      setSearchValue(() => capitalizedWord);
     },
     [setSearchValue],
   );
@@ -52,11 +55,9 @@ const WorldMap = () => {
   const handleSubmit = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>): void => {
       event.preventDefault();
-      if (countryName !== searchValue && answers[`${searchValue}`])
-        setAnswers({ ...answers, [`${searchValue}`]: false });
-      else if (countryName === searchValue)
-        setAnswers({ ...answers, [`${countryName}`]: true });
-      else setAnswers({ ...answers, [`${countryName}`]: false });
+      if (countryName !== searchValue)
+        setAnswers({ ...answers, [`${countryName}`]: false });
+      else setAnswers({ ...answers, [`${countryName}`]: true });
 
       setCountryId('');
       setCountryName('');

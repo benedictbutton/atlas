@@ -20,24 +20,29 @@ const Europe = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="North_Macedonia"
+          id="North Macedonia"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#cc0b20',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3790'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{
+            display: !answers['North Macedonia'] ? 'none' : '',
+            lineHeight: '80',
+            textAlign: 'center',
+          }}
           id="North_Macedonia_label"
           y="299.508"
           x="424.102"
-          style={{
-            lineHeight: '80',
-            textAlign: 'center',
-            display: 'none',
-          }}
           transform="matrix(1.0087 -.22919 .2472 .9352 0 0)"
           font-style="normal"
           font-variant="normal"
@@ -58,7 +63,7 @@ const Europe = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#fff',
             }}
             y="299.508"
             x="424.102"
@@ -78,7 +83,7 @@ const Europe = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#fff',
             }}
             id="tspan5448-4"
             y="300.336"
@@ -110,7 +115,12 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#90288f',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g4222'
+                ? '#36454f'
+                : '#90288f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -127,11 +137,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#1b83ff',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3856'
+                ? '#36454f'
+                : '#1b83ff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Georgia'] ? 'none' : '' }}
           transform="matrix(1.02252 .16853 -.18177 .94801 0 0)"
           id="Georgia_label"
           y="92.72"
@@ -158,7 +174,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3790'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             GEORGIA
           </tspan>
@@ -171,7 +194,7 @@ const Europe = ({
           stroke-miterlimit="4"
           stroke="none"
           fill="none"
-          id="Northern_Ireland"
+          id="Northern Ireland"
           stroke-dasharray="none"
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
@@ -184,12 +207,15 @@ const Europe = ({
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Northern Ireland'] ? 'none' : '',
+            lineHeight: '0.8',
+          }}
           id="Northern_Ireland_label"
           y="-83.596"
           x="421.725"
           fontSize="1.405"
           strokeWidth=".036"
-          style={{ lineHeight: '0.8', display: 'none' }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -210,7 +236,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".036"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             NORTHERN
           </tspan>
@@ -221,7 +249,9 @@ const Europe = ({
             fontSize="1.405"
             strokeWidth=".036"
             fill="#6a0707"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             IRELAND
           </tspan>
@@ -247,6 +277,7 @@ const Europe = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Wales'] ? 'none' : '' }}
           id="Wales_label"
           y="158.758"
           x="412.245"
@@ -273,7 +304,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".093"
-            style={{ fill: '#fff' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g4205'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             WALES
           </tspan>
@@ -299,6 +337,7 @@ const Europe = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['England'] ? 'none' : '' }}
           id="England_label"
           y="354.315"
           x="308.42"
@@ -325,7 +364,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".102"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ENGLAND
           </tspan>
@@ -351,6 +392,7 @@ const Europe = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Scotland'] ? 'none' : '' }}
           id="Scotland_label"
           y="134.658"
           x="425.361"
@@ -377,7 +419,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".102"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g4210'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SCOTLAND
           </tspan>
@@ -389,17 +438,25 @@ const Europe = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="United_Kingdom"
+          id="United Kingdom, The"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#000fff',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g4311'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{
+            display: !answers['United Kingdom, The'] ? 'none' : '',
+          }}
           id="United_Kingdom_label"
           y="154.932"
           x="418.33"
@@ -426,7 +483,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".102"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             UNITED KINGDOM
           </tspan>
@@ -445,7 +504,12 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g4213'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -462,11 +526,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#cc0b20',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3680'
+                ? '#36454f'
+                : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Italy'] ? 'none' : '' }}
           id="Italy_label"
           y="180.83"
           x="452.561"
@@ -493,7 +563,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ITALY
           </tspan>
@@ -511,11 +583,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ffcc01',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3841'
+                ? '#36454f'
+                : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Czechia'] ? 'none' : '' }}
           id="Czechia_label"
           y="165.626"
           x="463.23"
@@ -542,7 +620,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3841'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             CZECHIA
           </tspan>
@@ -560,11 +645,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#705348',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3650'
+                ? '#36454f'
+                : '#705348',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Greece'] ? 'none' : '' }}
           id="Greece_label"
           y="196.939"
           x="480.494"
@@ -591,7 +682,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             GREECE
           </tspan>
@@ -609,11 +702,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#05922a',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3695'
+                ? '#36454f'
+                : '#05922a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Netherlands'] ? 'none' : '' }}
           id="Netherlands_label"
           y="151.847"
           x="433.622"
@@ -640,7 +739,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3695'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             NETHERLANDS
           </tspan>
@@ -658,11 +764,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#6a5acd',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3710'
+                ? '#36454f'
+                : '#6a5acd',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Germany'] ? 'none' : '' }}
           id="Germany_label"
           y="159.088"
           x="448.325"
@@ -689,7 +801,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             GERMANY
           </tspan>
@@ -707,11 +821,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#009330',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3779'
+                ? '#36454f'
+                : '#009330',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Romania'] ? 'none' : '' }}
           id="Romania_label"
           y="177.46"
           x="482.285"
@@ -738,7 +858,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".164"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ROMANIA
           </tspan>
@@ -756,11 +878,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0d9445',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3705'
+                ? '#36454f'
+                : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Denmark'] ? 'none' : '' }}
           id="Denmark_label"
           y="141.159"
           x="438.821"
@@ -787,7 +915,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3705'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             DENMARK
           </tspan>
@@ -805,11 +940,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ffffff',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3734'
+                ? '#36454f'
+                : '#ffffff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Iceland'] ? 'none' : '' }}
           id="Iceland_label"
           y="108.758"
           x="380.423"
@@ -836,7 +977,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3734'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             ICELAND
           </tspan>
@@ -854,11 +1002,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0f72b3',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3655'
+                ? '#36454f'
+                : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Portugal'] ? 'none' : '' }}
           id="Portugal_label"
           y="195.87"
           x="391.996"
@@ -885,7 +1039,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".164"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3655'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             PORTUGAL
           </tspan>
@@ -903,12 +1064,18 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3660'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
         ></path>
         <text
+          style={{ display: !answers['Spain'] ? 'none' : '' }}
           id="Spain_label"
           y="195.161"
           x="415.717"
@@ -937,7 +1104,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3660'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SPAIN
           </tspan>
@@ -955,11 +1129,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#009330',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3846'
+                ? '#36454f'
+                : '#009330',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Austria'] ? 'none' : '' }}
           transform="matrix(.94224 -.40495 .43678 .87358 0 0)"
           id="Austria_label"
           y="352.252"
@@ -988,7 +1168,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             AUSTRIA
           </tspan>
@@ -1006,11 +1188,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ffcc01',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3784'
+                ? '#36454f'
+                : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Bulgaria'] ? 'none' : '' }}
           transform="matrix(1.02246 -.16886 .18213 .94795 0 0)"
           id="Bulgaria_label"
           y="271.302"
@@ -1037,7 +1225,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3784'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BULGARIA
           </tspan>
@@ -1055,11 +1250,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3831'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Hungary'] ? 'none' : '' }}
           transform="matrix(.96642 -.35258 .3803 .896 0 0)"
           id="Hungary_label"
           y="336.477"
@@ -1088,7 +1289,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3831'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             HUNGARY
           </tspan>
@@ -1106,11 +1314,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0f72b3',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3821'
+                ? '#36454f'
+                : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Croatia'] ? 'none' : '' }}
           id="Croatia_label"
           y="178.365"
           x="468.401"
@@ -1137,7 +1351,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".067"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             CROATIA
           </tspan>
@@ -1155,11 +1371,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ff9549',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3724'
+                ? '#36454f'
+                : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Sweden'] ? 'none' : '' }}
           id="Sweden_label"
           y="110.376"
           x="465.56"
@@ -1186,7 +1408,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3724'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SWEDEN
           </tspan>
@@ -1204,11 +1433,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#de1c33',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3810'
+                ? '#36454f'
+                : '#de1c33',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Serbia'] ? 'none' : '' }}
           id="Serbia_label"
           y="182.938"
           x="478.463"
@@ -1235,7 +1470,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".087"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             SERBIA
           </tspan>
@@ -1253,11 +1490,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#df001c',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3836'
+                ? '#36454f'
+                : '#df001c',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Slovakia'] ? 'none' : '' }}
           id="Slovakia_label"
           y="167.696"
           x="474.592"
@@ -1286,7 +1529,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             SLOVAKIA
           </tspan>
@@ -1304,11 +1549,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ff9549',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3754'
+                ? '#36454f'
+                : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Lithuania'] ? 'none' : '' }}
           id="Lithuania_label"
           y="144.394"
           x="483.633"
@@ -1335,7 +1586,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3754'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             LITHUANIA
           </tspan>
@@ -1353,11 +1611,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#1272b3',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3749'
+                ? '#36454f'
+                : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Latvia'] ? 'none' : '' }}
           id="Latvia_label"
           y="140.1"
           x="488.756"
@@ -1384,7 +1648,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             LATVIA
           </tspan>
@@ -1402,11 +1668,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#525b61',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3744'
+                ? '#36454f'
+                : '#525b61',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Estonia'] ? 'none' : '' }}
           id="Estonia_label"
           y="132.349"
           x="488.573"
@@ -1433,7 +1705,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ESTONIA
           </tspan>
@@ -1451,11 +1725,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#059031',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3800'
+                ? '#36454f'
+                : '#059031',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Montenegro'] ? 'none' : '' }}
           transform="matrix(.9355 -.41817 .45103 .86733 0 0)"
           id="Montenegro_label"
           y="376.193"
@@ -1482,7 +1762,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".058"
-            style={{ fill: '#fff' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3800'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MONTENEGRO
           </tspan>
@@ -1500,11 +1787,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ffcc01',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3719'
+                ? '#36454f'
+                : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Norway'] ? 'none' : '' }}
           transform="matrix(.61557 -.77551 .83646 .57071 0 0)"
           id="Norway_label"
           y="439.365"
@@ -1531,7 +1824,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3719'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             NORWAY
           </tspan>
@@ -1549,11 +1849,17 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e1021a',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3729'
+                ? '#36454f'
+                : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Finland'] ? 'none' : '' }}
           id="Finland_label"
           y="118.416"
           x="486.859"
@@ -1580,7 +1886,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             FINLAND
           </tspan>
@@ -1599,11 +1907,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#008479',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3645'
+                ? '#36454f'
+                : '#008479',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Malta'] ? 'none' : '' }}
           id="Malta_label"
           y="209.37"
           x="468.859"
@@ -1630,7 +1944,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3645'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MALTA
           </tspan>
@@ -1648,11 +1969,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#92268f',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3769'
+                ? '#36454f'
+                : '#92268f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Poland'] ? 'none' : '' }}
           id="Poland_label"
           y="158.809"
           x="470.442"
@@ -1679,7 +2006,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             POLAND
           </tspan>
@@ -1697,11 +2026,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e3106f',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3795'
+                ? '#36454f'
+                : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Albania'] ? 'none' : '' }}
           transform="matrix(.16515 -.95062 1.02534 .15312 0 0)"
           id="Albania_label"
           y="503.852"
@@ -1728,7 +2063,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".058"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ALBANIA
           </tspan>
@@ -1746,11 +2083,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0d9445',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3700'
+                ? '#36454f'
+                : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Ireland'] ? 'none' : '' }}
           id="Ireland_label"
           y="153.943"
           x="393.559"
@@ -1777,7 +2120,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3700'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             IRELAND
           </tspan>
@@ -1795,11 +2145,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#f9a433',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3805'
+                ? '#36454f'
+                : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Kosovo'] ? 'none' : '' }}
           id="Kosovo_label"
           y="187.435"
           x="479.782"
@@ -1828,7 +2184,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".048"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3805'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             KOSOVO
           </tspan>
@@ -1840,24 +2203,29 @@ const Europe = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Bosnia_and_Herzegovina"
+          id="Bosnia and Herzegovina"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#d21c5b',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3816'
+                ? '#36454f'
+                : '#d21c5b',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Bosnia and Herzegovina'] ? 'none' : '',
+            lineHeight: '80',
+            textAlign: 'start',
+          }}
           id="Bosnia_and_Herzegovina_label"
           y="181.764"
           x="471.443"
-          style={{
-            lineHeight: '80',
-            textAlign: 'start',
-            display: 'none',
-          }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -1882,7 +2250,9 @@ const Europe = ({
             strokeWidth=".202"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -1898,7 +2268,9 @@ const Europe = ({
             strokeWidth=".202"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -1921,11 +2293,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fe9724',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3866'
+                ? '#36454f'
+                : '#fe9724',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Armenia'] ? 'none' : '' }}
           transform="matrix(.9414 .40662 -.43858 .8728 0 0)"
           id="Armenia_label"
           y="-51.615"
@@ -1954,7 +2332,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".067"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3866'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             ARMENIA
           </tspan>
@@ -1972,11 +2357,17 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#91268e',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3665'
+                ? '#36454f'
+                : '#91268e',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['France'] ? 'none' : '' }}
           id="France_label"
           y="174.667"
           x="429.24"
@@ -2003,7 +2394,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".202"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             FRANCE
           </tspan>
@@ -2021,11 +2414,17 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#000fff',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3764'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Ukraine'] ? 'none' : '' }}
           id="Ukraine_label"
           y="166.608"
           x="493.743"
@@ -2052,7 +2451,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             UKRAINE
           </tspan>
@@ -2070,11 +2471,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fcf390',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3759'
+                ? '#36454f'
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Belarus'] ? 'none' : '' }}
           id="Belarus_label"
           y="153.474"
           x="488.987"
@@ -2101,7 +2508,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".183"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3759'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BELARUS
           </tspan>
@@ -2119,11 +2533,17 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e1021a',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3640'
+                ? '#36454f'
+                : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Cyprus'] ? 'none' : '' }}
           id="Cyprus_label"
           y="209.273"
           x="502.746"
@@ -2150,7 +2570,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".077"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3640'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             CYPRUS
           </tspan>
@@ -2168,11 +2595,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e1021a',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3851'
+                ? '#36454f'
+                : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Luxembourg'] ? 'none' : '' }}
           id="Luxembourg_label"
           y="166.309"
           x="440.862"
@@ -2201,7 +2634,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".077"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             LUXEMBOURG
           </tspan>
@@ -2220,11 +2655,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#1071b0',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3670'
+                ? '#36454f'
+                : '#1071b0',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Andorra'] ? 'none' : '' }}
           id="Andorra_label"
           y="188.215"
           x="427.979"
@@ -2253,7 +2694,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".067"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             ANDORRA
           </tspan>
@@ -2271,19 +2714,24 @@ const Europe = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#bd517e',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3675'
+                ? '#36454f'
+                : '#bd517e',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{
+            display: !answers['Monaco'] ? 'none' : '',
+            lineHeight: '125',
+            textAlign: 'start',
+          }}
           id="Monaco_label"
           y="186.664"
           x="446.909"
-          style={{
-            lineHeight: '125',
-            textAlign: 'start',
-            display: 'none',
-          }}
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -2308,7 +2756,9 @@ const Europe = ({
             strokeWidth=".193"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -2331,11 +2781,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#cc0b20',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3774'
+                ? '#36454f'
+                : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Moldova'] ? 'none' : '' }}
           id="Moldova_label"
           y="172.684"
           x="494.177"
@@ -2362,7 +2818,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             MOLDOVA
           </tspan>
@@ -2380,11 +2838,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#000fff',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3685'
+                ? '#36454f'
+                : '#000fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Switzerland'] ? 'none' : '' }}
           id="Switz._label"
           y="174.455"
           x="447.265"
@@ -2411,7 +2875,9 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#fff' }}
+            style={{
+              fill: '#fff',
+            }}
           >
             SWITZ.
           </tspan>
@@ -2429,11 +2895,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#faa433',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3690'
+                ? '#36454f'
+                : '#faa433',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Belgium'] ? 'none' : '' }}
           id="Belgium_label"
           y="162.054"
           x="439.043"
@@ -2460,7 +2932,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3690'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BELGIUM
           </tspan>
@@ -2478,11 +2957,17 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#ff9549',
+            fill:
+              zoomIn === 'europe' &&
+              countryId &&
+              countryId !== 'g3826'
+                ? '#36454f'
+                : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Slovenia'] ? 'none' : '' }}
           transform="matrix(1.03835 .01932 -.02084 .96268 0 0)"
           id="Slovenia_label"
           y="166.919"
@@ -2511,7 +2996,14 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".077"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3826'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             SLOVENIA
           </tspan>

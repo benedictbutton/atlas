@@ -1308,12 +1308,10 @@ Afghanistan:
 //   { id: 'g3449', name: 'Eritrea', answer: null },
 //   { id: 'g3414', name: 'Burundi', answer: null },
 // ];
-
-// const sortedList = list.sort((a, b) => {
+ {
 //   if (a.name < b.name) {
 //     return -1;
-//   }
-//   if (a.name > b.name) {
+//   } b.name) {
 //     return 1;
 //   }
 //   return 0;
@@ -1337,9 +1335,9 @@ const hasTransitionedInPortal = useMountTransition(
 <CountryGrouping
       lastChild={lastChild}
       zoomInContinent={zoomInContinent}
-    >
+
       <g
-        onClick={(e) => {
+     {
           if (zoomInContinent) return;
           e.stopPropagation();
           setZoomInContinent(true);
@@ -1357,7 +1355,7 @@ const hasTransitionedInPortal = useMountTransition(
         className={
           !zoomInContinent ? nonPortalClassName : portalClassName
         }
-      ></g></CountryGrouping
+    </CountryGrouping
 
 /* path:hover {
   fill: #36454f !important;
@@ -1442,12 +1440,6 @@ text:hover ~ path {
 "Eritrea"
 "Burundi"
 
-
-
-
-
-
-
 Singapore
 Vietnam
 Tajikistan
@@ -1475,3 +1467,150 @@ Uzbekistan
 Kazakhstan
 Bangladesh
 Bhutan
+
+
+
+
+
+
+
+
+
+North Macedonia
+Georgia
+Northern Ireland
+Wales
+England
+Scotland
+United Kingdom
+Italy
+Czechia
+Greece
+Netherlands
+Germany
+Romania
+Denmark
+Iceland
+Portugal
+Spain
+Austria
+Bulgaria
+Hungary
+Croatia
+Sweden
+Serbia
+Slovakia
+Lithuania
+Latvia
+Estonia
+Montenegro
+Norway
+Finland
+Malta
+Poland
+Albania
+Ireland
+Kosovo
+Bosnia and Herzegovina
+Armenia
+France
+Ukraine
+Belarus
+Cyprus
+Luxembourg
+Andorra
+Monaco
+Moldova
+Switzerland
+Belgium
+Slovenia
+
+Liechtenstein
+
+
+
+
+
+
+
+g3816
+
+
+Western Sahara
+Tunisia
+Morocco
+Libya
+Egypt
+Algeria
+Türkiye
+Azerbaijan
+Lebanon
+Pakistan
+Qatar
+Yemen
+Saudi Arabia
+Syria
+Oman
+Iraq
+Palestinian Territories
+Iran
+Afghanistan
+Israel
+Kuwait
+Bahrain
+United Arab Emirates
+Jordan
+
+
+
+
+g3790
+g3856
+g4195
+g4205
+g4200
+g4210
+g4311
+g3680
+g3841
+g3650
+g3695
+g3710
+g3779
+g3705
+g3734
+g3655
+g3660
+g3846
+g3784
+g3831
+g3821
+g3724
+g3810
+g3836
+g3754
+g3749
+g3744
+g3800
+g3719
+g3729
+g3645
+g3769
+g3795
+g3700
+g3805
+g3816
+g3816
+g3866
+g3665
+g3764
+g3759
+g3640
+g3851
+g3670
+g3675
+g3774
+g3685
+g3690
+g3826
+

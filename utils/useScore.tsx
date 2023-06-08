@@ -5,11 +5,13 @@ const useScore = (answers) => {
   const [incorrect, setIncorrect] = useState(0);
 
   useEffect(() => {
-    let currentCorrect = Object.values(answers).filter(
+    let answerValues = Object.values(answers);
+
+    let currentCorrect = answerValues.filter(
       (el) => el === true,
     ).length;
     setCorrect(currentCorrect);
-    let currentIncorrect = Object.values(answers).filter(
+    let currentIncorrect = answerValues.filter(
       (el) => el === false,
     ).length;
     setIncorrect(currentIncorrect);

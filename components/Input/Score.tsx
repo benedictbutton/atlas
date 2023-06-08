@@ -9,10 +9,10 @@ const Score = ({ answers }) => {
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 100) * circumference;
+    circumference - (correct / 187) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 100) * circumference)
+      -1 * (circumference - (incorrect / 187) * circumference)
     }`,
   };
 
@@ -62,10 +62,12 @@ const Score = ({ answers }) => {
         x={radius}
         y={radius}
         textAnchor="middle"
-        fontSize="7rem"
+        fontSize={`${
+          incorrect >= 10 && correct >= 10 ? '6.3rem' : '7rem'
+        }`}
         stroke="transparent"
         stroke-width="2px"
-        dy="3rem"
+        dy="2rem"
       >
         <tspan fill="#df001d">{incorrect}</tspan>
         <tspan fill="url('#myGradient')"> / </tspan>
