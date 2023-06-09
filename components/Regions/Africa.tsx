@@ -1307,7 +1307,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Congo"
+          id="Congo (Republic Of The Congo)"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -1323,7 +1323,11 @@ const Africa = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Congo'] ? 'none' : '' }}
+          style={{
+            display: !answers['Congo (Republic Of The Congo)']
+              ? 'none'
+              : '',
+          }}
           transform="matrix(.54604 -.81905 .88342 .50625 0 0)"
           id="Congo_label"
           y="562.267"

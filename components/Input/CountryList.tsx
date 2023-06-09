@@ -4,7 +4,7 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
   const countries = useMemo(() => Object.keys(answers), [answers]);
 
   return (
-    <ul>
+    <ul className="overflow-auto max-h-[30rem] p-3">
       {countries
         .filter(
           (country, idx) =>

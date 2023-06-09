@@ -26,7 +26,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -54,10 +54,10 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.003"
             font-family="Arial"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             EL SALVADOR
           </tspan>
@@ -75,7 +75,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#076bb3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -106,7 +106,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             BELIZE
           </tspan>
@@ -123,7 +123,7 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -134,7 +134,7 @@ const CentralAmerica = ({
           style={{
             lineHeight: '100',
             textAlign: 'center',
-            display: 'none',
+            // display: 'none',
           }}
           font-style="normal"
           font-variant="normal"
@@ -156,14 +156,14 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#000',
             }}
             y="272.65"
             x="289.315"
             id="tspan4344"
             text-anchor="middle"
             strokeWidth=".125"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -176,14 +176,14 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#000',
             }}
             id="tspan4348"
             y="274.749"
             x="289.315"
             text-anchor="middle"
             strokeWidth=".125"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -206,7 +206,7 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#2dc4f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -217,7 +217,7 @@ const CentralAmerica = ({
           style={{
             lineHeight: '100',
             textAlign: 'center',
-            display: 'none',
+            // display: 'none',
           }}
           font-style="normal"
           font-variant="normal"
@@ -239,14 +239,14 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#000',
             }}
             y="259.66"
             x="276.808"
             id="tspan4350"
             text-anchor="middle"
             strokeWidth=".135"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -259,14 +259,14 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: 'rgb(106, 7, 7)',
+              fill: '#000',
             }}
             id="tspan4354"
             y="262"
             x="276.808"
             text-anchor="middle"
             strokeWidth=".135"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -290,7 +290,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#bd517e',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -318,7 +318,7 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.754"
             font-family="Arial"
-            fill="#6a0707"
+            fill="#000"
             fill-opacity="1"
             strokeWidth=".135"
             style={{ fill: 'rgb(106, 7, 7)' }}
@@ -338,7 +338,7 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#103f66',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -374,7 +374,7 @@ const CentralAmerica = ({
             strokeWidth=".135"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -390,7 +390,7 @@ const CentralAmerica = ({
             strokeWidth=".135"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -413,7 +413,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#2fc2f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -446,7 +446,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             NICARAGUA
           </tspan>
@@ -464,7 +464,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#0fa89c',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -495,7 +495,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             PANAMA
           </tspan>
@@ -513,7 +513,7 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#4f8400',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -544,7 +544,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             CUBA
           </tspan>
@@ -562,7 +562,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#e3f97d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -593,7 +593,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             JAMAICA
           </tspan>
@@ -611,7 +611,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -642,7 +642,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             GUATEMALA
           </tspan>
@@ -660,7 +660,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -691,7 +691,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             COSTA RICA
           </tspan>
@@ -709,7 +709,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#00167f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -740,7 +740,7 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#fff' }}
           >
             HONDURAS
           </tspan>
@@ -759,7 +759,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#2fc2f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -777,7 +777,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#0fa89c',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -795,7 +795,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#901f5d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -813,7 +813,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#e3f97d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -831,7 +831,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -849,7 +849,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -867,7 +867,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#00167f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -885,7 +885,7 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: 'rgb(209, 219, 221)',
+            fill: '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
