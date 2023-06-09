@@ -27,11 +27,11 @@ const Input = ({
   countryName,
 }: InputProps) => {
   return (
-    <div className="flex flex-wrap p-5">
+    <div className="flex flex-wrap content-start h-full p-5 overflow-scroll">
       <p
         className={`text ${
           !zoomIn ? 'collapse' : ''
-        } w-full h-full mb-3 text-3xl text-white`}
+        } w-full mb-3 text-3xl text-white`}
       >
         {regionHeader}
       </p>

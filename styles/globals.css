@@ -223,7 +223,7 @@ a {
     transform: scale(1);
   }
   to {
-    transform: scale(2) translate(-60%, -50%);
+    transform: scale(2.5) translate(-72%, -55%);
   }
 }
 
@@ -234,7 +234,7 @@ a {
 
 @keyframes oceania-zoom-out {
   from {
-    transform: scale(2) translate(-60%, -50%);
+    transform: scale(2.5) translate(-72%, -55%);
   }
   to {
     transform: scale(1);

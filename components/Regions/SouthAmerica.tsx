@@ -36,6 +36,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Suriname'] ? 'none' : '' }}
           transform="matrix(.67062 -.73522 .79301 .62175 0 0)"
           id="Suriname_label"
           y="414.006"
@@ -90,6 +91,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Guyana'] ? 'none' : '' }}
           transform="matrix(.70257 -.70911 .76485 .65138 0 0)"
           id="Guyana_label"
           y="407.484"
@@ -144,6 +146,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Chile'] ? 'none' : '' }}
           id="Chile_label"
           y="388.878"
           x="244.416"
@@ -198,6 +201,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Peru'] ? 'none' : '' }}
           id="Peru_label"
           y="329.247"
           x="241.942"
@@ -252,6 +256,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Ecuador'] ? 'none' : '' }}
           id="Ecuador_label"
           y="305.994"
           x="219.218"
@@ -278,7 +283,7 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
           >
             ECUADOR
           </tspan>
@@ -306,6 +311,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Uruguay'] ? 'none' : '' }}
           id="Uruguay_label"
           y="400.491"
           x="302.853"
@@ -360,6 +366,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Argentina'] ? 'none' : '' }}
           id="Argentina_label"
           y="403.225"
           x="264.069"
@@ -414,6 +421,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Venezuela'] ? 'none' : '' }}
           id="Venezuela_label"
           y="285.562"
           x="263.202"
@@ -468,6 +476,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Colombia'] ? 'none' : '' }}
           id="Colombia_label"
           y="299.119"
           x="246.718"
@@ -522,6 +531,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Bolivia'] ? 'none' : '' }}
           id="Bolivia_label"
           y="354.879"
           x="267.516"
@@ -548,7 +558,14 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'southAmerica' &&
+                countryId &&
+                countryId !== 'g3188'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BOLIVIA
           </tspan>
@@ -576,6 +593,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Brazil'] ? 'none' : '' }}
           id="Brazil_label"
           y="330.74"
           x="297.143"
@@ -604,7 +622,14 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".327"
-            style={{ fill: '#000' }}
+            style={{
+              fill:
+                zoomIn === 'southAmerica' &&
+                countryId &&
+                countryId !== 'g3183'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             BRAZIL
           </tspan>
@@ -632,6 +657,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
+          style={{ display: !answers['Paragua'] ? 'none' : '' }}
           id="Paraguay_label"
           y="363.545"
           x="282.96"
@@ -664,14 +690,10 @@ const SouthAmerica = ({
           </tspan>
         </text>
       </g>
-      <g
-        id="g3244"
-        fill-opacity="1"
-        onClick={(event) => handlecountryId(event)}
-      >
+      <g id="g3244" fill-opacity="1">
         <path
           d="m312.07 287.2.07-.05h.17l.06-.17.17-.04.16-.18.2-.43.17-.25.06-.15v-.15l.06-.18-.03-.19v-.17l-.09-.03.06-.13.19-.27.08-.05.06-.17.1-.1.03-.1v-.18l.03-.2-.07-.08h-.08l-.05-.1-.06-.16-.08-.11-.15-.06-.2-.27-.1-.18-.09-.08-.03-.1.05-.21-.12-.05-.06-.1.04-.09-.02-.16-.08-.16-.04-.27.06-.2-.03-.22v-.14l-.11-.11v-.4l.08-.06-.03-.14.08-.15.21-.25.03-.12.15-.16.25-.2.16-.08.11-.15.14-.3.04-.26.11-.2.23.02.19.05.2.13.28.11.17.09.17.06h.1l.26.05.13-.03.3.11.12.1.22.02.25.13.17.15.1.07.08.13.18.14.34.33.06.06.1.04.2.16.07.16.07-.09h.1l.11.13-.21.33h.08l.03-.13.13-.11.13.02.09.13.15.1.18.16.07.1.11.5-.02.11-.14.11.07.02.13-.09.03-.14-.02-.35.02-.09.07-.1.11.02.12.11.07.15.05.2.06.18.1.07-.06.1.02.08.1.14.05.13v.17l-.1.21-.24.15-.12.28-.17.18-.07.03-.05.15-.1.04-.06.22-.2.34-.33.55-.18.1-.06.1-.1.12.02.19-.16.32.03.07-.11.09-.2.43-.1.13.05.16-.17.28-.09.08-.13.18-.43.24-.07.14-.12.08-.26-.04-.18-.08-.29.06-.06-.06.1-.07-.27-.25-.08.11-.24.12-.14.03-.12-.07-.18-.01-.24-.11-.05-.12-.09.04-.08.11h-.09l-.08.11h-.09l-.02.11-.19.1-.11-.02-.08.15-.09.04-.13-.13-.2.03-.16-.03-.1-.08-.26-.04-.17-.14-.05-.11z"
-          id="French_Guiana"
+          id="French Guiana"
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
@@ -689,13 +711,14 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          id="French_Guiana_label"
-          y="286.486"
-          x="304.972"
           style={{
+            display: !answers['French Guiana'] ? 'none' : '',
             lineHeight: '100',
             textAlign: 'start',
           }}
+          id="French_Guiana_label"
+          y="286.486"
+          x="304.972"
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -714,7 +737,7 @@ const SouthAmerica = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
             y="286.486"
             x="304.972"
             id="tspan4320"
@@ -730,7 +753,7 @@ const SouthAmerica = ({
             FRENCH
           </tspan>
           <tspan
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{ fill: '#000' }}
             id="tspan4324"
             y="289.933"
             x="304.972"

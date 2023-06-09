@@ -70,7 +70,7 @@ const WorldMap = () => {
     <>
       <button
         className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
-        onClick={() => signOut()}
+        onClick={() => signOut({ callbackUrl: '/signin' })}
       >
         Sign Out
       </button>

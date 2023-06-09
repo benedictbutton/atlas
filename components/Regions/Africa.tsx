@@ -2283,7 +2283,7 @@ const Africa = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Gambia"
+          id="Gambia, The"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"
@@ -2299,7 +2299,7 @@ const Africa = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Gambia'] ? 'none' : '' }}
+          style={{ display: !answers['Gambia, The'] ? 'none' : '' }}
           id="Gambia_label"
           y="269.732"
           x="376.135"

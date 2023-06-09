@@ -39,7 +39,7 @@ const SignUp = ({ providers, csrfToken }: Props) => {
             ATLAS
           </h1>
           <Image
-            src="/../public/globe.jpg"
+            src="/../public/birdseye-globe.jpg"
             alt=""
             className="globe"
             layout={'fill'}

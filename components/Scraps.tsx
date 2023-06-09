@@ -1526,7 +1526,16 @@ Belgium
 Slovenia
 
 Liechtenstein
-
+French Guiana
+Vanuatu
+American Samoa
+New Caledonia
+Fiji
+Australia
+New Zealand
+Papua New Guinea
+Samoa
+Solomon Islands
 
 
 
@@ -1614,3 +1623,39 @@ g3685
 g3690
 g3826
 
+g4282
+g4285
+g4228
+g4225
+g4016
+g4026
+g4021
+g4270
+g4273
+
+
+Suriname
+Guyana
+Chile
+Peru
+Ecuador
+Uruguay
+Argentina
+Venezuela
+Colombia
+Bolivia
+Brazil
+Paragua
+French Guiana
+
+
+
+Vanuatu
+American Samoa
+New Caledonia
+Fiji
+Australia
+New Zealand
+Papua New Guinea
+Samoa
+Solomon Islands

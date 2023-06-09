@@ -61,7 +61,7 @@ const MiddleEast = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ lineHeight: '95', fill: '#fff' }}
+            style={{ lineHeight: '95', fill: '#000' }}
             y="236.378"
             x="377.505"
             id="tspan6774"
@@ -77,7 +77,7 @@ const MiddleEast = ({
             WESTERN
           </tspan>
           <tspan
-            style={{ lineHeight: '95', fill: '#fff' }}
+            style={{ lineHeight: '95', fill: '#000' }}
             id="tspan6778"
             y="239.97"
             x="377.505"
@@ -196,7 +196,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".202"
-            style={{ fill: '#fff' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3553'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             MOROCCO
           </tspan>
@@ -1417,7 +1424,14 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#fff' }}
+            style={{
+              fill:
+                zoomIn === 'middleEast' &&
+                countryId &&
+                countryId !== 'g3553'
+                  ? '#fff'
+                  : '#000',
+            }}
           >
             JORDAN
           </tspan>
