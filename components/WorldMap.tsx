@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, SetStateAction } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input/Input';
@@ -12,10 +12,12 @@ const WorldMap = () => {
   const [searchValue, setSearchValue] = useState('');
   const [answers, setAnswers] = useState(countries);
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
-
   const handleZoom = useCallback(
     (
-      event: React.MouseEventHandler<SVGGElement>,
+      event: {
+        currentTarget: { id: SetStateAction<string> };
+        target: SVGGElement;
+      },
       close: string | undefined,
     ): void => {
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
@@ -24,11 +26,15 @@ const WorldMap = () => {
         setCountryName('');
         setZoomIn('');
         setSearchValue('');
-      } else if (countryId === event.target.parentNode.id) {
+      } else if (
+        countryId === (event.target.parentNode as SVGGElement).id
+      ) {
         setCountryId('');
         setCountryName('');
       } else {
-        setCountryId(() => event.target.parentNode.id);
+        setCountryId(
+          () => (event.target.parentNode as SVGGElement).id,
+        );
         setCountryName(() => event.target.id);
       }
     },
@@ -92,13 +98,14 @@ const WorldMap = () => {
           strokeWidth={3}
           stroke="currentColor"
           className="absolute top-[10%] left-[10%] w-12 h-12"
-          onClick={(event) => handleZoom(event, 'close')}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
+          <g onClick={(event) => handleZoom(event, 'close')}>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </g>
         </svg>
       )}
       <svg

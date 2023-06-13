@@ -40,7 +40,7 @@ const useZoom = () => {
     setRegionHeader(findRegion);
   }, [zoomIn, findRegion]);
 
-  return [regionHeader, zoomIn, setZoomIn];
+  return [regionHeader, zoomIn, setZoomIn] as const;
 };
 
 export default useZoom;
