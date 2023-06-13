@@ -89,9 +89,9 @@ const WorldMap = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={1.5}
+          strokeWidth={3}
           stroke="currentColor"
-          className="absolute top-36 left-36 w-12 h-12"
+          className="absolute top-[10%] left-[10%] w-12 h-12"
           onClick={(event) => handleZoom(event, 'close')}
         >
           <path
