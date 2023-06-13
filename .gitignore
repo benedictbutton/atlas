@@ -37,6 +37,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+/components/Scraps.tsx
+
 test.js
 test2.js
 test3.js

@@ -4,7 +4,7 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
   const countries = useMemo(() => Object.keys(answers), [answers]);
 
   return (
-    <ul className="overflow-auto max-h-[30rem] p-3">
+    <>
       {countries
         .filter(
           (country, idx) =>
@@ -12,7 +12,7 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
             country.includes(searchValue),
         )
         .map((countrySearch, idx) => (
-          <li key={idx} className="text-white cursor">
+          <li key={idx} className="text-white cursor p-2 list-none">
             <input
               id={countrySearch}
               type="radio"
@@ -26,7 +26,7 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
             </label>
           </li>
         ))}
-    </ul>
+    </>
   );
 };
 

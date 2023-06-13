@@ -657,7 +657,7 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Paragua'] ? 'none' : '' }}
+          style={{ display: !answers['Paraguay'] ? 'none' : '' }}
           id="Paraguay_label"
           y="363.545"
           x="282.96"

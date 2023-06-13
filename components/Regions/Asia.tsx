@@ -1549,7 +1549,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".135"
             style={{
-              fill: '#000',
+              fill: '#fff',
             }}
           >
             BANGLADESH

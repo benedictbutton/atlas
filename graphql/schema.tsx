@@ -1,4 +1,4 @@
-import { gql } from "apollo-server-micro";
+import { gql } from 'apollo-server-micro';
 
 export const typeDefs = gql`
   type Account {
@@ -38,6 +38,30 @@ export const typeDefs = gql`
     sessions: Session
   }
 
+  type Country {
+    id: String
+    name: String
+    answer: [Answer]
+  }
+
+  type Answer {
+    id: String
+    value: Boolean
+    countryId: String
+    gameId: String
+  }
+
+  type Game {
+    id: String
+    userId: String
+    answers: [Answer]
+    user: User
+  }
+
+  type BatchPayload {
+    count: Int
+  }
+
   input UserCreateInput {
     email: String!
     password: String
@@ -48,9 +72,14 @@ export const typeDefs = gql`
     password: String
   }
 
+  input CountryInput {
+    name: String!
+  }
+
   type Query {
     users: [User]!
     user: User!
+    countries: [Country]
   }
 
   type Mutation {
@@ -59,6 +88,8 @@ export const typeDefs = gql`
     updateUser(id: String!, email: String): User
     deleteUser: User
     updateManyUsers: [User]
+    createCountries(inputs: [CountryInput]): BatchPayload
+    deleteAllCountries: BatchPayload
   }
 `;
 

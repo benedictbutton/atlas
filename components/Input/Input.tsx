@@ -1,5 +1,6 @@
-import CountryList from './CountryList';
-import Score from './Score';
+import TallInput from './TallInput';
+import WideInput from './WideInput';
+import useViewport from '../../utils/useViewport';
 
 type InputProps = {
   searchValue: string;
@@ -16,58 +17,15 @@ type InputProps = {
   countryName: string;
 };
 
-const Input = ({
-  searchValue,
-  handleSearchValue,
-  handleSelectValue,
-  zoomIn,
-  handleSubmit,
-  answers,
-  regionHeader,
-  countryName,
-}: InputProps) => {
+const Input = ({ ...props }) => {
+  const { width } = useViewport();
+
   return (
     <>
-      <div className="flex flex-wrap content-start h-auto p-5 overflow-scroll">
-        <p
-          className={`text ${
-            !zoomIn ? 'collapse' : ''
-          } w-full mb-3 text-3xl text-white`}
-        >
-          {regionHeader}
-        </p>
-        <label className="inline-block w-full mt-2 mb-4">
-          <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
-            Country
-          </p>
-          <input
-            className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-            id="signInInput1-1"
-            type="text"
-            placeholder="Country Name"
-            name="country"
-            onChange={handleSearchValue}
-            value={searchValue}
-          />
-        </label>
-        <button
-          className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
-          disabled={
-            answers[`${searchValue}`] === undefined || !countryName
-          }
-          onClick={handleSubmit}
-        >
-          Submit
-        </button>
+      <div>
+        {width >= 920 && <TallInput {...props} />}
+        {width < 920 && <WideInput {...props} />}
       </div>
-      {searchValue && (
-        <CountryList
-          searchValue={searchValue}
-          handleSelectValue={handleSelectValue}
-          answers={answers}
-        />
-      )}
-      {!searchValue && <Score answers={answers} />}
     </>
   );
 };

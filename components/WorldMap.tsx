@@ -32,7 +32,7 @@ const WorldMap = () => {
         setCountryName(() => event.target.id);
       }
     },
-    [zoomIn, countryId],
+    [zoomIn, setZoomIn, countryId],
   );
 
   const handleSearchValue = useCallback(
@@ -74,22 +74,16 @@ const WorldMap = () => {
       >
         Sign Out
       </button>
-      <div
-        className={`input ${
-          !zoomIn ? 'collapse' : ''
-        } absolute bottom-5 right-5 w-96 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
-      >
-        <Input
-          searchValue={searchValue}
-          handleSearchValue={handleSearchValue}
-          handleSelectValue={handleSelectValue}
-          zoomIn={zoomIn}
-          handleSubmit={handleSubmit}
-          answers={answers}
-          regionHeader={regionHeader}
-          countryName={countryName}
-        />
-      </div>
+      <Input
+        searchValue={searchValue}
+        handleSearchValue={handleSearchValue}
+        handleSelectValue={handleSelectValue}
+        zoomIn={zoomIn}
+        handleSubmit={handleSubmit}
+        answers={answers}
+        regionHeader={regionHeader}
+        countryName={countryName}
+      />
       {zoomIn && (
         <svg
           xmlns="http://www.w3.org/2000/svg"

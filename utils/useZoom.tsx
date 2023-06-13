@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 
 const useZoom = () => {
   const [zoomIn, setZoomIn] = useState('');
+
   const findRegion = useMemo(() => {
     let region = '';
     switch (zoomIn) {

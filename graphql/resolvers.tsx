@@ -16,6 +16,10 @@ export const resolvers = {
       });
       return user;
     },
+    countries: async (_parent, _args, context: Context) => {
+      const countries = await context.prisma.country.findMany();
+      return countries;
+    },
   },
   Mutation: {
     createUser: async (_parent, _args) => {
@@ -67,7 +71,6 @@ export const resolvers = {
       const users = await prisma.user.findMany({
         where: { email: null },
       });
-      console.log(users);
       const updateUsers = users.map(
         async (person, idx) =>
           await prisma.user.update({
@@ -77,6 +80,17 @@ export const resolvers = {
       );
 
       return await prisma.$transaction([updateUsers]);
+    },
+    createCountries: async (_parent, _args) => {
+      const count = await prisma.country.createMany({
+        data: _args.inputs,
+      });
+      return count;
+    },
+    deleteAllCountries: async (_parent, _args) => {
+      const count = await prisma.country.deleteMany({});
+
+      return count;
     },
   },
 };

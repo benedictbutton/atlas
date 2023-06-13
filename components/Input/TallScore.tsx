@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import useScore from '../../utils/useScore';
 
-const Score = ({ answers }) => {
+const TallScore = ({ answers }) => {
   const [correct, incorrect] = useScore(answers);
   const numOfAnswers = Object.keys(answers).length;
 
@@ -9,10 +9,10 @@ const Score = ({ answers }) => {
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 187) * circumference;
+    circumference - (correct / 188) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 187) * circumference)
+      -1 * (circumference - (incorrect / 188) * circumference)
     }`,
   };
 
@@ -77,4 +77,4 @@ const Score = ({ answers }) => {
   );
 };
 
-export default Score;
+export default TallScore;
