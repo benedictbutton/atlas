@@ -1,20 +1,6 @@
+import { InputProps } from './Input';
 import CountryList from './CountryList';
 import TallScore from './TallScore';
-
-type InputProps = {
-  searchValue: string;
-  handleSearchValue: (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) => void;
-  handleSelectValue: (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) => void;
-  zoomIn: string;
-  handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  answers: string[];
-  regionHeader: string;
-  countryName: string;
-};
 
 const TallInput = ({
   searchValue,

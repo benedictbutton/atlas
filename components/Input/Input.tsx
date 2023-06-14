@@ -2,7 +2,11 @@ import TallInput from './TallInput';
 import WideInput from './WideInput';
 import useViewport from '../../utils/useViewport';
 
-type InputProps = {
+interface Answers {
+  [key: string]: boolean | null;
+}
+
+export interface InputProps {
   searchValue: string;
   handleSearchValue: (
     event: React.ChangeEvent<HTMLInputElement>,
@@ -12,12 +16,12 @@ type InputProps = {
   ) => void;
   zoomIn: string;
   handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  answers: string[];
+  answers: Answers | {};
   regionHeader: string;
   countryName: string;
-};
+}
 
-const Input = ({ ...props }) => {
+const Input = ({ ...props }: InputProps) => {
   const { width } = useViewport();
 
   return (

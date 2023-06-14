@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
+import { Answers } from '../Countries';
 import useScore from '../../utils/useScore';
 
-const TallScore = ({ answers }) => {
+const TallScore = ({ answers }: Answers) => {
   const [correct, incorrect] = useScore(answers);
-  const numOfAnswers = Object.keys(answers).length;
 
   const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;

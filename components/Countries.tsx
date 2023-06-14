@@ -9,6 +9,10 @@ import Oceania from './Regions/Oceania';
 import SouthAmerica from './Regions/SouthAmerica';
 // import useMountTransition from '../utils/useMountTransition';
 
+export interface Answers {
+  [key: string]: boolean | null;
+}
+
 export interface CountryProps {
   zoomIn: string;
   handleZoom: (
@@ -16,7 +20,7 @@ export interface CountryProps {
     close: string | undefined,
   ) => void;
   countryId: string;
-  answers: { [key: string]: boolean | null };
+  answers: Answers | {};
 }
 
 export interface RegionProps extends CountryProps {
