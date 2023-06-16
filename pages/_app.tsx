@@ -38,7 +38,7 @@ const client = new ApolloClient({
   // uri: "http://localhost:3000/api/graphql",
   // uri: "https://flyby-gateway.herokuapp.com/",
   link: from([errorLink, httpLink]),
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({ addTypename: false }),
 });
 
 // Use of the <SessionProvider> is mandatory to allow components that call

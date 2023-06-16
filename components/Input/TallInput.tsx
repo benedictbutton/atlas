@@ -1,6 +1,7 @@
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import TallScore from './TallScore';
+import Game from '../Game';
 
 const TallInput = ({
   searchValue,
@@ -60,6 +61,7 @@ const TallInput = ({
         </ul>
       )}
       {!searchValue && <TallScore answers={answers} />}
+      <Game />
     </div>
   );
 };

@@ -12,6 +12,7 @@ const WorldMap = () => {
   const [searchValue, setSearchValue] = useState('');
   const [answers, setAnswers] = useState(countries);
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
+
   const handleZoom = useCallback(
     (
       event: {

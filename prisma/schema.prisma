@@ -67,12 +67,10 @@ model Answer {
   id        String   @id @default(cuid())
   value     Boolean?
   countryId String
-  gameId    String
+  gameId    String?
 
   country Country @relation(fields: [countryId], references: [id])
-  game    Game    @relation(fields: [gameId], references: [id], onDelete: Cascade)
-
-  @@unique([countryId])
+  game    Game?   @relation(fields: [gameId], references: [id], onDelete: Cascade)
 }
 
 model Game {

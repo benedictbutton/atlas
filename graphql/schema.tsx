@@ -36,6 +36,7 @@ export const typeDefs = gql`
     password: String
     accounts: Account
     sessions: Session
+    games: [Game]
   }
 
   type Country {
@@ -55,7 +56,6 @@ export const typeDefs = gql`
     id: String
     userId: String
     answers: [Answer]
-    user: User
   }
 
   type BatchPayload {
@@ -73,13 +73,22 @@ export const typeDefs = gql`
   }
 
   input CountryInput {
-    name: String!
+    id: String
+    name: String
+  }
+
+  input AnswerInput {
+    countryId: String
+    gameId: String
   }
 
   type Query {
     users: [User]!
     user: User!
     countries: [Country]
+    answers: [Answer]
+    game: Game
+    games: [Game]
   }
 
   type Mutation {
@@ -90,6 +99,9 @@ export const typeDefs = gql`
     updateManyUsers: [User]
     createCountries(inputs: [CountryInput]): BatchPayload
     deleteAllCountries: BatchPayload
+    createGame(userId: String!, countries: [CountryInput]): Game
+    deleteGames: [Game]
+    deleteAnswers: [Answer]
   }
 `;
 

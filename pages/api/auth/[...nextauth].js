@@ -64,6 +64,7 @@ export const authOptions = {
             );
             if (res === true) {
               let userAccount = {
+                id: user.id,
                 email: user.email,
               };
 
@@ -128,6 +129,13 @@ export const authOptions = {
      * For adding custom parameters to user in session, we first need to add those parameters
      * in token which then will be available in the `session()` callback
      */
+    async session({ session, token, user }) {
+      // Send properties to the client, like an access_token and user id from a provider.
+
+      // session.accessToken = token.accessToken;
+      session.user.id = token.sub;
+      return session;
+    },
     pages: {
       signIn: '/signin',
       signOut: '/signout',
