@@ -2050,4 +2050,40 @@ mutation CreateCountries($inputs: [CountryInput]) {
     } 
   }
 
+     createUser: async (_parent, _args, context: Context) => {
+      const { email, password } = _args?.inputs;
+      try {
+        const hash = await bcrypt.hash(password, 10);
+        const user = await context.prisma.user.create({
+          data: {
+            email: email,
+            password: hash,
+          },
+        });
+        return user;
+      } catch (err) {
+        console.log('Error');
+      }
+    },
+
+  authenticateUser: async (
+      _parent,
+      _args: { inputs: { email: string; password: string } },
+      context: Context,
+    ) => {
+      const { email, password } = _args?.inputs;
+      try {
+        return await context.prisma.user.update({
+          data: {
+            email: email,
+            password: hash,
+          },
+        });
+      } catch (err) {
+        console.log('Error');
+      }
+    },
+
+
+
   

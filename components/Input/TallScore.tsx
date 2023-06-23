@@ -15,9 +15,9 @@ const TallScore = ({ answers }: Answers) => {
     }`,
   };
 
-  const numOfCountries: number = (
-    Object.keys(answers) as Array<keyof typeof answers>
-  ).length;
+  // const numOfCountries: number = (
+  //   Object.keys(answers) as Array<keyof typeof answers>
+  // ).length;
 
   return (
     <svg height={radius * 2} width={radius * 2} viewBox="0 0 360 360">

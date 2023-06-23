@@ -42,13 +42,12 @@ export const typeDefs = gql`
   type Country {
     id: String
     name: String
-    answer: [Answer]
   }
 
   type Answer {
     id: String
     value: Boolean
-    countryId: String
+    countryName: String
     gameId: String
   }
 
@@ -62,16 +61,6 @@ export const typeDefs = gql`
     count: Int
   }
 
-  input UserCreateInput {
-    email: String!
-    password: String
-  }
-
-  input AuthenticateInput {
-    email: String!
-    password: String
-  }
-
   input CountryInput {
     id: String
     name: String
@@ -82,9 +71,14 @@ export const typeDefs = gql`
     gameId: String
   }
 
+  input SaveAnswerInput {
+    countryName: String!
+    value: Boolean
+  }
+
   type Query {
     users: [User]!
-    user: User!
+    user(id: String!): User!
     countries: [Country]
     answers: [Answer]
     game: Game
@@ -92,16 +86,16 @@ export const typeDefs = gql`
   }
 
   type Mutation {
-    createUser(inputs: UserCreateInput!): User!
-    authenticateUser(inputs: AuthenticateInput!): User!
-    updateUser(id: String!, email: String): User
-    deleteUser: User
+    updateUserEmail(id: String!, email: String!): User
     updateManyUsers: [User]
-    createCountries(inputs: [CountryInput]): BatchPayload
-    deleteAllCountries: BatchPayload
-    createGame(userId: String!, countries: [CountryInput]): Game
-    deleteGames: [Game]
-    deleteAnswers: [Answer]
+    deleteUser(id: String!): User
+    deleteManyUsers: [User]
+    createManyCountries(inputs: [CountryInput]): BatchPayload
+    deleteManyCountries: BatchPayload
+    createGame(userId: String!): [Answer]
+    saveGame(gameId: String, answers: [SaveAnswerInput]): [Answer]
+    deleteManyGames: [Game]
+    deleteManyAnswers: [Answer]
   }
 `;
 

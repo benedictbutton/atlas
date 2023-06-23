@@ -60,16 +60,18 @@ model VerificationToken {
 model Country {
   id     String   @id @default(cuid())
   name   String
-  answer Answer[]
+  Answer Answer[]
+
+  @@unique([name])
 }
 
 model Answer {
-  id        String   @id @default(cuid())
-  value     Boolean?
-  countryId String
-  gameId    String?
+  id          String   @id @default(cuid())
+  value       Boolean?
+  countryName String
+  gameId      String?
 
-  country Country @relation(fields: [countryId], references: [id])
+  country Country @relation(fields: [countryName], references: [name])
   game    Game?   @relation(fields: [gameId], references: [id], onDelete: Cascade)
 }
 

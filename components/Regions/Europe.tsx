@@ -1956,12 +1956,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".106"
             style={{
-              fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3645'
-                  ? '#fff'
-                  : '#000',
+              fill: '#000',
             }}
           >
             MALTA
@@ -2706,7 +2701,12 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".067"
             style={{
-              fill: '#fff',
+              fill:
+                zoomIn === 'europe' &&
+                countryId &&
+                countryId !== 'g3660'
+                  ? '#fff'
+                  : '#000',
             }}
           >
             ANDORRA
@@ -2768,7 +2768,7 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             style={{
-              fill: '#fff',
+              fill: '#000',
             }}
             font-style="normal"
             font-variant="normal"

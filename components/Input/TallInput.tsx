@@ -1,7 +1,7 @@
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import TallScore from './TallScore';
-import Game from '../Game';
+import GameButton from './GameButton';
 
 const TallInput = ({
   searchValue,
@@ -12,6 +12,9 @@ const TallInput = ({
   answers,
   regionHeader,
   countryName,
+  game,
+  createGame,
+  handleSaveGame,
 }: InputProps) => {
   return (
     <div
@@ -61,7 +64,11 @@ const TallInput = ({
         </ul>
       )}
       {!searchValue && <TallScore answers={answers} />}
-      <Game />
+      <GameButton
+        createGame={createGame}
+        saveGame={handleSaveGame}
+        game={game}
+      />
     </div>
   );
 };

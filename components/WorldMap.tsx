@@ -2,7 +2,8 @@ import { useState, useCallback, SetStateAction } from 'react';
 import { signOut } from 'next-auth/react';
 import Countries from './Countries';
 import Input from './Input/Input';
-import { countries } from '../data/countries';
+// import { countries } from '../data/countries';
+import useAnswers from '../utils/useAnswers';
 import useZoom from '../utils/useZoom';
 
 const WorldMap = () => {
@@ -10,7 +11,9 @@ const WorldMap = () => {
   const [countryName, setCountryName] = useState('');
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
-  const [answers, setAnswers] = useState(countries);
+  // const [countryLabels, setCountryLabels] = useState(countries);
+  const { answers, setAnswers, createGame, handleSaveGame, game } =
+    useAnswers();
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
 
   const handleZoom = useCallback(
@@ -90,6 +93,9 @@ const WorldMap = () => {
         answers={answers}
         regionHeader={regionHeader}
         countryName={countryName}
+        game={game}
+        createGame={createGame}
+        handleSaveGame={handleSaveGame}
       />
       {zoomIn && (
         <svg

@@ -2,9 +2,9 @@ import TallInput from './TallInput';
 import WideInput from './WideInput';
 import useViewport from '../../utils/useViewport';
 
-interface Answers {
+type Answers = {
   [key: string]: boolean | null;
-}
+};
 
 export interface InputProps {
   searchValue: string;
@@ -19,6 +19,9 @@ export interface InputProps {
   answers: Answers | {};
   regionHeader: string;
   countryName: string;
+  game: string | undefined;
+  createGame: () => void;
+  handleSaveGame: () => void;
 }
 
 const Input = ({ ...props }: InputProps) => {

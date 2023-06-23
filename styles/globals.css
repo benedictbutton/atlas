@@ -46,6 +46,15 @@ a {
   left: 0;
 }
 
+.diagonal-split-bg {
+  background-color: #013a6b;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    #df001d 50%,
+    #1b83ff 50%
+  );
+}
+
 .globe {
   padding: 90px 0 !important;
   background: black;
