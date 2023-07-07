@@ -90,6 +90,7 @@ export const typeDefs = gql`
     updateManyUsers: [User]
     deleteUser(id: String!): User
     deleteManyUsers: [User]
+    createCountry(name: String!): Country
     createManyCountries(inputs: [CountryInput]): BatchPayload
     deleteManyCountries: BatchPayload
     createGame(userId: String!): [Answer]

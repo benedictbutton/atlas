@@ -29,7 +29,7 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
 });
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:3000/api/graphql', // Server URL (must be absolute)
+  uri: 'http://bens-atlas.fly.dev/api/graphql', // Server URL (must be absolute)
   // headers: getAuthHeaders(),
   credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
 });

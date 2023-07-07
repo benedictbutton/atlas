@@ -1,5 +1,12 @@
-import { useState, useCallback, SetStateAction } from 'react';
+import {
+  useState,
+  useCallback,
+  SetStateAction,
+  useMemo,
+  useRef,
+} from 'react';
 import { signOut } from 'next-auth/react';
+import { debounce } from 'lodash';
 import Countries from './Countries';
 import Input from './Input/Input';
 // import { countries } from '../data/countries';
@@ -15,6 +22,7 @@ const WorldMap = () => {
   const { answers, setAnswers, createGame, handleSaveGame, game } =
     useAnswers();
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
+  const formInput = useRef();
 
   const handleZoom = useCallback(
     (
@@ -45,21 +53,23 @@ const WorldMap = () => {
     [zoomIn, setZoomIn, countryId],
   );
 
-  const handleSearchValue = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>): void => {
-      let word = event.target.value;
-      let capitalizedWord =
-        word.charAt(0).toUpperCase() + word.slice(1);
-      setSearchValue(() => capitalizedWord);
-    },
-    [setSearchValue],
+  const handleSearchValue = useMemo(
+    () =>
+      debounce((event: React.ChangeEvent<HTMLInputElement>): void => {
+        let word = event.target.value;
+        console.log('ref: ', formInput);
+        let capitalizedWord =
+          word.charAt(0).toUpperCase() + word.slice(1);
+        setSearchValue(capitalizedWord);
+      }, 300),
+    [],
   );
 
   const handleSelectValue = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>): void => {
       setSearchValue(() => event.target.value);
     },
-    [setSearchValue],
+    [],
   );
 
   const handleSubmit = useCallback(
@@ -72,6 +82,7 @@ const WorldMap = () => {
       setCountryId('');
       setCountryName('');
       setSearchValue('');
+      formInput.current.value = '';
     },
     [countryName, searchValue, answers, setAnswers],
   );
@@ -96,6 +107,7 @@ const WorldMap = () => {
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}
+        forwardRef={(el) => (formInput.current = el)}
       />
       {zoomIn && (
         <svg

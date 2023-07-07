@@ -15,6 +15,7 @@ const TallInput = ({
   game,
   createGame,
   handleSaveGame,
+  forwardRef,
 }: InputProps) => {
   return (
     <div
@@ -40,8 +41,8 @@ const TallInput = ({
             type="text"
             placeholder="Country Name"
             name="country"
+            ref={forwardRef}
             onChange={handleSearchValue}
-            value={searchValue}
           />
         </label>
         <button

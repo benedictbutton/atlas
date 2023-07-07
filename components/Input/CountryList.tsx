@@ -8,8 +8,9 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
       {countries
         .filter(
           (country, idx) =>
-            country[0] === searchValue[0] &&
-            country.includes(searchValue),
+            country[0].toLowerCase() ===
+              searchValue[0].toLowerCase() &&
+            country.toLowerCase().includes(searchValue.toLowerCase()),
         )
         .map((countrySearch, idx) => (
           <li key={idx} className="text-white cursor p-2 list-none">
@@ -31,3 +32,28 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
 };
 
 export default CountryList;
+
+// const useFetch = (query, initialState) => {
+//   const [data, setData] = useState(initialState);
+//   const [url, setUrl] = useState(query);
+
+//   useEffect(() => {
+//     let didCancel = false;
+
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(url);
+//         const data = await response.json();
+
+//         setData(data);
+//       } catch (error) {
+//         throw new Error('whoops');
+//       }
+//     };
+//     fetchData();
+
+//     return () => {
+//       didCancel = true;
+//     };
+//   }, [url]);
+// };

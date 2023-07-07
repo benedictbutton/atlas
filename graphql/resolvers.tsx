@@ -94,6 +94,17 @@ export const resolvers = {
     ) => {
       return await context.prisma.user.deleteMany();
     },
+    createCountry: async (
+      _parent: unknown,
+      _args: { name: string },
+      context: Context,
+    ) => {
+      return await context.prisma.country.create({
+        data: {
+          name: _args.name,
+        },
+      });
+    },
     createManyCountries: async (
       _parent: unknown,
       _args: { inputs: Country[] },

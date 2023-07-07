@@ -350,7 +350,7 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
           >
-            D'IVOIRE
+            D&aposIVOIRE
           </tspan>
         </text>
       </g>

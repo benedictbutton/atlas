@@ -50,6 +50,7 @@ export const countries = {
   Dominica: null,
   'Dominican Republic': null,
   Ecuador: null,
+  England: null,
   Egypt: null,
   'El Salvador': null,
   'Equatorial Guinea': null,

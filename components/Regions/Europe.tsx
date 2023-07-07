@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { RegionProps } from '../Countries';
 
 const Europe = ({
@@ -263,7 +264,7 @@ const Europe = ({
             fill: 'none',
             stroke: 'none',
             pointerEvents: 'visible',
-            display: 'none',
+            // display: 'none',
           }}
         ></path>
         <text
@@ -3024,4 +3025,10 @@ const Europe = ({
   );
 };
 
-export default Europe;
+const MemoizedEurope = memo(
+  Europe,
+  (oldProps, newProps) =>
+    oldProps.zoomIn !== 'europe' && newProps.zoomIn !== 'europe',
+);
+
+export default MemoizedEurope;

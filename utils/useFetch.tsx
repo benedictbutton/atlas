@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef } from "react";
+import { useEffect, useReducer, useRef } from 'react';
 
 interface State<T> {
   data?: T;
@@ -7,13 +7,13 @@ interface State<T> {
 
 // discriminated union type
 type Action<T> =
-  | { type: "loading" }
-  | { type: "fetched"; payload: T }
-  | { type: "error"; payload: Error };
+  | { type: 'loading' }
+  | { type: 'fetched'; payload: T }
+  | { type: 'error'; payload: Error };
 
 const useFetch = <T = unknown,>(
   url?: string,
-  options?: RequestInit
+  options?: RequestInit,
 ): State<T> => {
   // Used to prevent state update if the component is unmounted
   const cancelRequest = useRef<boolean>(false);
@@ -24,13 +24,16 @@ const useFetch = <T = unknown,>(
   };
 
   // Keep state logic separated
-  const fetchReducer = (state: State<T>, action: Action<T>): State<T> => {
+  const fetchReducer = (
+    state: State<T>,
+    action: Action<T>,
+  ): State<T> => {
     switch (action.type) {
-      case "loading":
+      case 'loading':
         return { ...initialState };
-      case "fetched":
+      case 'fetched':
         return { ...initialState, data: action.payload };
-      case "error":
+      case 'error':
         return { ...initialState, error: action.payload };
       default:
         return state;
@@ -46,7 +49,7 @@ const useFetch = <T = unknown,>(
     cancelRequest.current = false;
 
     const fetchData = async () => {
-      dispatch({ type: "loading" });
+      dispatch({ type: 'loading' });
 
       try {
         const response = await fetch(url, options);
@@ -57,11 +60,11 @@ const useFetch = <T = unknown,>(
         const data = (await response.json()) as T;
         if (cancelRequest.current) return;
 
-        dispatch({ type: "fetched", payload: data });
+        dispatch({ type: 'fetched', payload: data });
       } catch (error) {
         if (cancelRequest.current) return;
 
-        dispatch({ type: "error", payload: error as Error });
+        dispatch({ type: 'error', payload: error as Error });
       }
     };
 
