@@ -8,6 +8,7 @@ import {
 import { signOut } from 'next-auth/react';
 import { debounce } from 'lodash';
 import Countries from './Countries';
+import Profile from './Profile';
 import Input from './Input/Input';
 // import { countries } from '../data/countries';
 import useAnswers from '../utils/useAnswers';
@@ -89,12 +90,7 @@ const WorldMap = () => {
 
   return (
     <>
-      <button
-        className="absolute top-5 right-5 bg-[#36454f] text-white p-2"
-        onClick={() => signOut({ callbackUrl: '/signin' })}
-      >
-        Sign Out
-      </button>
+      <Profile />
       <Input
         searchValue={searchValue}
         handleSearchValue={handleSearchValue}

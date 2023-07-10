@@ -1,0 +1,37 @@
+.box {
+  width: 70pxpx;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box:hover::after,
+.box:hover::before {
+  transform: scale(1, 1);
+}
+
+.box::after,
+.box::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  bottom: 15px;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.box::after {
+  border-right: 1px solid #1b83ff;
+  border-left: 1px solid #1b83ff;
+  transform: scale(1, 0);
+}
+
+.box::before {
+  border-top: 1px solid #1b83ff;
+  border-bottom: 1px solid #1b83ff;
+  transform: scale(0, 1);
+}

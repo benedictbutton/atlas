@@ -1,0 +1,11 @@
+.profile {
+  width: 250px;
+  height: 5rem;
+  transition: height 1s;
+}
+
+.profile[aria-hidden='false'] {
+  color: white;
+  height: 300px;
+  background: black;
+}
