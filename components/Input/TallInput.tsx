@@ -65,11 +65,11 @@ const TallInput = ({
         </ul>
       )}
       {!searchValue && <TallScore answers={answers} />}
-      <GameButton
+      {/* <GameButton
         createGame={createGame}
         saveGame={handleSaveGame}
         game={game}
-      />
+      /> */}
     </div>
   );
 };
