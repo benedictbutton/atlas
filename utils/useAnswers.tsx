@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
-import { gql, useQuery, useMutation } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { useSession } from 'next-auth/react';
+import { gql } from '../pages/__generated__/gql';
 import { countries } from '../data/countries';
 
 // const GET_COUNTRIES = gql`
@@ -12,7 +13,7 @@ import { countries } from '../data/countries';
 //   }
 // `;
 
-const CREATE_GAME = gql`
+const CREATE_GAME = gql(`
   mutation CreateGame($userId: String!) {
     createGame(userId: $userId) {
       id
@@ -21,26 +22,26 @@ const CREATE_GAME = gql`
       gameId
     }
   }
-`;
+`);
 
-const SAVE_GAME = gql`
+const SAVE_GAME = gql(`
   mutation SaveGame($gameId: String, $answers: [SaveAnswerInput]) {
     saveGame(gameId: $gameId, answers: $answers) {
       id
     }
   }
-`;
+`);
 
 const useAnswers = () => {
   const { data } = useSession();
   const [answers, setAnswers] = useState(countries);
-  const [game, setGame] = useState();
+  const [game, setGame] = useState(null);
   //   const { data: countryData } = useQuery(GET_COUNTRIES);
 
   const [createGame, { data: gameData, loading, error }] =
     useMutation(CREATE_GAME, {
       variables: {
-        userId: data.user.id,
+        userId: data?.user?.id,
       },
     });
 

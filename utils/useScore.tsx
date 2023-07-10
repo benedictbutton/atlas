@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import { Answers } from '../components/Countries';
 
-const useScore = (answers) => {
+const useScore = (answers: Answers) => {
   const [correct, setCorrect] = useState(0);
   const [incorrect, setIncorrect] = useState(0);
 

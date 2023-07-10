@@ -1,28 +1,19 @@
-import {
-  useState,
-  useEffect,
-  useMemo,
-  useCallback,
-  useRef,
-} from 'react';
+import { useState } from 'react';
 import { gql, useQuery, useMutation } from '@apollo/client';
 import Tracker from './Tracker';
 import styles from '../styles/Intro.module.css';
 
-const Intro = ({ introMessage, setIntroMessage }) => {
-  const [open, setOpen] = useState(true);
-  const checkBox = useRef(!introMessage);
+export interface IntroMsg {
+  introMessage: boolean;
+  setIntroMessage: () => void;
+}
 
-  const handleCheckBox = useCallback(() => {
-    let node = checkBox.current;
-    if (node) {
-      node.focus();
-      node.select();
-    }
-  }, [checkBox]);
+const Intro = ({ introMessage, setIntroMessage }: IntroMsg) => {
+  const [open, setOpen] = useState(true);
+  const [checkBox, setCheckBox] = useState(!introMessage);
 
   const closeDisplayIntro = () => {
-    if (checkBox.current.checked === introMessage) setIntroMessage();
+    if (checkBox === introMessage) setIntroMessage();
     setOpen(false);
   };
 
@@ -81,12 +72,15 @@ const Intro = ({ introMessage, setIntroMessage }) => {
           </div>
           <div
             className={styles.checkboxWrapper}
-            onClick={handleCheckBox}
+            onClick={(e) => {
+              e.preventDefault();
+              setCheckBox(!checkBox);
+            }}
           >
             <input
               id="displayIntro"
               type="checkbox"
-              ref={checkBox}
+              checked={checkBox}
               className={`${styles.promotedCheckbox} invisible`}
             />
             <svg>
@@ -96,7 +90,7 @@ const Intro = ({ introMessage, setIntroMessage }) => {
               htmlFor="displayIntro"
               className={styles.promotedCheckbox}
             >
-              Don&apos;t show again on sign-in
+              Don&apos;t show again on sign in
             </label>
             <svg
               xmlns="http://www.w3.org/2000/svg"

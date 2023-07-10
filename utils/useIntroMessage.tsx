@@ -1,15 +1,15 @@
-import { useState, useEffect, useMemo } from 'react';
 import { useSession } from 'next-auth/react';
-import { gql, useQuery, useMutation } from '@apollo/client';
+import { useMutation } from '@apollo/client';
+import { gql } from '../pages/__generated__/gql';
 
-const UPDATE_USER = gql`
+const UPDATE_USER = gql(`
   mutation UpdateUserIntroMessage($inputs: UserInput) {
     updateUserIntroMessage(inputs: $inputs) {
       id
       introMessage
     }
   }
-`;
+`);
 
 const useIntroMessage = () => {
   const { data: userData, update } = useSession();
@@ -18,8 +18,8 @@ const useIntroMessage = () => {
     {
       variables: {
         inputs: {
-          id: userData.user.id,
-          introMessage: !userData.user.introMessage,
+          id: userData?.user?.id,
+          introMessage: !userData?.user?.introMessage,
         },
       },
       onCompleted: (data) =>
@@ -29,7 +29,7 @@ const useIntroMessage = () => {
     },
   );
 
-  return [userData?.user.introMessage, updateUser];
+  return [userData?.user?.introMessage, updateUser];
 };
 
 export default useIntroMessage;

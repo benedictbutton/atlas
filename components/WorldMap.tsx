@@ -5,7 +5,6 @@ import {
   useMemo,
   useRef,
 } from 'react';
-import { signOut } from 'next-auth/react';
 import { debounce } from 'lodash';
 import Countries from './Countries';
 import Intro from './Intro';
