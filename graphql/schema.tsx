@@ -36,6 +36,7 @@ export const typeDefs = gql`
     password: String
     accounts: Account
     sessions: Session
+    introMessage: Boolean
     games: [Game]
   }
 
@@ -59,6 +60,12 @@ export const typeDefs = gql`
 
   type BatchPayload {
     count: Int
+  }
+
+  input UserInput {
+    id: String!
+    email: String
+    introMessage: Boolean
   }
 
   input CountryInput {
@@ -86,6 +93,7 @@ export const typeDefs = gql`
   }
 
   type Mutation {
+    updateUserIntroMessage(inputs: UserInput): User
     updateUserEmail(id: String!, email: String!): User
     updateManyUsers: [User]
     deleteUser(id: String!): User

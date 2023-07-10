@@ -1,10 +1,7 @@
-import { Answers } from '../Countries';
-import useScore from '../../utils/useScore';
+const Tracker = () => {
+  const [correct, incorrect] = [39, 7];
 
-const WideScore = ({ answers }: Answers) => {
-  const [correct, incorrect] = useScore(answers);
-
-  const [radius, stroke] = [100, 10];
+  const [radius, stroke] = [120, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
@@ -66,17 +63,17 @@ const WideScore = ({ answers }: Answers) => {
         x={radius}
         y={radius}
         textAnchor="middle"
-        fontSize="4rem"
+        fontSize="1.5rem"
         stroke="transparent"
         stroke-width="2px"
         dy="1rem"
       >
-        <tspan fill="#df001d">{incorrect}</tspan>
+        <tspan fill="#df001d">incorrect</tspan>
         <tspan fill="url('#myGradient')"> / </tspan>
-        <tspan fill="#1b83ff">{correct}</tspan>
+        <tspan fill="#1b83ff">correct</tspan>
       </text>
     </svg>
   );
 };
 
-export default WideScore;
+export default Tracker;

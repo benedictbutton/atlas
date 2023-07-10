@@ -44,6 +44,22 @@ export const resolvers = {
     },
   },
   Mutation: {
+    updateUserIntroMessage: async (
+      _parent: unknown,
+      _args,
+      context: Context,
+    ) => {
+      let user = await context.prisma.user.update({
+        data: {
+          introMessage: _args.inputs.introMessage,
+        },
+        where: {
+          id: _args.inputs.id,
+        },
+      });
+
+      return user;
+    },
     updateUserEmail: async (
       _parent: unknown,
       _args: { id: string; email: string },
@@ -51,7 +67,7 @@ export const resolvers = {
     ) => {
       return await context.prisma.user.update({
         data: {
-          id: _args.email,
+          email: _args.email,
         },
         where: {
           id: _args.id,

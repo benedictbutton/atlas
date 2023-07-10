@@ -66,6 +66,7 @@ export const authOptions = {
               let userAccount = {
                 id: user.id,
                 email: user.email,
+                introMessage: user.introMessage,
               };
 
               return userAccount;
@@ -108,6 +109,7 @@ export const authOptions = {
             data: {
               email: email,
               password: hash,
+              introMessage: true,
             },
           });
           return user;
@@ -124,16 +126,25 @@ export const authOptions = {
      * the `session()` callback. So we have to add custom parameters in `token`
      * via `jwt()` callback to make them accessible in the `session()` callback
      */
+    async jwt({ token, trigger, user, session }) {
+      // the user present here gets the same data as received from DB call  made above -> fetchUserInfo(credentials.opt)
+      if (trigger === 'update' && session)
+        token.introMessage = session.introMessage;
+
+      return { ...token, ...user };
+    },
 
     /*
      * For adding custom parameters to user in session, we first need to add those parameters
      * in token which then will be available in the `session()` callback
      */
-    async session({ session, token, user }) {
+    async session({ session, token }) {
       // Send properties to the client, like an access_token and user id from a provider.
 
       // session.accessToken = token.accessToken;
       session.user.id = token.sub;
+      session.user.introMessage = token.introMessage;
+
       return session;
     },
     pages: {

@@ -73,7 +73,6 @@ interface Props {
 const Auth = ({ children }: Props) => {
   // if `{ required: true }` is supplied, `status` can only be "loading" or "authenticated"
   const { status } = useSession({ required: true });
-  console.log(status);
 
   if (status === 'loading') {
     return <div>Loading...</div>;

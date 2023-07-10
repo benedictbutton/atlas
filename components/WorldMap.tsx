@@ -8,10 +8,12 @@ import {
 import { signOut } from 'next-auth/react';
 import { debounce } from 'lodash';
 import Countries from './Countries';
+import Intro from './Intro';
 import Profile from './Profile';
 import Input from './Input/Input';
 // import { countries } from '../data/countries';
 import useAnswers from '../utils/useAnswers';
+import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
 
 const WorldMap = () => {
@@ -23,6 +25,7 @@ const WorldMap = () => {
   const { answers, setAnswers, createGame, handleSaveGame, game } =
     useAnswers();
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
+  const [introMessage, setIntroMessage] = useIntroMessage();
   const formInput = useRef();
 
   const handleZoom = useCallback(
@@ -91,6 +94,12 @@ const WorldMap = () => {
   return (
     <>
       <Profile />
+      {introMessage && (
+        <Intro
+          introMessage={introMessage}
+          setIntroMessage={setIntroMessage}
+        />
+      )}
       <Input
         searchValue={searchValue}
         handleSearchValue={handleSearchValue}
