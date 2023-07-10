@@ -41,7 +41,7 @@ export const authOptions = {
         email: {
           label: 'Email',
           type: 'email',
-          placeholder: 'support@hygraph.com',
+          placeholder: 'support@email.com',
         },
         password: {
           label: 'Password',

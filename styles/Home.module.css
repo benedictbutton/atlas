@@ -51,12 +51,19 @@
   text-decoration: underline;
 }
 
-.title {
+.heading {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
   color: white;
   text-align: left;
+}
+
+.welcome {
+  font-size: 4rem;
+}
+
+.title {
+  font-size: 6rem;
 }
 
 .description {
@@ -137,9 +144,24 @@
   }
 }
 
-@media (min-width: 760px) {
+@media (max-width: 768px) {
   .landing {
-    background-size: 70%;
+    background-size: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .buttons {
+    margin-bottom: 3rem;
   }
 }
 
