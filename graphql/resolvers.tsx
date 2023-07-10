@@ -1,5 +1,6 @@
 import { Answer, Country, Game } from '@prisma/client';
 import { Context } from './context';
+import { UserInput } from '../pages/__generated__/graphql';
 
 const bcrypt = require('bcrypt');
 // import type { NextApiReqzuest, NextApiResponse } from "next";
@@ -46,7 +47,7 @@ export const resolvers = {
   Mutation: {
     updateUserIntroMessage: async (
       _parent: unknown,
-      _args,
+      _args: { inputs: { id: string; introMessage?: boolean } },
       context: Context,
     ) => {
       let user = await context.prisma.user.update({

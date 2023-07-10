@@ -3,6 +3,16 @@ import { useQuery, useMutation } from '@apollo/client';
 import { useSession } from 'next-auth/react';
 import { gql } from '../pages/__generated__/gql';
 import { countries } from '../data/countries';
+import { CreateGameMutation } from '../pages/__generated__/graphql';
+
+type FormedAnswer = {
+  countryName: string;
+  value: boolean | null | undefined;
+};
+
+type CountriesObject = {
+  [key: string]: boolean | null | undefined;
+};
 
 // const GET_COUNTRIES = gql`
 //   query Countries {
@@ -34,29 +44,30 @@ const SAVE_GAME = gql(`
 
 const useAnswers = () => {
   const { data } = useSession();
-  const [answers, setAnswers] = useState(countries);
-  const [game, setGame] = useState(null);
+  const [answers, setAnswers] = useState<CountriesObject>(countries);
+  const [game, setGame] = useState<string | null | undefined>(null);
   //   const { data: countryData } = useQuery(GET_COUNTRIES);
 
   const [createGame, { data: gameData, loading, error }] =
     useMutation(CREATE_GAME, {
       variables: {
-        userId: data?.user?.id,
+        userId: data?.user?.id ?? '',
       },
     });
 
-  const [saveGame, { data: updatedGame }] = useMutation(SAVE_GAME);
+  const [saveGame, { data: updatedGame }] =
+    useMutation<CreateGameMutation | null>(SAVE_GAME);
 
   const handleSaveGame = () => {
-    const formedAnswers = [];
+    const formedAnswers: FormedAnswer[] = [];
     for (const country in answers) {
       formedAnswers.push({
         countryName: country,
-        value: answers[country],
+        value: answers[country as keyof typeof answers],
       });
     }
 
-    const gameId = game?.id;
+    const gameId = game;
 
     saveGame({
       variables: { gameId: gameId, answers: formedAnswers },
@@ -64,17 +75,16 @@ const useAnswers = () => {
   };
 
   useEffect(() => {
-    if (gameData) {
-      setAnswers(() => {
-        const countriesObj = {};
-        gameData.createGame.map((ans) => {
-          countriesObj[ans.countryName] = ans.value;
-          return countriesObj;
-        });
+    if (gameData && gameData.createGame) {
+      const countriesObj: CountriesObject = {};
+      gameData.createGame.map((ans) => {
+        countriesObj[ans?.countryName as keyof typeof countriesObj] =
+          ans?.value;
         return countriesObj;
       });
+      setAnswers(countriesObj);
 
-      setGame(gameData.createGame[0].gameId);
+      setGame(gameData?.createGame[0]?.gameId);
     }
   }, [gameData]);
 

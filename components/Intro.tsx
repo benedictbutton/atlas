@@ -1,14 +1,8 @@
 import { useState } from 'react';
-import { gql, useQuery, useMutation } from '@apollo/client';
 import Tracker from './Tracker';
 import styles from '../styles/Intro.module.css';
 
-export interface IntroMsg {
-  introMessage: boolean;
-  setIntroMessage: () => void;
-}
-
-const Intro = ({ introMessage, setIntroMessage }: IntroMsg) => {
+const Intro = ({ introMessage, setIntroMessage }) => {
   const [open, setOpen] = useState(true);
   const [checkBox, setCheckBox] = useState(!introMessage);
 

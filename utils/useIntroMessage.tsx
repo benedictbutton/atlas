@@ -13,21 +13,18 @@ const UPDATE_USER = gql(`
 
 const useIntroMessage = () => {
   const { data: userData, update } = useSession();
-  const [updateUser, { data, loading, error }] = useMutation(
-    UPDATE_USER,
-    {
-      variables: {
-        inputs: {
-          id: userData?.user?.id,
-          introMessage: !userData?.user?.introMessage,
-        },
+  const [updateUser] = useMutation(UPDATE_USER, {
+    variables: {
+      inputs: {
+        id: userData?.user?.id,
+        introMessage: !userData?.user?.introMessage,
       },
-      onCompleted: (data) =>
-        update({
-          introMessage: data?.updateUserIntroMessage?.introMessage,
-        }),
     },
-  );
+    onCompleted: (data) =>
+      update({
+        introMessage: data?.updateUserIntroMessage?.introMessage,
+      }),
+  });
 
   return [userData?.user?.introMessage, updateUser];
 };
