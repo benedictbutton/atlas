@@ -15,8 +15,14 @@ import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
 
+const unitedKingdom = [
+  'England',
+  'Northern Ireland',
+  'Scotland',
+  'Wales',
+];
+
 const WorldMap = () => {
-  // const [isMounted, setIsMounted] = useState(false, 1000);
   const [countryName, setCountryName] = useState('');
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
@@ -60,7 +66,6 @@ const WorldMap = () => {
     () =>
       debounce((event: React.ChangeEvent<HTMLInputElement>): void => {
         let word = event.target.value;
-        console.log('ref: ', formInput);
         let capitalizedWord =
           word.charAt(0).toUpperCase() + word.slice(1);
         setSearchValue(capitalizedWord);
@@ -78,7 +83,18 @@ const WorldMap = () => {
   const handleSubmit = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>): void => {
       event.preventDefault();
-      if (countryName !== searchValue)
+      if (
+        searchValue === 'United Kingdom, The' &&
+        unitedKingdom.includes(countryName)
+      )
+        setAnswers({
+          ...answers,
+          ['England']: true,
+          ['Northern Ireland']: true,
+          ['Scotland']: true,
+          ['Wales']: true,
+        });
+      else if (countryName !== searchValue)
         setAnswers({ ...answers, [`${countryName}`]: false });
       else setAnswers({ ...answers, [`${countryName}`]: true });
 
@@ -87,7 +103,7 @@ const WorldMap = () => {
       setSearchValue('');
       formInput.current.value = '';
     },
-    [countryName, searchValue, answers, setAnswers],
+    [searchValue, countryName, setAnswers, answers],
   );
 
   return (

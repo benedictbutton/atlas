@@ -27,11 +27,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3238'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3238' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -82,9 +78,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3233'
+              countryId && countryId !== 'g3233'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -137,9 +131,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3208'
+              countryId && countryId !== 'g3208'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -192,11 +184,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3193'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3193' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -247,9 +235,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3223'
+              countryId && countryId !== 'g3223'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -302,11 +288,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3203'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3203' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -357,9 +339,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3198'
+              countryId && countryId !== 'g3198'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
@@ -412,9 +392,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3228'
+              countryId && countryId !== 'g3228'
                 ? '#36454f'
                 : '#ce453e	',
             stroke: 'rgb(0, 0, 0)',
@@ -467,9 +445,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3218'
+              countryId && countryId !== 'g3218'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -522,9 +498,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3188'
+              countryId && countryId !== 'g3188'
                 ? '#36454f'
                 : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
@@ -560,11 +534,7 @@ const SouthAmerica = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'southAmerica' &&
-                countryId &&
-                countryId !== 'g3188'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3188' ? '#fff' : '#000',
             }}
           >
             BOLIVIA
@@ -584,9 +554,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3183'
+              countryId && countryId !== 'g3183'
                 ? '#36454f'
                 : '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
@@ -624,11 +592,7 @@ const SouthAmerica = ({
             strokeWidth=".327"
             style={{
               fill:
-                zoomIn === 'southAmerica' &&
-                countryId &&
-                countryId !== 'g3183'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3183' ? '#fff' : '#000',
             }}
           >
             BRAZIL
@@ -648,9 +612,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3213'
+              countryId && countryId !== 'g3213'
                 ? '#36454f'
                 : '#cf453e	',
             stroke: 'rgb(0, 0, 0)',
@@ -702,9 +664,7 @@ const SouthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'southAmerica' &&
-              countryId &&
-              countryId !== 'g3244'
+              countryId && countryId !== 'g3244'
                 ? '#36454f'
                 : '#4f8400',
             stroke: 'rgb(0, 0, 0)',

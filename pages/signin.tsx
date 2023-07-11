@@ -28,8 +28,8 @@ interface Props {
 
 const SignInPage = ({ providers, csrfToken }: Props) => {
   return (
-    <div className="relative flex flex-wrap h-full bg-black md:overflow-hidden">
-      <h1 className="z-10 w-full text-9xl text-[#80b6ec] text-center mt-14">
+    <div className="relative flex flex-wrap w-full h-full bg-black mx-auto md:overflow-hidden">
+      <h1 className="z-10 w-full text-9xl text-[#80b6ec] text-center mt-14 font-serif font-semi-bold">
         BEN&apos;S <span className="atlas">ATLAS</span>
       </h1>
       <div className="flex-1 relative w-full h-auto p-8 scale-125">

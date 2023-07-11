@@ -28,9 +28,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4282'
+              countryId && countryId !== 'g4282'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',
@@ -51,9 +49,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4285'
+              countryId && countryId !== 'g4285'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',
@@ -74,9 +70,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4228'
+              countryId && countryId !== 'g4228'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',
@@ -97,9 +91,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4225'
+              countryId && countryId !== 'g4225'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',
@@ -119,9 +111,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4016'
+              countryId && countryId !== 'g4016'
                 ? '#36454f'
                 : '#faa433',
             stroke: 'rgb(0, 0, 0)',
@@ -159,11 +149,7 @@ const Oceania = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'oceania' &&
-                countryId &&
-                countryId !== 'g4016'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g4016' ? '#fff' : '#000',
             }}
           >
             AUSTRALIA
@@ -183,9 +169,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4026'
+              countryId && countryId !== 'g4026'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -240,9 +224,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4021'
+              countryId && countryId !== 'g4021'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -300,9 +282,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4270'
+              countryId && countryId !== 'g4270'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',
@@ -323,9 +303,7 @@ const Oceania = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'oceania' &&
-              countryId &&
-              countryId !== 'g4273'
+              countryId && countryId !== 'g4273'
                 ? '#36454f'
                 : 'rgb(209, 219, 221)',
             stroke: 'rgb(0, 0, 0)',

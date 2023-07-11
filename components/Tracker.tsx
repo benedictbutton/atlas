@@ -1,4 +1,6 @@
-const Tracker = () => {
+import styles from '../styles/Intro.module.css';
+
+const Tracker = ({ isMounted }) => {
   const [correct, incorrect] = [39, 7];
 
   const [radius, stroke] = [120, 10];
@@ -68,9 +70,23 @@ const Tracker = () => {
         stroke-width="2px"
         dy="1rem"
       >
-        <tspan fill="#df001d">incorrect</tspan>
+        <tspan
+          className={`${
+            isMounted ? styles.mounted : styles.unmounting
+          }`}
+          fill="#df001d"
+        >
+          incorrect
+        </tspan>
         <tspan fill="url('#myGradient')"> / </tspan>
-        <tspan fill="#1b83ff">correct</tspan>
+        <tspan
+          className={`${
+            isMounted ? styles.mounted : styles.unmounting
+          }`}
+          fill="#1b83ff"
+        >
+          correct
+        </tspan>
       </text>
     </svg>
   );

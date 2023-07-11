@@ -1,20 +1,28 @@
 import { useState } from 'react';
 import Tracker from './Tracker';
+import useDelayedUnmounting from '../utils/useDelayedUnmounting';
 import styles from '../styles/Intro.module.css';
 
 const Intro = ({ introMessage, setIntroMessage }) => {
   const [open, setOpen] = useState(true);
   const [checkBox, setCheckBox] = useState(!introMessage);
+  const [isMounted, setIsMounted] = useState(true);
+
+  const shouldRender = useDelayedUnmounting(isMounted, 5000);
 
   const closeDisplayIntro = () => {
     if (checkBox === introMessage) setIntroMessage();
-    setOpen(false);
+    setIsMounted(!isMounted);
   };
 
   return (
     <>
-      {open && (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 w-5/6 p-3 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double">
+      {shouldRender && (
+        <div
+          className={`${
+            isMounted ? styles.mounted : styles.unmounting
+          } fixed top-1/4 left-1/2 w-5/6 p-3 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double opacity-90`}
+        >
           <button aria-label="close" onClick={closeDisplayIntro}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,18 +53,18 @@ const Intro = ({ introMessage, setIntroMessage }) => {
                 </li>
                 <li className="p-2">
                   Once a region is in focus, clicking a country will
-                  now display an input form.
+                  display an input form.
                 </li>
                 <li className="p-2">
                   Use the input form to search for the country you
-                  believe correctly labels the area clicked. If
+                  believe correctly labels the area you clicked. If
                   correct, the label will be applied to the map.
                 </li>
               </ul>
             </div>
             <div className="w-1/2">
               <div className="text-center">
-                <Tracker />
+                <Tracker isMounted={isMounted} />
               </div>
               <p className="text-[#1b83ff] text-center text-lg">
                 When a region is in focus, the above tracker displays

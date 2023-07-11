@@ -28,7 +28,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g4006'
+              countryId && countryId !== 'g4006'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -66,11 +66,7 @@ const Asia = ({
             strokeWidth=".096"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g4006'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g4006' ? '#fff' : '#000',
             }}
           >
             SINGAPORE
@@ -90,7 +86,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3941'
+              countryId && countryId !== 'g3941'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -126,11 +122,7 @@ const Asia = ({
             strokeWidth=".144"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3941'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3941' ? '#fff' : '#000',
             }}
           >
             VIETNAM
@@ -150,7 +142,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3891'
+              countryId && countryId !== 'g3891'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -205,7 +197,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3986'
+              countryId && countryId !== 'g3986'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -265,7 +257,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3976'
+              countryId && countryId !== 'g3976'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -301,11 +293,7 @@ const Asia = ({
             strokeWidth=".106"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3976'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3976' ? '#fff' : '#000',
             }}
           >
             HONG KONG
@@ -325,7 +313,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3951'
+              countryId && countryId !== 'g3951'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -361,11 +349,7 @@ const Asia = ({
             strokeWidth=".125"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3951'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3951' ? '#fff' : '#000',
             }}
           >
             BRUNEI
@@ -385,7 +369,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3946'
+              countryId && countryId !== 'g3946'
                 ? '#36454f'
                 : '#89bc3b',
             stroke: 'rgb(0, 0, 0)',
@@ -423,11 +407,7 @@ const Asia = ({
             strokeWidth=".212"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3946'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3946' ? '#fff' : '#000',
             }}
           >
             MALAYSIA
@@ -447,7 +427,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3956'
+              countryId && countryId !== 'g3956'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -485,11 +465,7 @@ const Asia = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3956'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3956' ? '#fff' : '#000',
             }}
           >
             INDONESIA
@@ -509,7 +485,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g4001'
+              countryId && countryId !== 'g4001'
                 ? '#36454f'
                 : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
@@ -547,11 +523,7 @@ const Asia = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g4001'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g4001' ? '#fff' : '#000',
             }}
           >
             MONGOLIA
@@ -571,7 +543,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3936'
+              countryId && countryId !== 'g3936'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -628,7 +600,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3926'
+              countryId && countryId !== 'g3926'
                 ? '#36454f'
                 : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
@@ -664,11 +636,7 @@ const Asia = ({
             strokeWidth=".154"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3926'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3926' ? '#fff' : '#000',
             }}
           >
             LAOS
@@ -688,7 +656,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3921'
+              countryId && countryId !== 'g3921'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -743,7 +711,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3966'
+              countryId && countryId !== 'g3966'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -779,11 +747,7 @@ const Asia = ({
             strokeWidth=".231"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3966'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3966' ? '#fff' : '#000',
             }}
           >
             PHILIPPINES
@@ -803,7 +767,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3996'
+              countryId && countryId !== 'g3996'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -839,11 +803,7 @@ const Asia = ({
             strokeWidth=".221"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3996'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3996' ? '#fff' : '#000',
             }}
           >
             JAPAN
@@ -863,7 +823,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3981'
+              countryId && countryId !== 'g3981'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
@@ -921,7 +881,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g4011'
+              countryId && countryId !== 'g4011'
                 ? '#36454f'
                 : '#89bc3b',
             stroke: 'rgb(0, 0, 0)',
@@ -957,11 +917,7 @@ const Asia = ({
             strokeWidth=".116"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g4011'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g4011' ? '#fff' : '#000',
             }}
           >
             SRI LANKA
@@ -981,7 +937,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3991'
+              countryId && countryId !== 'g3991'
                 ? '#36454f'
                 : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
@@ -1019,11 +975,7 @@ const Asia = ({
             strokeWidth=".154"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3991'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3991' ? '#fff' : '#000',
             }}
           >
             NORTH KOREA
@@ -1043,7 +995,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3906'
+              countryId && countryId !== 'g3906'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -1098,7 +1050,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3876'
+              countryId && countryId !== 'g3876'
                 ? '#36454f'
                 : '#92268f',
             stroke: 'rgb(0, 0, 0)',
@@ -1153,7 +1105,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3971'
+              countryId && countryId !== 'g3971'
                 ? '#36454f'
                 : '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
@@ -1193,11 +1145,7 @@ const Asia = ({
             strokeWidth=".096"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3971'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3971' ? '#fff' : '#000',
             }}
           >
             TAIWAN
@@ -1217,7 +1165,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3901'
+              countryId && countryId !== 'g3901'
                 ? '#36454f'
                 : '#faa433',
             stroke: 'rgb(0, 0, 0)',
@@ -1253,11 +1201,7 @@ const Asia = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3901'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3901' ? '#fff' : '#000',
             }}
           >
             INDIA
@@ -1277,7 +1221,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3886'
+              countryId && countryId !== 'g3886'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -1332,7 +1276,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3931'
+              countryId && countryId !== 'g3931'
                 ? '#36454f'
                 : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
@@ -1368,11 +1312,7 @@ const Asia = ({
             strokeWidth=".154"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3931'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3931' ? '#fff' : '#000',
             }}
           >
             THAILAND
@@ -1392,7 +1332,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3871'
+              countryId && countryId !== 'g3871'
                 ? '#36454f'
                 : '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
@@ -1428,11 +1368,7 @@ const Asia = ({
             strokeWidth=".193"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3871'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3871' ? '#fff' : '#000',
             }}
           >
             UZBEKISTAN
@@ -1452,7 +1388,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g4031'
+              countryId && countryId !== 'g4031'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -1490,11 +1426,7 @@ const Asia = ({
             strokeWidth=".241"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g4031'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g4031' ? '#fff' : '#000',
             }}
           >
             KAZAKHSTAN
@@ -1514,7 +1446,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3916'
+              countryId && countryId !== 'g3916'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -1569,7 +1501,7 @@ const Asia = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'asia' && countryId && countryId !== 'g3911'
+              countryId && countryId !== 'g3911'
                 ? '#36454f'
                 : '#48bd44',
             stroke: 'rgb(0, 0, 0)',
@@ -1605,11 +1537,7 @@ const Asia = ({
             strokeWidth=".135"
             style={{
               fill:
-                zoomIn === 'asia' &&
-                countryId &&
-                countryId !== 'g3911'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3911' ? '#fff' : '#000',
             }}
           >
             BHUTAN

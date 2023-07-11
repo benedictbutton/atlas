@@ -18,9 +18,17 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.landing}>
           <h1 className={styles.heading}>
-            <span className={styles.welcome}>Welcome to</span>
+            <span
+              className={`${styles.welcome} text-[#80b6ec] font-serif`}
+            >
+              Welcome to
+            </span>
             <br />
-            <span className={styles.title}>Ben&apos;s Atlas!</span>
+            <span
+              className={`${styles.title} text-[#80b6ec] font-serif font-semi-bold`}
+            >
+              Ben&apos;s Atlas
+            </span>
           </h1>
           <div className={`flex ${styles.buttons}`}>
             <div className="w-24 my-2 ml-2 mr-4 p-2 bg-indigo-500 rounded-xl text-white text-center">

@@ -1,4 +1,4 @@
-import { memo } from 'react';
+// import { memo } from 'react';
 import { RegionProps } from '../Countries';
 
 const Europe = ({
@@ -27,9 +27,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3790'
+              countryId && countryId !== 'g3790'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -117,9 +115,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g4222'
+              countryId && countryId !== 'g4222'
                 ? '#36454f'
                 : '#90288f',
             stroke: 'rgb(0, 0, 0)',
@@ -139,9 +135,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3856'
+              countryId && countryId !== 'g3856'
                 ? '#36454f'
                 : '#1b83ff',
             stroke: 'rgb(0, 0, 0)',
@@ -177,11 +171,7 @@ const Europe = ({
             strokeWidth=".125"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3790'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3790' ? '#fff' : '#000',
             }}
           >
             GEORGIA
@@ -201,11 +191,18 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           pointerEvents="visible"
           style={{
-            fill: 'none',
-            stroke: 'none',
-            pointerEvents: 'visible',
-            display: 'none',
+            fill:
+              countryId && countryId !== 'g4205'
+                ? '#36454f'
+                : '#1b83ff',
+            stroke: 'rgb(0, 0, 0)',
           }}
+          // style={{
+          // fill: 'none',
+          // stroke: 'none',
+          // pointerEvents: 'visible',
+          // display: 'none',
+          // }}
         ></path>
         <text
           style={{ display: !answers['Wales'] ? 'none' : '' }}
@@ -236,12 +233,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".093"
             style={{
-              fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g4205'
-                  ? '#fff'
-                  : '#000',
+              fill: '#000',
             }}
           >
             WALES
@@ -261,11 +253,18 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           pointerEvents="visible"
           style={{
-            fill: 'none',
-            stroke: 'none',
-            pointerEvents: 'visible',
-            // display: 'none',
+            fill:
+              countryId && countryId !== 'g4200'
+                ? '#36454f'
+                : '#e1021a',
+            stroke: 'rgb(0, 0, 0)',
           }}
+          // style={{
+          //   fill: 'none',
+          //   stroke: 'none',
+          //   pointerEvents: 'visible',
+          //   // display: 'none',
+          // }}
         ></path>
         <text
           style={{ display: !answers['England'] ? 'none' : '' }}
@@ -315,13 +314,12 @@ const Europe = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g4311'
-                ? '#36454f'
-                : '#e1021a',
-            stroke: 'rgb(0, 0, 0)',
+            display: 'none',
+            // fill:
+            //   countryId && countryId !== 'g4311'
+            //     ? '#36454f'
+            //     : '#e1021a',
+            // stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
@@ -375,9 +373,7 @@ const Europe = ({
           pointerEvents="visible"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g4311'
+              countryId && countryId !== 'g4210'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -387,7 +383,7 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['United Kingdom, The'] ? 'none' : '',
+            display: !answers['Scotland'] ? 'none' : '',
           }}
           id="Scotland_label"
           y="134.658"
@@ -416,12 +412,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".102"
             style={{
-              fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g4210'
-                  ? '#fff'
-                  : '#000',
+              fill: '#000',
             }}
           >
             SCOTLAND
@@ -442,9 +433,7 @@ const Europe = ({
           pointerEvents="visible"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g4311'
+              countryId && countryId !== 'g4195'
                 ? '#36454f'
                 : '#fb9521',
             stroke: 'rgb(0, 0, 0)',
@@ -454,7 +443,7 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['United Kingdom, The'] ? 'none' : '',
+            display: !answers['Northern Ireland'] ? 'none' : '',
             lineHeight: '0.8',
           }}
           id="Northern_Ireland_label"
@@ -517,9 +506,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g4213'
+              countryId && countryId !== 'g4213'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -539,9 +526,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3680'
+              countryId && countryId !== 'g3680'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
@@ -596,9 +581,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3841'
+              countryId && countryId !== 'g3841'
                 ? '#36454f'
                 : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
@@ -634,11 +617,7 @@ const Europe = ({
             strokeWidth=".106"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3841'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3841' ? '#fff' : '#000',
             }}
           >
             CZECHIA
@@ -658,9 +637,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3650'
+              countryId && countryId !== 'g3650'
                 ? '#36454f'
                 : '#705348',
             stroke: 'rgb(0, 0, 0)',
@@ -715,9 +692,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3695'
+              countryId && countryId !== 'g3695'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -753,11 +728,7 @@ const Europe = ({
             strokeWidth=".096"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3695'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3695' ? '#fff' : '#000',
             }}
           >
             NETHERLANDS
@@ -777,9 +748,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3710'
+              countryId && countryId !== 'g3710'
                 ? '#36454f'
                 : '#6a5acd',
             stroke: 'rgb(0, 0, 0)',
@@ -834,9 +803,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3779'
+              countryId && countryId !== 'g3779'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -891,9 +858,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3705'
+              countryId && countryId !== 'g3705'
                 ? '#36454f'
                 : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
@@ -929,11 +894,7 @@ const Europe = ({
             strokeWidth=".116"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3705'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3705' ? '#fff' : '#000',
             }}
           >
             DENMARK
@@ -953,9 +914,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3734'
+              countryId && countryId !== 'g3734'
                 ? '#36454f'
                 : '#ffffff',
             stroke: 'rgb(0, 0, 0)',
@@ -991,11 +950,7 @@ const Europe = ({
             strokeWidth=".173"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3734'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3734' ? '#fff' : '#000',
             }}
           >
             ICELAND
@@ -1015,9 +970,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3655'
+              countryId && countryId !== 'g3655'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1053,11 +1006,7 @@ const Europe = ({
             strokeWidth=".164"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3655'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3655' ? '#fff' : '#000',
             }}
           >
             PORTUGAL
@@ -1077,9 +1026,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3660'
+              countryId && countryId !== 'g3660'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -1118,11 +1065,7 @@ const Europe = ({
             strokeWidth=".212"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3660'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3660' ? '#fff' : '#000',
             }}
           >
             SPAIN
@@ -1142,9 +1085,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3846'
+              countryId && countryId !== 'g3846'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -1201,9 +1142,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3784'
+              countryId && countryId !== 'g3784'
                 ? '#36454f'
                 : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
@@ -1239,11 +1178,7 @@ const Europe = ({
             strokeWidth=".125"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3784'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3784' ? '#fff' : '#000',
             }}
           >
             BULGARIA
@@ -1263,9 +1198,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3831'
+              countryId && countryId !== 'g3831'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -1303,11 +1236,7 @@ const Europe = ({
             strokeWidth=".135"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3831'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3831' ? '#fff' : '#000',
             }}
           >
             HUNGARY
@@ -1327,9 +1256,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3821'
+              countryId && countryId !== 'g3821'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1384,9 +1311,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3724'
+              countryId && countryId !== 'g3724'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1422,11 +1347,7 @@ const Europe = ({
             strokeWidth=".183"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3724'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3724' ? '#fff' : '#000',
             }}
           >
             SWEDEN
@@ -1446,9 +1367,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3810'
+              countryId && countryId !== 'g3810'
                 ? '#36454f'
                 : '#de1c33',
             stroke: 'rgb(0, 0, 0)',
@@ -1503,9 +1422,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3836'
+              countryId && countryId !== 'g3836'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1562,9 +1479,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3754'
+              countryId && countryId !== 'g3754'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1600,11 +1515,7 @@ const Europe = ({
             strokeWidth=".096"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3754'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3754' ? '#fff' : '#000',
             }}
           >
             LITHUANIA
@@ -1624,9 +1535,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3749'
+              countryId && countryId !== 'g3749'
                 ? '#36454f'
                 : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1681,9 +1590,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3744'
+              countryId && countryId !== 'g3744'
                 ? '#36454f'
                 : '#525b61',
             stroke: 'rgb(0, 0, 0)',
@@ -1738,9 +1645,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3800'
+              countryId && countryId !== 'g3800'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -1776,11 +1681,7 @@ const Europe = ({
             strokeWidth=".058"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3800'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3800' ? '#fff' : '#000',
             }}
           >
             MONTENEGRO
@@ -1800,9 +1701,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3719'
+              countryId && countryId !== 'g3719'
                 ? '#36454f'
                 : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
@@ -1838,11 +1737,7 @@ const Europe = ({
             strokeWidth=".183"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3719'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3719' ? '#fff' : '#000',
             }}
           >
             NORWAY
@@ -1862,9 +1757,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3729'
+              countryId && countryId !== 'g3729'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -1920,9 +1813,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3645'
+              countryId && countryId !== 'g3645'
                 ? '#36454f'
                 : '#008479',
             stroke: 'rgb(0, 0, 0)',
@@ -1977,9 +1868,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3769'
+              countryId && countryId !== 'g3769'
                 ? '#36454f'
                 : '#92268f',
             stroke: 'rgb(0, 0, 0)',
@@ -2034,9 +1923,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3795'
+              countryId && countryId !== 'g3795'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -2091,9 +1978,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3700'
+              countryId && countryId !== 'g3700'
                 ? '#36454f'
                 : '#0d9445',
             stroke: 'rgb(0, 0, 0)',
@@ -2129,11 +2014,7 @@ const Europe = ({
             strokeWidth=".154"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3700'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3700' ? '#fff' : '#000',
             }}
           >
             IRELAND
@@ -2153,9 +2034,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3805'
+              countryId && countryId !== 'g3805'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -2193,11 +2072,7 @@ const Europe = ({
             strokeWidth=".048"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3805'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3805' ? '#fff' : '#000',
             }}
           >
             KOSOVO
@@ -2216,9 +2091,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3816'
+              countryId && countryId !== 'g3816'
                 ? '#36454f'
                 : '#d21c5b',
             stroke: 'rgb(0, 0, 0)',
@@ -2301,9 +2174,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3866'
+              countryId && countryId !== 'g3866'
                 ? '#36454f'
                 : '#fe9724',
             stroke: 'rgb(0, 0, 0)',
@@ -2341,11 +2212,7 @@ const Europe = ({
             strokeWidth=".067"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3866'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3866' ? '#fff' : '#000',
             }}
           >
             ARMENIA
@@ -2365,9 +2232,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3665'
+              countryId && countryId !== 'g3665'
                 ? '#36454f'
                 : '#91268e',
             stroke: 'rgb(0, 0, 0)',
@@ -2422,9 +2287,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3764'
+              countryId && countryId !== 'g3764'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -2479,9 +2342,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3759'
+              countryId && countryId !== 'g3759'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -2517,11 +2378,7 @@ const Europe = ({
             strokeWidth=".183"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3759'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3759' ? '#fff' : '#000',
             }}
           >
             BELARUS
@@ -2541,9 +2398,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3640'
+              countryId && countryId !== 'g3640'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2579,11 +2434,7 @@ const Europe = ({
             strokeWidth=".077"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3640'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3640' ? '#fff' : '#000',
             }}
           >
             CYPRUS
@@ -2603,9 +2454,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3851'
+              countryId && countryId !== 'g3851'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2663,9 +2512,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3670'
+              countryId && countryId !== 'g3670'
                 ? '#36454f'
                 : '#1071b0',
             stroke: 'rgb(0, 0, 0)',
@@ -2703,11 +2550,7 @@ const Europe = ({
             strokeWidth=".067"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3660'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3660' ? '#fff' : '#000',
             }}
           >
             ANDORRA
@@ -2727,9 +2570,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3675'
+              countryId && countryId !== 'g3675'
                 ? '#36454f'
                 : '#bd517e',
             stroke: 'rgb(0, 0, 0)',
@@ -2794,9 +2635,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3774'
+              countryId && countryId !== 'g3774'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
@@ -2851,9 +2690,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3685'
+              countryId && countryId !== 'g3685'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -2908,9 +2745,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3690'
+              countryId && countryId !== 'g3690'
                 ? '#36454f'
                 : '#faa433',
             stroke: 'rgb(0, 0, 0)',
@@ -2946,11 +2781,7 @@ const Europe = ({
             strokeWidth=".116"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3690'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3690' ? '#fff' : '#000',
             }}
           >
             BELGIUM
@@ -2970,9 +2801,7 @@ const Europe = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'europe' &&
-              countryId &&
-              countryId !== 'g3826'
+              countryId && countryId !== 'g3826'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -3010,11 +2839,7 @@ const Europe = ({
             strokeWidth=".077"
             style={{
               fill:
-                zoomIn === 'europe' &&
-                countryId &&
-                countryId !== 'g3826'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3826' ? '#fff' : '#000',
             }}
           >
             SLOVENIA
@@ -3025,10 +2850,11 @@ const Europe = ({
   );
 };
 
-const MemoizedEurope = memo(
-  Europe,
-  (oldProps, newProps) =>
-    oldProps.zoomIn !== 'europe' && newProps.zoomIn !== 'europe',
-);
+// const MemoizedEurope = memo(
+//   Europe,
+//   (oldProps, newProps) =>
+//     oldProps.zoomIn !== 'europe' && newProps.zoomIn !== 'europe',
+// );
 
-export default MemoizedEurope;
+// export default MemoizedEurope;
+export default Europe;

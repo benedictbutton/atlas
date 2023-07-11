@@ -1,42 +1,21 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
-const useDelayedUnmounting = (time = 5000) => {
-  const [state, setState] = useState('unmounted');
-  const show = useCallback(() => {
-    // debugger;
-    if (state === 'unmounting') {
-      return;
-    }
-    setState('mounting');
-  }, [state]);
-
-  const hide = useCallback(() => {
-    if (state === 'mounting') {
-      return;
-    }
-    setState('unmounting');
-  }, [state]);
+const useDelayedUnmounting = (isMounted, delay = 5000) => {
+  const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
     let timeoutId;
-    if (state === 'unmounting') {
-      timeoutId = setTimeout(() => {
-        setState('unmounted');
-      }, time);
-    } else if (state === 'mounting') {
-      timeoutId = setTimeout(() => {
-        setState('mounted');
-      }, time);
+
+    if (isMounted && !shouldRender) {
+      setShouldRender(true);
+    } else if (!isMounted && shouldRender) {
+      timeoutId = setTimeout(() => setShouldRender(false), delay);
     }
 
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [state, time]);
+    return () => clearTimeout(timeoutId);
+  }, [delay, isMounted, shouldRender]);
 
-  console.log('test: ', state);
-
-  return [state, show, hide];
+  return shouldRender;
 };
 
 export default useDelayedUnmounting;

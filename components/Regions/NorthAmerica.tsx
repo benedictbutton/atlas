@@ -31,9 +31,7 @@ const NorthAmerica = ({
           stop-opacity="1"
           style={{
             fill:
-              zoomIn === 'northAmerica' &&
-              countryId &&
-              countryId !== 'g1786'
+              countryId && countryId !== 'g1786'
                 ? '#36454f'
                 : '#0d9445',
             fontVariationSettings: 'normal',
@@ -74,11 +72,7 @@ const NorthAmerica = ({
             strokeWidth=".318"
             style={{
               fill:
-                zoomIn === 'northAmerica' &&
-                countryId &&
-                countryId !== 'g1786'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g1786' ? '#fff' : '#000',
             }}
           >
             GREENLAND
@@ -97,9 +91,7 @@ const NorthAmerica = ({
           id="United States"
           style={{
             fill:
-              zoomIn === 'northAmerica' &&
-              countryId &&
-              countryId !== 'g1915'
+              countryId && countryId !== 'g1915'
                 ? '#36454f'
                 : '#000fff',
             fontVariationSettings: 'normal',
@@ -169,9 +161,7 @@ const NorthAmerica = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'northAmerica' &&
-              countryId &&
-              countryId !== 'g1791'
+              countryId && countryId !== 'g1791'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -207,11 +197,7 @@ const NorthAmerica = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'northAmerica' &&
-                countryId &&
-                countryId !== 'g1791'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g1791' ? '#fff' : '#000',
             }}
           >
             MEXICO
@@ -225,9 +211,7 @@ const NorthAmerica = ({
           style={{
             fontVariationSettings: 'normal',
             fill:
-              zoomIn === 'northAmerica' &&
-              countryId &&
-              countryId !== 'g1910'
+              countryId && countryId !== 'g1910'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',

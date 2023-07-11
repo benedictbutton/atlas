@@ -28,9 +28,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g4036'
+              countryId && countryId !== 'g4036'
                 ? '#36454f'
                 : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
@@ -66,11 +64,7 @@ const Africa = ({
             strokeWidth=".096"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             DJIBOUTI
@@ -90,9 +84,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3496'
+              countryId && countryId !== 'g3496'
                 ? '#36454f'
                 : '#90288f',
             stroke: 'rgb(0, 0, 0)',
@@ -147,9 +139,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3469'
+              countryId && countryId !== 'g3469'
                 ? '#36454f'
                 : '#1b83ff',
             stroke: 'rgb(0, 0, 0)',
@@ -185,11 +175,7 @@ const Africa = ({
             strokeWidth=".125"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             GHANA
@@ -208,9 +194,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3352'
+              countryId && countryId !== 'g3352'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -248,11 +232,7 @@ const Africa = ({
             strokeWidth=".212"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             MADAGASCAR
@@ -270,9 +250,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3475'
+              countryId && countryId !== 'g3475'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -315,11 +293,7 @@ const Africa = ({
             fill-opacity="1"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
             font-style="normal"
             font-variant="normal"
@@ -338,11 +312,7 @@ const Africa = ({
             fill-opacity="1"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
             font-style="normal"
             font-variant="normal"
@@ -367,11 +337,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3392'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3392' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -422,9 +388,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3332'
+              countryId && countryId !== 'g3332'
                 ? '#36454f'
                 : '#faa433',
             stroke: 'rgb(0, 0, 0)',
@@ -460,11 +424,7 @@ const Africa = ({
             strokeWidth=".173"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3332'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3332' ? '#fff' : '#000',
             }}
           >
             BOTSWANA
@@ -484,9 +444,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g4041'
+              countryId && countryId !== 'g4041'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -542,9 +500,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3404'
+              countryId && countryId !== 'g3404'
                 ? '#36454f'
                 : '#705348',
             stroke: 'rgb(0, 0, 0)',
@@ -623,9 +579,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3511'
+              countryId && countryId !== 'g3511'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -661,11 +615,7 @@ const Africa = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             MALI
@@ -684,9 +634,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3429'
+              countryId && countryId !== 'g3429'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -722,11 +670,7 @@ const Africa = ({
             strokeWidth=".241"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             SOMALIA
@@ -746,9 +690,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3347'
+              countryId && countryId !== 'g3347'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -803,9 +745,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3527'
+              countryId && countryId !== 'g3527'
                 ? '#36454f'
                 : '#e30088',
             stroke: 'rgb(0, 0, 0)',
@@ -860,9 +800,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3439'
+              countryId && countryId !== 'g3439'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -916,9 +854,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3317'
+              countryId && countryId !== 'g3317'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -973,9 +909,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3327'
+              countryId && countryId !== 'g3327'
                 ? '#36454f'
                 : '#df001d',
             stroke: 'rgb(0, 0, 0)',
@@ -1028,9 +962,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3322'
+              countryId && countryId !== 'g3322'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -1083,9 +1015,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3367'
+              countryId && countryId !== 'g3367'
                 ? '#36454f'
                 : '#df001d',
             stroke: 'rgb(0, 0, 0)',
@@ -1138,9 +1068,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3362'
+              countryId && countryId !== 'g3362'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -1176,11 +1104,7 @@ const Africa = ({
             strokeWidth=".212"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             ZAMBIA
@@ -1200,11 +1124,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3342'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3342' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -1255,9 +1175,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3372'
+              countryId && countryId !== 'g3372'
                 ? '#36454f'
                 : '#0f72b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1314,9 +1232,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3377'
+              countryId && countryId !== 'g3377'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1356,11 +1272,7 @@ const Africa = ({
             strokeWidth=".164"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             CONGO
@@ -1380,9 +1292,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3382'
+              countryId && countryId !== 'g3382'
                 ? '#36454f'
                 : '#de1c33',
             stroke: 'rgb(0, 0, 0)',
@@ -1435,9 +1345,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3424'
+              countryId && countryId !== 'g3424'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1490,9 +1398,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3434'
+              countryId && countryId !== 'g3434'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -1528,11 +1434,7 @@ const Africa = ({
             strokeWidth=".231"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             ETHIOPIA
@@ -1552,9 +1454,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3480'
+              countryId && countryId !== 'g3480'
                 ? '#36454f'
                 : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
@@ -1607,9 +1507,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3387'
+              countryId && countryId !== 'g3387'
                 ? '#36454f'
                 : '#525b61',
             stroke: 'rgb(0, 0, 0)',
@@ -1664,9 +1562,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3419'
+              countryId && countryId !== 'g3419'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -1717,9 +1613,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3398'
+              countryId && countryId !== 'g3398'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -1800,9 +1694,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3444'
+              countryId && countryId !== 'g3444'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -1855,9 +1747,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3522'
+              countryId && countryId !== 'g3522'
                 ? '#36454f'
                 : '#008479',
             stroke: 'rgb(0, 0, 0)',
@@ -1910,9 +1800,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3454'
+              countryId && countryId !== 'g3454'
                 ? '#36454f'
                 : '#92268f',
             stroke: 'rgb(0, 0, 0)',
@@ -1965,9 +1853,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3337'
+              countryId && countryId !== 'g3337'
                 ? '#36454f'
                 : '#e3106f',
             stroke: 'rgb(0, 0, 0)',
@@ -2018,9 +1904,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3517'
+              countryId && countryId !== 'g3517'
                 ? '#36454f'
                 : '#ff9549',
             stroke: 'rgb(0, 0, 0)',
@@ -2056,11 +1940,7 @@ const Africa = ({
             style={{
               lineHeight: '95',
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3517'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3517' ? '#fff' : '#000',
             }}
             y="273.786"
             x="425.514"
@@ -2080,11 +1960,7 @@ const Africa = ({
             style={{
               lineHeight: '95',
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3517'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3517' ? '#fff' : '#000',
             }}
             id="tspan6694"
             y="275.904"
@@ -2115,9 +1991,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3409'
+              countryId && countryId !== 'g3409'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -2153,11 +2027,7 @@ const Africa = ({
             strokeWidth=".202"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             TANZANIA
@@ -2177,9 +2047,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3459'
+              countryId && countryId !== 'g3459'
                 ? '#36454f'
                 : '#d21c5b',
             stroke: 'rgb(0, 0, 0)',
@@ -2232,9 +2100,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3491'
+              countryId && countryId !== 'g3491'
                 ? '#36454f'
                 : '#fe9724',
             stroke: 'rgb(0, 0, 0)',
@@ -2270,11 +2136,7 @@ const Africa = ({
             strokeWidth=".183"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             GUINEA
@@ -2294,9 +2156,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3501'
+              countryId && countryId !== 'g3501'
                 ? '#36454f'
                 : '#000fff',
             stroke: 'rgb(0, 0, 0)',
@@ -2349,9 +2209,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3506'
+              countryId && countryId !== 'g3506'
                 ? '#36454f'
                 : '#f3f870',
             stroke: 'rgb(0, 0, 0)',
@@ -2387,11 +2245,7 @@ const Africa = ({
             strokeWidth=".135"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3506'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3506' ? '#fff' : '#000',
             }}
           >
             SENEGAL
@@ -2409,9 +2263,7 @@ const Africa = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3486'
+              countryId && countryId !== 'g3486'
                 ? '#36454f'
                 : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
@@ -2490,9 +2342,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3464'
+              countryId && countryId !== 'g3464'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2547,9 +2397,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3357'
+              countryId && countryId !== 'g3357'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -2585,11 +2433,7 @@ const Africa = ({
             strokeWidth=".144"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             MALAWI
@@ -2609,9 +2453,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3449'
+              countryId && countryId !== 'g3449'
                 ? '#36454f'
                 : '#1071b0',
             stroke: 'rgb(0, 0, 0)',
@@ -2664,9 +2506,7 @@ const Africa = ({
           data-originalStrokeWidth="0.15"
           style={{
             fill:
-              zoomIn === 'africa' &&
-              countryId &&
-              countryId !== 'g3414'
+              countryId && countryId !== 'g3414'
                 ? '#36454f'
                 : '#bd517e',
             stroke: 'rgb(0, 0, 0)',
@@ -2702,11 +2542,7 @@ const Africa = ({
             strokeWidth=".087"
             style={{
               fill:
-                zoomIn === 'africa' &&
-                countryId &&
-                countryId !== 'g3496'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3496' ? '#fff' : '#000',
             }}
           >
             BURUNDI

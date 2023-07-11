@@ -25,11 +25,7 @@ const MiddleEast = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3533'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3533' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
             strokeWidth: '0.15',
           }}
@@ -106,9 +102,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3548'
+              countryId && countryId !== 'g3548'
                 ? '#36454f'
                 : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
@@ -160,9 +154,7 @@ const MiddleEast = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3538'
+              countryId && countryId !== 'g3538'
                 ? '#36454f'
                 : '#737578',
             stroke: 'rgb(0, 0, 0)',
@@ -198,11 +190,7 @@ const MiddleEast = ({
             strokeWidth=".202"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3553'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3553' ? '#fff' : '#000',
             }}
           >
             MOROCCO
@@ -221,9 +209,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3553'
+              countryId && countryId !== 'g3553'
                 ? '#36454f'
                 : '#f9a433',
             stroke: 'rgb(0, 0, 0)',
@@ -260,11 +246,7 @@ const MiddleEast = ({
             strokeWidth=".26"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3553'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3553' ? '#fff' : '#000',
             }}
           >
             LIBYA
@@ -283,9 +265,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3558'
+              countryId && countryId !== 'g3558'
                 ? '#36454f'
                 : '#009330',
             stroke: 'rgb(0, 0, 0)',
@@ -338,9 +318,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3543'
+              countryId && countryId !== 'g3543'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -393,9 +371,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3635'
+              countryId && countryId !== 'g3635'
                 ? '#36454f'
                 : '#059031',
             stroke: 'rgb(0, 0, 0)',
@@ -447,9 +423,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3861'
+              countryId && countryId !== 'g3861'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -501,9 +475,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3615'
+              countryId && countryId !== 'g3615'
                 ? '#36454f'
                 : '#98fe01',
             stroke: 'rgb(0, 0, 0)',
@@ -555,11 +527,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3896'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3896' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -609,9 +577,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3579'
+              countryId && countryId !== 'g3579'
                 ? '#36454f'
                 : '#727578',
             stroke: 'rgb(0, 0, 0)',
@@ -663,11 +629,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3563'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3563' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -717,9 +679,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3584'
+              countryId && countryId !== 'g3584'
                 ? '#36454f'
                 : '#ffcc01',
             stroke: 'rgb(0, 0, 0)',
@@ -755,11 +715,7 @@ const MiddleEast = ({
             strokeWidth=".231"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3584'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3584' ? '#fff' : '#000',
             }}
           >
             SAUDI ARABIA
@@ -778,11 +734,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3620'
-                ? '#36454f'
-                : 'blue',
+              countryId && countryId !== 'g3620' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -832,9 +784,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3568'
+              countryId && countryId !== 'g3568'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -886,9 +836,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3625'
+              countryId && countryId !== 'g3625'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -939,9 +887,7 @@ const MiddleEast = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3610'
+              countryId && countryId !== 'g3610'
                 ? '#36454f'
                 : '#026835',
             stroke: 'rgb(0, 0, 0)',
@@ -1023,9 +969,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3630'
+              countryId && countryId !== 'g3630'
                 ? '#36454f'
                 : '#e50e72',
             stroke: 'rgb(0, 0, 0)',
@@ -1077,9 +1021,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3881'
+              countryId && countryId !== 'g3881'
                 ? '#36454f'
                 : '#f9a432',
             stroke: 'rgb(0, 0, 0)',
@@ -1115,11 +1057,7 @@ const MiddleEast = ({
             strokeWidth=".183"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3881'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3881' ? '#fff' : '#000',
             }}
           >
             AFGHANISTAN
@@ -1138,9 +1076,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3604'
+              countryId && countryId !== 'g3604'
                 ? '#36454f'
                 : '#ff9966',
             stroke: 'rgb(0, 0, 0)',
@@ -1192,9 +1128,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3594'
+              countryId && countryId !== 'g3594'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1246,9 +1180,7 @@ const MiddleEast = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3589'
+              countryId && countryId !== 'g3589'
                 ? '#36454f'
                 : '#803788',
             stroke: 'rgb(0, 0, 0)',
@@ -1284,11 +1216,7 @@ const MiddleEast = ({
             strokeWidth=".106"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3589'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3589' ? '#fff' : '#000',
             }}
           >
             BAHRAIN
@@ -1306,9 +1234,7 @@ const MiddleEast = ({
           stroke-dasharray="none"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3574'
+              countryId && countryId !== 'g3574'
                 ? '#36454f'
                 : '#05922a',
             stroke: 'rgb(0, 0, 0)',
@@ -1388,9 +1314,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              zoomIn === 'middleEast' &&
-              countryId &&
-              countryId !== 'g3599'
+              countryId && countryId !== 'g3599'
                 ? '#36454f'
                 : '#df001c',
             stroke: 'rgb(0, 0, 0)',
@@ -1426,11 +1350,7 @@ const MiddleEast = ({
             strokeWidth=".116"
             style={{
               fill:
-                zoomIn === 'middleEast' &&
-                countryId &&
-                countryId !== 'g3553'
-                  ? '#fff'
-                  : '#000',
+                countryId && countryId !== 'g3553' ? '#fff' : '#000',
             }}
           >
             JORDAN
