@@ -1,9 +1,9 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { useSession } from 'next-auth/react';
-import { gql } from '../pages/__generated__/gql';
+import { gql } from '../__generated__/gql';
 import { countries } from '../data/countries';
-import { CreateGameMutation } from '../pages/__generated__/graphql';
+import { CreateGameMutation } from '../__generated__/graphql';
 
 type FormedAnswer = {
   countryName: string;

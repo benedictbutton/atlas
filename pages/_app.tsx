@@ -29,15 +29,14 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
 });
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:3000/api/graphql', // Server URL (must be absolute)
-  // uri: 'http://bens-atlas.fly.dev/api/graphql'
+  // Server URL (must be absolute)
+  // uri: 'http://localhost:3000/api/graphql',
+  uri: 'http://bens-atlas.fly.dev/api/graphql',
   // headers: getAuthHeaders(),
   credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
 });
 
 const client = new ApolloClient({
-  // uri: "http://localhost:3000/api/graphql",
-  // uri: "https://flyby-gateway.herokuapp.com/",
   link: from([errorLink, httpLink]),
   cache: new InMemoryCache({ addTypename: false }),
 });

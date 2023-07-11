@@ -1,6 +1,6 @@
 import { Answer, Country, Game } from '@prisma/client';
 import { Context } from './context';
-import { UserInput } from '../pages/__generated__/graphql';
+import { UserInput } from '../__generated__/graphql';
 
 const bcrypt = require('bcrypt');
 // import type { NextApiReqzuest, NextApiResponse } from "next";

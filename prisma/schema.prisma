@@ -44,7 +44,7 @@ model User {
   password      String?
   emailVerified DateTime?
   image         String?
-  introMessage  Boolean
+  introMessage  Boolean?   @default(true)
   accounts      Account[]
   sessions      Session[]
   games         Game[]
