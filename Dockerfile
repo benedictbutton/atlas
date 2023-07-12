@@ -14,7 +14,6 @@ COPY . .
 
 RUN npx prisma generate
 RUN yarn build
-RUN npx prisma migrate resolve --rolled-back '20230710042958_adds_boolean_intro_flag_to_user'
 RUN npx prisma migrate deploy
 
 FROM node:18-alpine3.16 AS deploy

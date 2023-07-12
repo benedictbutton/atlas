@@ -27,7 +27,7 @@ const TallInput = ({
         <p
           className={`text ${
             !zoomIn ? 'collapse' : ''
-          } w-full mb-3 text-3xl text-white`}
+          } w-full mb-3 text-3xl text-[#80b6ec]`}
         >
           {regionHeader}
         </p>

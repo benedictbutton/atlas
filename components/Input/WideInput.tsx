@@ -22,7 +22,7 @@ const WideInput = ({
         <p
           className={`flex-1 text ${
             !zoomIn ? 'collapse' : ''
-          } w-1/4 mb-1 text-3xl text-white`}
+          } w-1/4 mb-1 text-3xl text-[#80b6ec]`}
         >
           {regionHeader}
         </p>

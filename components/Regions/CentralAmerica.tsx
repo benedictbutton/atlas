@@ -26,11 +26,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#fbb34a',
+            fill:
+              countryId && countryId !== 'g3297'
+                ? '#36454f'
+                : '#fbb34a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['El Salvador'] ? 'none' : '' }}
           transform="matrix(1.00944 -.22641 .2442 .93588 0 0)"
           id="El_Salvador_label"
           y="315.406"
@@ -75,11 +79,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#076bb3',
+            fill:
+              countryId && countryId !== 'g3312'
+                ? '#36454f'
+                : '#076bb3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Belize'] ? 'none' : '' }}
           id="Belize_label"
           y="258.332"
           x="221.327"
@@ -123,19 +131,23 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e1021a',
+            fill:
+              countryId && countryId !== 'g3250'
+                ? '#36454f'
+                : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
-          id="Trinidad_and_Tobago_label"
-          y="272.65"
-          x="289.315"
           style={{
+            display: !answers['Trinidad and Tobago'] ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
             // display: 'none',
           }}
+          id="Trinidad_and_Tobago_label"
+          y="272.65"
+          x="289.315"
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -206,19 +218,23 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#2dc4f4',
+            fill:
+              countryId && countryId !== 'g3256'
+                ? '#36454f'
+                : '#2dc4f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
-          id="Puerto_Rico_label"
-          y="259.66"
-          x="276.808"
           style={{
+            display: !answers['Puerto Rico'] ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
             // display: 'none',
           }}
+          id="Puerto_Rico_label"
+          y="259.66"
+          x="276.808"
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -290,11 +306,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#bd517e',
+            fill:
+              countryId && countryId !== 'g3267'
+                ? '#36454f'
+                : '#bd517e',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Haiti'] ? 'none' : '' }}
           id="Haiti_label"
           y="259.968"
           x="250.617"
@@ -338,18 +358,22 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#103f66',
+            fill:
+              countryId && countryId !== 'g3262'
+                ? '#36454f'
+                : '#103f66',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
-          id="Dominican_Republic_label"
-          y="248.895"
-          x="267.362"
           style={{
+            display: !answers['Dominican Republic'] ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
           }}
+          id="Dominican_Republic_label"
+          y="248.895"
+          x="267.362"
           font-style="normal"
           font-variant="normal"
           font-stretch="normal"
@@ -413,11 +437,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#2fc2f4',
+            fill:
+              countryId && countryId !== 'g3292'
+                ? '#36454f'
+                : '#2fc2f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Nicaragua'] ? 'none' : '' }}
           transform="matrix(.99832 -.2654 .28626 .92558 0 0)"
           id="Nicaragua_label"
           y="325.745"
@@ -464,11 +492,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0fa89c',
+            fill:
+              countryId && countryId !== 'g3282'
+                ? '#36454f'
+                : '#0fa89c',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Panama'] ? 'none' : '' }}
           transform="matrix(.97555 -.33027 .35623 .90446 0 0)"
           id="Panama_label"
           y="351.431"
@@ -513,11 +545,15 @@ const CentralAmerica = ({
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#4f8400',
+            fill:
+              countryId && countryId !== 'g3277'
+                ? '#36454f'
+                : '#4f8400',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Cuba'] ? 'none' : '' }}
           id="Cuba_label"
           y="252.054"
           x="229.068"
@@ -562,11 +598,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e3f97d',
+            fill:
+              countryId && countryId !== 'g3272'
+                ? '#36454f'
+                : '#e3f97d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Jamaica'] ? 'none' : '' }}
           id="Jamaica_label"
           y="259.66"
           x="236.203"
@@ -611,11 +651,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#a6a9ac',
+            fill:
+              countryId && countryId !== 'g3307'
+                ? '#36454f'
+                : '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Guatemala'] ? 'none' : '' }}
           transform="matrix(1.00753 -.2336 .25195 .93411 0 0)"
           id="Guatemala_label"
           y="311.691"
@@ -660,11 +704,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#1272b3',
+            fill:
+              countryId && countryId !== 'g3287'
+                ? '#36454f'
+                : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Costa Rica'] ? 'none' : '' }}
           transform="matrix(1.00973 -.22527 .24297 .93615 0 0)"
           id="Costa_Rica_label"
           y="327.661"
@@ -709,11 +757,15 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#00167f',
+            fill:
+              countryId && countryId !== 'g3302'
+                ? '#36454f'
+                : '#00167f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
         <text
+          style={{ display: !answers['Honduras'] ? 'none' : '' }}
           transform="matrix(.99932 -.26217 .28278 .9265 0 0)"
           id="Honduras_label"
           y="316.522"
@@ -759,7 +811,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#2fc2f4',
+            fill:
+              countryId && countryId !== 'g4237'
+                ? '#36454f'
+                : '#2fc2f4',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -777,7 +832,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#0fa89c',
+            fill:
+              countryId && countryId !== 'g4240'
+                ? '#36454f'
+                : '#0fa89c',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -795,7 +853,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#901f5d',
+            fill:
+              countryId && countryId !== 'g4243'
+                ? '#36454f'
+                : '#901f5d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -813,7 +874,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e3f97d',
+            fill:
+              countryId && countryId !== 'g4246'
+                ? '#36454f'
+                : '#e3f97d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -831,7 +895,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#a6a9ac',
+            fill:
+              countryId && countryId !== 'g4252'
+                ? '#36454f'
+                : '#a6a9ac',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -849,7 +916,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#1272b3',
+            fill:
+              countryId && countryId !== 'g4249'
+                ? '#36454f'
+                : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -867,7 +937,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#00167f',
+            fill:
+              countryId && countryId !== 'g4255'
+                ? '#36454f'
+                : '#00167f',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -885,7 +958,10 @@ const CentralAmerica = ({
           stroke-opacity="1"
           data-originalStrokeWidth="0.15"
           style={{
-            fill: '#e1021a',
+            fill:
+              countryId && countryId !== 'g4231'
+                ? '#36454f'
+                : '#e1021a',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>

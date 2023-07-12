@@ -27,6 +27,9 @@ const useZoom = () => {
       case 'northAmerica':
         region = 'North America';
         break;
+      case 'urals':
+        region = 'Eastern Europe, Volga, & the Urals';
+        break;
       default:
         region = '';
         break;

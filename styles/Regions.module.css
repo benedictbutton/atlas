@@ -1,0 +1,251 @@
+.africa__zoom__in {
+  animation: africa__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes africa__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.5) translate(-38%, -43%);
+  }
+}
+
+.africa__zoom__out {
+  animation: africa__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes africa__zoom__out {
+  from {
+    transform: scale(2.5) translate(-38%, -43%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.asia__zoom__in {
+  animation: asia__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes asia__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.2) translate(-57%, -27%);
+  }
+}
+
+.asia__zoom__out {
+  animation: asia__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes asia__zoom__out {
+  from {
+    transform: scale(2.2) translate(-57%, -27%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.ca__zoom__in {
+  animation: ca__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ca__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(5.5) translate(-20%, -45%);
+  }
+}
+
+.ca__zoom__out {
+  animation: ca__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ca__zoom__out {
+  from {
+    transform: scale(5.5) translate(-20%, -45%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.europe__zoom__in {
+  animation: europe__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes europe__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3) translate(-39%, -15%);
+  }
+}
+
+.europe__zoom__out {
+  animation: europe__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes europe__zoom__out {
+  from {
+    transform: scale(3) translate(-39%, -15%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.middle-east__zoom__in {
+  animation: middle-east__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-east__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.8) translate(-43%, -32%);
+  }
+}
+
+.middle-east__zoom__out {
+  animation: middle-east__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-east__zoom__out {
+  from {
+    transform: scale(2.8) translate(-43%, -32%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.na__zoom__in {
+  animation: na__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes na__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5) translateX(5%);
+  }
+}
+
+.na__zoom__out {
+  animation: na__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes na__zoom__out {
+  from {
+    transform: scale(1.5) translateX(5%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.oceania__zoom__in {
+  animation: oceania__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oceania__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.5) translate(-72%, -55%);
+  }
+}
+
+.oceania__zoom__out {
+  animation: oceania__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oceania__zoom__out {
+  from {
+    transform: scale(2.5) translate(-72%, -55%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.sa__zoom__in {
+  animation: sa__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sa__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.4) translate(-15%, -54%);
+  }
+}
+
+.sa__zoom__out {
+  animation: sa__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sa__zoom__out {
+  from {
+    transform: scale(2.4) translate(-15%, -54%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.urals__zoom__in {
+  animation: urals__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes urals__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.7) translate(-57%, 0%);
+  }
+}
+
+.urals__zoom__out {
+  animation: urals__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes urals__zoom__out {
+  from {
+    transform: scale(2.4) translate(15%, 54%);
+  }
+  to {
+    transform: scale(1);
+  }
+}

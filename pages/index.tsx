@@ -30,13 +30,18 @@ const Home: NextPage = () => {
               Ben&apos;s Atlas
             </span>
           </h1>
+
           <div className={`flex ${styles.buttons}`}>
-            <div className="w-24 my-2 ml-2 mr-4 p-2 bg-indigo-500 rounded-xl text-white text-center">
-              <Link href="/signin">Sign In</Link>
-            </div>
-            <div className="w-24 m-2 p-2 bg-indigo-500 rounded-xl text-white text-center">
-              <Link href="/signup">Sign Up</Link>
-            </div>
+            <Link href="/signin">
+              <div className="w-24 my-2 ml-2 mr-4 p-2 bg-indigo-500 rounded-xl text-white text-center">
+                Sign In
+              </div>
+            </Link>
+            <Link href="/signup">
+              <div className="w-24 m-2 p-2 bg-indigo-500 rounded-xl text-white text-center">
+                Sign Up
+              </div>
+            </Link>
           </div>
         </div>
       </main>

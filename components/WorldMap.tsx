@@ -137,8 +137,9 @@ const WorldMap = () => {
           strokeWidth={3}
           stroke="currentColor"
           className="absolute top-[10%] left-[10%] w-12 h-12"
+          onClick={(event) => handleZoom(event, 'close')}
         >
-          <g onClick={(event) => handleZoom(event, 'close')}>
+          <g>
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
