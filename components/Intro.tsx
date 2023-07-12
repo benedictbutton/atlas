@@ -44,7 +44,7 @@ const Intro = ({ introMessage, setIntroMessage }) => {
           <p className="flex-1 w-full mb-3 text-center text-4xl text-[#80b6ec]">
             How To Label The World
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center align-center">
             <div className="w-1/2 h-full flex-wrap content-start align-center p-4">
               <ul className="text-[#1b83ff] text-lg list-decimal p-3 border-r-2 border-[#80b6ec] border-solid">
                 <li className="p-2">

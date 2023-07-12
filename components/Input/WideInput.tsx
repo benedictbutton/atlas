@@ -52,7 +52,7 @@ const WideInput = ({
           </button>
         </div>
         {!searchValue && (
-          <div className="w-[55%] text-center">
+          <div className="w-[55%] h-full text-center">
             <WideScore answers={answers} />
           </div>
         )}

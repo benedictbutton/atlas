@@ -21,7 +21,7 @@ const TallInput = ({
     <div
       className={`input ${
         !zoomIn ? 'collapse' : ''
-      } absolute bottom-5 right-5 w-96 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
+      } absolute bottom-5 right-5 w-1/4 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
     >
       <div className="flex flex-wrap content-start h-auto p-5">
         <p

@@ -17,9 +17,9 @@ const WideScore = ({ answers }: Answers) => {
 
   return (
     <svg
-      height={radius * 2}
-      width={radius * 2}
-      viewBox={`0 14 ${radius * 2} ${radius * 2}`}
+      height="100%"
+      width="100%"
+      viewBox={`0 0 ${radius * 2} ${radius * 2}`}
       className="inline-block"
     >
       <defs>
