@@ -107,6 +107,22 @@ const WorldMap = () => {
     [searchValue, countryName, setAnswers, answers],
   );
 
+  const handleResetAnswers = () => {
+    setCountryId('');
+    setCountryName('');
+    setSearchValue('');
+    formInput.current.value = '';
+
+    const resetAnswers = {};
+    const countries = Object.keys(answers);
+    countries.map((country) => {
+      resetAnswers[country] = null;
+      return resetAnswers;
+    });
+
+    setAnswers({ ...answers, ...resetAnswers });
+  };
+
   return (
     <>
       <Profile />
@@ -128,6 +144,7 @@ const WorldMap = () => {
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}
+        handleResetAnswers={handleResetAnswers}
         forwardRef={(el) => (formInput.current = el)}
       />
       {zoomIn && (

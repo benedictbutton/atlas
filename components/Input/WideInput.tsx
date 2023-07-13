@@ -12,6 +12,8 @@ const WideInput = ({
   answers,
   regionHeader,
   countryName,
+  handleResetAnswers,
+  forwardRef,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
   return (
@@ -39,8 +41,8 @@ const WideInput = ({
               type="text"
               placeholder="Country Name"
               name="country"
+              ref={forwardRef}
               onChange={handleSearchValue}
-              value={searchValue}
             />
           </label>
           <button
@@ -71,6 +73,16 @@ const WideInput = ({
           <p className="p-5 text-[#df001d] text-xl">
             Select a country before guessing
           </p>
+        )}
+        {correct + incorrect > 0 && (
+          <button
+            onClick={handleResetAnswers}
+            className="reset absolute bottom-2 right-5 h-[24px] leading-[24px] text-[#df001d]"
+          >
+            <span className="inline-block h-full leading-normal align-middle mb-4">
+              Reset
+            </span>
+          </button>
         )}
       </div>
     </div>

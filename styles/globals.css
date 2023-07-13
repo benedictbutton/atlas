@@ -46,6 +46,13 @@ a {
   left: 0;
 }
 
+.reset:before {
+  content: url('../public/reset.svg');
+  display: inline-block;
+  height: 100%;
+  margin-right: 3px;
+}
+
 .atlas {
   padding-left: 2rem;
 }

@@ -22,6 +22,7 @@ export interface InputProps {
   game: string | undefined;
   createGame: () => void;
   handleSaveGame: () => void;
+  handleResetAnswers: () => void;
 }
 
 const Input = ({ ...props }: InputProps) => {
@@ -29,10 +30,8 @@ const Input = ({ ...props }: InputProps) => {
 
   return (
     <>
-      <div>
-        {width >= 920 && <TallInput {...props} />}
-        {width < 920 && <WideInput {...props} />}
-      </div>
+      {width >= 920 && <TallInput {...props} />}
+      {width < 920 && <WideInput {...props} />}
     </>
   );
 };

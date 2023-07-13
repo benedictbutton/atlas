@@ -15,7 +15,7 @@ const Profile = () => {
       >
         <div className="flex justify-center items-center w-full">
           <p className="text-md md:text-xl mr-2">Profile</p>
-          <div className="relative p-8">
+          <div className="relative p-8 h-auto">
             <Image
               src="/earth.png"
               alt="profile button"
