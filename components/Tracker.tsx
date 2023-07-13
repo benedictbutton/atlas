@@ -18,7 +18,7 @@ const Tracker = ({ isMounted }) => {
     <svg
       height={radius * 2}
       width={radius * 2}
-      viewBox={`0 14 ${radius * 2} ${radius * 2}`}
+      viewBox={`0 0 ${radius * 2} ${radius * 2}`}
       className="inline-block"
     >
       <defs>

@@ -167,7 +167,7 @@ const WorldMap = () => {
         </svg>
       )}
       <svg
-        className="bg-[#80b6ec]"
+        className="h-full bg-[#80b6ec]"
         version="1.2"
         width="100%"
         height="auto"
