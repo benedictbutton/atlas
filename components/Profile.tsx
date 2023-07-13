@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <>
       <div
-        className={`${styles.profile} absolute top-0 right-0 py-4`}
+        className={`${styles.profile} absolute top-0 right-0 py-4 z-20`}
         aria-hidden={hidden}
         onMouseEnter={() => setHidden(false)}
         onMouseLeave={() => setHidden(true)}

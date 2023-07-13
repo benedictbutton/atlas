@@ -47,6 +47,7 @@ const WorldMap = () => {
         setCountryName('');
         setZoomIn('');
         setSearchValue('');
+        formInput.current.value = '';
       } else if (
         countryId === (event.target.parentNode as SVGGElement).id
       ) {

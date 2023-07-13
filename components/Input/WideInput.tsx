@@ -56,7 +56,7 @@ const WideInput = ({
             <WideScore answers={answers} />
           </div>
         )}
-        {searchValue && (
+        {searchValue && countryName && (
           <ul className="flex flex-col flex-wrap w-[55%] justify-center overflow-auto ml-2 px-3">
             <CountryList
               searchValue={searchValue}
@@ -64,6 +64,11 @@ const WideInput = ({
               answers={answers}
             />
           </ul>
+        )}
+        {searchValue && !countryName && (
+          <p className="p-5 text-[#df001d] text-xl">
+            Must select a country first
+          </p>
         )}
       </div>
     </div>

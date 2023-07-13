@@ -55,7 +55,7 @@ const TallInput = ({
           Submit
         </button>
       </div>
-      {searchValue && (
+      {searchValue && countryName && (
         <ul className="h-full overflow-auto p-3">
           <CountryList
             searchValue={searchValue}
@@ -65,6 +65,11 @@ const TallInput = ({
         </ul>
       )}
       {!searchValue && <TallScore answers={answers} />}
+      {searchValue && !countryName && (
+        <p className="p-5 text-[#df001d] text-xl">
+          Must select a country first
+        </p>
+      )}
       {/* <GameButton
         createGame={createGame}
         saveGame={handleSaveGame}

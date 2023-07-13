@@ -25,13 +25,13 @@
 }
 
 .box::after {
-  border-right: 1px solid #1b83ff;
-  border-left: 1px solid #1b83ff;
+  border-right: 2px solid #1b83ff;
+  border-left: 2px solid #1b83ff;
   transform: scale(1, 0);
 }
 
 .box::before {
-  border-top: 1px solid #1b83ff;
-  border-bottom: 1px solid #1b83ff;
+  border-top: 2px solid #1b83ff;
+  border-bottom: 2px solid #1b83ff;
   transform: scale(0, 1);
 }
