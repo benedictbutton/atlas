@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import TallScore from './TallScore';
 import GameButton from './GameButton';
+import useScore from '../../utils/useScore';
 
 const TallInput = ({
   searchValue,
@@ -17,6 +19,7 @@ const TallInput = ({
   handleSaveGame,
   forwardRef,
 }: InputProps) => {
+  const [correct, incorrect] = useScore(answers);
   return (
     <div
       className={`input ${
@@ -64,10 +67,12 @@ const TallInput = ({
           />
         </ul>
       )}
-      {!searchValue && <TallScore answers={answers} />}
+      {!searchValue && (
+        <TallScore correct={correct} incorrect={incorrect} />
+      )}
       {searchValue && !countryName && (
         <p className="p-5 text-[#df001d] text-xl">
-          Must select a country first
+          Select a country before guessing
         </p>
       )}
       {/* <GameButton
@@ -75,6 +80,19 @@ const TallInput = ({
         saveGame={handleSaveGame}
         game={game}
       /> */}
+      {/* <div className="flex justify-end align-center p-2">
+        <div className="relative bottom-0 right-3 text-right">
+          <Image
+            src="/reset.svg"
+            alt=""
+            width="35px"
+            height="35px"
+            // layout={'fill'}
+            // objectFit={'cover'}
+          />
+        </div>
+        <p className="text-red text-[#df001d] text-lg">Reset</p>
+      </div> */}
     </div>
   );
 };

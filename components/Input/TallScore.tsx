@@ -1,8 +1,9 @@
 import { Answers } from '../Countries';
 import useScore from '../../utils/useScore';
-
-const TallScore = ({ answers }: Answers) => {
-  const [correct, incorrect] = useScore(answers);
+// const [correct, incorrect] = useScore(answers);
+// : Answers
+const TallScore = ({ correct, incorrect }) => {
+  // const [correct, incorrect] = useScore(t);
 
   const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;

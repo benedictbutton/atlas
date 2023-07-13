@@ -1,6 +1,7 @@
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import WideScore from './WideScore';
+import useScore from '../../utils/useScore';
 
 const WideInput = ({
   searchValue,
@@ -12,6 +13,7 @@ const WideInput = ({
   regionHeader,
   countryName,
 }: InputProps) => {
+  const [correct, incorrect] = useScore(answers);
   return (
     <div
       className={`input ${
@@ -53,7 +55,7 @@ const WideInput = ({
         </div>
         {!searchValue && (
           <div className="w-[55%] h-full text-center">
-            <WideScore answers={answers} />
+            <WideScore correct={correct} incorrect={incorrect} />
           </div>
         )}
         {searchValue && countryName && (
@@ -67,7 +69,7 @@ const WideInput = ({
         )}
         {searchValue && !countryName && (
           <p className="p-5 text-[#df001d] text-xl">
-            Must select a country first
+            Select a country before guessing
           </p>
         )}
       </div>

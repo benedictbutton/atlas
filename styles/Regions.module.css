@@ -110,26 +110,26 @@
   }
 }
 
-.middle-east__zoom__in {
-  animation: middle-east__zoom__in ease-in 1s;
+.middle__east__zoom__in {
+  animation: middle__east__zoom__in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes middle-east__zoom__in {
+@keyframes middle__east__zoom__in {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(2.8) translate(-43%, -32%);
+    transform: scale(2.8) translate(-45%, -32%);
   }
 }
 
-.middle-east__zoom__out {
-  animation: middle-east__zoom__out ease-out 1s;
+.middle__east__zoom__out {
+  animation: middle__east__zoom__out ease-out 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes middle-east__zoom__out {
+@keyframes middle__east__zoom__out {
   from {
     transform: scale(2.8) translate(-43%, -32%);
   }
