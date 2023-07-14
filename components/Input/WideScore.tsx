@@ -70,11 +70,17 @@ const WideScore = ({ correct, incorrect }) => {
         fontSize="4rem"
         stroke="transparent"
         stroke-width="2px"
-        dy="1rem"
       >
-        <tspan fill="#df001d">{incorrect}</tspan>
-        <tspan fill="url('#myGradient')"> / </tspan>
-        <tspan fill="#1b83ff">{correct}</tspan>
+        <tspan fill="#df001d" dominantBaseline="middle">
+          {incorrect}
+        </tspan>
+        <tspan fill="url('#myGradient')" dominantBaseline="middle">
+          {' '}
+          /{' '}
+        </tspan>
+        <tspan fill="#1b83ff" dominantBaseline="middle">
+          {correct}
+        </tspan>
       </text>
     </svg>
   );
