@@ -1,19 +1,20 @@
-import { Answers } from '../Countries';
-import useScore from '../../utils/useScore';
-// const [correct, incorrect] = useScore(answers);
-
 const WideScore = ({ correct, incorrect }) => {
-  // const [correct, incorrect] = useScore(answers);
-
   const [radius, stroke] = [100, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 188) * circumference;
+    circumference - (correct / 192) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 188) * circumference)
+      -1 * (circumference - (incorrect / 192) * circumference)
     }`,
+  };
+
+  const fontsize = () => {
+    if (correct >= 100 || incorrect >= 100) return '2.5rem';
+    if (correct >= 10 && incorrect >= 10) return '3rem';
+
+    return '4rem';
   };
 
   return (
@@ -67,7 +68,7 @@ const WideScore = ({ correct, incorrect }) => {
         x={radius}
         y={radius}
         textAnchor="middle"
-        fontSize="4rem"
+        fontSize={fontsize()}
         stroke="transparent"
         stroke-width="2px"
       >

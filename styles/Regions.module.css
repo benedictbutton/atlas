@@ -131,7 +131,7 @@
 
 @keyframes middle__east__zoom__out {
   from {
-    transform: scale(2.8) translate(-43%, -32%);
+    transform: scale(2.8) translate(-45%, -32%);
   }
   to {
     transform: scale(1);
@@ -148,7 +148,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5) translateX(5%);
+    transform: scale(1.5) translateX(2%);
   }
 }
 
@@ -159,7 +159,7 @@
 
 @keyframes na__zoom__out {
   from {
-    transform: scale(1.5) translateX(5%);
+    transform: scale(1.5) translateX(2%);
   }
   to {
     transform: scale(1);

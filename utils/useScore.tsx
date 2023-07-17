@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Answers } from '../components/Countries';
 
 const useScore = (answers: Answers) => {
@@ -7,16 +7,23 @@ const useScore = (answers: Answers) => {
 
   useEffect(() => {
     let answerValues = Object.values(answers);
-
     let currentCorrect = answerValues.filter(
       (el) => el === true,
     ).length;
-    setCorrect(currentCorrect);
+    let id;
+    if (currentCorrect < correct) {
+      id = setTimeout(() => setCorrect(correct - 1), 20);
+    } else setCorrect(currentCorrect);
+
     let currentIncorrect = answerValues.filter(
       (el) => el === false,
     ).length;
-    setIncorrect(currentIncorrect);
-  }, [answers]);
+    if (currentIncorrect < incorrect) {
+      id = setTimeout(() => setIncorrect(incorrect - 1), 20);
+    } else setIncorrect(currentIncorrect);
+
+    return () => clearTimeout(id);
+  }, [answers, correct, incorrect]);
 
   return [correct, incorrect];
 };

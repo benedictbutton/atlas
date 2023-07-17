@@ -1,5 +1,6 @@
 import { InputProps } from './Input';
 import CountryList from './CountryList';
+import Switch from './Switch';
 import WideScore from './WideScore';
 import useScore from '../../utils/useScore';
 
@@ -10,6 +11,7 @@ const WideInput = ({
   zoomIn,
   handleSubmit,
   answers,
+  setAnswers,
   regionHeader,
   countryName,
   handleResetAnswers,
@@ -58,6 +60,7 @@ const WideInput = ({
         {!searchValue && (
           <div className="w-[55%] h-full text-center">
             <WideScore correct={correct} incorrect={incorrect} />
+            <Switch answers={answers} setAnswers={setAnswers} />
           </div>
         )}
         {searchValue && countryName && (

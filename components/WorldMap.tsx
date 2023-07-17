@@ -10,7 +10,6 @@ import Countries from './Countries';
 import Intro from './Intro';
 import Profile from './Profile';
 import Input from './Input/Input';
-// import { countries } from '../data/countries';
 import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
@@ -26,7 +25,6 @@ const WorldMap = () => {
   const [countryName, setCountryName] = useState('');
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
-  // const [countryLabels, setCountryLabels] = useState(countries);
   const { answers, setAnswers, createGame, handleSaveGame, game } =
     useAnswers();
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
@@ -139,6 +137,7 @@ const WorldMap = () => {
         zoomIn={zoomIn}
         handleSubmit={handleSubmit}
         answers={answers}
+        setAnswers={setAnswers}
         regionHeader={regionHeader}
         countryName={countryName}
         game={game}
@@ -148,23 +147,27 @@ const WorldMap = () => {
         forwardRef={(el) => (formInput.current = el)}
       />
       {zoomIn && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={3}
-          stroke="currentColor"
+        <button
           className="absolute top-[10%] left-[10%] w-12 h-12"
           onClick={(event) => handleZoom(event, 'close')}
+          aria-label="close"
         >
-          <g>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </g>
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+          >
+            <g>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </g>
+          </svg>
+        </button>
       )}
       <svg
         className="h-full bg-[#80b6ec]"

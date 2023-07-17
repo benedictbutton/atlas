@@ -1,8 +1,8 @@
-import { useState, useEffect, useMemo } from 'react';
-import { useQuery, useMutation } from '@apollo/client';
+import { useState, useEffect } from 'react';
+import { useMutation } from '@apollo/client';
 import { useSession } from 'next-auth/react';
 import { gql } from '../__generated__/gql';
-import { countries } from '../data/countries';
+import { countries, sampleGame } from '../data/countries';
 import { CreateGameMutation } from '../__generated__/graphql';
 
 type FormedAnswer = {
@@ -44,7 +44,7 @@ const SAVE_GAME = gql(`
 
 const useAnswers = () => {
   const { data } = useSession();
-  const [answers, setAnswers] = useState<CountriesObject>(countries);
+  const [answers, setAnswers] = useState<CountriesObject>(sampleGame);
   const [game, setGame] = useState<string | null | undefined>(null);
   //   const { data: countryData } = useQuery(GET_COUNTRIES);
 
@@ -88,7 +88,13 @@ const useAnswers = () => {
     }
   }, [gameData]);
 
-  return { answers, setAnswers, createGame, handleSaveGame, game };
+  return {
+    answers,
+    setAnswers,
+    createGame,
+    handleSaveGame,
+    game,
+  };
 };
 
 export default useAnswers;

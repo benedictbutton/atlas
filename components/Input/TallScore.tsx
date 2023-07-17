@@ -1,18 +1,12 @@
-import { Answers } from '../Countries';
-import useScore from '../../utils/useScore';
-// const [correct, incorrect] = useScore(answers);
-// : Answers
 const TallScore = ({ correct, incorrect }) => {
-  // const [correct, incorrect] = useScore(t);
-
   const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 188) * circumference;
+    circumference - (correct / 192) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 188) * circumference)
+      -1 * (circumference - (incorrect / 192) * circumference)
     }`,
   };
 
@@ -20,13 +14,18 @@ const TallScore = ({ correct, incorrect }) => {
   //   Object.keys(answers) as Array<keyof typeof answers>
   // ).length;
 
+  const fontsize = () => {
+    if (correct >= 100 || incorrect >= 100) return '5rem';
+    if (correct >= 10 && incorrect >= 10) return '6rem';
+
+    return '7rem';
+  };
+
   return (
     <div className="w-full">
       <svg
         width="100%"
         height="100%"
-        // height={radius * 2}
-        // width={radius * 2}
         viewBox={`0 0 ${radius * 2} ${radius * 2}`}
       >
         <defs>
@@ -73,9 +72,7 @@ const TallScore = ({ correct, incorrect }) => {
           x={radius}
           y={radius}
           textAnchor="middle"
-          fontSize={`${
-            incorrect >= 10 && correct >= 10 ? '6.3rem' : '7rem'
-          }`}
+          fontSize={fontsize()}
           stroke="transparent"
           stroke-width="2px"
         >

@@ -81,29 +81,27 @@ a {
 }
 
 .input.expand {
-  transform: scaleY(1);
+  transform: rotateY(0deg);
   transform-origin: top;
   overflow: hidden;
 }
 
 .input.collapse {
-  transform: scaleY(0);
+  transform: rotateY(90deg);
   transform-origin: bottom;
   overflow: hidden;
 }
 
 .text {
-  transition: all 1s ease-in;
+  transition: all 1s ease-in-out;
 }
 
 .text.expand {
-  transform: scaleY(1);
-  transform-origin: bottom;
+  opacity: 1;
 }
 
 .text.collapse {
-  transform: scaleY(0);
-  transform-origin: bottom;
+  opacity: 0;
 }
 
 g {

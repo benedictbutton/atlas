@@ -1,5 +1,6 @@
 import { InputProps } from './Input';
 import CountryList from './CountryList';
+import Switch from './Switch';
 import TallScore from './TallScore';
 import GameButton from './GameButton';
 import useScore from '../../utils/useScore';
@@ -11,6 +12,7 @@ const TallInput = ({
   zoomIn,
   handleSubmit,
   answers,
+  setAnswers,
   regionHeader,
   countryName,
   game,
@@ -70,18 +72,21 @@ const TallInput = ({
           </ul>
         )}
         {!searchValue && (
-          <TallScore correct={correct} incorrect={incorrect} />
+          <>
+            <TallScore correct={correct} incorrect={incorrect} />
+            {/* <GameButton
+              createGame={createGame}
+              saveGame={handleSaveGame}
+              game={game}
+            /> */}
+            <Switch answers={answers} setAnswers={setAnswers} />
+          </>
         )}
         {searchValue && !countryName && (
           <p className="p-5 text-[#df001d] text-xl">
             Select a country before guessing
           </p>
         )}
-        {/* <GameButton
-        createGame={createGame}
-        saveGame={handleSaveGame}
-        game={game}
-      /> */}
         {correct + incorrect > 0 && (
           <button
             onClick={handleResetAnswers}

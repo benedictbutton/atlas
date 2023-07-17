@@ -39,6 +39,18 @@ export const resolvers = {
       const answers = await context.prisma.answer.findMany();
       return answers;
     },
+    game: async (
+      _parent: unknown,
+      _args: { id: string },
+      context: Context,
+    ) => {
+      const game = await context.prisma.game.findFirst({
+        where: {
+          id: _args.id,
+        },
+      });
+      return game;
+    },
     games: async (_parent: unknown, _args: {}, context: Context) => {
       const games = await context.prisma.game.findMany();
       return games;
