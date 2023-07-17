@@ -15,11 +15,12 @@ const Profile = () => {
       >
         <div className="flex justify-center items-center w-full">
           <p className="text-md md:text-xl mr-2">Profile</p>
-          <div className="relative p-8 h-auto">
+          <div className="relative h-9">
             <Image
               src="/earth.png"
               alt="profile button"
-              layout={'fill'}
+              width="36px"
+              height="36px"
             />
           </div>
         </div>

@@ -56,6 +56,7 @@ const WorldMap = () => {
           () => (event.target.parentNode as SVGGElement).id,
         );
         setCountryName(() => event.target.id);
+        formInput.current.focus();
       }
     },
     [zoomIn, setZoomIn, countryId],

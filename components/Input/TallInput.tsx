@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import Switch from './Switch';
@@ -22,6 +23,19 @@ const TallInput = ({
   forwardRef,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
+
+  const handleEnter = useCallback(
+    (event) => {
+      if (
+        event.key !== 'Enter' ||
+        answers[`${searchValue}`] === undefined ||
+        !countryName
+      )
+        return;
+      handleSubmit(event);
+    },
+    [answers, countryName, handleSubmit, searchValue],
+  );
 
   return (
     <div
@@ -50,6 +64,7 @@ const TallInput = ({
               name="country"
               ref={forwardRef}
               onChange={handleSearchValue}
+              onKeyUp={handleEnter}
             />
           </label>
           <button

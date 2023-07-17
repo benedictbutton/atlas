@@ -18,6 +18,20 @@ const WideInput = ({
   forwardRef,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
+
+  const handleEnter = useCallback(
+    (event) => {
+      if (
+        event.key !== 'Enter' ||
+        answers[`${searchValue}`] === undefined ||
+        !countryName
+      )
+        return;
+      handleSubmit(event);
+    },
+    [answers, countryName, handleSubmit, searchValue],
+  );
+
   return (
     <div
       className={`input ${
@@ -45,6 +59,7 @@ const WideInput = ({
               name="country"
               ref={forwardRef}
               onChange={handleSearchValue}
+              onKeyUp={handleEnter}
             />
           </label>
           <button
