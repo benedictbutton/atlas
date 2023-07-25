@@ -1,6 +1,7 @@
 import TallInput from './TallInput';
 import WideInput from './WideInput';
 import useViewport from '../../utils/useViewport';
+import { Dispatch, SetStateAction } from 'react';
 
 type Answers = {
   [key: string]: boolean | null;
@@ -15,14 +16,16 @@ export interface InputProps {
     event: React.ChangeEvent<HTMLInputElement>,
   ) => void;
   zoomIn: string;
-  handleSubmit: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  answers: Answers | {};
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  answers: CountriesObject;
+  setAnswers: Dispatch<SetStateAction<CountriesObject>>;
   regionHeader: string;
   countryName: string;
-  game: string | undefined;
+  game: string | null | undefined;
   createGame: () => void;
   handleSaveGame: () => void;
   handleResetAnswers: () => void;
+  forwardRef: (el: HTMLInputElement) => HTMLInputElement;
 }
 
 const Input = ({ ...props }: InputProps) => {

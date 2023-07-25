@@ -4,6 +4,7 @@ import {
   SetStateAction,
   useMemo,
   useRef,
+  MouseEvent,
 } from 'react';
 import { debounce } from 'lodash';
 import Countries from './Countries';
@@ -29,14 +30,18 @@ const WorldMap = () => {
     useAnswers();
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
   const [introMessage, setIntroMessage] = useIntroMessage();
-  const formInput = useRef();
+  const formInput = useRef<HTMLInputElement | null>(null);
+
+  console.log(answers);
 
   const handleZoom = useCallback(
     (
-      event: {
-        currentTarget: { id: SetStateAction<string> };
-        target: SVGGElement;
-      },
+      event:
+        | {
+            currentTarget: { id: SetStateAction<string> };
+            target: SVGGElement;
+          }
+        | MouseEvent<SVGGElement | HTMLButtonElement>,
       close: string | undefined,
     ): void => {
       if (zoomIn === '') setZoomIn(event.currentTarget.id);
@@ -45,18 +50,21 @@ const WorldMap = () => {
         setCountryName('');
         setZoomIn('');
         setSearchValue('');
-        formInput.current.value = '';
+        if (formInput.current) formInput.current.value = '';
       } else if (
-        countryId === (event.target.parentNode as SVGGElement).id
+        countryId ===
+        ((event.target as SVGGElement).parentNode as SVGGElement).id
       ) {
         setCountryId('');
         setCountryName('');
       } else {
         setCountryId(
-          () => (event.target.parentNode as SVGGElement).id,
+          () =>
+            ((event.target as SVGGElement).parentNode as SVGGElement)
+              .id,
         );
-        setCountryName(() => event.target.id);
-        formInput.current.focus();
+        setCountryName(() => (event.target as SVGGElement).id);
+        formInput.current?.focus();
       }
     },
     [zoomIn, setZoomIn, countryId],
@@ -81,7 +89,7 @@ const WorldMap = () => {
   );
 
   const handleSubmit = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>): void => {
+    (event: React.FormEvent<HTMLFormElement>): void => {
       event.preventDefault();
       if (
         searchValue === 'United Kingdom, The' &&
@@ -101,18 +109,18 @@ const WorldMap = () => {
       setCountryId('');
       setCountryName('');
       setSearchValue('');
-      formInput.current.value = '';
+      if (formInput.current) formInput.current.value = '';
     },
     [searchValue, countryName, setAnswers, answers],
   );
 
-  const handleResetAnswers = () => {
+  const handleResetAnswers = useCallback(() => {
     setCountryId('');
     setCountryName('');
     setSearchValue('');
-    formInput.current.value = '';
+    if (formInput.current) formInput.current.value = '';
 
-    const resetAnswers = {};
+    const resetAnswers: CountriesObject = {};
     const countries = Object.keys(answers);
     countries.map((country) => {
       resetAnswers[country] = null;
@@ -120,7 +128,7 @@ const WorldMap = () => {
     });
 
     setAnswers({ ...answers, ...resetAnswers });
-  };
+  }, [answers, setAnswers]);
 
   return (
     <>
@@ -145,7 +153,9 @@ const WorldMap = () => {
         createGame={createGame}
         handleSaveGame={handleSaveGame}
         handleResetAnswers={handleResetAnswers}
-        forwardRef={(el) => (formInput.current = el)}
+        forwardRef={(el: HTMLInputElement) =>
+          (formInput.current = el)
+        }
       />
       {zoomIn && (
         <button

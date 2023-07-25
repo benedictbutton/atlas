@@ -1,6 +1,6 @@
 import styles from '../styles/Intro.module.css';
 
-const Tracker = ({ isMounted }) => {
+const Tracker = ({ isMounted }: { isMounted: boolean }) => {
   const [correct, incorrect] = [39, 7];
 
   const [radius, stroke] = [120, 10];

@@ -1,6 +1,11 @@
 import { useSession } from 'next-auth/react';
 import { useMutation } from '@apollo/client';
+import {
+  InputMaybe,
+  UpdateUserIntroMessageMutation,
+} from '../__generated__/graphql';
 import { gql } from '../__generated__/gql';
+import { UserInput } from '../__generated__/graphql';
 
 const UPDATE_USER = gql(`
   mutation UpdateUserIntroMessage($inputs: UserInput) {
@@ -16,7 +21,7 @@ const useIntroMessage = () => {
   const [updateUser] = useMutation(UPDATE_USER, {
     variables: {
       inputs: {
-        id: userData?.user?.id,
+        id: userData?.user?.id ?? '',
         introMessage: !userData?.user?.introMessage,
       },
     },

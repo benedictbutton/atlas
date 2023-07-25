@@ -1,9 +1,16 @@
-import { useRef } from 'react';
+import { Dispatch, SetStateAction, useRef } from 'react';
 import useShowAllCountries from '../../utils/useShowAllCountries';
 import styles from '../../styles/Switch.module.css';
+import { Answer } from '../../__generated__/graphql';
 
-const Switch = ({ answers, setAnswers }) => {
-  const toggleInput = useRef();
+const Switch = ({
+  answers,
+  setAnswers,
+}: {
+  answers: CountriesObject;
+  setAnswers: Dispatch<SetStateAction<CountriesObject>>;
+}) => {
+  const toggleInput = useRef(null);
   const { showAll, showAllCountries, hideAllCountries } =
     useShowAllCountries(answers, setAnswers);
 

@@ -1,10 +1,21 @@
 import { useState } from 'react';
+import {
+  UpdateUserIntroMessageMutation,
+  MutationUpdateUserIntroMessageArgs,
+  UserInput,
+  Mutation,
+} from '../__generated__/graphql';
 import Tracker from './Tracker';
 import useDelayedUnmounting from '../utils/useDelayedUnmounting';
 import styles from '../styles/Intro.module.css';
 
-const Intro = ({ introMessage, setIntroMessage }) => {
-  const [open, setOpen] = useState(true);
+const Intro = ({
+  introMessage,
+  setIntroMessage,
+}: {
+  introMessage: boolean;
+  setIntroMessage: UpdateUserIntroMessageMutation;
+}) => {
   const [checkBox, setCheckBox] = useState(!introMessage);
   const [isMounted, setIsMounted] = useState(true);
 
@@ -52,11 +63,11 @@ const Intro = ({ introMessage, setIntroMessage }) => {
                   surrounding region will then zoom into focus.
                 </li>
                 <li className="p-2">
-                  Once a region is in focus, clicking a country will
-                  display an input form.
+                  Once a region is in focus, clicking a country or
+                  territory will display an input form.
                 </li>
                 <li className="p-2">
-                  Use the input form to search for the country you
+                  Use the input form to search for the name you
                   believe correctly labels the area you clicked. If
                   correct, the label will be applied to the map.
                 </li>

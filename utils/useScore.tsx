@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Answers } from '../components/Countries';
-import useTimeout from './useTimeout';
 
-const useScore = (answers: Answers) => {
+const useScore = (answers: CountriesObject) => {
   const [correct, setCorrect] = useState(0);
   const [incorrect, setIncorrect] = useState(0);
 
@@ -12,7 +10,7 @@ const useScore = (answers: Answers) => {
     let currentCorrect = answerValues.filter(
       (el) => el === true,
     ).length;
-    let id;
+    let id: string | number | NodeJS.Timeout | undefined;
     if (currentCorrect < correct) {
       id = setTimeout(() => setCorrect(correct - 1), 20);
     } else if (currentCorrect > correct) {

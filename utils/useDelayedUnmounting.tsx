@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-const useDelayedUnmounting = (isMounted, delay = 5000) => {
+const useDelayedUnmounting = (isMounted: boolean, delay = 5000) => {
   const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
-    let timeoutId;
+    let timeoutId: string | number | NodeJS.Timeout | undefined;
 
     if (isMounted && !shouldRender) {
       setShouldRender(true);

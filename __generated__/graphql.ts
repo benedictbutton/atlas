@@ -69,7 +69,7 @@ export type Game = {
 export type Mutation = {
   __typename?: 'Mutation';
   createCountry?: Maybe<Country>;
-  createGame?: Maybe<Array<Maybe<Answer>>>;
+  createGame: Array<Maybe<Answer>>;
   createManyCountries?: Maybe<BatchPayload>;
   deleteManyAnswers?: Maybe<Array<Maybe<Answer>>>;
   deleteManyCountries?: Maybe<BatchPayload>;
@@ -177,7 +177,7 @@ export type CreateGameMutationVariables = Exact<{
 }>;
 
 
-export type CreateGameMutation = { __typename?: 'Mutation', createGame?: Array<{ __typename?: 'Answer', id?: string | null, value?: boolean | null, countryName?: string | null, gameId?: string | null } | null> | null };
+export type CreateGameMutation = { __typename?: 'Mutation', createGame: Array<{ __typename?: 'Answer', id?: string | null, value?: boolean | null, countryName?: string | null, gameId?: string | null } | null> };
 
 export type SaveGameMutationVariables = Exact<{
   gameId?: InputMaybe<Scalars['String']>;

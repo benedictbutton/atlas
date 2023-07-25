@@ -1,12 +1,20 @@
-import { useState, useCallback } from 'react';
+import {
+  useState,
+  useCallback,
+  SetStateAction,
+  Dispatch,
+} from 'react';
 
-const useShowAllCountries = (answers, setAnswers) => {
+const useShowAllCountries = (
+  answers: CountriesObject,
+  setAnswers: Dispatch<SetStateAction<CountriesObject>>,
+) => {
   const [showAll, setShowAll] = useState(true);
   const [currentGame, setCurrentGame] = useState({});
 
   const showAllCountries = useCallback(() => {
     setCurrentGame(answers);
-    let correctAnswers = {};
+    let correctAnswers: CountriesObject = {};
     Object.keys(answers).map(
       (country) => (correctAnswers[country] = true),
     );

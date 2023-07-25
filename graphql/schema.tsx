@@ -101,7 +101,7 @@ export const typeDefs = gql`
     createCountry(name: String!): Country
     createManyCountries(inputs: [CountryInput]): BatchPayload
     deleteManyCountries: BatchPayload
-    createGame(userId: String!): [Answer]
+    createGame(userId: String!): [Answer]!
     saveGame(gameId: String, answers: [SaveAnswerInput]): [Answer]
     deleteManyGames: [Game]
     deleteManyAnswers: [Answer]

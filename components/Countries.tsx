@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { SetStateAction, MouseEvent, useRef } from 'react';
 import Africa from './Regions/Africa';
 import Asia from './Regions/Asia';
 import CentralAmerica from './Regions/CentralAmerica';
@@ -17,11 +17,16 @@ export interface Answers {
 export interface CountryProps {
   zoomIn: string;
   handleZoom: (
-    event: React.MouseEventHandler<SVGGElement>,
+    event:
+      | {
+          currentTarget: { id: SetStateAction<string> };
+          target: SVGGElement;
+        }
+      | MouseEvent<SVGGElement>,
     close: string | undefined,
   ) => void;
   countryId: string;
-  answers: Answers | {};
+  answers: CountriesObject;
 }
 
 export interface RegionProps extends CountryProps {
