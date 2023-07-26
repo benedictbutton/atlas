@@ -1,6 +1,3 @@
-
-
-
 style={{ display: !answers['Grenada'] ? 'none' : ''}}
 style={{ display: !answers['Saint Vincent and the Grenadines'] ? 'none' : ''}}
 style={{ display: !answers['Barbados'] ? 'none' : ''}}

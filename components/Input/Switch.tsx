@@ -1,7 +1,6 @@
 import { Dispatch, SetStateAction, useRef } from 'react';
 import useShowAllCountries from '../../utils/useShowAllCountries';
 import styles from '../../styles/Switch.module.css';
-import { Answer } from '../../__generated__/graphql';
 
 const Switch = ({
   answers,

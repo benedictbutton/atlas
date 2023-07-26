@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import { InputProps } from './Input';
 import CountryList from './CountryList';
 import Switch from './Switch';

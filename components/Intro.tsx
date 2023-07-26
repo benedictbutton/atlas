@@ -1,10 +1,5 @@
 import { useState } from 'react';
-import {
-  UpdateUserIntroMessageMutation,
-  MutationUpdateUserIntroMessageArgs,
-  UserInput,
-  Mutation,
-} from '../__generated__/graphql';
+import { MutationFunction } from '@apollo/client';
 import Tracker from './Tracker';
 import useDelayedUnmounting from '../utils/useDelayedUnmounting';
 import styles from '../styles/Intro.module.css';
@@ -13,8 +8,8 @@ const Intro = ({
   introMessage,
   setIntroMessage,
 }: {
-  introMessage: boolean;
-  setIntroMessage: UpdateUserIntroMessageMutation;
+  introMessage: boolean | undefined;
+  setIntroMessage: MutationFunction;
 }) => {
   const [checkBox, setCheckBox] = useState(!introMessage);
   const [isMounted, setIsMounted] = useState(true);

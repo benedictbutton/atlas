@@ -1,4 +1,10 @@
-const WideScore = ({ correct, incorrect }) => {
+const WideScore = ({
+  correct,
+  incorrect,
+}: {
+  correct: number;
+  incorrect: number;
+}) => {
   const [radius, stroke] = [100, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;

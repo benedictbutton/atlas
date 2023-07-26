@@ -32,8 +32,6 @@ const WorldMap = () => {
   const [introMessage, setIntroMessage] = useIntroMessage();
   const formInput = useRef<HTMLInputElement | null>(null);
 
-  console.log(answers);
-
   const handleZoom = useCallback(
     (
       event:
