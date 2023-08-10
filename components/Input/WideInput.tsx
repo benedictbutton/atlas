@@ -19,19 +19,6 @@ const WideInput = ({
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
 
-  const handleEnter = useCallback(
-    (event) => {
-      if (
-        event.key !== 'Enter' ||
-        answers[`${searchValue}`] === undefined ||
-        !countryName
-      )
-        return;
-      handleSubmit(event);
-    },
-    [answers, countryName, handleSubmit, searchValue],
-  );
-
   return (
     <div
       className={`input ${
@@ -47,30 +34,31 @@ const WideInput = ({
           {regionHeader}
         </p>
         <div className="w-1/5">
-          <label className="inline-block w-full mt-1 mb-4">
-            <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
-              Country
-            </p>
-            <input
-              className="px-2 py-2.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-              id="signInInput1-1"
-              type="text"
-              placeholder="Country Name"
-              name="country"
-              ref={forwardRef}
-              onChange={handleSearchValue}
-              onKeyUp={handleEnter}
-            />
-          </label>
-          <button
-            className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
-            disabled={
-              answers[`${searchValue}`] === undefined || !countryName
-            }
-            onClick={handleSubmit}
-          >
-            Submit
-          </button>
+          <form className="w-full" onSubmit={handleSubmit}>
+            <label className="inline-block w-full mt-1 mb-4">
+              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
+                Country
+              </p>
+              <input
+                className="px-2 py-2.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                id="signInInput1-1"
+                type="text"
+                placeholder="Country Name"
+                name="country"
+                ref={forwardRef}
+                onChange={handleSearchValue}
+              />
+            </label>
+            <button
+              className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
+              disabled={
+                answers[`${searchValue}`] === undefined ||
+                !countryName
+              }
+            >
+              Submit
+            </button>
+          </form>
         </div>
         {!searchValue && (
           <div className="w-[55%] h-full text-center">

@@ -9,10 +9,10 @@ const TallScore = ({
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 195) * circumference;
+    circumference - (correct / 194) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 195) * circumference)
+      -1 * (circumference - (incorrect / 194) * circumference)
     }`,
   };
 

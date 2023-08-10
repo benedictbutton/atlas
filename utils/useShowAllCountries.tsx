@@ -14,7 +14,7 @@ const useShowAllCountries = (
 
   const showAllCountries = useCallback(() => {
     setCurrentGame(answers);
-    let correctAnswers: CountriesObject = {};
+    const correctAnswers: CountriesObject = {};
     Object.keys(answers).map(
       (country) => (correctAnswers[country] = true),
     );

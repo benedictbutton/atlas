@@ -30,7 +30,7 @@ const TallInput = ({
       } absolute bottom-5 right-5 w-1/4 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
     >
       <div className="flex column flex-col h-full">
-        <div className="flex flex-wrap content-start p-5">
+        <div className="flex flex-wrap content-start px-5 pt-5">
           <p
             className={`text ${
               !zoomIn ? 'collapse' : ''
