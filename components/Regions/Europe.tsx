@@ -35,7 +35,8 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['North Macedonia'] ? 'none' : '',
+            display:
+              (answers['North Macedonia'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '80',
             textAlign: 'center',
           }}
@@ -142,7 +143,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Georgia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Georgia'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.02252 .16853 -.18177 .94801 0 0)"
           id="Georgia_label"
           y="92.72"
@@ -205,7 +208,9 @@ const Europe = ({
           // }}
         ></path>
         <text
-          style={{ display: !answers['Wales'] ? 'none' : '' }}
+          style={{
+            display: (answers['Wales'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Wales_label"
           y="158.758"
           x="412.245"
@@ -267,7 +272,9 @@ const Europe = ({
           // }}
         ></path>
         <text
-          style={{ display: !answers['England'] ? 'none' : '' }}
+          style={{
+            display: (answers['England'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="England_label"
           y="354.315"
           x="308.42"
@@ -324,7 +331,8 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['United Kingdom, The'] ? 'none' : '',
+            display:
+              (answers['United Kingdom, The'] ?? 0) < 1 ? 'none' : '',
           }}
           id="United_Kingdom_label"
           y="154.932"
@@ -383,7 +391,7 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['Scotland'] ? 'none' : '',
+            display: (answers['Scotland'] ?? 0) < 1 ? 'none' : '',
           }}
           id="Scotland_label"
           y="134.658"
@@ -443,7 +451,8 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['Northern Ireland'] ? 'none' : '',
+            display:
+              (answers['Northern Ireland'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '0.8',
           }}
           id="Northern_Ireland_label"
@@ -533,7 +542,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Italy'] ? 'none' : '' }}
+          style={{
+            display: (answers['Italy'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Italy_label"
           y="180.83"
           x="452.561"
@@ -588,7 +599,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Czechia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Czechia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Czechia_label"
           y="165.626"
           x="463.23"
@@ -644,7 +657,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Greece'] ? 'none' : '' }}
+          style={{
+            display: (answers['Greece'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Greece_label"
           y="196.939"
           x="480.494"
@@ -699,7 +714,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Netherlands'] ? 'none' : '' }}
+          style={{
+            display: (answers['Netherlands'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Netherlands_label"
           y="151.847"
           x="433.622"
@@ -755,7 +772,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Germany'] ? 'none' : '' }}
+          style={{
+            display: (answers['Germany'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Germany_label"
           y="159.088"
           x="448.325"
@@ -810,7 +829,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Romania'] ? 'none' : '' }}
+          style={{
+            display: (answers['Romania'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Romania_label"
           y="177.46"
           x="482.285"
@@ -865,7 +886,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Denmark'] ? 'none' : '' }}
+          style={{
+            display: (answers['Denmark'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Denmark_label"
           y="141.159"
           x="438.821"
@@ -921,7 +944,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Iceland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Iceland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Iceland_label"
           y="108.758"
           x="380.423"
@@ -977,7 +1002,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Portugal'] ? 'none' : '' }}
+          style={{
+            display: (answers['Portugal'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Portugal_label"
           y="195.87"
           x="391.996"
@@ -1034,7 +1061,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Spain'] ? 'none' : '' }}
+          style={{
+            display: (answers['Spain'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Spain_label"
           y="195.161"
           x="415.717"
@@ -1092,7 +1121,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Austria'] ? 'none' : '' }}
+          style={{
+            display: (answers['Austria'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.94224 -.40495 .43678 .87358 0 0)"
           id="Austria_label"
           y="352.252"
@@ -1149,7 +1180,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Bulgaria'] ? 'none' : '' }}
+          style={{
+            display: (answers['Bulgaria'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.02246 -.16886 .18213 .94795 0 0)"
           id="Bulgaria_label"
           y="271.302"
@@ -1205,7 +1238,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Hungary'] ? 'none' : '' }}
+          style={{
+            display: (answers['Hungary'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.96642 -.35258 .3803 .896 0 0)"
           id="Hungary_label"
           y="336.477"
@@ -1263,7 +1298,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Croatia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Croatia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Croatia_label"
           y="178.365"
           x="468.401"
@@ -1318,7 +1355,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Sweden'] ? 'none' : '' }}
+          style={{
+            display: (answers['Sweden'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Sweden_label"
           y="110.376"
           x="465.56"
@@ -1374,7 +1413,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Serbia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Serbia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Serbia_label"
           y="182.938"
           x="478.463"
@@ -1429,7 +1470,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Slovakia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Slovakia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Slovakia_label"
           y="167.696"
           x="474.592"
@@ -1486,7 +1529,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Lithuania'] ? 'none' : '' }}
+          style={{
+            display: (answers['Lithuania'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Lithuania_label"
           y="144.394"
           x="483.633"
@@ -1542,7 +1587,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Latvia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Latvia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Latvia_label"
           y="140.1"
           x="488.756"
@@ -1597,7 +1644,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Estonia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Estonia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Estonia_label"
           y="132.349"
           x="488.573"
@@ -1652,7 +1701,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Montenegro'] ? 'none' : '' }}
+          style={{
+            display: (answers['Montenegro'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.9355 -.41817 .45103 .86733 0 0)"
           id="Montenegro_label"
           y="376.193"
@@ -1708,7 +1759,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Norway'] ? 'none' : '' }}
+          style={{
+            display: (answers['Norway'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.61557 -.77551 .83646 .57071 0 0)"
           id="Norway_label"
           y="439.365"
@@ -1764,7 +1817,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Finland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Finland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Finland_label"
           y="118.416"
           x="486.859"
@@ -1820,7 +1875,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Malta'] ? 'none' : '' }}
+          style={{
+            display: (answers['Malta'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Malta_label"
           y="209.37"
           x="468.859"
@@ -1875,7 +1932,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Poland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Poland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Poland_label"
           y="158.809"
           x="470.442"
@@ -1930,7 +1989,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Albania'] ? 'none' : '' }}
+          style={{
+            display: (answers['Albania'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.16515 -.95062 1.02534 .15312 0 0)"
           id="Albania_label"
           y="503.852"
@@ -1985,7 +2046,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Ireland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Ireland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Ireland_label"
           y="153.943"
           x="393.559"
@@ -2041,7 +2104,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Kosovo'] ? 'none' : '' }}
+          style={{
+            display: (answers['Kosovo'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Kosovo_label"
           y="187.435"
           x="479.782"
@@ -2099,7 +2164,10 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['Bosnia And Herzegovina'] ? 'none' : '',
+            display:
+              (answers['Bosnia And Herzegovina'] ?? 0) < 1
+                ? 'none'
+                : '',
             lineHeight: '80',
             textAlign: 'start',
           }}
@@ -2181,7 +2249,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Armenia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Armenia'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.9414 .40662 -.43858 .8728 0 0)"
           id="Armenia_label"
           y="-51.615"
@@ -2239,7 +2309,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['France'] ? 'none' : '' }}
+          style={{
+            display: (answers['France'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="France_label"
           y="174.667"
           x="429.24"
@@ -2294,7 +2366,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Ukraine'] ? 'none' : '' }}
+          style={{
+            display: (answers['Ukraine'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Ukraine_label"
           y="166.608"
           x="493.743"
@@ -2349,7 +2423,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Belarus'] ? 'none' : '' }}
+          style={{
+            display: (answers['Belarus'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Belarus_label"
           y="153.474"
           x="488.987"
@@ -2405,7 +2481,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Cyprus'] ? 'none' : '' }}
+          style={{
+            display: (answers['Cyprus'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Cyprus_label"
           y="209.273"
           x="502.746"
@@ -2461,7 +2539,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Luxembourg'] ? 'none' : '' }}
+          style={{
+            display: (answers['Luxembourg'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Luxembourg_label"
           y="166.309"
           x="440.862"
@@ -2519,7 +2599,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Andorra'] ? 'none' : '' }}
+          style={{
+            display: (answers['Andorra'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Andorra_label"
           y="188.215"
           x="427.979"
@@ -2578,7 +2660,7 @@ const Europe = ({
         ></path>
         <text
           style={{
-            display: !answers['Monaco'] ? 'none' : '',
+            display: (answers['Monaco'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '125',
             textAlign: 'start',
           }}
@@ -2642,7 +2724,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Moldova'] ? 'none' : '' }}
+          style={{
+            display: (answers['Moldova'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Moldova_label"
           y="172.684"
           x="494.177"
@@ -2697,7 +2781,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Switzerland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Switzerland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Switz._label"
           y="174.455"
           x="447.265"
@@ -2752,7 +2838,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Belgium'] ? 'none' : '' }}
+          style={{
+            display: (answers['Belgium'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Belgium_label"
           y="162.054"
           x="439.043"
@@ -2808,7 +2896,9 @@ const Europe = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Slovenia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Slovenia'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.03835 .01932 -.02084 .96268 0 0)"
           id="Slovenia_label"
           y="166.919"

@@ -6,15 +6,15 @@ import {
 } from 'react';
 
 const useShowAllCountries = (
-  answers: CountriesObject,
-  setAnswers: Dispatch<SetStateAction<CountriesObject>>,
+  answers: AnswersObject,
+  setAnswers: Dispatch<SetStateAction<AnswersObject>>,
 ) => {
   const [showAll, setShowAll] = useState(true);
   const [currentGame, setCurrentGame] = useState({});
 
   const showAllCountries = useCallback(() => {
     setCurrentGame(answers);
-    const correctAnswers: CountriesObject = {};
+    const correctAnswers: AnswersObject = {};
     Object.keys(answers).map(
       (country) => (correctAnswers[country] = true),
     );

@@ -32,7 +32,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Suriname'] ? 'none' : '' }}
+          style={{
+            display: (answers['Suriname'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.67062 -.73522 .79301 .62175 0 0)"
           id="Suriname_label"
           y="414.006"
@@ -85,7 +87,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Guyana'] ? 'none' : '' }}
+          style={{
+            display: (answers['Guyana'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.70257 -.70911 .76485 .65138 0 0)"
           id="Guyana_label"
           y="407.484"
@@ -138,7 +142,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Chile'] ? 'none' : '' }}
+          style={{
+            display: (answers['Chile'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Chile_label"
           y="388.878"
           x="244.416"
@@ -189,7 +195,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Peru'] ? 'none' : '' }}
+          style={{
+            display: (answers['Peru'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Peru_label"
           y="329.247"
           x="241.942"
@@ -242,7 +250,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Ecuador'] ? 'none' : '' }}
+          style={{
+            display: (answers['Ecuador'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Ecuador_label"
           y="305.994"
           x="219.218"
@@ -293,7 +303,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Uruguay'] ? 'none' : '' }}
+          style={{
+            display: (answers['Uruguay'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Uruguay_label"
           y="400.491"
           x="302.853"
@@ -346,7 +358,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Argentina'] ? 'none' : '' }}
+          style={{
+            display: (answers['Argentina'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Argentina_label"
           y="403.225"
           x="264.069"
@@ -399,7 +413,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Venezuela'] ? 'none' : '' }}
+          style={{
+            display: (answers['Venezuela'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Venezuela_label"
           y="285.562"
           x="263.202"
@@ -452,7 +468,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Colombia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Colombia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Colombia_label"
           y="299.119"
           x="246.718"
@@ -505,7 +523,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Bolivia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Bolivia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Bolivia_label"
           y="354.879"
           x="267.516"
@@ -561,7 +581,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Brazil'] ? 'none' : '' }}
+          style={{
+            display: (answers['Brazil'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Brazil_label"
           y="330.74"
           x="297.143"
@@ -619,7 +641,9 @@ const SouthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Paraguay'] ? 'none' : '' }}
+          style={{
+            display: (answers['Paraguay'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Paraguay_label"
           y="363.545"
           x="282.96"
@@ -672,7 +696,8 @@ const SouthAmerica = ({
         ></path>
         <text
           style={{
-            display: !answers['French Guiana'] ? 'none' : '',
+            display:
+              (answers['French Guiana'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '100',
             textAlign: 'start',
           }}

@@ -1,29 +1,28 @@
 import { useMemo } from 'react';
 
-const CountryList = ({ searchValue, handleSelectValue, answers }) => {
-  const countries = useMemo(() => Object.keys(answers), [answers]);
+const SearchList = ({ searchValue, handleSelectValue, answers }) => {
+  const listItems = useMemo(() => Object.keys(answers), [answers]);
 
   return (
     <>
-      {countries
+      {listItems
         .filter(
-          (country, idx) =>
-            country[0].toLowerCase() ===
-              searchValue[0].toLowerCase() &&
-            country.toLowerCase().includes(searchValue.toLowerCase()),
+          (item, idx) =>
+            item[0].toLowerCase() === searchValue[0].toLowerCase() &&
+            item.toLowerCase().includes(searchValue.toLowerCase()),
         )
-        .map((countrySearch, idx) => (
+        .map((itemSearch, idx) => (
           <li key={idx} className="text-white cursor p-2 list-none">
             <input
-              id={countrySearch}
+              id={itemSearch}
               type="radio"
-              value={countrySearch}
-              checked={searchValue === countrySearch}
+              value={itemSearch}
+              checked={searchValue === itemSearch}
               onChange={(event) => handleSelectValue(event)}
               className="mr-3"
             />
-            <label htmlFor={countrySearch} className="cursor-pointer">
-              {countrySearch}
+            <label htmlFor={itemSearch} className="cursor-pointer">
+              {itemSearch}
             </label>
           </li>
         ))}
@@ -31,7 +30,7 @@ const CountryList = ({ searchValue, handleSelectValue, answers }) => {
   );
 };
 
-export default CountryList;
+export default SearchList;
 
 // const useFetch = (query, initialState) => {
 //   const [data, setData] = useState(initialState);

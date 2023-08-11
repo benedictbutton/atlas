@@ -1,0 +1,31 @@
+.arm__zoom__in {
+  animation: arm__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.arm__zoom__in > text {
+  font-size: 9px;
+}
+
+@keyframes arm__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3) translate(-70%, -17%);
+  }
+}
+
+.arm__zoom__out {
+  animation: arm__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arm__zoom__out {
+  from {
+    transform: scale(3) translate(0%, 0%);
+  }
+  to {
+    transform: scale(1);
+  }
+}

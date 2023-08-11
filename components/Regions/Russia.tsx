@@ -35,7 +35,9 @@ const Russia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Russia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Russia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Russia_label"
           y="125.763"
           x="632.446"

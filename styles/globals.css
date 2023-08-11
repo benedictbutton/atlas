@@ -53,6 +53,11 @@ a {
   margin-right: 3px;
 }
 
+.opaque {
+  opacity: 0;
+  fill-opacity: 0;
+}
+
 .atlas {
   padding-left: 2rem;
 }
@@ -108,19 +113,23 @@ g {
   cursor: pointer;
 }
 
-g > circle {
+.hide__circle {
   display: none;
 }
 
-circle {
+.hide__circle + text {
+  display: none;
+}
+
+.score_tracker {
   transition: stroke-dashoffset 0.35s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
 
-circle + text {
+/* circle + text {
   display: none;
-}
+} */
 
 .score-text {
   display: inline-block;

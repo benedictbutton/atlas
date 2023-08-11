@@ -1,8 +1,9 @@
 import { InputProps } from './Input';
-import CountryList from './CountryList';
+import CountryList from './SearchList';
 import Switch from './Switch';
 import TallScore from './TallScore';
 import GameButton from './GameButton';
+import SearchList from './SearchList';
 import useScore from '../../utils/useScore';
 
 const TallInput = ({
@@ -14,14 +15,18 @@ const TallInput = ({
   answers,
   setAnswers,
   regionHeader,
-  countryName,
+  labelName,
+  labelType,
   game,
   createGame,
   handleSaveGame,
   handleResetAnswers,
   forwardRef,
+  total,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
+  const placeholderLabelType =
+    labelType.charAt(0).toUpperCase() + labelType.slice(1);
 
   return (
     <div
@@ -40,15 +45,15 @@ const TallInput = ({
           </p>
           <form className="w-full" onSubmit={handleSubmit}>
             <label className="inline-block w-full mt-2 mb-4">
-              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
-                Country
+              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal capitalize">
+                {labelType}
               </p>
               <input
                 className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
                 id="signInInput1-1"
                 type="text"
-                placeholder="Country Name"
-                name="country"
+                placeholder={placeholderLabelType + ' Name'}
+                name={labelType}
                 ref={forwardRef}
                 onChange={handleSearchValue}
               />
@@ -56,17 +61,16 @@ const TallInput = ({
             <button
               className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
               disabled={
-                answers[`${searchValue}`] === undefined ||
-                !countryName
+                answers[`${searchValue}`] === undefined || !labelName
               }
             >
               Submit
             </button>
           </form>
         </div>
-        {searchValue && countryName && (
+        {searchValue && labelName && (
           <ul className="h-full overflow-auto p-3">
-            <CountryList
+            <SearchList
               searchValue={searchValue}
               handleSelectValue={handleSelectValue}
               answers={answers}
@@ -75,7 +79,11 @@ const TallInput = ({
         )}
         {!searchValue && (
           <>
-            <TallScore correct={correct} incorrect={incorrect} />
+            <TallScore
+              correct={correct}
+              incorrect={incorrect}
+              total={total}
+            />
             {/* <GameButton
               createGame={createGame}
               saveGame={handleSaveGame}
@@ -84,9 +92,9 @@ const TallInput = ({
             <Switch answers={answers} setAnswers={setAnswers} />
           </>
         )}
-        {searchValue && !countryName && (
+        {searchValue && !labelName && (
           <p className="p-5 text-[#df001d] text-xl">
-            Select a country before guessing
+            Select a {labelType} before guessing
           </p>
         )}
         {correct + incorrect > 0 && (

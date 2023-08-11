@@ -1,18 +1,21 @@
 const TallScore = ({
   correct,
   incorrect,
+  total,
 }: {
   correct: number;
   incorrect: number;
+  total: number;
 }) => {
+  console.log('test: ', total);
   const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset =
-    circumference - (correct / 194) * circumference;
+    circumference - (correct / total) * circumference;
   let incorrectStrokeDashoffset = {
     strokeDashoffset: `${
-      -1 * (circumference - (incorrect / 194) * circumference)
+      -1 * (circumference - (incorrect / total) * circumference)
     }`,
   };
 
@@ -41,6 +44,7 @@ const TallScore = ({
           </linearGradient>
         </defs>
         <circle
+          className="score_tracker"
           stroke="#dee1e1"
           fill="transparent"
           strokeWidth={stroke}
@@ -52,6 +56,7 @@ const TallScore = ({
           cy={radius}
         />
         <circle
+          className="score_tracker"
           stroke="#1b83ff"
           fill="transparent"
           strokeWidth={stroke}
@@ -63,6 +68,7 @@ const TallScore = ({
           cy={radius}
         />
         <circle
+          className="score_tracker"
           stroke="#df001d"
           fill="transparent"
           strokeWidth={stroke}

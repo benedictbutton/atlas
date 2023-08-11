@@ -6,8 +6,8 @@ const Switch = ({
   answers,
   setAnswers,
 }: {
-  answers: CountriesObject;
-  setAnswers: Dispatch<SetStateAction<CountriesObject>>;
+  answers: AnswersObject;
+  setAnswers: Dispatch<SetStateAction<AnswersObject>>;
 }) => {
   const toggleInput = useRef(null);
   const { showAll, showAllCountries, hideAllCountries } =

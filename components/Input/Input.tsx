@@ -17,15 +17,17 @@ export interface InputProps {
   ) => void;
   zoomIn: string;
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
-  answers: CountriesObject;
-  setAnswers: Dispatch<SetStateAction<CountriesObject>>;
+  answers: AnswersObject;
+  setAnswers: Dispatch<SetStateAction<AnswersObject>>;
   regionHeader: string;
-  countryName: string;
+  labelName: string;
+  labelType: string;
   game: string | null | undefined;
   createGame: () => void;
   handleSaveGame: () => void;
   handleResetAnswers: () => void;
   forwardRef: (el: HTMLInputElement) => HTMLInputElement;
+  total: number;
 }
 
 const Input = ({ ...props }: InputProps) => {

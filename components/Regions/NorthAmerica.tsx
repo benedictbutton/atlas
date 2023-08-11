@@ -41,7 +41,9 @@ const NorthAmerica = ({
           data-originalStrokeWidth="0.5"
         ></path>
         <text
-          style={{ display: !answers['Greenland'] ? 'none' : '' }}
+          style={{
+            display: (answers['Greenland'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Greenland_label"
           y="72.044"
           x="311.51"
@@ -114,7 +116,10 @@ const NorthAmerica = ({
           data-originalStrokeWidth="0.2"
         ></path>
         <text
-          style={{ display: !answers['United States'] ? 'none' : '' }}
+          style={{
+            display:
+              (answers['United States'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="United_States_label"
           y="201.35"
           x="159.858"
@@ -168,7 +173,9 @@ const NorthAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Mexico'] ? 'none' : '' }}
+          style={{
+            display: (answers['Mexico'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Mexico_label"
           y="244.11"
           x="177.574"
@@ -233,7 +240,9 @@ const NorthAmerica = ({
           data-originalStrokeWidth="0.2"
         ></path>
         <text
-          style={{ display: !answers['Canada'] ? 'none' : '' }}
+          style={{
+            display: (answers['Canada'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Canada_label"
           y="144.79"
           x="157.036"

@@ -28,6 +28,7 @@ const Tracker = ({ isMounted }: { isMounted: boolean }) => {
         </linearGradient>
       </defs>
       <circle
+        className="score_tracker"
         stroke="#dee1e1"
         fill="transparent"
         strokeWidth={stroke}
@@ -39,6 +40,7 @@ const Tracker = ({ isMounted }: { isMounted: boolean }) => {
         cy={radius}
       />
       <circle
+        className="score_tracker"
         stroke="#1b83ff"
         fill="transparent"
         strokeWidth={stroke}
@@ -50,6 +52,7 @@ const Tracker = ({ isMounted }: { isMounted: boolean }) => {
         cy={radius}
       />
       <circle
+        className="score_tracker"
         stroke="#df001d"
         fill="transparent"
         strokeWidth={stroke}

@@ -1,0 +1,31 @@
+.pelvis__zoom__in {
+  animation: pelvis__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.pelvis__zoom__in > text {
+  font-size: 7px;
+}
+
+@keyframes pelvis__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3.2) translate(-47%, -30%);
+  }
+}
+
+.pelvis__zoom__out {
+  animation: pelvis__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pelvis__zoom__out {
+  from {
+    transform: scale(3.2) translate(-47%, -30%);
+  }
+  to {
+    transform: scale(1);
+  }
+}

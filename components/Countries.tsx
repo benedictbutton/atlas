@@ -26,7 +26,7 @@ export interface CountryProps {
     close: string | undefined,
   ) => void;
   countryId: string;
-  answers: CountriesObject;
+  answers: { [key: string]: null | number };
 }
 
 export interface RegionProps extends CountryProps {

@@ -35,7 +35,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Singapore'] ? 'none' : '' }}
+          style={{
+            display: (answers['Singapore'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Singapore_label"
           y="302.402"
           x="680.994"
@@ -93,7 +95,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Vietnam'] ? 'none' : '' }}
+          style={{
+            display: (answers['Vietnam'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Vietnam_label"
           y="267.286"
           x="692.991"
@@ -148,7 +152,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Tajikistan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Tajikistan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Tajikistan_label"
           y="199.192"
           x="596.107"
@@ -204,9 +210,10 @@ const Asia = ({
         ></path>
         <text
           style={{
-            display: !answers['South Korea (Republic Of Korea)']
-              ? 'none'
-              : '',
+            display:
+              (answers['South Korea (Republic Of Korea)'] ?? 0) < 1
+                ? 'none'
+                : '',
           }}
           id="South_Korea_label"
           y="204.67"
@@ -263,7 +270,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Hong Kong'] ? 'none' : '' }}
+          style={{
+            display: (answers['Hong Kong'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Hong_Kong_label"
           y="246.69"
           x="706.03"
@@ -319,7 +328,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Brunei'] ? 'none' : '' }}
+          style={{
+            display: (answers['Brunei'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Brunei_label"
           y="290.492"
           x="697.315"
@@ -375,7 +386,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Malaysia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Malaysia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Malaysia_label"
           y="298.358"
           x="675.207"
@@ -433,7 +446,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Indonesia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Indonesia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Indonesia_label"
           y="313.735"
           x="690.613"
@@ -492,7 +507,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Mongolia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Mongolia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Mongolia_label"
           y="176.901"
           x="661.939"
@@ -549,7 +566,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Cambodia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Cambodia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Cambodia_label"
           y="270.599"
           x="677.065"
@@ -606,7 +625,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Laos'] ? 'none' : '' }}
+          style={{
+            display: (answers['Laos'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Laos_label"
           y="252.314"
           x="673.118"
@@ -662,7 +683,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Myanmar'] ? 'none' : '' }}
+          style={{
+            display: (answers['Myanmar'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Myanmar_label"
           y="249.579"
           x="655.314"
@@ -717,7 +740,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Philippines'] ? 'none' : '' }}
+          style={{
+            display: (answers['Philippines'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Philippines_label"
           y="269.356"
           x="730.428"
@@ -772,7 +797,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Japan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Japan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Japan_label"
           y="202.764"
           x="770.821"
@@ -828,7 +855,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['China'] ? 'none' : '' }}
+          style={{
+            display: (answers['China'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="China_label"
           y="213.038"
           x="654.64"
@@ -885,7 +914,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Sri Lanka'] ? 'none' : '' }}
+          style={{
+            display: (answers['Sri Lanka'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Sri_Lanka_label"
           y="290.482"
           x="625.571"
@@ -941,7 +972,8 @@ const Asia = ({
         ></path>
         <text
           style={{
-            display: !answers['North Korea (Korea)'] ? 'none' : '',
+            display:
+              (answers['North Korea (Korea)'] ?? 0) < 1 ? 'none' : '',
           }}
           id="North_Korea_label"
           y="195.263"
@@ -998,7 +1030,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Nepal'] ? 'none' : '' }}
+          style={{
+            display: (answers['Nepal'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.96602 .35352 -.3813 .89563 0 0)"
           id="Nepal_label"
           y="-17.72"
@@ -1053,7 +1087,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Turkmenistan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Turkmenistan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Turkmenistan_label"
           y="198.595"
           x="560.702"
@@ -1109,9 +1145,10 @@ const Asia = ({
         ></path>
         <text
           style={{
-            display: !answers['Taiwan (Republic of China)']
-              ? 'none'
-              : '',
+            display:
+              (answers['Taiwan (Republic of China)'] ?? 0) < 1
+                ? 'none'
+                : '',
           }}
           id="Taiwan_label"
           y="242.473"
@@ -1167,7 +1204,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['India'] ? 'none' : '' }}
+          style={{
+            display: (answers['India'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="India_label"
           y="253.045"
           x="613.91"
@@ -1223,7 +1262,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Kyrgyzstan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Kyrgyzstan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Kyrgyzstan_label"
           y="190.43"
           x="603.251"
@@ -1278,7 +1319,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Thailand'] ? 'none' : '' }}
+          style={{
+            display: (answers['Thailand'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Thailand_label"
           y="264.677"
           x="668.361"
@@ -1334,7 +1377,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Uzbekistan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Uzbekistan'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.88304 .50682 -.54666 .8187 0 0)"
           id="Uzbekistan_label"
           y="-143.294"
@@ -1390,7 +1435,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Kazakhstan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Kazakhstan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Kazakhstan_label"
           y="170.305"
           x="576.801"
@@ -1448,7 +1495,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Bangladesh'] ? 'none' : '' }}
+          style={{
+            display: (answers['Bangladesh'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Bangladesh_label"
           y="239.43"
           x="637.915"
@@ -1503,7 +1552,9 @@ const Asia = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Bhutan'] ? 'none' : '' }}
+          style={{
+            display: (answers['Bhutan'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Bhutan_label"
           y="228.425"
           x="642.219"

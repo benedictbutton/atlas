@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useMutation } from '@apollo/client';
 import { useSession } from 'next-auth/react';
 import { gql } from '../__generated__/gql';
-import { countries, sampleGame } from '../data/countries';
 
 // const GET_COUNTRIES = gql`
 //   query Countries {
@@ -32,9 +31,9 @@ const SAVE_GAME = gql(`
   }
 `);
 
-const useAnswers = () => {
+const useAnswers = (answerData: AnswersObject) => {
   const { data } = useSession();
-  const [answers, setAnswers] = useState<CountriesObject>(countries);
+  const [answers, setAnswers] = useState<AnswersObject>(answerData);
   const [game, setGame] = useState<string | null | undefined>(null);
   //   const { data: countryData } = useQuery(GET_COUNTRIES);
 
@@ -48,11 +47,17 @@ const useAnswers = () => {
   const [saveGame, { data: updatedGame }] = useMutation(SAVE_GAME);
 
   const handleSaveGame = () => {
+    const convertNumToBoolean: { [key: string]: boolean | null } = {
+      '-1': false,
+      '0': null,
+      '1': true,
+    };
     const formedAnswers = [];
     for (const country in answers) {
+      const valueKey = answers[country as keyof typeof answers] + '';
       formedAnswers.push({
         countryName: country,
-        value: answers[country as keyof typeof answers],
+        value: convertNumToBoolean[valueKey],
       });
     }
 
@@ -65,20 +70,20 @@ const useAnswers = () => {
 
   useEffect(() => {
     if (gameData && gameData.createGame) {
-      const countriesObj: CountriesObject = {};
+      const answersObj: AnswersObject = {};
       gameData.createGame.map(
         (
           ans: {
-            value?: boolean | null | undefined;
-            countryName?: string | null | undefined;
+            value?: boolean | null | number;
+            countryName?: string | null | number;
           } | null,
         ) => {
           if (ans?.countryName)
-            countriesObj[ans.countryName] = ans?.value;
-          return countriesObj;
+            answersObj[ans.countryName] = ans?.value;
+          return answersObj;
         },
       );
-      setAnswers(countriesObj);
+      setAnswers(answersObj);
 
       setGame(gameData?.createGame[0]?.gameId);
     }

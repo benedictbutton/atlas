@@ -7,6 +7,7 @@ import {
   MouseEvent,
 } from 'react';
 import { debounce } from 'lodash';
+import CloseButton from './Input/Close';
 import Countries from './Countries';
 import Intro from './Intro';
 import Profile from './Profile';
@@ -14,6 +15,7 @@ import Input from './Input/Input';
 import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
+import { countries, sampleGame } from '../data/countries';
 
 const unitedKingdom = [
   'England',
@@ -27,10 +29,11 @@ const WorldMap = () => {
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
   const { answers, setAnswers, createGame, handleSaveGame, game } =
-    useAnswers();
+    useAnswers(countries);
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
   const [introMessage, setIntroMessage] = useIntroMessage();
   const formInput = useRef<HTMLInputElement | null>(null);
+  const total = 194;
 
   const handleZoom = useCallback(
     (
@@ -95,14 +98,14 @@ const WorldMap = () => {
       )
         setAnswers({
           ...answers,
-          ['England']: true,
-          ['Northern Ireland']: true,
-          ['Scotland']: true,
-          ['Wales']: true,
+          ['England']: 1,
+          ['Northern Ireland']: 1,
+          ['Scotland']: 1,
+          ['Wales']: 1,
         });
       else if (countryName !== searchValue)
-        setAnswers({ ...answers, [`${countryName}`]: false });
-      else setAnswers({ ...answers, [`${countryName}`]: true });
+        setAnswers({ ...answers, [`${countryName}`]: -1 });
+      else setAnswers({ ...answers, [`${countryName}`]: 1 });
 
       setCountryId('');
       setCountryName('');
@@ -118,7 +121,7 @@ const WorldMap = () => {
     setSearchValue('');
     if (formInput.current) formInput.current.value = '';
 
-    const resetAnswers: CountriesObject = {};
+    const resetAnswers: AnswersObject = {};
     const countries = Object.keys(answers);
     countries.map((country) => {
       resetAnswers[country] = null;
@@ -146,7 +149,8 @@ const WorldMap = () => {
         answers={answers}
         setAnswers={setAnswers}
         regionHeader={regionHeader}
-        countryName={countryName}
+        labelName={countryName}
+        labelType="country"
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}
@@ -154,30 +158,9 @@ const WorldMap = () => {
         forwardRef={(el: HTMLInputElement) =>
           (formInput.current = el)
         }
+        total={total}
       />
-      {zoomIn && (
-        <button
-          className="absolute top-[10%] left-[10%] w-12 h-12"
-          onClick={(event) => handleZoom(event, 'close')}
-          aria-label="close"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-          >
-            <g>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </g>
-          </svg>
-        </button>
-      )}
+      {zoomIn && <CloseButton handleZoom={handleZoom} />}
       <svg
         className="h-full bg-[#80b6ec]"
         version="1.2"
@@ -198,7 +181,13 @@ const WorldMap = () => {
             patternUnits="userSpaceOnUse"
           >
             <rect width="10" height="10" fill="#fff"></rect>
-            <circle cx="4" cy="4" r="2" fill="#000"></circle>
+            <circle
+              className="hide__circle"
+              cx="4"
+              cy="4"
+              r="2"
+              fill="#000"
+            ></circle>
           </pattern>
           <pattern
             id="diagonal1"
@@ -358,7 +347,13 @@ const WorldMap = () => {
             patternUnits="userSpaceOnUse"
           >
             <rect width="10" height="10" fill="#a03500"></rect>
-            <circle cx="4" cy="4" r="2" fill="#000000"></circle>
+            <circle
+              className="hide__circle"
+              cx="4"
+              cy="4"
+              r="2"
+              fill="#000000"
+            ></circle>
           </pattern>
           <pattern
             id="diagonal1_d9b400_535353"
@@ -1425,6 +1420,7 @@ const WorldMap = () => {
             opacity="1"
           >
             <circle
+              className="hide__circle"
               cx="567.95"
               cy="268.5"
               r=".25"
@@ -1434,6 +1430,7 @@ const WorldMap = () => {
               Kozhikode
             </text>
             <circle
+              className="hide__circle"
               cx="590.25"
               cy="248"
               r=".25"
@@ -1447,6 +1444,7 @@ const WorldMap = () => {
               Bhubaneshwar
             </text>
             <circle
+              className="hide__circle"
               cx="591.07"
               cy="242.16"
               r=".25"
@@ -1460,6 +1458,7 @@ const WorldMap = () => {
               Jamshedpur
             </text>
             <circle
+              className="hide__circle"
               cx="275.48"
               cy="374.05"
               r=".25"
@@ -1469,6 +1468,7 @@ const WorldMap = () => {
               Montevideo
             </text>
             <circle
+              className="hide__circle"
               cx="129.294"
               cy="207.343"
               r=".25"
@@ -1478,6 +1478,7 @@ const WorldMap = () => {
               San Jose
             </text>
             <circle
+              className="hide__circle"
               cx="130.144"
               cy="204.063"
               r=".25"
@@ -1487,6 +1488,7 @@ const WorldMap = () => {
               Sacramento
             </text>
             <circle
+              className="hide__circle"
               cx="144.569"
               cy="210.318"
               r=".25"
@@ -1496,6 +1498,7 @@ const WorldMap = () => {
               Las Vegas
             </text>
             <circle
+              className="hide__circle"
               cx="127.855"
               cy="185.912"
               r=".25"
@@ -1505,6 +1508,7 @@ const WorldMap = () => {
               Portland
             </text>
             <circle
+              className="hide__circle"
               cx="151.983"
               cy="198.99"
               r=".25"
@@ -1514,6 +1518,7 @@ const WorldMap = () => {
               Salt Lake City
             </text>
             <circle
+              className="hide__circle"
               cx="183.994"
               cy="212.599"
               r=".25"
@@ -1523,6 +1528,7 @@ const WorldMap = () => {
               Oklahoma City
             </text>
             <circle
+              className="hide__circle"
               cx="181.619"
               cy="226.825"
               r=".25"
@@ -1532,6 +1538,7 @@ const WorldMap = () => {
               San Antonio
             </text>
             <circle
+              className="hide__circle"
               cx="249.31"
               cy="270.79"
               r=".25"
@@ -1541,6 +1548,7 @@ const WorldMap = () => {
               Valencia
             </text>
             <circle
+              className="hide__circle"
               cx="219.136"
               cy="196.595"
               r=".25"
@@ -1550,6 +1558,7 @@ const WorldMap = () => {
               Cleveland
             </text>
             <circle
+              className="hide__circle"
               cx="212.657"
               cy="202.625"
               r=".25"
@@ -1559,6 +1568,7 @@ const WorldMap = () => {
               Cincinnati
             </text>
             <circle
+              className="hide__circle"
               cx="207.63"
               cy="210.049"
               r=".25"
@@ -1568,6 +1578,7 @@ const WorldMap = () => {
               Nashville
             </text>
             <circle
+              className="hide__circle"
               cx="200.438"
               cy="213.048"
               r=".25"
@@ -1577,6 +1588,7 @@ const WorldMap = () => {
               Memphis
             </text>
             <circle
+              className="hide__circle"
               cx="205.048"
               cy="192.191"
               r=".25"
@@ -1586,6 +1598,7 @@ const WorldMap = () => {
               Milwaukee
             </text>
             <circle
+              className="hide__circle"
               cx="225.253"
               cy="192.63"
               r=".25"
@@ -1595,6 +1608,7 @@ const WorldMap = () => {
               Buffalo
             </text>
             <circle
+              className="hide__circle"
               cx="222.681"
               cy="199.294"
               r=".25"
@@ -1604,6 +1618,7 @@ const WorldMap = () => {
               Pittsburgh
             </text>
             <circle
+              className="hide__circle"
               cx="402.71"
               cy="279.93"
               r=".25"
@@ -1613,6 +1628,7 @@ const WorldMap = () => {
               Lomé
             </text>
             <circle
+              className="hide__circle"
               cx="462.69"
               cy="327.98"
               r=".25"
@@ -1626,6 +1642,7 @@ const WorldMap = () => {
               Lusaka
             </text>
             <circle
+              className="hide__circle"
               cx="468.81"
               cy="333.45"
               r=".25"
@@ -1639,6 +1656,7 @@ const WorldMap = () => {
               Harare
             </text>
             <circle
+              className="hide__circle"
               cx="206.66"
               cy="262.08"
               r=".25"
@@ -1648,6 +1666,7 @@ const WorldMap = () => {
               Tegucigalpa
             </text>
             <circle
+              className="hide__circle"
               cx="239.65"
               cy="251.98"
               r=".25"
@@ -1661,6 +1680,7 @@ const WorldMap = () => {
               Port-au-Prince
             </text>
             <circle
+              className="hide__circle"
               cx="390.57"
               cy="154.79"
               r=".25"
@@ -1674,6 +1694,7 @@ const WorldMap = () => {
               Glasgow
             </text>
             <circle
+              className="hide__circle"
               cx="472.22"
               cy="292.84"
               r=".25"
@@ -1687,6 +1708,7 @@ const WorldMap = () => {
               Kampala
             </text>
             <circle
+              className="hide__circle"
               cx="404.69"
               cy="263.4"
               r=".25"
@@ -1700,6 +1722,7 @@ const WorldMap = () => {
               Niamey
             </text>
             <circle
+              className="hide__circle"
               cx="272.22"
               cy="350.82"
               r=".25"
@@ -1713,6 +1736,7 @@ const WorldMap = () => {
               Asunción
             </text>
             <circle
+              className="hide__circle"
               cx="208.77"
               cy="266.47"
               r=".25"
@@ -1726,6 +1750,7 @@ const WorldMap = () => {
               Managua
             </text>
             <circle
+              className="hide__circle"
               cx="370.66"
               cy="274.72"
               r=".25"
@@ -1739,6 +1764,7 @@ const WorldMap = () => {
               Freetown
             </text>
             <circle
+              className="hide__circle"
               cx="562.18"
               cy="215.92"
               r=".25"
@@ -1748,6 +1774,7 @@ const WorldMap = () => {
               Islamabad
             </text>
             <circle
+              className="hide__circle"
               cx="558.39"
               cy="224.52"
               r=".25"
@@ -1761,6 +1788,7 @@ const WorldMap = () => {
               Multan
             </text>
             <circle
+              className="hide__circle"
               cx="551.56"
               cy="236.07"
               r=".25"
@@ -1774,6 +1802,7 @@ const WorldMap = () => {
               Hyderabad
             </text>
             <circle
+              className="hide__circle"
               cx="558.56"
               cy="215.16"
               r=".25"
@@ -1787,6 +1816,7 @@ const WorldMap = () => {
               Peshawar
             </text>
             <circle
+              className="hide__circle"
               cx="589.11"
               cy="230.51"
               r=".25"
@@ -1796,6 +1826,7 @@ const WorldMap = () => {
               Kathmandu
             </text>
             <circle
+              className="hide__circle"
               cx="462.57"
               cy="351.79"
               r=".25"
@@ -1809,6 +1840,7 @@ const WorldMap = () => {
               Pretoria
             </text>
             <circle
+              className="hide__circle"
               cx="223.7"
               cy="273.61"
               r=".25"
@@ -1822,6 +1854,7 @@ const WorldMap = () => {
               Panama City
             </text>
             <circle
+              className="hide__circle"
               cx="388.91"
               cy="215.04"
               r=".25"
@@ -1835,6 +1868,7 @@ const WorldMap = () => {
               Fez
             </text>
             <circle
+              className="hide__circle"
               cx="384.85"
               cy="215.12"
               r=".25"
@@ -1848,6 +1882,7 @@ const WorldMap = () => {
               Rabat
             </text>
             <circle
+              className="hide__circle"
               cx="382.26"
               cy="221.03"
               r=".25"
@@ -1861,6 +1896,7 @@ const WorldMap = () => {
               Marrakesh
             </text>
             <circle
+              className="hide__circle"
               cx="456.74"
               cy="371.84"
               r=".25"
@@ -1874,6 +1910,7 @@ const WorldMap = () => {
               Port Elizabeth
             </text>
             <circle
+              className="hide__circle"
               cx="472.24"
               cy="352.38"
               r=".25"
@@ -1887,6 +1924,7 @@ const WorldMap = () => {
               Maputo
             </text>
             <circle
+              className="hide__circle"
               cx="497.53"
               cy="153.36"
               r=".25"
@@ -1900,6 +1938,7 @@ const WorldMap = () => {
               Nizhny Novgorod
             </text>
             <circle
+              className="hide__circle"
               cx="498.64"
               cy="176.13"
               r=".25"
@@ -1913,6 +1952,7 @@ const WorldMap = () => {
               Volgograd
             </text>
             <circle
+              className="hide__circle"
               cx="524.22"
               cy="158.15"
               r=".25"
@@ -1926,6 +1966,7 @@ const WorldMap = () => {
               Ufa
             </text>
             <circle
+              className="hide__circle"
               cx="534.33"
               cy="151.73"
               r=".25"
@@ -1939,6 +1980,7 @@ const WorldMap = () => {
               Yekaterinburg
             </text>
             <circle
+              className="hide__circle"
               cx="511.16"
               cy="163"
               r=".25"
@@ -1952,6 +1994,7 @@ const WorldMap = () => {
               Samara
             </text>
             <circle
+              className="hide__circle"
               cx="508.89"
               cy="155.18"
               r=".25"
@@ -1965,6 +2008,7 @@ const WorldMap = () => {
               Kazan
             </text>
             <circle
+              className="hide__circle"
               cx="583.89"
               cy="157.41"
               r=".25"
@@ -1978,6 +2022,7 @@ const WorldMap = () => {
               Novosibirsk
             </text>
             <circle
+              className="hide__circle"
               cx="500.56"
               cy="288.96"
               r=".25"
@@ -1991,6 +2036,7 @@ const WorldMap = () => {
               Mogadishu
             </text>
             <circle
+              className="hide__circle"
               cx="674.64"
               cy="270.59"
               r=".25"
@@ -2004,6 +2050,7 @@ const WorldMap = () => {
               Cebu
             </text>
             <circle
+              className="hide__circle"
               cx="678.48"
               cy="277.76"
               r=".25"
@@ -2017,6 +2064,7 @@ const WorldMap = () => {
               Davao
             </text>
             <circle
+              className="hide__circle"
               cx="605.85"
               cy="154.35"
               r=".25"
@@ -2030,6 +2078,7 @@ const WorldMap = () => {
               Krasnoyarsk
             </text>
             <circle
+              className="hide__circle"
               cx="140.47"
               cy="218.89"
               r=".25"
@@ -2039,6 +2088,7 @@ const WorldMap = () => {
               Tijuana
             </text>
             <circle
+              className="hide__circle"
               cx="164.84"
               cy="228.28"
               r=".25"
@@ -2052,6 +2102,7 @@ const WorldMap = () => {
               Chihuahua
             </text>
             <circle
+              className="hide__circle"
               cx="201.35"
               cy="246.39"
               r=".25"
@@ -2065,6 +2116,7 @@ const WorldMap = () => {
               Mérida
             </text>
             <circle
+              className="hide__circle"
               cx="524.68"
               cy="148.06"
               r=".25"
@@ -2078,6 +2130,7 @@ const WorldMap = () => {
               Perm
             </text>
             <circle
+              className="hide__circle"
               cx="636.99"
               cy="178.38"
               r=".25"
@@ -2091,6 +2144,7 @@ const WorldMap = () => {
               Ulaanbaatar
             </text>
             <circle
+              className="hide__circle"
               cx="399.11"
               cy="201.21"
               r=".25"
@@ -2104,6 +2158,7 @@ const WorldMap = () => {
               Valencia
             </text>
             <circle
+              className="hide__circle"
               cx="416.69"
               cy="273.35"
               r=".25"
@@ -2117,6 +2172,7 @@ const WorldMap = () => {
               Abuja
             </text>
             <circle
+              className="hide__circle"
               cx="622.46"
               cy="295.67"
               r=".25"
@@ -2130,6 +2186,7 @@ const WorldMap = () => {
               Padang
             </text>
             <circle
+              className="hide__circle"
               cx="429.59"
               cy="204.73"
               r=".25"
@@ -2143,6 +2200,7 @@ const WorldMap = () => {
               Palermo
             </text>
             <circle
+              className="hide__circle"
               cx="479.65"
               cy="220.25"
               r=".25"
@@ -2152,6 +2210,7 @@ const WorldMap = () => {
               Amman
             </text>
             <circle
+              className="hide__circle"
               cx="565.33"
               cy="192.26"
               r=".25"
@@ -2165,6 +2224,7 @@ const WorldMap = () => {
               Bishkek
             </text>
             <circle
+              className="hide__circle"
               cx="625.59"
               cy="208.58"
               r=".25"
@@ -2178,6 +2238,7 @@ const WorldMap = () => {
               Xining
             </text>
             <circle
+              className="hide__circle"
               cx="644.45"
               cy="236.3"
               r=".25"
@@ -2191,6 +2252,7 @@ const WorldMap = () => {
               Guilin
             </text>
             <circle
+              className="hide__circle"
               cx="659.3"
               cy="218.57"
               r=".25"
@@ -2204,6 +2266,7 @@ const WorldMap = () => {
               Huainan
             </text>
             <circle
+              className="hide__circle"
               cx="658.61"
               cy="240.79"
               r=".25"
@@ -2217,6 +2280,7 @@ const WorldMap = () => {
               Shantou
             </text>
             <circle
+              className="hide__circle"
               cx="487.98"
               cy="302.5"
               r=".25"
@@ -2230,6 +2294,7 @@ const WorldMap = () => {
               Mombasa
             </text>
             <circle
+              className="hide__circle"
               cx="505.32"
               cy="335.97"
               r=".25"
@@ -2243,6 +2308,7 @@ const WorldMap = () => {
               Antananarivo
             </text>
             <circle
+              className="hide__circle"
               cx="644.76"
               cy="309.01"
               r=".25"
@@ -2252,6 +2318,7 @@ const WorldMap = () => {
               Semarang
             </text>
             <circle
+              className="hide__circle"
               cx="632.19"
               cy="300.15"
               r=".25"
@@ -2265,6 +2332,7 @@ const WorldMap = () => {
               Palembang
             </text>
             <circle
+              className="hide__circle"
               cx="664.9"
               cy="304.97"
               r=".25"
@@ -2274,6 +2342,7 @@ const WorldMap = () => {
               Ujungpandang
             </text>
             <circle
+              className="hide__circle"
               cx="410.7"
               cy="184.38"
               r=".25"
@@ -2287,6 +2356,7 @@ const WorldMap = () => {
               Lyon
             </text>
             <circle
+              className="hide__circle"
               cx="225.99"
               cy="294.02"
               r=".25"
@@ -2300,6 +2370,7 @@ const WorldMap = () => {
               Quito
             </text>
             <circle
+              className="hide__circle"
               cx="213.61"
               cy="271.45"
               r=".25"
@@ -2313,6 +2384,7 @@ const WorldMap = () => {
               San José
             </text>
             <circle
+              className="hide__circle"
               cx="202.26"
               cy="262.96"
               r=".25"
@@ -2322,6 +2394,7 @@ const WorldMap = () => {
               San Salvador
             </text>
             <circle
+              className="hide__circle"
               cx="232.61"
               cy="270.41"
               r=".25"
@@ -2335,6 +2408,7 @@ const WorldMap = () => {
               Cartagena
             </text>
             <circle
+              className="hide__circle"
               cx="433.35"
               cy="266.56"
               r=".25"
@@ -2348,6 +2422,7 @@ const WorldMap = () => {
               Ndjamena
             </text>
             <circle
+              className="hide__circle"
               cx="635.57"
               cy="203.85"
               r=".25"
@@ -2361,6 +2436,7 @@ const WorldMap = () => {
               Yinchuan
             </text>
             <circle
+              className="hide__circle"
               cx="652.36"
               cy="230.74"
               r=".25"
@@ -2370,6 +2446,7 @@ const WorldMap = () => {
               Pingxiang
             </text>
             <circle
+              className="hide__circle"
               cx="674.84"
               cy="179.99"
               r=".25"
@@ -2383,6 +2460,7 @@ const WorldMap = () => {
               Qiqihar
             </text>
             <circle
+              className="hide__circle"
               cx="460.91"
               cy="319.55"
               r=".25"
@@ -2396,6 +2474,7 @@ const WorldMap = () => {
               Lubumbashi
             </text>
             <circle
+              className="hide__circle"
               cx="199.33"
               cy="260.9"
               r=".25"
@@ -2405,6 +2484,7 @@ const WorldMap = () => {
               Guatemala
             </text>
             <circle
+              className="hide__circle"
               cx="584.66"
               cy="253.83"
               r=".25"
@@ -2418,6 +2498,7 @@ const WorldMap = () => {
               Vishakhapatnam
             </text>
             <circle
+              className="hide__circle"
               cx="241.24"
               cy="369.54"
               r=".25"
@@ -2427,6 +2508,7 @@ const WorldMap = () => {
               Valparaíso
             </text>
             <circle
+              className="hide__circle"
               cx="382.26"
               cy="265.35"
               r=".25"
@@ -2440,6 +2522,7 @@ const WorldMap = () => {
               Bamako
             </text>
             <circle
+              className="hide__circle"
               cx="444.48"
               cy="219.84"
               r=".25"
@@ -2453,6 +2536,7 @@ const WorldMap = () => {
               Banghazi
             </text>
             <circle
+              className="hide__circle"
               cx="450.72"
               cy="198.04"
               r=".25"
@@ -2466,6 +2550,7 @@ const WorldMap = () => {
               Thessaloniki
             </text>
             <circle
+              className="hide__circle"
               cx="478.71"
               cy="215.49"
               r=".25"
@@ -2475,6 +2560,7 @@ const WorldMap = () => {
               Beirut
             </text>
             <circle
+              className="hide__circle"
               cx="499.28"
               cy="195.33"
               r=".25"
@@ -2488,6 +2574,7 @@ const WorldMap = () => {
               Tbilisi
             </text>
             <circle
+              className="hide__circle"
               cx="570.49"
               cy="191.05"
               r=".25"
@@ -2501,6 +2588,7 @@ const WorldMap = () => {
               Almaty
             </text>
             <circle
+              className="hide__circle"
               cx="514.6"
               cy="218.4"
               r=".25"
@@ -2514,6 +2602,7 @@ const WorldMap = () => {
               Isfahan
             </text>
             <circle
+              className="hide__circle"
               cx="516.53"
               cy="225.9"
               r=".25"
@@ -2527,6 +2616,7 @@ const WorldMap = () => {
               Shiraz
             </text>
             <circle
+              className="hide__circle"
               cx="565.96"
               cy="221.01"
               r=".25"
@@ -2536,6 +2626,7 @@ const WorldMap = () => {
               Amritsar
             </text>
             <circle
+              className="hide__circle"
               cx="583.98"
               cy="236.19"
               r=".25"
@@ -2549,6 +2640,7 @@ const WorldMap = () => {
               Varanasi
             </text>
             <circle
+              className="hide__circle"
               cx="592.81"
               cy="240.06"
               r=".25"
@@ -2562,6 +2654,7 @@ const WorldMap = () => {
               Asansol
             </text>
             <circle
+              className="hide__circle"
               cx="580.51"
               cy="245.81"
               r=".25"
@@ -2575,6 +2668,7 @@ const WorldMap = () => {
               Bhilai
             </text>
             <circle
+              className="hide__circle"
               cx="571.59"
               cy="241.07"
               r=".25"
@@ -2588,6 +2682,7 @@ const WorldMap = () => {
               Bhopal
             </text>
             <circle
+              className="hide__circle"
               cx="573.16"
               cy="271.48"
               r=".25"
@@ -2601,6 +2696,7 @@ const WorldMap = () => {
               Madurai
             </text>
             <circle
+              className="hide__circle"
               cx="570.57"
               cy="269.06"
               r=".25"
@@ -2610,6 +2706,7 @@ const WorldMap = () => {
               Coimbatore
             </text>
             <circle
+              className="hide__circle"
               cx="433.88"
               cy="302.99"
               r=".25"
@@ -2623,6 +2720,7 @@ const WorldMap = () => {
               Brazzaville
             </text>
             <circle
+              className="hide__circle"
               cx="369.67"
               cy="272.35"
               r=".25"
@@ -2636,6 +2734,7 @@ const WorldMap = () => {
               Conakry
             </text>
             <circle
+              className="hide__circle"
               cx="267"
               cy="300.42"
               r=".25"
@@ -2649,6 +2748,7 @@ const WorldMap = () => {
               Manaus
             </text>
             <circle
+              className="hide__circle"
               cx="278.93"
               cy="339.5"
               r=".25"
@@ -2662,6 +2762,7 @@ const WorldMap = () => {
               Campo Grande
             </text>
             <circle
+              className="hide__circle"
               cx="292.44"
               cy="356.25"
               r=".25"
@@ -2675,6 +2776,7 @@ const WorldMap = () => {
               Florianópolis
             </text>
             <circle
+              className="hide__circle"
               cx="147.12"
               cy="169.27"
               r=".25"
@@ -2688,6 +2790,7 @@ const WorldMap = () => {
               Calgary
             </text>
             <circle
+              className="hide__circle"
               cx="232.393"
               cy="186.032"
               r=".25"
@@ -2697,6 +2800,7 @@ const WorldMap = () => {
               Ottawa
             </text>
             <circle
+              className="hide__circle"
               cx="445.37"
               cy="186.99"
               r=".25"
@@ -2710,6 +2814,7 @@ const WorldMap = () => {
               Belgrade
             </text>
             <circle
+              className="hide__circle"
               cx="247.45"
               cy="369.14"
               r=".25"
@@ -2723,6 +2828,7 @@ const WorldMap = () => {
               Mendoza
             </text>
             <circle
+              className="hide__circle"
               cx="257.72"
               cy="365.49"
               r=".25"
@@ -2736,6 +2842,7 @@ const WorldMap = () => {
               Córdoba
             </text>
             <circle
+              className="hide__circle"
               cx="425.52"
               cy="284.97"
               r=".25"
@@ -2749,6 +2856,7 @@ const WorldMap = () => {
               Yaounde
             </text>
             <circle
+              className="hide__circle"
               cx="498.67"
               cy="199.4"
               r=".25"
@@ -2762,6 +2870,7 @@ const WorldMap = () => {
               Yerevan
             </text>
             <circle
+              className="hide__circle"
               cx="510.52"
               cy="198.83"
               r=".25"
@@ -2775,6 +2884,7 @@ const WorldMap = () => {
               Baku
             </text>
             <circle
+              className="hide__circle"
               cx="632.56"
               cy="267.83"
               r=".25"
@@ -2788,6 +2898,7 @@ const WorldMap = () => {
               Phnom Penh
             </text>
             <circle
+              className="hide__circle"
               cx="434.93"
               cy="321.95"
               r=".25"
@@ -2801,6 +2912,7 @@ const WorldMap = () => {
               Huambo
             </text>
             <circle
+              className="hide__circle"
               cx="248.93"
               cy="330.44"
               r=".25"
@@ -2814,6 +2926,7 @@ const WorldMap = () => {
               La Paz
             </text>
             <circle
+              className="hide__circle"
               cx="259.84"
               cy="333.31"
               r=".25"
@@ -2827,6 +2940,7 @@ const WorldMap = () => {
               Santa Cruz
             </text>
             <circle
+              className="hide__circle"
               cx="398.62"
               cy="210.88"
               r=".25"
@@ -2840,6 +2954,7 @@ const WorldMap = () => {
               Oran
             </text>
             <circle
+              className="hide__circle"
               cx="405.58"
               cy="279.34"
               r=".25"
@@ -2853,6 +2968,7 @@ const WorldMap = () => {
               Cotonou
             </text>
             <circle
+              className="hide__circle"
               cx="451.68"
               cy="192.77"
               r=".25"
@@ -2866,6 +2982,7 @@ const WorldMap = () => {
               Sofia
             </text>
             <circle
+              className="hide__circle"
               cx="461.1"
               cy="160.87"
               r=".25"
@@ -2879,6 +2996,7 @@ const WorldMap = () => {
               Minsk
             </text>
             <circle
+              className="hide__circle"
               cx="707.23"
               cy="374.25"
               r=".25"
@@ -2892,6 +3010,7 @@ const WorldMap = () => {
               Adelaide
             </text>
             <circle
+              className="hide__circle"
               cx="739.22"
               cy="355.95"
               r=".25"
@@ -2905,6 +3024,7 @@ const WorldMap = () => {
               Brisbane
             </text>
             <circle
+              className="hide__circle"
               cx="396.62"
               cy="265.98"
               r=".25"
@@ -2918,6 +3038,7 @@ const WorldMap = () => {
               Ouagadougou
             </text>
             <circle
+              className="hide__circle"
               cx="613.06"
               cy="249.16"
               r=".25"
@@ -2931,6 +3052,7 @@ const WorldMap = () => {
               Naypyidaw
             </text>
             <circle
+              className="hide__circle"
               cx="253.41"
               cy="252.21"
               r=".25"
@@ -2944,6 +3066,7 @@ const WorldMap = () => {
               San Juan
             </text>
             <circle
+              className="hide__circle"
               cx="666.59"
               cy="242.52"
               r=".25"
@@ -2957,6 +3080,7 @@ const WorldMap = () => {
               Kaohsiung
             </text>
             <circle
+              className="hide__circle"
               cx="652.97"
               cy="242.7"
               r=".25"
@@ -2966,6 +3090,7 @@ const WorldMap = () => {
               Shenzhen
             </text>
             <circle
+              className="hide__circle"
               cx="661.67"
               cy="208.12"
               r=".25"
@@ -2979,6 +3104,7 @@ const WorldMap = () => {
               Zibo
             </text>
             <circle
+              className="hide__circle"
               cx="193.29"
               cy="186.55"
               r=".25"
@@ -2992,6 +3118,7 @@ const WorldMap = () => {
               Minneapolis
             </text>
             <circle
+              className="hide__circle"
               cx="50.08"
               cy="245.6"
               r=".25"
@@ -3005,6 +3132,7 @@ const WorldMap = () => {
               Honolulu
             </text>
             <circle
+              className="hide__circle"
               cx="128.687"
               cy="180.181"
               r=".25"
@@ -3014,6 +3142,7 @@ const WorldMap = () => {
               Seattle
             </text>
             <circle
+              className="hide__circle"
               cx="151.57"
               cy="216.32"
               r=".25"
@@ -3027,6 +3156,7 @@ const WorldMap = () => {
               Phoenix
             </text>
             <circle
+              className="hide__circle"
               cx="139.839"
               cy="218.018"
               r=".25"
@@ -3036,6 +3166,7 @@ const WorldMap = () => {
               San Diego
             </text>
             <circle
+              className="hide__circle"
               cx="199.96"
               cy="203.42"
               r=".25"
@@ -3049,6 +3180,7 @@ const WorldMap = () => {
               St. Louis
             </text>
             <circle
+              className="hide__circle"
               cx="200.225"
               cy="225.964"
               r=".25"
@@ -3058,6 +3190,7 @@ const WorldMap = () => {
               New Orleans
             </text>
             <circle
+              className="hide__circle"
               cx="185.309"
               cy="218.634"
               r=".25"
@@ -3067,6 +3200,7 @@ const WorldMap = () => {
               Dallas
             </text>
             <circle
+              className="hide__circle"
               cx="241.15"
               cy="269.67"
               r=".25"
@@ -3080,6 +3214,7 @@ const WorldMap = () => {
               Maracaibo
             </text>
             <circle
+              className="hide__circle"
               cx="242.953"
               cy="193.884"
               r=".25"
@@ -3089,6 +3224,7 @@ const WorldMap = () => {
               Boston
             </text>
             <circle
+              className="hide__circle"
               cx="217.189"
               cy="230.74"
               r=".25"
@@ -3098,6 +3234,7 @@ const WorldMap = () => {
               Tampa
             </text>
             <circle
+              className="hide__circle"
               cx="233.925"
               cy="200.301"
               r=".25"
@@ -3107,6 +3244,7 @@ const WorldMap = () => {
               Philadelphia
             </text>
             <circle
+              className="hide__circle"
               cx="216.344"
               cy="194.028"
               r=".25"
@@ -3116,6 +3254,7 @@ const WorldMap = () => {
               Detroit
             </text>
             <circle
+              className="hide__circle"
               cx="634.63"
               cy="246.23"
               r=".25"
@@ -3129,6 +3268,7 @@ const WorldMap = () => {
               Hanoi
             </text>
             <circle
+              className="hide__circle"
               cx="636.5"
               cy="269.56"
               r=".25"
@@ -3142,6 +3282,7 @@ const WorldMap = () => {
               Ho Chi Minh City
             </text>
             <circle
+              className="hide__circle"
               cx="472.85"
               cy="200.06"
               r=".25"
@@ -3155,6 +3296,7 @@ const WorldMap = () => {
               Ankara
             </text>
             <circle
+              className="hide__circle"
               cx="442.3"
               cy="179.56"
               r=".25"
@@ -3168,6 +3310,7 @@ const WorldMap = () => {
               Budapest
             </text>
             <circle
+              className="hide__circle"
               cx="497.99"
               cy="259.24"
               r=".25"
@@ -3181,6 +3324,7 @@ const WorldMap = () => {
               Sanaa
             </text>
             <circle
+              className="hide__circle"
               cx="404.84"
               cy="196.23"
               r=".25"
@@ -3194,6 +3338,7 @@ const WorldMap = () => {
               Barcelona
             </text>
             <circle
+              className="hide__circle"
               cx="457.85"
               cy="188.04"
               r=".25"
@@ -3207,6 +3352,7 @@ const WorldMap = () => {
               Bucharest
             </text>
             <circle
+              className="hide__circle"
               cx="482.39"
               cy="209.57"
               r=".25"
@@ -3220,6 +3366,7 @@ const WorldMap = () => {
               Aleppo
             </text>
             <circle
+              className="hide__circle"
               cx="480.46"
               cy="216.42"
               r=".25"
@@ -3229,6 +3376,7 @@ const WorldMap = () => {
               Damascus
             </text>
             <circle
+              className="hide__circle"
               cx="418.95"
               cy="179.89"
               r=".25"
@@ -3242,6 +3390,7 @@ const WorldMap = () => {
               Zürich
             </text>
             <circle
+              className="hide__circle"
               cx="379.72"
               cy="203.19"
               r=".25"
@@ -3255,6 +3404,7 @@ const WorldMap = () => {
               Lisbon
             </text>
             <circle
+              className="hide__circle"
               cx="472.11"
               cy="258.71"
               r=".25"
@@ -3269,6 +3419,7 @@ const WorldMap = () => {
             </text>
             <g id="g650">
               <circle
+                className="hide__circle"
                 cx="486.93"
                 cy="245.11"
                 r=".25"
@@ -3284,6 +3435,7 @@ const WorldMap = () => {
             </g>
             <g id="g656">
               <circle
+                className="hide__circle"
                 cx="488.26"
                 cy="245.31"
                 r=".25"
@@ -3295,6 +3447,7 @@ const WorldMap = () => {
             </g>
             <g id="g662">
               <circle
+                className="hide__circle"
                 cx="423.82"
                 cy="141.81"
                 r=".25"
@@ -3310,6 +3463,7 @@ const WorldMap = () => {
             </g>
             <g id="g668">
               <circle
+                className="hide__circle"
                 cx="564.8"
                 cy="221.2"
                 r=".25"
@@ -3321,6 +3475,7 @@ const WorldMap = () => {
             </g>
             <g id="g674">
               <circle
+                className="hide__circle"
                 cx="548.49"
                 cy="237.27"
                 r=".25"
@@ -3332,6 +3487,7 @@ const WorldMap = () => {
             </g>
             <g id="g680">
               <circle
+                className="hide__circle"
                 cx="468.67"
                 cy="361.75"
                 r=".25"
@@ -3347,6 +3503,7 @@ const WorldMap = () => {
             </g>
             <g id="g686">
               <circle
+                className="hide__circle"
                 cx="467.2"
                 cy="141.74"
                 r=".25"
@@ -3362,6 +3519,7 @@ const WorldMap = () => {
             </g>
             <g id="g692">
               <circle
+                className="hide__circle"
                 cx="170.95"
                 cy="247.07"
                 r=".25"
@@ -3377,6 +3535,7 @@ const WorldMap = () => {
             </g>
             <g id="g698">
               <circle
+                className="hide__circle"
                 cx="182.32"
                 cy="250.81"
                 r=".25"
@@ -3392,6 +3551,7 @@ const WorldMap = () => {
             </g>
             <g id="g704">
               <circle
+                className="hide__circle"
                 cx="418.88"
                 cy="266.82"
                 r=".25"
@@ -3407,6 +3567,7 @@ const WorldMap = () => {
             </g>
             <g id="g710">
               <circle
+                className="hide__circle"
                 cx="446.55"
                 cy="165.82"
                 r=".25"
@@ -3422,6 +3583,7 @@ const WorldMap = () => {
             </g>
             <g id="g716">
               <circle
+                className="hide__circle"
                 cx="678.75"
                 cy="202.42"
                 r=".25"
@@ -3437,6 +3599,7 @@ const WorldMap = () => {
             </g>
             <g id="g722">
               <circle
+                className="hide__circle"
                 cx="487.04"
                 cy="308.64"
                 r=".25"
@@ -3452,6 +3615,7 @@ const WorldMap = () => {
             </g>
             <g id="g728">
               <circle
+                className="hide__circle"
                 cx="618.67"
                 cy="285.6"
                 r=".25"
@@ -3467,6 +3631,7 @@ const WorldMap = () => {
             </g>
             <g id="g734">
               <circle
+                className="hide__circle"
                 cx="386.14"
                 cy="162.58"
                 r=".25"
@@ -3482,6 +3647,7 @@ const WorldMap = () => {
             </g>
             <g id="g740">
               <circle
+                className="hide__circle"
                 cx="376.06"
                 cy="279.53"
                 r=".25"
@@ -3497,6 +3663,7 @@ const WorldMap = () => {
             </g>
             <g id="g746">
               <circle
+                className="hide__circle"
                 cx="431.57"
                 cy="197.67"
                 r=".25"
@@ -3512,6 +3679,7 @@ const WorldMap = () => {
             </g>
             <g id="g752">
               <circle
+                className="hide__circle"
                 cx="420.4"
                 cy="185.2"
                 r=".25"
@@ -3527,6 +3695,7 @@ const WorldMap = () => {
             </g>
             <g id="g758">
               <circle
+                className="hide__circle"
                 cx="625.43"
                 cy="286.52"
                 r=".25"
@@ -3538,6 +3707,7 @@ const WorldMap = () => {
             </g>
             <g id="g764">
               <circle
+                className="hide__circle"
                 cx="630.07"
                 cy="210.01"
                 r=".25"
@@ -3553,6 +3723,7 @@ const WorldMap = () => {
             </g>
             <g id="g770">
               <circle
+                className="hide__circle"
                 cx="640.11"
                 cy="242.08"
                 r=".25"
@@ -3568,6 +3739,7 @@ const WorldMap = () => {
             </g>
             <g id="g776">
               <circle
+                className="hide__circle"
                 cx="636.56"
                 cy="233.22"
                 r=".25"
@@ -3583,6 +3755,7 @@ const WorldMap = () => {
             </g>
             <g id="g782">
               <circle
+                className="hide__circle"
                 cx="636.28"
                 cy="226.06"
                 r=".25"
@@ -3598,6 +3771,7 @@ const WorldMap = () => {
             </g>
             <g id="g788">
               <circle
+                className="hide__circle"
                 cx="664.44"
                 cy="234.41"
                 r=".25"
@@ -3613,6 +3787,7 @@ const WorldMap = () => {
             </g>
             <g id="g794">
               <circle
+                className="hide__circle"
                 cx="651.2"
                 cy="241.32"
                 r=".25"
@@ -3624,6 +3799,7 @@ const WorldMap = () => {
             </g>
             <g id="g800">
               <circle
+                className="hide__circle"
                 cx="652.13"
                 cy="241.54"
                 r=".25"
@@ -3635,6 +3811,7 @@ const WorldMap = () => {
             </g>
             <g id="g806">
               <circle
+                className="hide__circle"
                 cx="638.44"
                 cy="308.97"
                 r=".25"
@@ -3650,6 +3827,7 @@ const WorldMap = () => {
             </g>
             <g id="g812">
               <circle
+                className="hide__circle"
                 cx="649.93"
                 cy="309.64"
                 r=".25"
@@ -3665,6 +3843,7 @@ const WorldMap = () => {
             </g>
             <g id="g818">
               <circle
+                className="hide__circle"
                 cx="222.84"
                 cy="298.46"
                 r=".25"
@@ -3680,6 +3859,7 @@ const WorldMap = () => {
             </g>
             <g id="g824">
               <circle
+                className="hide__circle"
                 cx="232.47"
                 cy="279.61"
                 r=".25"
@@ -3695,6 +3875,7 @@ const WorldMap = () => {
             </g>
             <g id="g830">
               <circle
+                className="hide__circle"
                 cx="230.42"
                 cy="286"
                 r=".25"
@@ -3710,6 +3891,7 @@ const WorldMap = () => {
             </g>
             <g id="g836">
               <circle
+                className="hide__circle"
                 cx="217.42"
                 cy="241.35"
                 r=".25"
@@ -3725,6 +3907,7 @@ const WorldMap = () => {
             </g>
             <g id="g842">
               <circle
+                className="hide__circle"
                 cx="466.38"
                 cy="222.08"
                 r=".25"
@@ -3740,6 +3923,7 @@ const WorldMap = () => {
             </g>
             <g id="g848">
               <circle
+                className="hide__circle"
                 cx="422.16"
                 cy="161.93"
                 r=".25"
@@ -3755,6 +3939,7 @@ const WorldMap = () => {
             </g>
             <g id="g854">
               <circle
+                className="hide__circle"
                 cx="425.65"
                 cy="177.78"
                 r=".25"
@@ -3770,6 +3955,7 @@ const WorldMap = () => {
             </g>
             <g id="g860">
               <circle
+                className="hide__circle"
                 cx="432.06"
                 cy="172.18"
                 r=".25"
@@ -3785,6 +3971,7 @@ const WorldMap = () => {
             </g>
             <g id="g866">
               <circle
+                className="hide__circle"
                 cx="506.35"
                 cy="226.53"
                 r=".25"
@@ -3800,6 +3987,7 @@ const WorldMap = () => {
             </g>
             <g id="g872">
               <circle
+                className="hide__circle"
                 cx="641.38"
                 cy="214.49"
                 r=".25"
@@ -3815,6 +4003,7 @@ const WorldMap = () => {
             </g>
             <g id="g878">
               <circle
+                className="hide__circle"
                 cx="649.47"
                 cy="205.37"
                 r=".25"
@@ -3830,6 +4019,7 @@ const WorldMap = () => {
             </g>
             <g id="g884">
               <circle
+                className="hide__circle"
                 cx="653.29"
                 cy="223.6"
                 r=".25"
@@ -3845,6 +4035,7 @@ const WorldMap = () => {
             </g>
             <g id="g890">
               <circle
+                className="hide__circle"
                 cx="650.41"
                 cy="229.35"
                 r=".25"
@@ -3860,6 +4051,7 @@ const WorldMap = () => {
             </g>
             <g id="g896">
               <circle
+                className="hide__circle"
                 cx="627.6"
                 cy="236.8"
                 r=".25"
@@ -3875,6 +4067,7 @@ const WorldMap = () => {
             </g>
             <g id="g902">
               <circle
+                className="hide__circle"
                 cx="651.95"
                 cy="213.29"
                 r=".25"
@@ -3890,6 +4083,7 @@ const WorldMap = () => {
             </g>
             <g id="g908">
               <circle
+                className="hide__circle"
                 cx="673.64"
                 cy="195.11"
                 r=".25"
@@ -3905,6 +4099,7 @@ const WorldMap = () => {
             </g>
             <g id="g914">
               <circle
+                className="hide__circle"
                 cx="659.33"
                 cy="208.44"
                 r=".25"
@@ -3916,6 +4111,7 @@ const WorldMap = () => {
             </g>
             <g id="g920">
               <circle
+                className="hide__circle"
                 cx="659.79"
                 cy="202.13"
                 r=".25"
@@ -3931,6 +4127,7 @@ const WorldMap = () => {
             </g>
             <g id="g926">
               <circle
+                className="hide__circle"
                 cx="656.86"
                 cy="228.2"
                 r=".25"
@@ -3946,6 +4143,7 @@ const WorldMap = () => {
             </g>
             <g id="g932">
               <circle
+                className="hide__circle"
                 cx="663.29"
                 cy="220"
                 r=".25"
@@ -3961,6 +4159,7 @@ const WorldMap = () => {
             </g>
             <g id="g938">
               <circle
+                className="hide__circle"
                 cx="666.37"
                 cy="224.4"
                 r=".25"
@@ -3976,6 +4175,7 @@ const WorldMap = () => {
             </g>
             <g id="g944">
               <circle
+                className="hide__circle"
                 cx="693.58"
                 cy="214.21"
                 r=".25"
@@ -3991,6 +4191,7 @@ const WorldMap = () => {
             </g>
             <g id="g950">
               <circle
+                className="hide__circle"
                 cx="677.83"
                 cy="189.59"
                 r=".25"
@@ -4006,6 +4207,7 @@ const WorldMap = () => {
             </g>
             <g id="g956">
               <circle
+                className="hide__circle"
                 cx="643.43"
                 cy="198.16"
                 r=".25"
@@ -4021,6 +4223,7 @@ const WorldMap = () => {
             </g>
             <g id="g962">
               <circle
+                className="hide__circle"
                 cx="680.74"
                 cy="184.43"
                 r=".25"
@@ -4036,6 +4239,7 @@ const WorldMap = () => {
             </g>
             <g id="g968">
               <circle
+                className="hide__circle"
                 cx="713.3"
                 cy="191.72"
                 r=".25"
@@ -4051,6 +4255,7 @@ const WorldMap = () => {
             </g>
             <g id="g974">
               <circle
+                className="hide__circle"
                 cx="245.05"
                 cy="252.14"
                 r=".25"
@@ -4062,6 +4267,7 @@ const WorldMap = () => {
             </g>
             <g id="g980">
               <circle
+                className="hide__circle"
                 cx="399.52"
                 cy="281.23"
                 r=".25"
@@ -4073,6 +4279,7 @@ const WorldMap = () => {
             </g>
             <g id="g986">
               <circle
+                className="hide__circle"
                 cx="571.19"
                 cy="228.22"
                 r=".25"
@@ -4088,6 +4295,7 @@ const WorldMap = () => {
             </g>
             <g id="g992">
               <circle
+                className="hide__circle"
                 cx="573.96"
                 cy="254.59"
                 r=".25"
@@ -4103,6 +4311,7 @@ const WorldMap = () => {
             </g>
             <g id="g998">
               <circle
+                className="hide__circle"
                 cx="563.7"
                 cy="252"
                 r=".25"
@@ -4114,6 +4323,7 @@ const WorldMap = () => {
             </g>
             <g id="g1004">
               <circle
+                className="hide__circle"
                 cx="575.31"
                 cy="245.92"
                 r=".25"
@@ -4129,6 +4339,7 @@ const WorldMap = () => {
             </g>
             <g id="g1010">
               <circle
+                className="hide__circle"
                 cx="429.22"
                 cy="217.93"
                 r=".25"
@@ -4144,6 +4355,7 @@ const WorldMap = () => {
             </g>
             <g id="g1016">
               <circle
+                className="hide__circle"
                 cx="477.07"
                 cy="219.93"
                 r=".25"
@@ -4159,6 +4371,7 @@ const WorldMap = () => {
             </g>
             <g id="g1022">
               <circle
+                className="hide__circle"
                 cx="455.27"
                 cy="140.95"
                 r=".25"
@@ -4174,6 +4387,7 @@ const WorldMap = () => {
             </g>
             <g id="g1028">
               <circle
+                className="hide__circle"
                 cx="532.04"
                 cy="209.47"
                 r=".25"
@@ -4189,6 +4403,7 @@ const WorldMap = () => {
             </g>
             <g id="g1034">
               <circle
+                className="hide__circle"
                 cx="568.04"
                 cy="232.41"
                 r=".25"
@@ -4204,6 +4419,7 @@ const WorldMap = () => {
             </g>
             <g id="g1040">
               <circle
+                className="hide__circle"
                 cx="578.04"
                 cy="233.51"
                 r=".25"
@@ -4219,6 +4435,7 @@ const WorldMap = () => {
             </g>
             <g id="g1046">
               <circle
+                className="hide__circle"
                 cx="588.7"
                 cy="235.49"
                 r=".25"
@@ -4230,6 +4447,7 @@ const WorldMap = () => {
             </g>
             <g id="g1052">
               <circle
+                className="hide__circle"
                 cx="577.95"
                 cy="264.36"
                 r=".25"
@@ -4241,6 +4459,7 @@ const WorldMap = () => {
             </g>
             <g id="g1058">
               <circle
+                className="hide__circle"
                 cx="560.88"
                 cy="241.59"
                 r=".25"
@@ -4256,6 +4475,7 @@ const WorldMap = () => {
             </g>
             <g id="g1064">
               <circle
+                className="hide__circle"
                 cx="561.46"
                 cy="245.85"
                 r=".25"
@@ -4271,6 +4491,7 @@ const WorldMap = () => {
             </g>
             <g id="g1070">
               <circle
+                className="hide__circle"
                 cx="427.84"
                 cy="155.4"
                 r=".25"
@@ -4286,6 +4507,7 @@ const WorldMap = () => {
             </g>
             <g id="g1076">
               <circle
+                className="hide__circle"
                 cx="391.04"
                 cy="281.74"
                 r=".25"
@@ -4301,6 +4523,7 @@ const WorldMap = () => {
             </g>
             <g id="g1082">
               <circle
+                className="hide__circle"
                 cx="292.53"
                 cy="296.76"
                 r=".25"
@@ -4316,6 +4539,7 @@ const WorldMap = () => {
             </g>
             <g id="g1088">
               <circle
+                className="hide__circle"
                 cx="293.78"
                 cy="328.82"
                 r=".25"
@@ -4331,6 +4555,7 @@ const WorldMap = () => {
             </g>
             <g id="g1094">
               <circle
+                className="hide__circle"
                 cx="286.5"
                 cy="362.2"
                 r=".25"
@@ -4346,6 +4571,7 @@ const WorldMap = () => {
             </g>
             <g id="g1100">
               <circle
+                className="hide__circle"
                 cx="290.67"
                 cy="351.11"
                 r=".25"
@@ -4361,6 +4587,7 @@ const WorldMap = () => {
             </g>
             <g id="g1106">
               <circle
+                className="hide__circle"
                 cx="314.48"
                 cy="301.86"
                 r=".25"
@@ -4376,6 +4603,7 @@ const WorldMap = () => {
             </g>
             <g id="g1112">
               <circle
+                className="hide__circle"
                 cx="314.7"
                 cy="322.45"
                 r=".25"
@@ -4391,6 +4619,7 @@ const WorldMap = () => {
             </g>
             <g id="g1118">
               <circle
+                className="hide__circle"
                 cx="148.4"
                 cy="161.93"
                 r=".25"
@@ -4406,6 +4635,7 @@ const WorldMap = () => {
             </g>
             <g id="g1124" transform="translate(.262 .668)">
               <circle
+                className="hide__circle"
                 cx="236.89"
                 cy="185.12"
                 r=".25"
@@ -4421,6 +4651,7 @@ const WorldMap = () => {
             </g>
             <g id="g1130">
               <circle
+                className="hide__circle"
                 cx="290.71"
                 cy="330.95"
                 r=".25"
@@ -4436,6 +4667,7 @@ const WorldMap = () => {
             </g>
             <g id="g1136">
               <circle
+                className="hide__circle"
                 cx="322.6"
                 cy="311.48"
                 r=".25"
@@ -4451,6 +4683,7 @@ const WorldMap = () => {
             </g>
             <g id="g1142">
               <circle
+                className="hide__circle"
                 cx="409.6"
                 cy="170"
                 r=".25"
@@ -4466,6 +4699,7 @@ const WorldMap = () => {
             </g>
             <g id="g1148">
               <circle
+                className="hide__circle"
                 cx="600.4"
                 cy="239.97"
                 r=".25"
@@ -4481,6 +4715,7 @@ const WorldMap = () => {
             </g>
             <g id="g1154">
               <circle
+                className="hide__circle"
                 cx="429.33"
                 cy="313.18"
                 r=".25"
@@ -4496,6 +4731,7 @@ const WorldMap = () => {
             </g>
             <g id="g1160">
               <circle
+                className="hide__circle"
                 cx="406.76"
                 cy="208.22"
                 r=".25"
@@ -4511,6 +4747,7 @@ const WorldMap = () => {
             </g>
             <g id="g1166">
               <circle
+                className="hide__circle"
                 cx="603.49"
                 cy="243.22"
                 r=".25"
@@ -4526,6 +4763,7 @@ const WorldMap = () => {
             </g>
             <g id="g1172">
               <circle
+                className="hide__circle"
                 cx="656.77"
                 cy="366.85"
                 r=".25"
@@ -4541,6 +4779,7 @@ const WorldMap = () => {
             </g>
             <g id="g1178">
               <circle
+                className="hide__circle"
                 cx="613.17"
                 cy="255.99"
                 r=".25"
@@ -4556,6 +4795,7 @@ const WorldMap = () => {
             </g>
             <g id="g1184" transform="translate(-.596 .493)">
               <circle
+                className="hide__circle"
                 cx="128.64"
                 cy="205.65"
                 r=".25"
@@ -4571,6 +4811,7 @@ const WorldMap = () => {
             </g>
             <g id="g1190" transform="translate(-.02 .903)">
               <circle
+                className="hide__circle"
                 cx="167.28"
                 cy="200.55"
                 r=".25"
@@ -4586,6 +4827,7 @@ const WorldMap = () => {
             </g>
             <g id="g1196" transform="translate(-.02 .575)">
               <circle
+                className="hide__circle"
                 cx="188.66"
                 cy="225.44"
                 r=".25"
@@ -4601,6 +4843,7 @@ const WorldMap = () => {
             </g>
             <g id="g1202" transform="translate(.226 .76)">
               <circle
+                className="hide__circle"
                 cx="222.17"
                 cy="235.1"
                 r=".25"
@@ -4616,6 +4859,7 @@ const WorldMap = () => {
             </g>
             <g id="g1208" transform="translate(.123 .616)">
               <circle
+                className="hide__circle"
                 cx="212.91"
                 cy="215.6"
                 r=".25"
@@ -4631,6 +4875,7 @@ const WorldMap = () => {
             </g>
             <g id="g1214" transform="translate(.185 .41)">
               <circle
+                className="hide__circle"
                 cx="205.48"
                 cy="195.05"
                 r=".25"
@@ -4646,6 +4891,7 @@ const WorldMap = () => {
             </g>
             <g id="g1220">
               <circle
+                className="hide__circle"
                 cx="251.66"
                 cy="270.18"
                 r=".25"
@@ -4661,6 +4907,7 @@ const WorldMap = () => {
             </g>
             <g id="g1226">
               <circle
+                className="hide__circle"
                 cx="467.64"
                 cy="171.17"
                 r=".25"
@@ -4676,6 +4923,7 @@ const WorldMap = () => {
             </g>
             <g id="g1232">
               <circle
+                className="hide__circle"
                 cx="522.53"
                 cy="236.42"
                 r=".25"
@@ -4691,6 +4939,7 @@ const WorldMap = () => {
             </g>
             <g id="g1238">
               <circle
+                className="hide__circle"
                 cx="553.6"
                 cy="196.42"
                 r=".25"
@@ -4706,6 +4955,7 @@ const WorldMap = () => {
             </g>
             <g id="g1244">
               <circle
+                className="hide__circle"
                 cx="391.83"
                 cy="198.82"
                 r=".25"
@@ -4721,6 +4971,7 @@ const WorldMap = () => {
             </g>
             <g id="g1250">
               <circle
+                className="hide__circle"
                 cx="440.11"
                 cy="143.68"
                 r=".25"
@@ -4736,6 +4987,7 @@ const WorldMap = () => {
             </g>
             <g id="g1256">
               <circle
+                className="hide__circle"
                 cx="622.81"
                 cy="262.87"
                 r=".25"
@@ -4751,6 +5003,7 @@ const WorldMap = () => {
             </g>
             <g id="g1262">
               <circle
+                className="hide__circle"
                 cx="229.2"
                 cy="320.38"
                 r=".25"
@@ -4766,6 +5019,7 @@ const WorldMap = () => {
             </g>
             <g id="g1268">
               <circle
+                className="hide__circle"
                 cx="361.26"
                 cy="260.69"
                 r=".25"
@@ -4781,6 +5035,7 @@ const WorldMap = () => {
             </g>
             <g id="g1274">
               <circle
+                className="hide__circle"
                 cx="462.13"
                 cy="352.89"
                 r=".25"
@@ -4792,6 +5047,7 @@ const WorldMap = () => {
             </g>
             <g id="g1280">
               <circle
+                className="hide__circle"
                 cx="410.89"
                 cy="165.53"
                 r=".25"
@@ -4807,6 +5063,7 @@ const WorldMap = () => {
             </g>
             <g id="g1286">
               <circle
+                className="hide__circle"
                 cx="383.11"
                 cy="216.17"
                 r=".25"
@@ -4818,6 +5075,7 @@ const WorldMap = () => {
             </g>
             <g id="g1292">
               <circle
+                className="hide__circle"
                 cx="681.51"
                 cy="206.17"
                 r=".25"
@@ -4833,6 +5091,7 @@ const WorldMap = () => {
             </g>
             <g id="g1298">
               <circle
+                className="hide__circle"
                 cx="668.17"
                 cy="260.94"
                 r=".25"
@@ -4848,6 +5107,7 @@ const WorldMap = () => {
             </g>
             <g id="g1304">
               <circle
+                className="hide__circle"
                 cx="177.6"
                 cy="235.38"
                 r=".25"
@@ -4863,6 +5123,7 @@ const WorldMap = () => {
             </g>
             <g id="g1310">
               <circle
+                className="hide__circle"
                 cx="429.7"
                 cy="165.01"
                 r=".25"
@@ -4878,6 +5139,7 @@ const WorldMap = () => {
             </g>
             <g id="g1316">
               <circle
+                className="hide__circle"
                 cx="594.12"
                 cy="189.75"
                 r=".25"
@@ -4893,6 +5155,7 @@ const WorldMap = () => {
             </g>
             <g id="g1322">
               <circle
+                className="hide__circle"
                 cx="630.68"
                 cy="223.38"
                 r=".25"
@@ -4908,6 +5171,7 @@ const WorldMap = () => {
             </g>
             <g id="g1328">
               <circle
+                className="hide__circle"
                 cx="700.27"
                 cy="213.3"
                 r=".25"
@@ -4923,6 +5187,7 @@ const WorldMap = () => {
             </g>
             <g id="g1334">
               <circle
+                className="hide__circle"
                 cx="433.94"
                 cy="303.15"
                 r=".25"
@@ -4934,6 +5199,7 @@ const WorldMap = () => {
             </g>
             <g id="g1340">
               <circle
+                className="hide__circle"
                 cx="571.92"
                 cy="264.63"
                 r=".25"
@@ -4949,6 +5215,7 @@ const WorldMap = () => {
             </g>
             <g id="g1346">
               <circle
+                className="hide__circle"
                 cx="452.6"
                 cy="205.1"
                 r=".25"
@@ -4964,6 +5231,7 @@ const WorldMap = () => {
             </g>
             <g id="g1352">
               <circle
+                className="hide__circle"
                 cx="498.4"
                 cy="216.82"
                 r=".25"
@@ -4979,6 +5247,7 @@ const WorldMap = () => {
             </g>
             <g id="g1358">
               <circle
+                className="hide__circle"
                 cx="485.78"
                 cy="273.46"
                 r=".25"
@@ -4994,6 +5263,7 @@ const WorldMap = () => {
             </g>
             <g id="g1364">
               <circle
+                className="hide__circle"
                 cx="513.99"
                 cy="210.98"
                 r=".25"
@@ -5009,6 +5279,7 @@ const WorldMap = () => {
             </g>
             <g id="g1370" transform="translate(-.411 .575)">
               <circle
+                className="hide__circle"
                 cx="127.08"
                 cy="174.52"
                 r=".25"
@@ -5024,6 +5295,7 @@ const WorldMap = () => {
             </g>
             <g id="g1376" transform="translate(.164 .472)">
               <circle
+                className="hide__circle"
                 cx="223.95"
                 cy="190.03"
                 r=".25"
@@ -5039,6 +5311,7 @@ const WorldMap = () => {
             </g>
             <g id="g1382">
               <circle
+                className="hide__circle"
                 cx="270.55"
                 cy="373.41"
                 r=".25"
@@ -5054,6 +5327,7 @@ const WorldMap = () => {
             </g>
             <g id="g1388">
               <circle
+                className="hide__circle"
                 cx="553.35"
                 cy="213.88"
                 r=".25"
@@ -5069,6 +5343,7 @@ const WorldMap = () => {
             </g>
             <g id="g1394">
               <circle
+                className="hide__circle"
                 cx="436.28"
                 cy="177.58"
                 r=".25"
@@ -5084,6 +5359,7 @@ const WorldMap = () => {
             </g>
             <g id="g1400">
               <circle
+                className="hide__circle"
                 cx="721.36"
                 cy="381.57"
                 r=".25"
@@ -5099,6 +5375,7 @@ const WorldMap = () => {
             </g>
             <g id="g1406">
               <circle
+                className="hide__circle"
                 cx="669.48"
                 cy="236.88"
                 r=".25"
@@ -5114,6 +5391,7 @@ const WorldMap = () => {
             </g>
             <g id="g1412">
               <circle
+                className="hide__circle"
                 cx="787.39"
                 cy="379.09"
                 r=".25"
@@ -5129,6 +5407,7 @@ const WorldMap = () => {
             </g>
             <g id="g1418" transform="translate(-1.13 -.041)">
               <circle
+                className="hide__circle"
                 cx="138.03"
                 cy="215.2"
                 r=".25"
@@ -5144,6 +5423,7 @@ const WorldMap = () => {
             </g>
             <g id="g1424" transform="translate(.288 .678)">
               <circle
+                className="hide__circle"
                 cx="229.29"
                 cy="202.73"
                 r=".25"
@@ -5159,6 +5439,7 @@ const WorldMap = () => {
             </g>
             <g id="g1430" transform="translate(.74 .39)">
               <circle
+                className="hide__circle"
                 cx="236.01"
                 cy="197.9"
                 r=".25"
@@ -5174,6 +5455,7 @@ const WorldMap = () => {
             </g>
             <g id="g1436">
               <circle
+                className="hide__circle"
                 cx="399.74"
                 cy="168.04"
                 r=".25"
@@ -5189,6 +5471,7 @@ const WorldMap = () => {
             </g>
             <g id="g1442">
               <circle
+                className="hide__circle"
                 cx="464.3"
                 cy="196.97"
                 r=".25"
@@ -5204,6 +5487,7 @@ const WorldMap = () => {
             </g>
             <g id="g1448">
               <circle
+                className="hide__circle"
                 cx="503.68"
                 cy="237.81"
                 r=".25"
@@ -5219,6 +5503,7 @@ const WorldMap = () => {
             </g>
             <g id="g1454">
               <circle
+                className="hide__circle"
                 cx="440.86"
                 cy="371.71"
                 r=".25"
@@ -5234,6 +5519,7 @@ const WorldMap = () => {
             </g>
             <g id="g1460">
               <circle
+                className="hide__circle"
                 cx="483.38"
                 cy="155.17"
                 r=".25"
@@ -5249,6 +5535,7 @@ const WorldMap = () => {
             </g>
             <g id="g1466">
               <circle
+                className="hide__circle"
                 cx="180.26"
                 cy="249.91"
                 r=".25"
@@ -5264,6 +5551,7 @@ const WorldMap = () => {
             </g>
             <g id="g1472" transform="translate(.07)">
               <circle
+                className="hide__circle"
                 cx="407.51"
                 cy="279.24"
                 r=".25"
@@ -5275,6 +5563,7 @@ const WorldMap = () => {
             </g>
             <g id="g1478">
               <circle
+                className="hide__circle"
                 cx="427.67"
                 cy="194.87"
                 r=".25"
@@ -5290,6 +5579,7 @@ const WorldMap = () => {
             </g>
             <g id="g1484">
               <circle
+                className="hide__circle"
                 cx="657.99"
                 cy="200.06"
                 r=".25"
@@ -5305,6 +5595,7 @@ const WorldMap = () => {
             </g>
             <g id="g1490">
               <circle
+                className="hide__circle"
                 cx="481.61"
                 cy="296.39"
                 r=".25"
@@ -5320,6 +5611,7 @@ const WorldMap = () => {
             </g>
             <g id="g1496">
               <circle
+                className="hide__circle"
                 cx="636.8"
                 cy="307.25"
                 r=".25"
@@ -5335,6 +5627,7 @@ const WorldMap = () => {
             </g>
             <g id="g1502">
               <circle
+                className="hide__circle"
                 cx="235.78"
                 cy="283.35"
                 r=".25"
@@ -5350,6 +5643,7 @@ const WorldMap = () => {
             </g>
             <g id="g1508">
               <circle
+                className="hide__circle"
                 cx="469.27"
                 cy="224.89"
                 r=".25"
@@ -5365,6 +5659,7 @@ const WorldMap = () => {
             </g>
             <g id="g1514">
               <circle
+                className="hide__circle"
                 cx="669.18"
                 cy="222.04"
                 r=".25"
@@ -5380,6 +5675,7 @@ const WorldMap = () => {
             </g>
             <g id="g1520">
               <circle
+                className="hide__circle"
                 cx="709.78"
                 cy="210.95"
                 r=".25"
@@ -5395,6 +5691,7 @@ const WorldMap = () => {
             </g>
             <g id="g1526">
               <circle
+                className="hide__circle"
                 cx="561.5"
                 cy="250.88"
                 r=".25"
@@ -5410,6 +5707,7 @@ const WorldMap = () => {
             </g>
             <g id="g1532">
               <circle
+                className="hide__circle"
                 cx="405.17"
                 cy="175.68"
                 r=".25"
@@ -5425,6 +5723,7 @@ const WorldMap = () => {
             </g>
             <g id="g1538">
               <circle
+                className="hide__circle"
                 cx="243.35"
                 cy="370.54"
                 r=".25"
@@ -5436,6 +5735,7 @@ const WorldMap = () => {
             </g>
             <g id="g1544">
               <circle
+                className="hide__circle"
                 cx="595.78"
                 cy="242.84"
                 r=".25"
@@ -5447,6 +5747,7 @@ const WorldMap = () => {
             </g>
             <g id="g1550">
               <circle
+                className="hide__circle"
                 cx="304.18"
                 cy="345.25"
                 r=".25"
@@ -5462,6 +5763,7 @@ const WorldMap = () => {
             </g>
             <g id="g1556">
               <circle
+                className="hide__circle"
                 cx="296.64"
                 cy="346.73"
                 r=".25"
@@ -5477,6 +5779,7 @@ const WorldMap = () => {
             </g>
             <g id="g1562">
               <circle
+                className="hide__circle"
                 cx="735.12"
                 cy="371.71"
                 r=".25"
@@ -5492,6 +5795,7 @@ const WorldMap = () => {
             </g>
             <g id="g1568" transform="translate(.041)">
               <circle
+                className="hide__circle"
                 cx="630.21"
                 cy="290.68"
                 r=".25"
@@ -5507,6 +5811,7 @@ const WorldMap = () => {
             </g>
             <g id="g1574" transform="translate(0 .164)">
               <circle
+                className="hide__circle"
                 cx="653.11"
                 cy="243.28"
                 r=".25"

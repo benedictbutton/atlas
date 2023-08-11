@@ -118,7 +118,9 @@ const Oceania = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Australia'] ? 'none' : '' }}
+          style={{
+            display: (answers['Australia'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Australia_label"
           y="376.804"
           x="726.865"
@@ -176,7 +178,9 @@ const Oceania = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['New Zealand'] ? 'none' : '' }}
+          style={{
+            display: (answers['New Zealand'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="New_Zealand_label"
           y="410.206"
           x="810.818"
@@ -232,7 +236,8 @@ const Oceania = ({
         ></path>
         <text
           style={{
-            display: !answers['Papua New Guinea'] ? 'none' : '',
+            display:
+              (answers['Papua New Guinea'] ?? 0) < 1 ? 'none' : '',
           }}
           id="Papua_New_Guinea_label"
           y="324.269"

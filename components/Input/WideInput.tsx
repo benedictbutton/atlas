@@ -1,5 +1,5 @@
 import { InputProps } from './Input';
-import CountryList from './CountryList';
+import SearchList from './SearchList';
 import Switch from './Switch';
 import WideScore from './WideScore';
 import useScore from '../../utils/useScore';
@@ -13,11 +13,15 @@ const WideInput = ({
   answers,
   setAnswers,
   regionHeader,
-  countryName,
+  labelName,
+  labelType,
   handleResetAnswers,
   forwardRef,
+  total,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
+  const placeholderLabelType =
+    labelType.charAt(0).toUpperCase() + labelType.slice(1);
 
   return (
     <div
@@ -36,15 +40,15 @@ const WideInput = ({
         <div className="w-1/5">
           <form className="w-full" onSubmit={handleSubmit}>
             <label className="inline-block w-full mt-1 mb-4">
-              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal">
-                Country
+              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal capitalize">
+                {labelType}
               </p>
               <input
                 className="px-2 py-2.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
                 id="signInInput1-1"
                 type="text"
-                placeholder="Country Name"
-                name="country"
+                placeholder={placeholderLabelType + ' Name'}
+                name={labelType}
                 ref={forwardRef}
                 onChange={handleSearchValue}
               />
@@ -52,8 +56,7 @@ const WideInput = ({
             <button
               className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
               disabled={
-                answers[`${searchValue}`] === undefined ||
-                !countryName
+                answers[`${searchValue}`] === undefined || !labelName
               }
             >
               Submit
@@ -62,22 +65,26 @@ const WideInput = ({
         </div>
         {!searchValue && (
           <div className="w-[55%] h-full text-center">
-            <WideScore correct={correct} incorrect={incorrect} />
+            <WideScore
+              correct={correct}
+              incorrect={incorrect}
+              total={total}
+            />
             <Switch answers={answers} setAnswers={setAnswers} />
           </div>
         )}
-        {searchValue && countryName && (
+        {searchValue && labelName && (
           <ul className="flex flex-col flex-wrap w-[55%] justify-center overflow-auto ml-2 px-3">
-            <CountryList
+            <SearchList
               searchValue={searchValue}
               handleSelectValue={handleSelectValue}
               answers={answers}
             />
           </ul>
         )}
-        {searchValue && !countryName && (
+        {searchValue && !labelName && (
           <p className="p-5 text-[#df001d] text-xl">
-            Select a country before guessing
+            Select a {labelType} before guessing
           </p>
         )}
         {correct + incorrect > 0 && (

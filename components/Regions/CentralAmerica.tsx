@@ -34,7 +34,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['El Salvador'] ? 'none' : '' }}
+          style={{
+            display: (answers['El Salvador'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.00944 -.22641 .2442 .93588 0 0)"
           id="El_Salvador_label"
           y="315.406"
@@ -87,7 +89,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Belize'] ? 'none' : '' }}
+          style={{
+            display: (answers['Belize'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Belize_label"
           y="258.332"
           x="221.327"
@@ -140,7 +144,8 @@ const CentralAmerica = ({
         ></path>
         <text
           style={{
-            display: !answers['Trinidad and Tobago'] ? 'none' : '',
+            display:
+              (answers['Trinidad and Tobago'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
             // display: 'none',
@@ -227,7 +232,7 @@ const CentralAmerica = ({
         ></path>
         <text
           style={{
-            display: !answers['Puerto Rico'] ? 'none' : '',
+            display: (answers['Puerto Rico'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
             // display: 'none',
@@ -314,7 +319,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Haiti'] ? 'none' : '' }}
+          style={{
+            display: (answers['Haiti'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Haiti_label"
           y="259.968"
           x="250.617"
@@ -367,7 +374,8 @@ const CentralAmerica = ({
         ></path>
         <text
           style={{
-            display: !answers['Dominican Republic'] ? 'none' : '',
+            display:
+              (answers['Dominican Republic'] ?? 0) < 1 ? 'none' : '',
             lineHeight: '100',
             textAlign: 'center',
           }}
@@ -445,7 +453,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Nicaragua'] ? 'none' : '' }}
+          style={{
+            display: (answers['Nicaragua'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.99832 -.2654 .28626 .92558 0 0)"
           id="Nicaragua_label"
           y="325.745"
@@ -500,7 +510,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Panama'] ? 'none' : '' }}
+          style={{
+            display: (answers['Panama'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.97555 -.33027 .35623 .90446 0 0)"
           id="Panama_label"
           y="351.431"
@@ -553,7 +565,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Cuba'] ? 'none' : '' }}
+          style={{
+            display: (answers['Cuba'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Cuba_label"
           y="252.054"
           x="229.068"
@@ -606,7 +620,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Jamaica'] ? 'none' : '' }}
+          style={{
+            display: (answers['Jamaica'] ?? 0) < 1 ? 'none' : '',
+          }}
           id="Jamaica_label"
           y="259.66"
           x="236.203"
@@ -659,7 +675,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Guatemala'] ? 'none' : '' }}
+          style={{
+            display: (answers['Guatemala'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.00753 -.2336 .25195 .93411 0 0)"
           id="Guatemala_label"
           y="311.691"
@@ -712,7 +730,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Costa Rica'] ? 'none' : '' }}
+          style={{
+            display: (answers['Costa Rica'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(1.00973 -.22527 .24297 .93615 0 0)"
           id="Costa_Rica_label"
           y="327.661"
@@ -765,7 +785,9 @@ const CentralAmerica = ({
           }}
         ></path>
         <text
-          style={{ display: !answers['Honduras'] ? 'none' : '' }}
+          style={{
+            display: (answers['Honduras'] ?? 0) < 1 ? 'none' : '',
+          }}
           transform="matrix(.99932 -.26217 .28278 .9265 0 0)"
           id="Honduras_label"
           y="316.522"
