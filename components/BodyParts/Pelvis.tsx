@@ -1,5 +1,4 @@
 const Pelvis = ({
-  answers,
   bone,
   zoomIn,
   handleZoom,
@@ -285,72 +284,6 @@ const Pelvis = ({
           zoomIn && bone && bone !== 'coccyx' ? '#36454f' : '#ccb25c'
         }
       />
-      <g
-        style={{
-          display: (answers['pelvic girdle'] ?? 0) < 1 ? 'none' : '',
-        }}
-      >
-        <text
-          x="360.88937"
-          y="372.05472"
-          dx={zoomIn === 'pelvis' ? '-5%' : ''}
-          fill="#000000"
-          font-family="Arial"
-          font-size="11px"
-          stroke-width="1px"
-          style={{
-            lineHeight: '125%',
-          }}
-          xmlSpace="preserve"
-        >
-          <tspan x="360.88937" y="372.05472">
-            pelvic girdle
-          </tspan>
-        </text>
-        <line
-          x1="250.89"
-          x2={zoomIn === 'pelvis' ? '350' : '380'}
-          y1="375.15"
-          y2="375.15"
-          fill="none"
-          stroke="#003cff"
-          stroke-width=".546"
-        />
-        <circle
-          cx="250.89"
-          cy="375.15"
-          r={zoomIn === 'pelvis' ? '.566' : '1.166'}
-          fill="#003cff"
-        />
-      </g>
-      <text
-        x="21.22386"
-        y="370.29971"
-        fill="#000000"
-        font-family="Arial"
-        font-size="11px"
-        stroke-width="1px"
-        style={{ lineHeight: '125%' }}
-        xmlSpace="preserve"
-      >
-        <tspan x="21.22386" y="370.29971">
-          sacrum
-        </tspan>
-      </text>
-      <text
-        x="21.395149"
-        y="385.20505"
-        fill="#000000"
-        font-family="Arial"
-        font-size="11px"
-        stroke-width="1px"
-        style={{ lineHeight: '125%' }}
-        xmlSpace="preserve"
-      >
-        <tspan x="21.395149" y="385.20505">
-          coccyx
-        </tspan>
-      </text>
     </g>
   );
 };

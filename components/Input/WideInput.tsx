@@ -12,9 +12,11 @@ const WideInput = ({
   handleSubmit,
   answers,
   setAnswers,
+  answerData,
   regionHeader,
   labelName,
   labelType,
+  labelPlural,
   handleResetAnswers,
   forwardRef,
   total,
@@ -70,7 +72,12 @@ const WideInput = ({
               incorrect={incorrect}
               total={total}
             />
-            <Switch answers={answers} setAnswers={setAnswers} />
+            <Switch
+              answers={answers}
+              setAnswers={setAnswers}
+              answerData={answerData}
+              labelPlural={labelPlural}
+            />
           </div>
         )}
         {searchValue && labelName && (

@@ -1,0 +1,31 @@
+.upper_body__zoom__in {
+  animation: upper_body__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.upper_body__zoom__in text {
+  font-size: 8px;
+}
+
+@keyframes upper_body__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3) translate(-40%, -10%);
+  }
+}
+
+.upper_body__zoom__out {
+  animation: upper_body__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes upper_body__zoom__out {
+  from {
+    transform: scale(3) translate(-40%, -10%);
+  }
+  to {
+    transform: scale(1);
+  }
+}

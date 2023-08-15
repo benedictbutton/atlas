@@ -12,7 +12,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(3) translate(-70%, -17%);
+    transform: scale(2.7) translate(-57%, -13%);
   }
 }
 
@@ -23,7 +23,7 @@
 
 @keyframes arm__zoom__out {
   from {
-    transform: scale(3) translate(0%, 0%);
+    transform: scale(2.7) translate(-57%, -13%);
   }
   to {
     transform: scale(1);

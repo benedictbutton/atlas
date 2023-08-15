@@ -19,9 +19,11 @@ export interface InputProps {
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   answers: AnswersObject;
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
+  cribData?: { [key: string]: number | null };
   regionHeader: string;
   labelName: string;
   labelType: string;
+  labelPlural: string;
   game: string | null | undefined;
   createGame: () => void;
   handleSaveGame: () => void;

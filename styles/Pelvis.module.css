@@ -3,7 +3,7 @@
   animation-fill-mode: forwards;
 }
 
-.pelvis__zoom__in > text {
+.pelvis__zoom__in text {
   font-size: 7px;
 }
 
@@ -12,7 +12,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(3.2) translate(-47%, -30%);
+    transform: scale(3) translate(-47%, -30%);
   }
 }
 
@@ -23,7 +23,7 @@
 
 @keyframes pelvis__zoom__out {
   from {
-    transform: scale(3.2) translate(-47%, -30%);
+    transform: scale(3) translate(-47%, -30%);
   }
   to {
     transform: scale(1);

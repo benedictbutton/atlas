@@ -133,7 +133,13 @@ const WorldMap = () => {
 
   return (
     <>
-      <Profile />
+      <Profile
+        profileIcon="/earth.png"
+        iconSize="36px"
+        textColor="black"
+        menuItemLink="/bones"
+        menuItemName="Bones Demo"
+      />
       {introMessage && (
         <Intro
           introMessage={introMessage}
@@ -151,6 +157,7 @@ const WorldMap = () => {
         regionHeader={regionHeader}
         labelName={countryName}
         labelType="country"
+        labelPlural="Countries"
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}

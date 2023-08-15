@@ -14,9 +14,11 @@ const TallInput = ({
   handleSubmit,
   answers,
   setAnswers,
+  cribData,
   regionHeader,
   labelName,
   labelType,
+  labelPlural,
   game,
   createGame,
   handleSaveGame,
@@ -25,7 +27,7 @@ const TallInput = ({
   total,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
-  const placeholderLabelType =
+  const capitalLabelType =
     labelType.charAt(0).toUpperCase() + labelType.slice(1);
 
   return (
@@ -52,7 +54,7 @@ const TallInput = ({
                 className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
                 id="signInInput1-1"
                 type="text"
-                placeholder={placeholderLabelType + ' Name'}
+                placeholder={capitalLabelType + ' Name'}
                 name={labelType}
                 ref={forwardRef}
                 onChange={handleSearchValue}
@@ -89,7 +91,12 @@ const TallInput = ({
               saveGame={handleSaveGame}
               game={game}
             /> */}
-            <Switch answers={answers} setAnswers={setAnswers} />
+            <Switch
+              answers={answers}
+              setAnswers={setAnswers}
+              cribData={cribData}
+              labelPlural={labelPlural}
+            />
           </>
         )}
         {searchValue && !labelName && (

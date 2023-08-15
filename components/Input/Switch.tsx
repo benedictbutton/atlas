@@ -5,13 +5,16 @@ import styles from '../../styles/Switch.module.css';
 const Switch = ({
   answers,
   setAnswers,
+  cribData,
+  labelPlural,
 }: {
   answers: AnswersObject;
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
+  labelPlural: string;
 }) => {
   const toggleInput = useRef(null);
   const { showAll, showAllCountries, hideAllCountries } =
-    useShowAllCountries(answers, setAnswers);
+    useShowAllCountries(answers, setAnswers, cribData);
 
   return (
     <div className={styles.switch}>
@@ -39,8 +42,8 @@ const Switch = ({
           else hideAllCountries();
         }}
       >
-        {showAll && 'Show All Countries'}
-        {!showAll && 'Hide All Countries'}
+        {showAll && `Show All ${labelPlural}`}
+        {!showAll && `Hide All ${labelPlural}`}
       </label>
     </div>
   );
