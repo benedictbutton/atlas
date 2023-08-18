@@ -1,4 +1,4 @@
-import { RegionProps } from '../Countries';
+import { RegionProps } from '../WorldMap';
 
 const Africa = ({
   handleZoom,
@@ -12,7 +12,7 @@ const Africa = ({
       id="africa"
       className={className}
       onClick={(e) => handleZoom(e, '')}
-      opacity={zoomIn && zoomIn !== 'africa' ? '0.5' : '1'}
+      opacity={zoomIn && zoomIn !== 'africa' ? '0.3' : '1'}
       style={{ willChange: 'transform' }}
     >
       <g id="g4036" fill-opacity="1">

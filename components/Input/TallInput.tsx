@@ -1,5 +1,5 @@
 import { InputProps } from './Input';
-import CountryList from './SearchList';
+import Reset from './Reset';
 import Switch from './Switch';
 import TallScore from './TallScore';
 import GameButton from './GameButton';
@@ -34,7 +34,7 @@ const TallInput = ({
     <div
       className={`input ${
         !zoomIn ? 'collapse' : ''
-      } absolute bottom-5 right-5 w-1/4 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
+      } absolute top-1/2 right-[4%] -translate-y-1/2 w-1/5 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double z-50`}
     >
       <div className="flex column flex-col h-full">
         <div className="flex flex-wrap content-start px-5 pt-5">
@@ -79,6 +79,11 @@ const TallInput = ({
             />
           </ul>
         )}
+        {searchValue && !labelName && (
+          <p className="p-5 text-[#df001d] text-xl">
+            Select a {labelType} before guessing
+          </p>
+        )}
         {!searchValue && (
           <>
             <TallScore
@@ -91,28 +96,20 @@ const TallInput = ({
               saveGame={handleSaveGame}
               game={game}
             /> */}
-            <Switch
-              answers={answers}
-              setAnswers={setAnswers}
-              cribData={cribData}
-              labelPlural={labelPlural}
-            />
+            <div className="flex flex-wrap-reverse justify-between items-start mt-auto p-2">
+              <Switch
+                answers={answers}
+                setAnswers={setAnswers}
+                cribData={cribData}
+                labelPlural={labelPlural}
+              />
+              <Reset
+                correct={correct}
+                incorrect={incorrect}
+                handleResetAnswers={handleResetAnswers}
+              />
+            </div>
           </>
-        )}
-        {searchValue && !labelName && (
-          <p className="p-5 text-[#df001d] text-xl">
-            Select a {labelType} before guessing
-          </p>
-        )}
-        {correct + incorrect > 0 && (
-          <button
-            onClick={handleResetAnswers}
-            className="reset absolute bottom-2 right-5 h-[24px] leading-[24px] text-[#df001d]"
-          >
-            <span className="inline-block h-full leading-normal align-middle mb-4">
-              Reset
-            </span>
-          </button>
         )}
       </div>
     </div>

@@ -8,7 +8,9 @@ import {
 } from 'react';
 import { debounce } from 'lodash';
 import CloseButton from './Input/Close';
-import Countries from './Countries';
+import CountriesZoomOut from './CountriesZoomOut';
+import CountriesZoomIn from './CountriesZoomIn';
+import IslandTerritories from './Regions/IslandTerritories';
 import Intro from './Intro';
 import Profile from './Profile';
 import Input from './Input/Input';
@@ -16,6 +18,11 @@ import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
 import { countries, sampleGame } from '../data/countries';
+
+export interface RegionProps extends CountryProps {
+  countryId: string;
+  className: string;
+}
 
 const unitedKingdom = [
   'England',
@@ -178,7 +185,8 @@ const WorldMap = () => {
         id="map"
         xmlns="http:/'/',ww.w3.org/2000/sg"
         viewBox="0 0 895.92 471.76"
-        preserveAspectRatio="xMinYMin"
+        // preserveAspectRatio="xMinYMin"
+        // preserveAspectRatio="none"
       >
         <defs>
           <pattern
@@ -1409,7 +1417,8 @@ const WorldMap = () => {
               }}
             ></path>
           </g>
-          <Countries
+          <IslandTerritories />
+          <CountriesZoomOut
             zoomIn={zoomIn}
             handleZoom={handleZoom}
             countryId={countryId}
@@ -5861,6 +5870,12 @@ const WorldMap = () => {
           ></polyline>
         </>
       </svg>
+      <CountriesZoomIn
+        zoomIn={zoomIn}
+        handleZoom={handleZoom}
+        countryId={countryId}
+        answers={answers}
+      />
     </>
   );
 };

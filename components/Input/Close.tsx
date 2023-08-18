@@ -1,7 +1,7 @@
 const CloseButton = ({ handleZoom }) => {
   return (
     <button
-      className="absolute top-[10%] left-[10%] w-12 h-12"
+      className="absolute top-[10%] left-[5%] w-12 h-12 bg-[#80b6ec] rounded-full z-50"
       onClick={(event) => handleZoom(event, 'close')}
       aria-label="close"
     >

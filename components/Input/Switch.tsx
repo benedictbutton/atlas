@@ -10,6 +10,7 @@ const Switch = ({
 }: {
   answers: AnswersObject;
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
+  cribData: { [key: string]: number | null };
   labelPlural: string;
 }) => {
   const toggleInput = useRef(null);

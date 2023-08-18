@@ -1,4 +1,4 @@
-import { RegionProps } from '../Countries';
+import { RegionProps } from '../WorldMap';
 
 const Russia = ({
   handleZoom,
@@ -12,7 +12,7 @@ const Russia = ({
       id="urals"
       className={className}
       onClick={(e) => handleZoom(e, '')}
-      opacity={zoomIn && zoomIn !== 'urals' ? '0.5' : '1'}
+      opacity={zoomIn && zoomIn !== 'urals' ? '0.3' : '1'}
     >
       <g id="g3739" fill-opacity="1">
         <path

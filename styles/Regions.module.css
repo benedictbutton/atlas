@@ -1,3 +1,31 @@
+.region__zoom__in {
+  animation: region__zoom__in ease-in 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes region__zoom__in {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.region__zoom__out {
+  animation: region__zoom__out ease-in 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes region__zoom__out {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
 .africa__zoom__in {
   animation: africa__zoom__in ease-in 1s;
   animation-fill-mode: forwards;
@@ -8,7 +36,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(2.5) translate(-38%, -43%);
+    transform: scale(2.5) translate(-39%, -43%);
   }
 }
 
@@ -19,7 +47,7 @@
 
 @keyframes africa__zoom__out {
   from {
-    transform: scale(2.5) translate(-38%, -43%);
+    transform: scale(2.5) translate(-39%, -43%);
   }
   to {
     transform: scale(1);
@@ -36,7 +64,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(2.2) translate(-57%, -27%);
+    transform: scale(2.2) translate(-58%, -27%);
   }
 }
 
@@ -47,7 +75,7 @@
 
 @keyframes asia__zoom__out {
   from {
-    transform: scale(2.2) translate(-57%, -27%);
+    transform: scale(2.2) translate(-58%, -27%);
   }
   to {
     transform: scale(1);
@@ -64,7 +92,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(5.5) translate(-20%, -45%);
+    transform: scale(5.7) translate(-21%, -45%);
   }
 }
 
@@ -75,7 +103,7 @@
 
 @keyframes ca__zoom__out {
   from {
-    transform: scale(5.5) translate(-20%, -45%);
+    transform: scale(5.7) translate(-21%, -45%);
   }
   to {
     transform: scale(1);
@@ -92,7 +120,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(3) translate(-39%, -15%);
+    transform: scale(3) translate(-40%, -15%);
   }
 }
 
@@ -103,7 +131,7 @@
 
 @keyframes europe__zoom__out {
   from {
-    transform: scale(3) translate(-39%, -15%);
+    transform: scale(3) translate(-40%, -15%);
   }
   to {
     transform: scale(1);
@@ -120,7 +148,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(2.8) translate(-45%, -32%);
+    transform: scale(2.8) translate(-45%, -30%);
   }
 }
 
@@ -131,7 +159,7 @@
 
 @keyframes middle__east__zoom__out {
   from {
-    transform: scale(2.8) translate(-45%, -32%);
+    transform: scale(2.8) translate(-45%, -30%);
   }
   to {
     transform: scale(1);
@@ -148,7 +176,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5) translateX(2%);
+    transform: scale(1.5);
   }
 }
 
@@ -159,7 +187,7 @@
 
 @keyframes na__zoom__out {
   from {
-    transform: scale(1.5) translateX(2%);
+    transform: scale(1.5);
   }
   to {
     transform: scale(1);
@@ -176,7 +204,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(2.5) translate(-72%, -55%);
+    transform: scale(2.5) translate(-74%, -55%);
   }
 }
 
@@ -187,7 +215,7 @@
 
 @keyframes oceania__zoom__out {
   from {
-    transform: scale(2.5) translate(-72%, -55%);
+    transform: scale(2.5) translate(-74%, -55%);
   }
   to {
     transform: scale(1);
@@ -243,7 +271,7 @@
 
 @keyframes urals__zoom__out {
   from {
-    transform: scale(2.4) translate(15%, 54%);
+    transform: scale(1.7) translate(-57%, 0%);
   }
   to {
     transform: scale(1);

@@ -34,12 +34,13 @@ const Intro = ({
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1}
+              strokeWidth={2}
               stroke="#80b6ec"
-              className="absolute top-2 left-2 w-10 h-10"
+              className="absolute top-2 right-2 w-10 h-10"
             >
               <g>
                 <path
+                  fill="black"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M6 18L18 6M6 6l12 12"

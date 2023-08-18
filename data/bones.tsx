@@ -31,6 +31,9 @@ export const boneData: {
   tibia: { value: null, points: 2 },
   fibula: { value: null, points: 2 },
   patella: { value: null, points: 2 },
+  'foot distal': { value: null, points: 10 },
+  'foot middle': { value: null, points: 8 },
+  'foot proximal': { value: null, points: 10 },
 };
 
 export const boneValues = {
@@ -64,4 +67,7 @@ export const boneValues = {
   tibia: 2,
   fibula: 2,
   patella: 2,
+  'foot distal': 10,
+  'foot middle': 8,
+  'foot proximal': 10,
 };

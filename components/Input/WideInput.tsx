@@ -1,4 +1,5 @@
 import { InputProps } from './Input';
+import Reset from './Reset';
 import SearchList from './SearchList';
 import Switch from './Switch';
 import WideScore from './WideScore';
@@ -29,7 +30,7 @@ const WideInput = ({
     <div
       className={`input ${
         !zoomIn ? 'collapse' : ''
-      } fixed bottom-5 left-1/2 -translate-x-1/2 w-5/6 h-52 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
+      } fixed bottom-5 left-1/2 -translate-x-1/2 w-5/6 h-52 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double z-50`}
     >
       <div className="flex flex-col h-full flex-wrap content-start align-center pl-3 py-2">
         <p
@@ -66,18 +67,25 @@ const WideInput = ({
           </form>
         </div>
         {!searchValue && (
-          <div className="w-[55%] h-full text-center">
+          <div className="relative w-[55%] h-full text-center">
             <WideScore
               correct={correct}
               incorrect={incorrect}
               total={total}
             />
-            <Switch
-              answers={answers}
-              setAnswers={setAnswers}
-              answerData={answerData}
-              labelPlural={labelPlural}
-            />
+            <div className="flex justify-around absolute bottom-[-3%] left-0 w-full">
+              <Switch
+                answers={answers}
+                setAnswers={setAnswers}
+                answerData={answerData}
+                labelPlural={labelPlural}
+              />
+              <Reset
+                correct={correct}
+                incorrect={incorrect}
+                handleResetAnswers={handleResetAnswers}
+              />
+            </div>
           </div>
         )}
         {searchValue && labelName && (
@@ -93,16 +101,6 @@ const WideInput = ({
           <p className="p-5 text-[#df001d] text-xl">
             Select a {labelType} before guessing
           </p>
-        )}
-        {correct + incorrect > 0 && (
-          <button
-            onClick={handleResetAnswers}
-            className="reset absolute bottom-2 right-5 h-[24px] leading-[24px] text-[#df001d]"
-          >
-            <span className="inline-block h-full leading-normal align-middle mb-4">
-              Reset
-            </span>
-          </button>
         )}
       </div>
     </div>

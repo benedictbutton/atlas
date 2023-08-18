@@ -17,9 +17,9 @@ export interface InputProps {
   ) => void;
   zoomIn: string;
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
-  answers: AnswersObject;
+  answers: { [key: string]: number | boolean | null | undefined };
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
-  cribData?: { [key: string]: number | null };
+  cribData: { [key: string]: number | null };
   regionHeader: string;
   labelName: string;
   labelType: string;
@@ -37,8 +37,8 @@ const Input = ({ ...props }: InputProps) => {
 
   return (
     <>
-      {width >= 920 && <TallInput {...props} />}
-      {width < 920 && <WideInput {...props} />}
+      {width && width >= 920 && <TallInput {...props} />}
+      {width && width < 920 && <WideInput {...props} />}
     </>
   );
 };

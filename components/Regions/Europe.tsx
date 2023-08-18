@@ -1,5 +1,5 @@
 // import { memo } from 'react';
-import { RegionProps } from '../Countries';
+import { RegionProps } from '../WorldMap';
 
 const Europe = ({
   handleZoom,
@@ -13,7 +13,7 @@ const Europe = ({
       id="europe"
       className={className}
       onClick={(e) => handleZoom(e, '')}
-      opacity={zoomIn && zoomIn !== 'europe' ? '0.5' : '1'}
+      opacity={zoomIn && zoomIn !== 'europe' ? '0.3' : '1'}
     >
       <g id="g3790" fill-opacity="1" stroke-opacity="1">
         <path

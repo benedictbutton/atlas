@@ -1,8 +1,12 @@
 .switch {
   display: inline-block;
-  position: absolute;
+  flex: initial;
+  height: 24px;
+  margin-bottom: 0.25rem;
+  text-align: left;
+  /* position: relative;
   bottom: 0.5rem;
-  left: 1.25rem;
+  left: 1.25rem; */
 }
 
 .switch span {
