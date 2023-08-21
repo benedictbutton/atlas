@@ -61,7 +61,9 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
           >
             SURINAME
           </tspan>
@@ -116,7 +118,9 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".202"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
           >
             GUYANA
           </tspan>
@@ -171,7 +175,9 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
           >
             CHILE
           </tspan>
@@ -279,7 +285,9 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
           >
             ECUADOR
           </tspan>
@@ -332,7 +340,9 @@ const SouthAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
           >
             URUGUAY
           </tspan>
@@ -722,7 +732,9 @@ const SouthAmerica = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
             y="286.486"
             x="304.972"
             id="tspan4320"
@@ -731,14 +743,15 @@ const SouthAmerica = ({
             font-weight="400"
             font-stretch="normal"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
           >
             FRENCH
           </tspan>
           <tspan
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'southAmerica' ? '#fff' : '#000',
+            }}
             id="tspan4324"
             y="289.933"
             x="304.972"
@@ -747,7 +760,6 @@ const SouthAmerica = ({
             font-weight="400"
             font-stretch="normal"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
           >

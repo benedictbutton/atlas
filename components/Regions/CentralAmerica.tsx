@@ -63,7 +63,9 @@ const CentralAmerica = ({
             fill="#000"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             EL SALVADOR
           </tspan>
@@ -118,7 +120,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             BELIZE
           </tspan>
@@ -130,7 +134,7 @@ const CentralAmerica = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Trinidad_and_Tobago"
+          id="Trinidad and Tobago"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
@@ -173,7 +177,7 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: '#000',
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
             y="272.65"
             x="289.315"
@@ -193,7 +197,7 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: '#000',
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
             id="tspan4348"
             y="274.749"
@@ -260,14 +264,13 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: '#000',
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
             y="259.66"
             x="276.808"
             id="tspan4350"
             text-anchor="middle"
             strokeWidth=".135"
-            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -280,14 +283,13 @@ const CentralAmerica = ({
           <tspan
             style={{
               textAlign: 'center',
-              fill: '#000',
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
             id="tspan4354"
             y="262"
             x="276.808"
             text-anchor="middle"
             strokeWidth=".135"
-            fill="#000"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -348,7 +350,9 @@ const CentralAmerica = ({
             fill="#000"
             fill-opacity="1"
             strokeWidth=".135"
-            style={{ fill: 'rgb(106, 7, 7)' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             HAITI
           </tspan>
@@ -360,7 +364,7 @@ const CentralAmerica = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Dominican_Republic"
+          id="Dominican Republic"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
@@ -406,7 +410,9 @@ const CentralAmerica = ({
             strokeWidth=".135"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -422,7 +428,9 @@ const CentralAmerica = ({
             strokeWidth=".135"
             fill="#6a0707"
             fill-opacity="1"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
             font-style="normal"
             font-variant="normal"
             font-weight="400"
@@ -484,7 +492,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             NICARAGUA
           </tspan>
@@ -539,7 +549,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             PANAMA
           </tspan>
@@ -594,7 +606,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             CUBA
           </tspan>
@@ -649,7 +663,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             JAMAICA
           </tspan>
@@ -704,7 +720,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             GUATEMALA
           </tspan>
@@ -759,7 +777,9 @@ const CentralAmerica = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
           >
             COSTA RICA
           </tspan>
@@ -973,7 +993,7 @@ const CentralAmerica = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Bahamas"
+          id="Bahamas, The"
           fill-opacity="1"
           stroke-miterlimit="4"
           stroke-dasharray="none"
@@ -987,6 +1007,49 @@ const CentralAmerica = ({
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
+        <text
+          style={{
+            display: (answers['Bahamas, The'] ?? 0) < 1 ? 'none' : '',
+            lineHeight: '100',
+            textAlign: 'center',
+          }}
+          id="Bahamas_label"
+          y="236.895"
+          x="239.362"
+          font-style="normal"
+          font-variant="normal"
+          font-stretch="normal"
+          fontSize="2.33"
+          font-family="Arial"
+          letter-spacing="0"
+          word-spacing="0"
+          writing-mode="lr-tb"
+          text-anchor="middle"
+          stroke="none"
+          strokeWidth=".135"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          transform="scale(1.03856 .96288)"
+          font-weight="400"
+        >
+          <tspan
+            y="236.895"
+            x="239.362"
+            // id="tspan4384"
+            strokeWidth=".135"
+            fill-opacity="1"
+            style={{
+              fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
+            }}
+            font-style="normal"
+            font-variant="normal"
+            font-weight="400"
+            font-stretch="normal"
+            font-family="Arial"
+          >
+            The Bahamas
+          </tspan>
+        </text>
       </g>
     </g>
   );

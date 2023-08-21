@@ -144,8 +144,12 @@ const WorldMap = () => {
         profileIcon="/earth.png"
         iconSize="36px"
         textColor="black"
-        menuItemLink="/bones"
-        menuItemName="Bones Demo"
+        menuItemLink=""
+        menuItemName=""
+        // menuItemLink="/bones"
+        // menuItemName="Bones Demo"
+        menuItemColor="text-[#f9e3b7]"
+        zoomIn={zoomIn}
       />
       {introMessage && (
         <Intro

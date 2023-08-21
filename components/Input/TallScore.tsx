@@ -7,7 +7,6 @@ const TallScore = ({
   incorrect: number;
   total: number;
 }) => {
-  console.log('test: ', total);
   const [radius, stroke] = [180, 10];
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;

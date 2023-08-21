@@ -93,10 +93,46 @@ const Oceania = ({
             fill:
               countryId && countryId !== 'g4225'
                 ? '#36454f'
-                : 'rgb(209, 219, 221)',
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
+        <text
+          style={{
+            display: (answers['Fiji'] ?? 0) < 1 ? 'none' : '',
+          }}
+          id="Fiji_label"
+          y="350.269"
+          x="848.656"
+          fontSize="2.07"
+          letter-spacing=".51"
+          strokeWidth=".173"
+          font-style="normal"
+          font-variant="normal"
+          font-stretch="normal"
+          font-family="Arial"
+          transform="scale(1.03856 .96288)"
+          font-weight="400"
+          fill="#6a0707"
+        >
+          <tspan
+            y="350.269"
+            x="848.656"
+            id="tspan101"
+            font-style="normal"
+            font-variant="normal"
+            font-weight="400"
+            font-stretch="normal"
+            fontSize="3.457"
+            font-family="Arial"
+            letter-spacing=".51"
+            fill-opacity="1"
+            strokeWidth=".173"
+            style={{ fill: zoomIn === 'oceania' ? '#fff' : '#000' }}
+          >
+            Fiji
+          </tspan>
+        </text>
       </g>
       <g id="g4016" fill-opacity="1">
         <path
@@ -208,7 +244,7 @@ const Oceania = ({
             fill-opacity="1"
             strokeWidth=".26"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'oceania' ? '#fff' : '#000',
             }}
           >
             NEW ZEALAND

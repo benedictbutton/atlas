@@ -5,7 +5,8 @@ style={{ display: !answers['Saint Lucia'] ? 'none' : ''}}
 style={{ display: !answers['Dominica'] ? 'none' : ''}}
 style={{ display: !answers['Antigua and Barbuda'] ? 'none' : ''}}
 style={{ display: !answers['Mauritius'] ? 'none' : ''}}
-style={{ display: !answers['Bahamas'] ? 'none' : ''}}
+// style={{ display: !answers['Bahamas'] ? 'none' : ''}}
+style={{ display: !answers['Samoa'] ? 'none' : ''}}
 
 <g xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:groupmode="layer" id="layer3" inkscape:label="Skeleton" style="display:inline"><g style="display:inline;overflow:visible" id="FootLeft" inkscape:label="Foot">
 	

@@ -10,6 +10,8 @@ const Profile = ({
   textColor,
   menuItemLink,
   menuItemName,
+  menuItemColor,
+  zoomIn,
 }) => {
   const [hidden, setHidden] = useState(true);
   return (
@@ -21,7 +23,13 @@ const Profile = ({
         onMouseLeave={() => setHidden(true)}
       >
         <div className="flex justify-center items-center w-full">
-          <p className="text-md md:text-xl mr-2">Profile</p>
+          <p
+            className={`${
+              !!zoomIn ? 'text-white' : ''
+            } text-md md:text-xl mr-2`}
+          >
+            Profile
+          </p>
           <div className="relative">
             <Image
               src={profileIcon}
@@ -35,7 +43,9 @@ const Profile = ({
           <>
             <div className="w-3/4 h-2 mx-auto border-b-2 border-solid border-[#1b83ff]" />
             <div className="flex flex-col h-5/6 justify-between">
-              <div className="text-lg text-[#f3d48c] text-center mt-3">
+              <div
+                className={`text-lg ${menuItemColor} text-center mt-3`}
+              >
                 <Link href={menuItemLink}>{menuItemName}</Link>
               </div>
               <SignOut />

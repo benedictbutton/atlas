@@ -238,7 +238,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".093"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             WALES
@@ -420,7 +420,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".102"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             SCOTLAND
@@ -481,7 +481,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".036"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             NORTHERN
@@ -494,7 +494,7 @@ const Europe = ({
             strokeWidth=".036"
             fill="#6a0707"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             IRELAND
@@ -744,8 +744,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".096"
             style={{
-              fill:
-                countryId && countryId !== 'g3695' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             NETHERLANDS
@@ -916,8 +915,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".116"
             style={{
-              fill:
-                countryId && countryId !== 'g3705' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             DENMARK
@@ -1032,8 +1030,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".164"
             style={{
-              fill:
-                countryId && countryId !== 'g3655' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             PORTUGAL
@@ -1149,7 +1146,6 @@ const Europe = ({
             fontSize="2.263"
             font-family="Arial"
             letter-spacing="-.067"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
             style={{
@@ -1731,8 +1727,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".058"
             style={{
-              fill:
-                countryId && countryId !== 'g3800' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             MONTENEGRO
@@ -1905,7 +1900,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".106"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             MALTA
@@ -2076,8 +2071,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".154"
             style={{
-              fill:
-                countryId && countryId !== 'g3700' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             IRELAND
@@ -2511,8 +2505,7 @@ const Europe = ({
             fill-opacity="1"
             strokeWidth=".077"
             style={{
-              fill:
-                countryId && countryId !== 'g3640' ? '#fff' : '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
           >
             CYPRUS
@@ -2692,7 +2685,7 @@ const Europe = ({
             fill="#6a0707"
             fill-opacity="1"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'europe' ? '#fff' : '#000',
             }}
             font-style="normal"
             font-variant="normal"

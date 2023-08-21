@@ -68,7 +68,7 @@ const Asia = ({
             strokeWidth=".096"
             style={{
               fill:
-                countryId && countryId !== 'g4006' ? '#fff' : '#000',
+                zoomIn === 'asia' ? '#fff' : '#000' ? '#fff' : '#000',
             }}
           >
             SINGAPORE
@@ -125,7 +125,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".144"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             VIETNAM
@@ -358,8 +358,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".125"
             style={{
-              fill:
-                countryId && countryId !== 'g3951' ? '#fff' : '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             BRUNEI
@@ -418,8 +417,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".212"
             style={{
-              fill:
-                countryId && countryId !== 'g3946' ? '#fff' : '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             MALAYSIA
@@ -441,7 +439,7 @@ const Asia = ({
             fill:
               countryId && countryId !== 'g3956'
                 ? '#36454f'
-                : '#fcf390',
+                : '#1272b3',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -478,8 +476,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".26"
             style={{
-              fill:
-                countryId && countryId !== 'g3956' ? '#fff' : '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             INDONESIA
@@ -735,7 +732,7 @@ const Asia = ({
             fill:
               countryId && countryId !== 'g3966'
                 ? '#36454f'
-                : '#803788',
+                : '#fcf390',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -770,7 +767,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".231"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             PHILIPPINES
@@ -827,7 +824,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".221"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             JAPAN
@@ -944,7 +941,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".116"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             SRI LANKA
@@ -1006,7 +1003,16 @@ const Asia = ({
                 countryId && countryId !== 'g3991' ? '#fff' : '#000',
             }}
           >
-            NORTH KOREA
+            NOR
+          </tspan>
+          <tspan
+            fontSize="2.715"
+            font-family="Arial"
+            style={{
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
+            }}
+          >
+            TH KOREA
           </tspan>
         </text>
       </g>
@@ -1177,7 +1183,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".096"
             style={{
-              fill: '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             TAIWAN

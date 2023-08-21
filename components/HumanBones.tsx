@@ -37,7 +37,6 @@ export type DatasetInjector<T, D extends DOMStringMap> = T & {
 };
 
 const HumanBones = () => {
-  const total = 206;
   const initializeBoneAnswers = () => {
     const initialAnswers: {
       [key: string]: null;
@@ -51,6 +50,7 @@ const HumanBones = () => {
   const [bone, setBone] = useState('');
   const [searchValue, setSearchValue] = useState('');
   const formInput = useRef<HTMLInputElement | null>(null);
+  const total = 206;
 
   const handleZoom = (
     e:
@@ -136,6 +136,8 @@ const HumanBones = () => {
         textColor="white"
         menuItemLink="/map"
         menuItemName="Map"
+        menuItemColor="text-[#80b6ec]"
+        zoomIn={zoomIn}
       />
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
       <Input

@@ -58,12 +58,14 @@ const MiddleEast = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ lineHeight: '95', fill: '#000' }}
+            style={{
+              lineHeight: '95',
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
             y="236.378"
             x="377.505"
             id="tspan6774"
             strokeWidth=".472"
-            fill="#6a0707"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -74,12 +76,14 @@ const MiddleEast = ({
             WESTERN
           </tspan>
           <tspan
-            style={{ lineHeight: '95', fill: '#000' }}
+            style={{
+              lineHeight: '95',
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
             id="tspan6778"
             y="239.97"
             x="377.505"
             strokeWidth=".472"
-            fill="#6a0707"
             fill-opacity="1"
             font-style="normal"
             font-variant="normal"
@@ -526,7 +530,9 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".087"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
           >
             LEBANON
           </tspan>
@@ -632,7 +638,9 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
           >
             QATAR
           </tspan>
@@ -954,7 +962,10 @@ const MiddleEast = ({
           fill="#6a0707"
         >
           <tspan
-            style={{ textAlign: 'end', fill: '#000' }}
+            style={{
+              textAlign: 'end',
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
             y="215.821"
             x="514.975"
             id="tspan7332"
@@ -971,7 +982,10 @@ const MiddleEast = ({
             PALESTINIAN
           </tspan>
           <tspan
-            style={{ textAlign: 'end', fill: '#000' }}
+            style={{
+              textAlign: 'end',
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
             id="tspan7336"
             y="216.88"
             x="514.975"
@@ -1148,7 +1162,9 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".067"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
           >
             ISRAEL
           </tspan>
@@ -1202,7 +1218,9 @@ const MiddleEast = ({
             fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
-            style={{ fill: '#000' }}
+            style={{
+              fill: zoomIn === 'middleEast' ? '#fff' : '#000',
+            }}
           >
             KUWAIT
           </tspan>
