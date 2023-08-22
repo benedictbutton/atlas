@@ -56,7 +56,6 @@ const NorthAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="72.044"
@@ -69,7 +68,6 @@ const NorthAmerica = ({
             fontSize="6.326"
             font-family="Arial"
             letter-spacing="1.021"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".318"
             style={{
@@ -131,7 +129,6 @@ const NorthAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="201.35"
@@ -144,7 +141,6 @@ const NorthAmerica = ({
             fontSize="7.472"
             font-family="Arial"
             letter-spacing="1.666"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".279"
             style={{ fill: '#fff' }}
@@ -187,7 +183,6 @@ const NorthAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="244.11"
@@ -199,7 +194,6 @@ const NorthAmerica = ({
             font-stretch="normal"
             fontSize="5.094"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
             style={{
@@ -255,7 +249,6 @@ const NorthAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="144.79"
@@ -268,7 +261,6 @@ const NorthAmerica = ({
             fontSize="7.472"
             font-family="Arial"
             letter-spacing="2.041"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".308"
             style={{ fill: '#fff', display: 'inline' }}

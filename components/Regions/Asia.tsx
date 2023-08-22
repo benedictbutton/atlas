@@ -30,7 +30,7 @@ const Asia = ({
             fill:
               countryId && countryId !== 'g4006'
                 ? '#36454f'
-                : '#000fff',
+                : '#df001d',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -50,7 +50,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="302.402"
@@ -63,7 +62,6 @@ const Asia = ({
             fontSize="1.993"
             font-family="Arial"
             letter-spacing="-.106"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
             style={{
@@ -109,7 +107,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="267.286"
@@ -121,7 +118,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.975"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -166,7 +162,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="199.192"
@@ -178,7 +173,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.128"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
             style={{
@@ -226,7 +220,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="204.67"
@@ -238,7 +231,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.715"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -257,7 +249,7 @@ const Asia = ({
           stroke-miterlimit="4"
           fill="#d1dbdd"
           stroke="#000"
-          id="Hong_Kong"
+          id="Hong Kong"
           stroke-opacity="1"
           stroke-dasharray="none"
           data-originalStrokeWidth="0.15"
@@ -284,7 +276,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="246.69"
@@ -296,12 +287,10 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.128"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".106"
             style={{
-              fill:
-                countryId && countryId !== 'g3976' ? '#fff' : '#000',
+              fill: zoomIn === 'asia' ? '#fff' : '#000',
             }}
           >
             HONG KONG
@@ -342,7 +331,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="290.492"
@@ -354,7 +342,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.417"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".125"
             style={{
@@ -400,7 +387,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="298.358"
@@ -413,7 +399,6 @@ const Asia = ({
             fontSize="4.198"
             font-family="Arial"
             letter-spacing="1.531"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".212"
             style={{
@@ -459,7 +444,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="313.735"
@@ -472,7 +456,6 @@ const Asia = ({
             fontSize="7.472"
             font-family="Arial"
             letter-spacing="3.062"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
             style={{
@@ -518,7 +501,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="176.901"
@@ -531,7 +513,6 @@ const Asia = ({
             fontSize="5.094"
             font-family="Arial"
             letter-spacing="1.021"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
             style={{
@@ -578,7 +559,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="270.599"
@@ -591,7 +571,6 @@ const Asia = ({
             fontSize="2.359"
             font-family="Arial"
             letter-spacing="-.106"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
             style={{
@@ -636,7 +615,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="252.314"
@@ -648,7 +626,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="3.033"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
             style={{
@@ -694,7 +671,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="249.579"
@@ -706,7 +682,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="3.139"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
             style={{
@@ -751,7 +726,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="269.356"
@@ -763,7 +737,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="4.545"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
             style={{
@@ -808,7 +781,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="202.764"
@@ -820,7 +792,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="4.362"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".221"
             style={{
@@ -867,7 +838,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="213.038"
@@ -880,7 +850,6 @@ const Asia = ({
             fontSize="7.472"
             font-family="Arial"
             letter-spacing="2.041"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
             style={{
@@ -925,7 +894,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="290.482"
@@ -937,7 +905,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.388"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
             style={{
@@ -983,7 +950,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="195.263"
@@ -995,7 +961,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.715"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
             style={{
@@ -1050,7 +1015,6 @@ const Asia = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="-17.72"
@@ -1062,7 +1026,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="3.524"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".173"
             style={{
@@ -1107,7 +1070,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="198.595"
@@ -1119,7 +1081,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.908"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -1167,7 +1128,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="242.473"
@@ -1179,7 +1139,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.003"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
             style={{
@@ -1224,7 +1183,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="253.045"
@@ -1236,7 +1194,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="5.094"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".26"
             style={{
@@ -1282,7 +1239,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="190.43"
@@ -1294,7 +1250,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.388"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
             style={{
@@ -1339,7 +1294,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="264.677"
@@ -1351,7 +1305,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="3.033"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
             style={{
@@ -1397,7 +1350,6 @@ const Asia = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="-143.294"
@@ -1409,7 +1361,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="3.784"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".193"
             style={{
@@ -1456,7 +1407,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="170.305"
@@ -1469,7 +1419,6 @@ const Asia = ({
             fontSize="4.843"
             font-family="Arial"
             letter-spacing="1.021"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".241"
             style={{
@@ -1515,7 +1464,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="239.43"
@@ -1527,7 +1475,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.773"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
             style={{
@@ -1572,7 +1519,6 @@ const Asia = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="228.425"
@@ -1584,7 +1530,6 @@ const Asia = ({
             font-stretch="normal"
             fontSize="2.677"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
             style={{

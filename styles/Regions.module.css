@@ -64,7 +64,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(2.2) translate(-58%, -27%);
+    transform: scale(2.4) translate(-59%, -27%);
   }
 }
 
@@ -75,7 +75,7 @@
 
 @keyframes asia__zoom__out {
   from {
-    transform: scale(2.2) translate(-58%, -27%);
+    transform: scale(2.4) translate(-59%, -27%);
   }
   to {
     transform: scale(1);

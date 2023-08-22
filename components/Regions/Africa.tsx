@@ -52,7 +52,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="274.046"
@@ -64,7 +63,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="1.829"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
               style={{
@@ -110,7 +108,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="275.134"
@@ -122,7 +119,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.378"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
               style={{
@@ -167,7 +163,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="287.064"
@@ -179,7 +174,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.503"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".125"
               style={{
@@ -226,7 +220,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="640.242"
@@ -238,7 +231,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.237"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
               style={{
@@ -296,14 +288,12 @@ const Africa = ({
             stroke-linejoin="miter"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="284.859"
               x="413.353"
               id="tspan6086"
               strokeWidth=".337"
-              fill="#6a0707"
               fill-opacity="1"
               style={{
                 fill:
@@ -324,7 +314,6 @@ const Africa = ({
               y="287.449"
               x="413.353"
               strokeWidth=".337"
-              fill="#6a0707"
               fill-opacity="1"
               style={{
                 fill:
@@ -376,7 +365,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="530.007"
@@ -388,7 +376,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.033"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
               style={{ fill: '#fff' }}
@@ -431,7 +418,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="507.21"
@@ -443,7 +429,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.553"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
               style={{
@@ -491,7 +476,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="304.617"
@@ -503,7 +487,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.371"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".221"
               style={{ fill: '#fff' }}
@@ -559,14 +542,12 @@ const Africa = ({
             stroke-linejoin="miter"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="285.619"
               x="498.462"
               id="tspan6182"
               strokeWidth=".366"
-              fill="#6a0707"
               fill-opacity="1"
               style={{ fill: '#fff' }}
               font-style="normal"
@@ -582,7 +563,6 @@ const Africa = ({
               y="288.383"
               x="498.462"
               strokeWidth=".366"
-              fill="#6a0707"
               fill-opacity="1"
               style={{ fill: '#fff' }}
               font-style="normal"
@@ -629,7 +609,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="259.073"
@@ -641,7 +620,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.094"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
               style={{
@@ -688,7 +666,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="289.577"
@@ -700,7 +677,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.843"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".241"
               style={{
@@ -745,7 +721,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="353.521"
@@ -757,7 +732,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.86"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
               style={{ fill: '#fff' }}
@@ -800,7 +774,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="253.19"
@@ -812,7 +785,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.986"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
               style={{ fill: '#fff' }}
@@ -856,7 +828,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="268.288"
@@ -868,7 +839,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.094"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
               style={{ fill: '#fff' }}
@@ -912,7 +882,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="391.526"
@@ -924,7 +893,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.411"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".27"
               style={{ fill: '#fff' }}
@@ -967,7 +935,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="381.31"
@@ -979,7 +946,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.07"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".106"
               style={{ fill: '#fff' }}
@@ -1022,7 +988,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="378.133"
@@ -1034,7 +999,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.378"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
               style={{ fill: '#fff' }}
@@ -1077,7 +1041,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="340.908"
@@ -1089,7 +1052,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.063"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
               style={{ fill: '#fff' }}
@@ -1132,7 +1094,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="342.441"
@@ -1144,7 +1105,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.169"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".212"
               style={{
@@ -1192,7 +1152,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="355.64"
@@ -1204,7 +1163,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.927"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
               style={{ fill: '#fff' }}
@@ -1250,7 +1208,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="315.488"
@@ -1262,7 +1219,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.094"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
               style={{ fill: '#fff' }}
@@ -1308,7 +1264,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="562.267"
@@ -1320,7 +1275,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.332"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".164"
               style={{
@@ -1368,7 +1322,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="307.583"
@@ -1380,7 +1333,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.457"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".173"
               style={{ fill: '#fff' }}
@@ -1423,7 +1375,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="519.658"
@@ -1435,7 +1386,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.004"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".154"
               style={{ fill: '#fff' }}
@@ -1478,7 +1428,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="285.205"
@@ -1490,7 +1439,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.67"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
               style={{
@@ -1538,7 +1486,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="35.227"
@@ -1550,7 +1497,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.321"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".116"
               style={{ fill: '#fff' }}
@@ -1594,7 +1540,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="299.803"
@@ -1606,7 +1551,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.725"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
               style={{
@@ -1651,7 +1595,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="308.314"
@@ -1663,7 +1606,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="1.675"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".087"
               style={{ fill: '#fff' }}
@@ -1716,7 +1658,6 @@ const Africa = ({
             stroke-linejoin="miter"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               style={{ lineHeight: '95', fill: '#fff' }}
@@ -1724,7 +1665,6 @@ const Africa = ({
               x="480.966"
               id="tspan6602"
               strokeWidth=".308"
-              fill="#6a0707"
               fill-opacity="1"
               font-style="normal"
               font-variant="normal"
@@ -1740,7 +1680,6 @@ const Africa = ({
               y="289.432"
               x="480.966"
               strokeWidth=".308"
-              fill="#6a0707"
               fill-opacity="1"
               font-style="normal"
               font-variant="normal"
@@ -1786,7 +1725,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="266.246"
@@ -1798,7 +1736,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.094"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
               style={{ fill: '#fff' }}
@@ -1841,7 +1778,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="260.209"
@@ -1853,7 +1789,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="5.094"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".26"
               style={{ fill: '#fff' }}
@@ -1896,7 +1831,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="284.907"
@@ -1908,7 +1842,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.593"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".231"
               style={{ fill: '#fff' }}
@@ -1951,7 +1884,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="361.186"
@@ -1963,7 +1895,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.967"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
               style={{ fill: '#fff' }}
@@ -2014,7 +1945,6 @@ const Africa = ({
             stroke-linejoin="miter"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               style={{
@@ -2028,7 +1958,6 @@ const Africa = ({
               x="425.514"
               id="tspan6690"
               strokeWidth=".279"
-              fill="#6a0707"
               fill-opacity="1"
               font-style="normal"
               font-variant="normal"
@@ -2050,7 +1979,6 @@ const Africa = ({
               y="275.904"
               x="425.514"
               strokeWidth=".279"
-              fill="#6a0707"
               fill-opacity="1"
               font-style="normal"
               font-variant="normal"
@@ -2096,7 +2024,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="325.059"
@@ -2108,7 +2035,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="4.034"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".202"
               style={{
@@ -2157,7 +2083,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="490.915"
@@ -2169,7 +2094,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.619"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
               style={{ fill: '#fff' }}
@@ -2212,7 +2136,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="277.579"
@@ -2224,7 +2147,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.678"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".183"
               style={{
@@ -2273,7 +2195,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="269.732"
@@ -2285,7 +2206,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.378"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
               style={{
@@ -2330,7 +2250,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="-53.02"
@@ -2342,7 +2261,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.725"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".135"
               style={{
@@ -2398,14 +2316,12 @@ const Africa = ({
             stroke-linejoin="miter"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="284.454"
               x="399.584"
               id="tspan6852"
               strokeWidth=".26"
-              fill="#6a0707"
               fill-opacity="1"
               style={{
                 fill: zoomIn === 'africa' ? '#fff' : '#000',
@@ -2423,7 +2339,6 @@ const Africa = ({
               y="286.39"
               x="399.584"
               strokeWidth=".26"
-              fill="#6a0707"
               fill-opacity="1"
               style={{
                 fill: zoomIn === 'africa' ? '#fff' : '#000',
@@ -2473,7 +2388,6 @@ const Africa = ({
             font-stretch="normal"
             font-family="Arial"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="482.33"
@@ -2486,7 +2400,6 @@ const Africa = ({
               fontSize="1.829"
               font-family="Arial"
               letter-spacing="-.106"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".096"
               style={{ fill: '#fff' }}
@@ -2529,7 +2442,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="339.983"
@@ -2541,7 +2453,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="2.937"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".144"
               style={{
@@ -2589,7 +2500,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="262.761"
@@ -2601,7 +2511,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="3.235"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".164"
               style={{ fill: '#fff' }}
@@ -2644,7 +2553,6 @@ const Africa = ({
             font-family="Arial"
             transform="scale(1.03856 .96288)"
             font-weight="400"
-            fill="#6a0707"
           >
             <tspan
               y="315.286"
@@ -2656,7 +2564,6 @@ const Africa = ({
               font-stretch="normal"
               fontSize="1.762"
               font-family="Arial"
-              fill="#6a0707"
               fill-opacity="1"
               strokeWidth=".087"
               style={{

@@ -48,7 +48,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="315.406"
@@ -105,7 +104,6 @@ const CentralAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="258.332"
@@ -117,7 +115,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.648"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".135"
             style={{
@@ -172,7 +169,6 @@ const CentralAmerica = ({
           stroke-linejoin="miter"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             style={{
@@ -230,7 +226,7 @@ const CentralAmerica = ({
             fill:
               countryId && countryId !== 'g3256'
                 ? '#36454f'
-                : '#2dc4f4',
+                : '#150fff',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
@@ -259,7 +255,6 @@ const CentralAmerica = ({
           stroke-linejoin="miter"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             style={{
@@ -335,7 +330,6 @@ const CentralAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="259.968"
@@ -401,14 +395,12 @@ const CentralAmerica = ({
           stroke-linejoin="miter"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="248.895"
             x="267.362"
             id="tspan4384"
             strokeWidth=".135"
-            fill="#6a0707"
             fill-opacity="1"
             style={{
               fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
@@ -426,7 +418,6 @@ const CentralAmerica = ({
             y="251.226"
             x="267.362"
             strokeWidth=".135"
-            fill="#6a0707"
             fill-opacity="1"
             style={{
               fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
@@ -476,7 +467,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="325.745"
@@ -489,7 +479,6 @@ const CentralAmerica = ({
             fontSize="2.831"
             font-family="Arial"
             letter-spacing="-.221"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -534,7 +523,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="351.431"
@@ -546,7 +534,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.937"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -591,7 +578,6 @@ const CentralAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="252.054"
@@ -603,7 +589,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="4.68"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".231"
             style={{
@@ -648,7 +633,6 @@ const CentralAmerica = ({
           font-family="Arial"
           transform="scale(1.03856 .96288)"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="259.66"
@@ -660,7 +644,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.311"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".116"
             style={{
@@ -705,7 +688,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="311.691"
@@ -717,7 +699,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="2.908"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".144"
             style={{
@@ -762,7 +743,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="327.661"
@@ -774,7 +754,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="3.052"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".154"
             style={{
@@ -819,7 +798,6 @@ const CentralAmerica = ({
           font-stretch="normal"
           font-family="Arial"
           font-weight="400"
-          fill="#6a0707"
         >
           <tspan
             y="316.522"
@@ -831,7 +809,6 @@ const CentralAmerica = ({
             font-stretch="normal"
             fontSize="1.964"
             font-family="Arial"
-            fill="#6a0707"
             fill-opacity="1"
             strokeWidth=".096"
             style={{ fill: '#fff' }}
