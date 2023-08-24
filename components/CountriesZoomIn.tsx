@@ -9,7 +9,6 @@ import Oceania from './Regions/Oceania';
 import Russia from './Regions/Russia';
 import SouthAmerica from './Regions/SouthAmerica';
 import styles from '../styles/Regions.module.css';
-import useDelayedUnmounting from '../utils/useDelayedUnmounting';
 
 const CountriesZoomIn = ({
   zoomIn,
@@ -17,7 +16,6 @@ const CountriesZoomIn = ({
   countryId,
   answers,
 }: CountryProps) => {
-  const shouldRender = useDelayedUnmounting(true, 5000);
   return (
     <>
       {zoomIn && (

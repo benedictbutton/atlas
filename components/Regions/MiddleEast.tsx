@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { RegionProps } from '../WorldMap';
 
 const MiddleEast = ({

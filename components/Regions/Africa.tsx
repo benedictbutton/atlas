@@ -1,7 +1,4 @@
 import { RegionProps } from '../WorldMap';
-import styles from '../../styles/Regions.module.css';
-import useDelayedUnmounting from '../../utils/useDelayedUnmounting';
-import { useState, useEffect } from 'react';
 
 const Africa = ({
   handleZoom,
@@ -17,6 +14,7 @@ const Africa = ({
         className={className}
         onClick={(e) => handleZoom(e, '')}
         style={{ willChange: 'transform' }}
+        opacity={zoomIn && zoomIn !== 'africa' ? '0.3' : '1'}
       >
         <g id="g4036" fill-opacity="1">
           <path

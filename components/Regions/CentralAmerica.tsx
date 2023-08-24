@@ -175,7 +175,7 @@ const CentralAmerica = ({
               textAlign: 'center',
               fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
-            y="272.65"
+            y="280.65"
             x="289.315"
             id="tspan4344"
             text-anchor="middle"
@@ -196,7 +196,7 @@ const CentralAmerica = ({
               fill: zoomIn === 'centralAmerica' ? '#fff' : '#000',
             }}
             id="tspan4348"
-            y="274.749"
+            y="282.749"
             x="289.315"
             text-anchor="middle"
             strokeWidth=".125"
@@ -715,7 +715,7 @@ const CentralAmerica = ({
           fill="#d1dbdd"
           stroke="#000"
           strokeWidth=".15"
-          id="Costa_Rica"
+          id="Costa Rica"
           stroke-miterlimit="4"
           stroke-dasharray="none"
           stroke-opacity="1"

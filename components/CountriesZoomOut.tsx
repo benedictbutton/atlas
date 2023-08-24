@@ -1,4 +1,4 @@
-import { SetStateAction, MouseEvent, useRef } from 'react';
+import { useRef } from 'react';
 import Africa from './Regions/Africa';
 import Asia from './Regions/Asia';
 import CentralAmerica from './Regions/CentralAmerica';

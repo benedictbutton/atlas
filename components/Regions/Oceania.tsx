@@ -69,10 +69,46 @@ const Oceania = ({
             fill:
               countryId && countryId !== 'g4228'
                 ? '#36454f'
-                : 'rgb(209, 219, 221)',
+                : '#cc0b20',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
+        <text
+          style={{
+            display:
+              (answers['New Caledonia'] ?? 0) < 1 ? 'none' : '',
+          }}
+          id="New_Caledonia_label"
+          y="368.206"
+          x="830.818"
+          fontSize="3.062"
+          strokeWidth=".26"
+          font-style="normal"
+          font-variant="normal"
+          font-stretch="normal"
+          font-family="Arial"
+          transform="scale(1.03856 .96288)"
+          font-weight="400"
+        >
+          <tspan
+            y="368.206"
+            x="830.818"
+            id="tspan90"
+            font-style="normal"
+            font-variant="normal"
+            font-weight="400"
+            font-stretch="normal"
+            fontSize="3.062"
+            font-family="Arial"
+            fill-opacity="1"
+            strokeWidth=".26"
+            style={{
+              fill: zoomIn === 'oceania' ? '#fff' : '#000',
+            }}
+          >
+            NEW CALEDONIA
+          </tspan>
+        </text>
       </g>
       <g id="g4225">
         <path
@@ -125,7 +161,7 @@ const Oceania = ({
             strokeWidth=".173"
             style={{ fill: zoomIn === 'oceania' ? '#fff' : '#000' }}
           >
-            Fiji
+            FIJI
           </tspan>
         </text>
       </g>

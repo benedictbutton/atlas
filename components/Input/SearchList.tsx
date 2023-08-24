@@ -31,28 +31,3 @@ const SearchList = ({ searchValue, handleSelectValue, answers }) => {
 };
 
 export default SearchList;
-
-// const useFetch = (query, initialState) => {
-//   const [data, setData] = useState(initialState);
-//   const [url, setUrl] = useState(query);
-
-//   useEffect(() => {
-//     let didCancel = false;
-
-//     const fetchData = async () => {
-//       try {
-//         const response = await fetch(url);
-//         const data = await response.json();
-
-//         setData(data);
-//       } catch (error) {
-//         throw new Error('whoops');
-//       }
-//     };
-//     fetchData();
-
-//     return () => {
-//       didCancel = true;
-//     };
-//   }, [url]);
-// };

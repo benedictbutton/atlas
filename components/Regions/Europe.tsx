@@ -1,4 +1,3 @@
-// import { memo } from 'react';
 import { RegionProps } from '../WorldMap';
 
 const Europe = ({
@@ -347,6 +346,7 @@ const Europe = ({
             strokeWidth=".102"
             style={{
               fill: '#fff',
+              display: 'none',
             }}
           >
             UNITED KINGDOM
@@ -2789,11 +2789,4 @@ const Europe = ({
   );
 };
 
-// const MemoizedEurope = memo(
-//   Europe,
-//   (oldProps, newProps) =>
-//     oldProps.zoomIn !== 'europe' && newProps.zoomIn !== 'europe',
-// );
-
-// export default MemoizedEurope;
 export default Europe;

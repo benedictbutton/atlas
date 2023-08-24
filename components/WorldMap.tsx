@@ -41,7 +41,7 @@ const WorldMap = () => {
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
   const [introMessage, setIntroMessage] = useIntroMessage();
   const formInput = useRef<HTMLInputElement | null>(null);
-  const total = 194;
+  const total = 196;
 
   const handleZoom = useCallback(
     (
@@ -127,7 +127,7 @@ const WorldMap = () => {
     setCountryId('');
     setCountryName('');
     setSearchValue('');
-    if (formInput.current) formInput.current.value = '';
+    // if (formInput.current) formInput.current.value = '';
 
     const resetAnswers: AnswersObject = {};
     const countries = Object.keys(answers);

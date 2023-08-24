@@ -1533,8 +1533,7 @@ const Asia = ({
             fill-opacity="1"
             strokeWidth=".135"
             style={{
-              fill:
-                countryId && countryId !== 'g3911' ? '#fff' : '#000',
+              fill: '#fff',
             }}
           >
             BHUTAN
