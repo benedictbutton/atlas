@@ -126,8 +126,6 @@ const HumanBones = () => {
     setAnswers({ ...answers, ...resetAnswers });
   }, [answers, setAnswers]);
 
-  console.log('zoomIn: ', zoomIn !== 'upperBody');
-
   return (
     <>
       <Profile
@@ -167,10 +165,12 @@ const HumanBones = () => {
         overflow="visible"
         version="1.0"
         width="100%"
-        height="auto"
+        height="100%"
         viewBox="0 0 435.69 841.89"
         xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"
+        // preserveAspectRatio="xMinYMin"
+        // preserveAspectRatio="none"
       >
         <metadata>
           {/* <rdf:RDF>
@@ -185,7 +185,11 @@ const HumanBones = () => {
           <rect width="435.69" height="841.89" fill="#fff" />
         </g> */}
 
-        <g style={{ fillOpacity: zoomIn ? '0.2' : '1' }}>
+        <g
+          style={{
+            fillOpacity: zoomIn ? '0.2' : '1',
+          }}
+        >
           <RightArm handleZoom={handleZoom} />
           {zoomIn !== 'foot' && (
             <RightFoot

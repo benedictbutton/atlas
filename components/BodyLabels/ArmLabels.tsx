@@ -1,5 +1,4 @@
 const ArmLabels = ({ answers, zoomIn, className }) => {
-  console.log('className: ', className);
   return (
     <g className={className}>
       <g

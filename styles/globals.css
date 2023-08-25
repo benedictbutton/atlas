@@ -100,14 +100,14 @@ a {
 }
 
 .input.expand {
-  transform: rotateY(0deg);
-  transform-origin: top;
+  rotate: y 0deg;
+  /* transform-origin: left; */
   overflow: hidden;
 }
 
 .input.collapse {
-  transform: rotateY(90deg);
-  transform-origin: bottom;
+  rotate: y 90deg;
+  /* transform-origin: right; */
   overflow: hidden;
 }
 

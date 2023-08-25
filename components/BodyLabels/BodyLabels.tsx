@@ -1,9 +1,11 @@
 import ArmLabels from './ArmLabels';
+import FootLabels from './FootLabels';
 import HandLabels from './HandLables';
 import LegLabels from './LegLabels';
 import PelvisLabels from './PelvisLabels';
 import UpperBodyLabels from './UpperBodyLabels';
 import armStyles from '../../styles/Arm.module.css';
+import footStyles from '../../styles/Foot.module.css';
 import handStyles from '../../styles/Hand.module.css';
 import legStyles from '../../styles/Leg.module.css';
 import pelvisStyles from '../../styles/Pelvis.module.css';
@@ -24,6 +26,20 @@ const BodyLabels = ({ answers, zoomIn }) => {
           answers={answers}
           zoomIn={zoomIn}
           className={armStyles.arm__zoom__out}
+        />
+      )}
+      {zoomIn === 'foot' && (
+        <FootLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={footStyles.foot__zoom__in}
+        />
+      )}
+      {zoomIn !== 'foot' && (
+        <FootLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={footStyles.foot__zoom__out}
         />
       )}
       {zoomIn === 'hand' && (

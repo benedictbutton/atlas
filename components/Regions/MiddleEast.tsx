@@ -420,9 +420,7 @@ const MiddleEast = ({
           stroke-opacity="1"
           style={{
             fill:
-              countryId && countryId !== 'g3861'
-                ? '#36454f'
-                : '#803788',
+              countryId && countryId !== 'g3861' ? '#36454f' : 'blue',
             stroke: 'rgb(0, 0, 0)',
           }}
         ></path>
