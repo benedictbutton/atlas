@@ -54,20 +54,20 @@ const FootLabels = ({ answers, zoomIn, className }) => {
         }}
       >
         <text
-          x="23"
+          x="27"
           y="802.99307"
           fill="#000000"
           font-family="Arial"
           font-size="11px"
-          dx={zoomIn === 'foot' ? '12%' : ''}
+          dx={zoomIn === 'foot' ? '11.7%' : ''}
           stroke-width="1px"
           xmlSpace="preserve"
           style={{
             lineHeight: '125%',
           }}
         >
-          <tspan x="23" y="802.99307">
-            middle phalanx (10)
+          <tspan x="27" y="802.99307">
+            middle phalanx (8)
           </tspan>
         </text>
         <line

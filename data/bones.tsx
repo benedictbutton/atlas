@@ -70,4 +70,9 @@ export const boneValues = {
   'foot distal': 10,
   'foot middle': 8,
   'foot proximal': 10,
+  cuboid: 1,
+  'lateral cuneiform': 2,
+  'middle cuneiform': 2,
+  'medial cuneiform': 2,
+  navicular: 2,
 };

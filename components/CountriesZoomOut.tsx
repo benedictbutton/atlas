@@ -17,7 +17,6 @@ const CountriesZoomOut = ({
   answers,
 }: CountryProps) => {
   // const lastChild = useRef<SVGGElement | null>(null);
-
   return (
     <>
       {zoomIn !== 'africa' && (

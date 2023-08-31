@@ -44,7 +44,7 @@ const useZoom = () => {
 
   useEffect(() => {
     setRegionHeader(findRegion);
-  }, [zoomIn, findRegion]);
+  }, [findRegion]);
 
   return [regionHeader, zoomIn, setZoomIn] as const;
 };

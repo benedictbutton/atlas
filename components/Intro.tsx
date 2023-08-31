@@ -49,7 +49,7 @@ const Intro = ({
             </svg>
           </button>
           <p className="flex-1 w-full mb-3 text-center text-4xl text-[#80b6ec]">
-            How To Label The World
+            How To Map The World
           </p>
           <div className="flex justify-center align-center">
             <div className="w-1/2 h-full flex-wrap content-start align-center p-4">

@@ -19,6 +19,7 @@ import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
 import { countries, sampleGame } from '../data/countries';
+import styles from '../styles/Regions.module.css';
 
 export interface RegionProps extends CountryProps {
   countryId: string;
@@ -145,10 +146,8 @@ const WorldMap = () => {
         profileIcon="/earth.png"
         iconSize="36px"
         textColor="black"
-        // menuItemLink=""
-        // menuItemName=""
         menuItemLink="/bones"
-        menuItemName="Bones Demo"
+        menuItemName="Bones (WIP)"
         menuItemColor="text-[#f9e3b7]"
         zoomIn={zoomIn}
       />
@@ -180,7 +179,20 @@ const WorldMap = () => {
         total={total}
       />
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
-      <Countries>
+      {/* <Countries> */}
+      <svg
+        className="h-full bg-[#80b6ec]"
+        version="1.2"
+        width="100%"
+        height="100%"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        id="map"
+        xmlns="http:/'/',ww.w3.org/2000/sg"
+        viewBox="0 0 895.92 471.76"
+        // preserveAspectRatio="xMinYMin"
+        // preserveAspectRatio="none"
+      >
         <IslandTerritories />
         <CountriesZoomOut
           zoomIn={zoomIn}
@@ -188,7 +200,16 @@ const WorldMap = () => {
           countryId={countryId}
           answers={answers}
         />
-      </Countries>
+      </svg>
+      {/* </Countries> */}
+
+      {/* <div
+        className={`${
+          zoomIn !== ''
+            ? styles.region__zoom__in + ' z-10'
+            : styles.region__zoom__out + ' z-[-100]'
+        } absolute top-0 w-full h-full z-30`}
+      /> */}
 
       <CountriesZoomIn
         zoomIn={zoomIn}
