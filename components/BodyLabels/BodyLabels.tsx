@@ -3,6 +3,7 @@ import FootLabels from './FootLabels';
 import HandLabels from './HandLables';
 import LegLabels from './LegLabels';
 import PelvisLabels from './PelvisLabels';
+import SkullLabels from './SkullLabels';
 import UpperBodyLabels from './UpperBodyLabels';
 import armStyles from '../../styles/Arm.module.css';
 import footStyles from '../../styles/Foot.module.css';
@@ -14,6 +15,20 @@ import upperBodyStyles from '../../styles/UpperBody.module.css';
 const BodyLabels = ({ answers, zoomIn }) => {
   return (
     <>
+      {zoomIn === 'skull' && (
+        <SkullLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          // className={armStyles.arm__zoom__in}
+        />
+      )}
+      {zoomIn !== 'skull' && (
+        <SkullLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          // className={armStyles.arm__zoom__in}
+        />
+      )}
       {zoomIn === 'arm' && (
         <ArmLabels
           answers={answers}
@@ -32,14 +47,14 @@ const BodyLabels = ({ answers, zoomIn }) => {
         <FootLabels
           answers={answers}
           zoomIn={zoomIn}
-          className={footStyles.foot__zoom__in}
+          className={footStyles.front_foot__zoom__in}
         />
       )}
       {zoomIn !== 'foot' && (
         <FootLabels
           answers={answers}
           zoomIn={zoomIn}
-          className={footStyles.foot__zoom__out}
+          className={footStyles.front_foot__zoom__out}
         />
       )}
       {zoomIn === 'hand' && (

@@ -1,29 +1,93 @@
-.foot__zoom__in {
-  animation: foot__zoom__in ease-in 1s;
+.front_foot__zoom__in {
+  animation: front_foot__zoom__in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
-.foot__zoom__in text {
+.front_foot__zoom__in text {
   font-size: 5px;
 }
 
-@keyframes foot__zoom__in {
+@keyframes front_foot__zoom__in {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(7) translate(-35%, -87%);
+    transform: scale(7) translate(-33%, -89%);
   }
 }
 
-.foot__zoom__out {
-  animation: foot__zoom__out ease-out 1s;
+.back_foot__zoom__in {
+  animation: back_foot__zoom__in ease-in 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes foot__zoom__out {
+.back_foot__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes back_foot__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(7) translate(-52%, -83.5%);
+  }
+}
+
+.left_foot__zoom__in {
+  animation: left_foot__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.left_foot__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes left_foot__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(7) translate(-57%, -83%);
+  }
+}
+
+.front_foot__zoom__out {
+  animation: front_foot__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes front_foot__zoom__out {
   from {
     transform: scale(7) translate(-35%, -87%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.back_foot__zoom__out {
+  animation: back_foot__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes back_foot__zoom__out {
+  from {
+    transform: scale(7) translate(-52%, -83.5%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.left_foot__zoom__out {
+  animation: left_foot__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes left_foot__zoom__out {
+  from {
+    transform: scale(7) translate(-52%, -83.5%);
   }
   to {
     transform: scale(1);

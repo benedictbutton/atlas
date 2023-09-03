@@ -47,17 +47,17 @@ const HandLabels = ({ answers, zoomIn, className }) => {
       <g
         style={{
           display:
-            (answers['intermediate phalanx'] ?? 0) < 1 ||
+            (answers['middle phalanx'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'hand')
               ? 'none'
               : '',
         }}
       >
         <text
-          x="-79"
-          y="478.99307"
-          dx={zoomIn === 'hand' ? '16%' : ''}
-          dy={zoomIn === 'hand' ? '-.15%' : ''}
+          x="-50"
+          y="479.99307"
+          dx={zoomIn === 'hand' ? '12.5%' : ''}
+          dy={zoomIn === 'hand' ? '-.25%' : ''}
           fill="#000000"
           font-family="Arial"
           font-size="11px"
@@ -67,8 +67,8 @@ const HandLabels = ({ answers, zoomIn, className }) => {
             lineHeight: '125%',
           }}
         >
-          <tspan x="-79" y="480.99307">
-            intermediate phalanx (10)
+          <tspan x="-50" y="479.99307">
+            middle phalanx (10)
           </tspan>
         </text>
         <line

@@ -2,7 +2,7 @@ export const boneData: {
   [key: string]: { value: null | number; points: number };
 } = {
   'distal phalanx': { value: null, points: 10 },
-  'intermediate phalanx': { value: null, points: 10 },
+  'middle phalanx': { value: null, points: 10 },
   'proximal phalanx': { value: null, points: 8 },
   metacarpal: { value: null, points: 10 },
   harnate: { value: null, points: 2 },
@@ -34,11 +34,20 @@ export const boneData: {
   'foot distal': { value: null, points: 10 },
   'foot middle': { value: null, points: 8 },
   'foot proximal': { value: null, points: 10 },
+  metatarsal: { value: null, points: 10 },
+  cuboid: { value: null, points: 2 },
+  'lateral cuneiform': { value: null, points: 2 },
+  'middle cuneiform': { value: null, points: 2 },
+  'medial cuneiform': { value: null, points: 2 },
+  navicular: { value: null, points: 2 },
+  calcaneous: { value: null, points: 2 },
+  mandible: { value: null, points: 2 },
+  maxilla: { value: null, points: 2 },
 };
 
 export const boneValues = {
   'distal phalanx': 10,
-  'intermediate phalanx': 10,
+  'middle phalanx': 10,
   'proximal phalanx': 8,
   metacarpal: 10,
   harnate: 2,
@@ -70,9 +79,13 @@ export const boneValues = {
   'foot distal': 10,
   'foot middle': 8,
   'foot proximal': 10,
-  cuboid: 1,
+  metatarsal: 10,
+  cuboid: 2,
   'lateral cuneiform': 2,
   'middle cuneiform': 2,
   'medial cuneiform': 2,
   navicular: 2,
+  calcaneous: 2,
+  mandible: 2,
+  maxilla: 2,
 };

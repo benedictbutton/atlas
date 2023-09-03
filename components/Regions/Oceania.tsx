@@ -35,7 +35,7 @@ const Oceania = ({
         ></path>
         <text
           style={{
-            display: (answers['Fiji'] ?? 0) < 1 ? 'none' : '',
+            display: (answers['Vanuatu'] ?? 0) < 1 ? 'none' : '',
           }}
           id="Vanuatu_label"
           y="347.269"
