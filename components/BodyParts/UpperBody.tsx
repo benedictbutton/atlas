@@ -1,4 +1,9 @@
-const UpperBody = ({ handleZoom, className, bone, zoomIn }) => {
+const UpperBody = ({
+  bone,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps) => {
   return (
     <g id="upperBody" className={className} onClick={handleZoom}>
       <g id="additive">

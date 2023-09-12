@@ -1,4 +1,9 @@
-const ClavicleLeft = ({ bone, zoomIn, handleZoom, className }) => {
+const ClavicleLeft = ({
+  bone,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps) => {
   return (
     <g id="arm" className={className} onClick={handleZoom}>
       <g id="clavicleCartLeft">

@@ -1,7 +1,6 @@
 import ArmLabels from '../BodyLabels/ArmLabels';
 
 const LeftArm = ({
-  answers,
   bone,
   zoomIn,
   handleZoom,

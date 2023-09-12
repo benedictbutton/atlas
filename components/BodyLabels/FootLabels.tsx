@@ -424,6 +424,43 @@ const FootLabels = ({ answers, zoomIn, className }) => {
           fill="#003cff"
         />
       </g>
+      <g
+        style={{
+          display: (answers['calcaneus'] ?? 0) < 1 ? 'none' : '',
+        }}
+      >
+        <text
+          x="75"
+          y="850"
+          fill="#000000"
+          font-family="Arial"
+          font-size="5px"
+          stroke-width="1px"
+          xmlSpace="preserve"
+          style={{
+            lineHeight: '125%',
+          }}
+        >
+          <tspan x="82" y="850">
+            calcaneus (2)
+          </tspan>
+        </text>
+        <line
+          x1="115"
+          x2="125"
+          y1="850"
+          y2="857"
+          fill="none"
+          stroke="#003cff"
+          stroke-width=".546"
+        ></line>
+        <circle
+          cx="125"
+          cy="857"
+          r={zoomIn === 'foot' ? '.566' : '.566'}
+          fill="#003cff"
+        />
+      </g>
     </g>
   );
 };

@@ -44,11 +44,14 @@ const BodyLabels = ({ answers, zoomIn }) => {
         />
       )}
       {zoomIn === 'foot' && (
-        <FootLabels
-          answers={answers}
-          zoomIn={zoomIn}
-          className={footStyles.front_foot__zoom__in}
-        />
+        <>
+          <FootLabels
+            answers={answers}
+            zoomIn={zoomIn}
+            className={footStyles.front_foot__zoom__in}
+          />
+          {/* <BackfootLabel answers={answers} zoomIn={zoomIn} /> */}
+        </>
       )}
       {zoomIn !== 'foot' && (
         <FootLabels

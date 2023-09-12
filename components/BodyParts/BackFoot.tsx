@@ -1,9 +1,8 @@
 import useDelayedUnmounting from '../../utils/useDelayedUnmounting';
 import styles from '../../styles/Foot.module.css';
 
-const BackFoot = ({ bone, className, zoomIn, handleZoom }) => {
+const BackFoot = ({ bone, zoomIn, handleZoom }: BodyPartProps) => {
   const shouldRender = useDelayedUnmounting(zoomIn === 'foot', 5000);
-  console.log(bone);
   return (
     <>
       {shouldRender && (

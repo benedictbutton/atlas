@@ -65,6 +65,12 @@ const HumanBones = () => {
     close: string | undefined,
   ): void => {
     if (!zoomIn) setZoomIn(e.currentTarget.id);
+    else if (
+      bone ===
+      (((e.target as SVGGElement).dataset as DOMStringMap)
+        .bone as SetStateAction<string>)
+    )
+      setBone('');
     else if (close) {
       setBone('');
       setZoomIn('');
@@ -164,13 +170,11 @@ const HumanBones = () => {
         total={total}
       />
       <svg
-        enable-background="new 0 0 435.687 841.89"
         overflow="visible"
         version="1.0"
         width="100%"
         height="100%"
         viewBox="0 0 435.69 841.89"
-        xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"
         // preserveAspectRatio="xMinYMin"
         // preserveAspectRatio="none"
@@ -196,91 +200,82 @@ const HumanBones = () => {
           <RightArm handleZoom={handleZoom} />
           {zoomIn !== 'foot' && (
             <RightFoot
-              handleZoom={handleZoom}
-              className={footStyles.front_foot__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={footStyles.front_foot__zoom__out}
             />
           )}
           {zoomIn !== 'foot' && (
             <BackFoot
-              handleZoom={handleZoom}
-              className={footStyles.back_foot__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
             />
           )}
           {zoomIn !== 'foot' && (
             <LeftFoot
-              handleZoom={handleZoom}
-              className={footStyles.left_foot__zoom__out}
-              bone={bone}
+              answers={answers}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
             />
           )}
           {zoomIn !== 'hand' && (
             <RightHand
-              handleZoom={handleZoom}
-              className={handStyles.hand__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={handStyles.hand__zoom__out}
             />
           )}
           {zoomIn !== 'arm' && (
             <LeftArm
-              handleZoom={handleZoom}
-              className={armStyles.arm__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={armStyles.arm__zoom__out}
             />
           )}
           {zoomIn !== 'upperBody' && (
             <UpperBody
-              handleZoom={handleZoom}
-              className={upperBodyStyles.upper_body__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={upperBodyStyles.upper_body__zoom__out}
             />
           )}
           <ClavicleRight />
           {zoomIn !== 'arm' && (
             <ClavicleLeft
-              handleZoom={handleZoom}
-              className={pelvisStyles.pelvis__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={pelvisStyles.pelvis__zoom__out}
             />
           )}
           {zoomIn !== 'pelvis' && (
             <Ischium
-              handleZoom={handleZoom}
-              className={pelvisStyles.pelvis__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={pelvisStyles.pelvis__zoom__out}
             />
           )}
           {zoomIn !== 'leg' && (
             <LeftLeg
-              handleZoom={handleZoom}
-              className={legStyles.leg__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
-            />
-          )}
-          {zoomIn !== 'leg' && (
-            <RightLeg
               handleZoom={handleZoom}
               className={legStyles.leg__zoom__out}
-              bone={bone}
-              zoomIn={zoomIn}
             />
           )}
+          {zoomIn !== 'leg' && <RightLeg handleZoom={handleZoom} />}
           {zoomIn !== 'pelvis' && (
             <Pelvis
-              handleZoom={handleZoom}
-              className={pelvisStyles.pelvis__zoom__out}
               bone={bone}
               zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={pelvisStyles.pelvis__zoom__out}
             />
           )}
           {zoomIn !== 'upperBody' && (
@@ -333,82 +328,82 @@ const HumanBones = () => {
         </g>
         {zoomIn === 'foot' && (
           <RightFoot
-            handleZoom={handleZoom}
-            className={footStyles.front_foot__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={footStyles.front_foot__zoom__in}
           />
         )}
         {zoomIn === 'foot' && (
           <BackFoot
-            handleZoom={handleZoom}
-            className={footStyles.back_foot__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={footStyles.back_foot__zoom__in}
           />
         )}
         {zoomIn === 'foot' && (
           <LeftFoot
-            handleZoom={handleZoom}
-            className={footStyles.left_foot__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={footStyles.left_foot__zoom__in}
           />
         )}
         {zoomIn === 'hand' && (
           <RightHand
-            handleZoom={handleZoom}
-            className={handStyles.hand__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={handStyles.hand__zoom__in}
           />
         )}
         {zoomIn === 'arm' && (
           <LeftArm
-            handleZoom={handleZoom}
-            className={armStyles.arm__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={armStyles.arm__zoom__in}
           />
         )}
         {zoomIn === 'upperBody' && (
           <UpperBody
-            handleZoom={handleZoom}
-            className={upperBodyStyles.upper_body__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={upperBodyStyles.upper_body__zoom__in}
           />
         )}
         {zoomIn === 'arm' && (
           <ClavicleLeft
-            handleZoom={handleZoom}
-            className={armStyles.arm__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={armStyles.arm__zoom__in}
           />
         )}
         {zoomIn === 'pelvis' && (
           <Ischium
-            handleZoom={handleZoom}
-            className={pelvisStyles.pelvis__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={pelvisStyles.pelvis__zoom__in}
           />
         )}
         {zoomIn === 'leg' && (
           <LeftLeg
-            handleZoom={handleZoom}
-            className={legStyles.leg__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={legStyles.leg__zoom__in}
           />
         )}
         {zoomIn === 'pelvis' && (
           <Pelvis
-            handleZoom={handleZoom}
-            className={pelvisStyles.pelvis__zoom__in}
             bone={bone}
             zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={pelvisStyles.pelvis__zoom__in}
           />
         )}
         {zoomIn === 'upperBody' && (
@@ -542,7 +537,7 @@ const HumanBones = () => {
           <circle cx="201.93" cy="195.58" r="1.165" fill="#f00" />
 
           <circle cx="203.02" cy="53.942" r="1.166" fill="#003cff" />
-          <text
+          {/* <text
             x="254.69786"
             y="35.917721"
             fill="#003cff"
@@ -561,9 +556,9 @@ const HumanBones = () => {
             >
               Skull
             </tspan>
-          </text>
+          </text> */}
 
-          <text
+          {/* <text
             x="260.05814"
             y="52.302723"
             fill="#000000"
@@ -576,7 +571,7 @@ const HumanBones = () => {
             <tspan x="260.05814" y="52.302723">
               Cranium
             </tspan>
-          </text>
+          </text> */}
 
           <text
             x="284.81116"

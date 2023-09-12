@@ -1,4 +1,9 @@
-const RightFoot = ({ bone, zoomIn, handleZoom, className }) => {
+const RightFoot = ({
+  bone,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps) => {
   return (
     <g id="foot" className={className} onClick={handleZoom}>
       <path

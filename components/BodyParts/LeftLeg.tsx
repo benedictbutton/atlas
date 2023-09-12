@@ -1,4 +1,9 @@
-const LeftLeg = ({ bone, zoomIn, handleZoom, className }) => {
+const LeftLeg = ({
+  bone,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps) => {
   return (
     <g id="leg" className={className} onClick={handleZoom}>
       <g id="femur">

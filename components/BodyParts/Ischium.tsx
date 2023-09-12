@@ -1,4 +1,9 @@
-const Ischium = ({ bone, zoomIn, handleZoom, className }) => {
+const Ischium = ({
+  bone,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps) => {
   return (
     <g id="pelvis">
       <g id="ischium" className={className} onClick={handleZoom}>

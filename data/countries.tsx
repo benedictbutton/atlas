@@ -200,8 +200,8 @@ export const countries = {
 export const sampleGame = () => {
   const answers = {};
   Object.keys(countries).map((country, idx) => {
-    if (idx % 3 === 0) answers[country] = true;
-    else if (idx % 5 === 0) answers[country] = false;
+    if (idx % 3 === 0) answers[country] = 1;
+    else if (idx % 5 === 0) answers[country] = -1;
     else answers[country] = null;
   });
 
