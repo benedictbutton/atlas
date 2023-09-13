@@ -54,7 +54,7 @@ const HumanBones = () => {
   const [searchValue, setSearchValue] = useState('');
   const formInput = useRef<HTMLInputElement | null>(null);
   const total = 206;
-
+  // test
   const handleZoom = (
     e:
       | {
@@ -524,19 +524,7 @@ const HumanBones = () => {
             height="85.176"
             fill="#dff3f4"
           /> */}
-          <line
-            x1="205.71"
-            x2="266.32"
-            y1="53.975"
-            y2="53.975"
-            fill="none"
-            stroke="#003cff"
-            stroke-width=".546"
-          />
 
-          <circle cx="201.93" cy="195.58" r="1.165" fill="#f00" />
-
-          <circle cx="203.02" cy="53.942" r="1.166" fill="#003cff" />
           {/* <text
             x="254.69786"
             y="35.917721"

@@ -54,6 +54,22 @@
   }
 }
 
+@media (max-width: 920px) {
+  .africa__zoom__in {
+    animation: africa__zoom__in__mobile ease-in 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes africa__zoom__in__mobile {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.8) translate(-38%, -52%);
+  }
+}
+
 .asia__zoom__in {
   animation: asia__zoom__in ease-in 1s;
   animation-fill-mode: forwards;

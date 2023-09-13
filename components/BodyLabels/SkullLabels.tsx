@@ -446,6 +446,40 @@ const SkullLabels = ({ answers, zoomIn, className }) => {
         />
         <circle cx="-100" cy="63" r="1.16" fill="#003cff" />
       </g>
+      <g
+        style={{
+          display:
+            (answers['temporal'] ?? 0) < 1 ||
+            (zoomIn && zoomIn !== 'skull')
+              ? 'none'
+              : '',
+        }}
+      >
+        <text
+          x="-190"
+          y="37"
+          fill="#000000"
+          font-family="Arial"
+          font-size="11px"
+          stroke-width="1px"
+          style={{ lineHeight: '125%' }}
+          xmlSpace="preserve"
+        >
+          <tspan x="-190" y="37">
+            frontal
+          </tspan>
+        </text>
+        <line
+          x1="-159"
+          x2="-110"
+          y1="34"
+          y2="34"
+          fill="none"
+          stroke="#003cff"
+          stroke-width=".546"
+        />
+        <circle cx="-110" cy="34" r="1.16" fill="#003cff" />
+      </g>
     </g>
   );
 };
