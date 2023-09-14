@@ -68,11 +68,13 @@ const WideInput = ({
         </div>
         {!searchValue && (
           <div className="relative w-[55%] h-full text-center">
-            <WideScore
-              correct={correct}
-              incorrect={incorrect}
-              total={total}
-            />
+            <div className="h-[95%]">
+              <WideScore
+                correct={correct}
+                incorrect={incorrect}
+                total={total}
+              />
+            </div>
             <div className="flex justify-around absolute bottom-[-3%] left-0 w-full">
               <Switch
                 answers={answers}

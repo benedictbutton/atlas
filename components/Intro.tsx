@@ -27,7 +27,7 @@ const Intro = ({
         <div
           className={`${
             isMounted ? styles.mounted : styles.unmounting
-          } fixed top-1/4 left-1/2 z-30 w-5/6 p-3 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double opacity-90`}
+          } fixed top-1/4 left-1/2 z-30 w-5/6 max-lg:h-[85%] max-lg:top-0 max-lg:bottom-0 max-lg:m-auto p-3 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double opacity-90`}
         >
           <button aria-label="close" onClick={closeDisplayIntro}>
             <svg
