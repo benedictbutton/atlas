@@ -1,6 +1,6 @@
 .checkboxWrapper {
   --size: 25px;
-  position: relative;
+  /* position: relative; */
 }
 
 .checkboxWrapper *,
