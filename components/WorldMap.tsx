@@ -12,7 +12,7 @@ import Countries from './Countries';
 import CountriesZoomOut from './CountriesZoomOut';
 import CountriesZoomIn from './CountriesZoomIn';
 import IslandTerritories from './Regions/IslandTerritories';
-import Intro from './Intro';
+import IntroMessage from './IntroMessage/IntroMessage';
 import Profile from './Profile';
 import Input from './Input/Input';
 import useAnswers from '../utils/useAnswers';
@@ -152,7 +152,7 @@ const WorldMap = () => {
         zoomIn={zoomIn}
       />
       {introMessage && (
-        <Intro
+        <IntroMessage
           introMessage={introMessage}
           setIntroMessage={setIntroMessage}
         />

@@ -1,4 +1,4 @@
-import styles from '../styles/Intro.module.css';
+import styles from '../styles/IntroMessage.module.css';
 
 const Tracker = ({ isMounted }: { isMounted: boolean }) => {
   const [correct, incorrect] = [39, 7];

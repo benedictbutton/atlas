@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { MutationFunction } from '@apollo/client';
-import Tracker from './Tracker';
-import useDelayedUnmounting from '../utils/useDelayedUnmounting';
-import useViewport from '../utils/useViewport';
-import styles from '../styles/Intro.module.css';
+import CloseButton from './CloseButton';
+import PageArrows from './PageArrows';
+import Tracker from '../Tracker';
+import useDelayedUnmounting from '../../utils/useDelayedUnmounting';
+import useViewport from '../../utils/useViewport';
+import styles from '../../styles/IntroMessage.module.css';
 
-const Intro = ({
+const IntroMessage = ({
   introMessage,
   setIntroMessage,
 }: {
@@ -23,9 +25,6 @@ const Intro = ({
     if (checkBox === introMessage) setIntroMessage();
     setIsMounted(!isMounted);
   };
-
-  console.log('page: ', page);
-  console.log((width && width > 640) || page !== 1);
 
   return (
     <>
@@ -95,58 +94,17 @@ const Intro = ({
             )}
           </div>
 
-          {width && width < 640 && page === 1 && (
-            <>
-              <button onClick={() => setPage(2)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2.5}
-                  stroke="#80b6ec"
-                  className="absolute bottom-2 right-2 w-9 h-9"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={closeDisplayIntro}
-                className="absolute bottom-2 left-2 text-xl text-[#80b6ec]"
-              >
-                Close
-              </button>
-            </>
-          )}
-          {width && width < 640 && page === 2 && (
-            <>
-              <button onClick={() => setPage(1)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2.5}
-                  stroke="#80b6ec"
-                  className="absolute bottom-2 left-2 w-9 h-9"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={closeDisplayIntro}
-                className="absolute bottom-2 right-2 text-xl text-[#80b6ec]"
-              >
-                Close
-              </button>
-            </>
-          )}
+          <PageArrows
+            width={width}
+            page={page}
+            setPage={setPage}
+            close={
+              <CloseButton
+                page={page}
+                closeDisplayIntro={closeDisplayIntro}
+              />
+            }
+          />
           {((width && width > 640) || page === 2) && (
             <div
               className={`relative max-lg:absolute max-md:bottom-3 max-md:left-1/2 max-md:-translate-x-1/2 ${styles.checkboxWrapper}`}
@@ -191,4 +149,4 @@ const Intro = ({
   );
 };
 
-export default Intro;
+export default IntroMessage;
