@@ -38,7 +38,7 @@ const WorldMap = () => {
   const [countryId, setCountryId] = useState('');
   const [searchValue, setSearchValue] = useState('');
   const { answers, setAnswers, createGame, handleSaveGame, game } =
-    useAnswers(sampleGame);
+    useAnswers(countries);
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
   const [introMessage, setIntroMessage] = useIntroMessage();
   const formInput = useRef<HTMLInputElement | null>(null);

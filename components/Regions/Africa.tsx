@@ -2531,6 +2531,62 @@ const Africa = ({
             </tspan>
           </text>
         </g>
+        <g id="g4264">
+          <path
+            d="m386.49 255.65.04.06v.12l-.07.07-.07-.07-.01-.14zm1-.04v.13l-.2.12-.17-.05-.14-.11-.05-.11.1-.17.21-.11.1-.03.08.04.06.13zm2.1-.27.03.03-.11.23-.11.03-.23-.02-.12-.05-.14-.13v-.08l-.1-.06-.05-.13.04-.09-.03-.11.09-.16-.07-.2.07-.05.08.03.05.14.11.07.17.19.08.02.11.11zm.82-.74.04.29-.04.14-.14.06-.14-.08-.05-.06.06-.14-.03-.11.15-.15zm1.12-2.04v.13l-.18.14-.14.05-.14.01-.2-.09-.05-.09.01-.09.12-.09-.04-.22.05-.05.19.07.09-.07.2.06.08.1zm-3.46-1.28.1.13h-.21l-.3-.1-.1.03-.15.24-.11-.25-.07-.02-.04-.16.15-.04.2.11.14-.03.13.05zm2.83.05-.02-.19-.11-.14.03-.08-.05-.16.17-.11.07.08-.02.29.04.04-.04.24zm-4.94-.77.08.08.02.1-.1.05-.2.05-.16-.06-.08-.1.12-.09.19-.1h.08zm-.34-.36-.15.1-.18.18-.28.02-.04-.05v-.17l-.1-.08v-.08l.1-.1h.08l.1-.08.35-.15.16.04.03.09.14.1-.12.14z"
+            fill="#d1dbdd"
+            stroke="#000"
+            strokeWidth=".15"
+            id="Cape Verde (Cabo Verde)"
+            fill-opacity="1"
+            stroke-miterlimit="4"
+            stroke-dasharray="none"
+            stroke-opacity="1"
+            data-originalStrokeWidth="0.15"
+            style={{
+              fill: '#df001d',
+              stroke: 'rgb(0, 0, 0)',
+            }}
+          ></path>
+          <text
+            style={{
+              display:
+                (answers['Cape Verde (Cabo Verde)'] ?? 0) < 1
+                  ? 'none'
+                  : '',
+            }}
+            id="Gambia_label"
+            y="263.732"
+            x="355.135"
+            fontSize="1.685"
+            strokeWidth=".144"
+            font-style="normal"
+            font-variant="normal"
+            font-stretch="normal"
+            font-family="Arial"
+            transform="scale(1.03856 .96288)"
+            font-weight="400"
+          >
+            <tspan
+              y="263.732"
+              x="355.135"
+              id="tspan206"
+              font-style="normal"
+              font-variant="normal"
+              font-weight="400"
+              font-stretch="normal"
+              fontSize="2.378"
+              font-family="Arial"
+              fill-opacity="1"
+              strokeWidth=".144"
+              style={{
+                fill: zoomIn === 'africa' ? '#fff' : '#000',
+              }}
+            >
+              CAPE VERDE
+            </tspan>
+          </text>
+        </g>
       </g>
     </>
   );

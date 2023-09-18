@@ -29,10 +29,10 @@ interface Props {
 const SignInPage = ({ providers, csrfToken }: Props) => {
   return (
     <div className="relative flex flex-wrap w-full h-full bg-black mx-auto md:overflow-hidden">
-      <h1 className="z-10 w-full text-9xl text-[#80b6ec] text-center mt-14 font-serif font-semi-bold">
+      <h1 className="z-10 w-full text-9xl text-[#80b6ec] text-center mt-14 font-serif font-semi-bold max-md:text-8xl max-md:mb-5">
         BEN&apos;S <span className="atlas">ATLAS</span>
       </h1>
-      <div className="flex-1 relative w-full h-auto p-8 scale-125">
+      <div className="z-[5000] flex-1 relative w-full h-auto p-8 max-md:hidden max-lg:w-1/2">
         <Image
           src="/birdseye-globe.jpg"
           alt=""
