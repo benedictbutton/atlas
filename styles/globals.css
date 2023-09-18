@@ -85,11 +85,11 @@ a {
   );
 }
 
-.globe {
+/* .globe {
   padding: 90px 0 !important;
   background: black;
   z-index: -10;
-}
+} */
 
 .country text {
   display: none;

@@ -28,20 +28,21 @@ interface Props {
 
 const SignUpPage = ({ providers, csrfToken }: Props) => {
   return (
-    <div className="relative flex flex-wrap h-full bg-black md:overflow-hidden">
-      <h1 className="z-10 w-full text-9xl text-[#80b6ec] text-center mt-14 font-serif font-semi-bold max-md:text-8xl max-md:mb-5">
+    <div className="bg-black w-full h-full">
+      <h1 className="z-10 py-5 text-9xl text-[#80b6ec] text-center font-serif font-semi-bold max-md:text-7xl">
         BEN&apos;S <span className="atlas">ATLAS</span>
       </h1>
-      <div className="z-[5000] flex-1 relative w-full h-auto p-8 max-md:hidden max-lg:w-1/2">
-        <Image
-          src="/birdseye-globe.jpg"
-          alt=""
-          className="globe"
-          layout={'fill'}
-          objectFit={'contain'}
-        />
+      <div className="flex w-1/2 mx-auto max-xl:w-full max-sm:flex-col max-sm:h-full">
+        <div className="flex-1 relative z-[5000]">
+          <Image
+            src="/birdseye-globe.png"
+            alt=""
+            layout={'fill'}
+            objectFit={'contain'}
+          />
+        </div>
+        <SignUp providers={providers} csrfToken={csrfToken} />
       </div>
-      <SignUp providers={providers} csrfToken={csrfToken} />
     </div>
   );
 };
