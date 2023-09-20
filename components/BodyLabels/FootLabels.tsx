@@ -1,4 +1,8 @@
-const FootLabels = ({ answers, zoomIn, className }) => {
+const FootLabels = ({
+  answers,
+  zoomIn,
+  className,
+}: BodyLabelProps) => {
   return (
     <g className={className}>
       <g

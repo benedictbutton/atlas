@@ -12,7 +12,7 @@ const Profile = ({
   menuItemName,
   menuItemColor,
   zoomIn,
-}) => {
+}: ProfileProps) => {
   const [hidden, setHidden] = useState(true);
   return (
     <>

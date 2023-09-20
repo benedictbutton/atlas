@@ -1,4 +1,8 @@
-const PelvisLabels = ({ answers, zoomIn, className }) => {
+const PelvisLabels = ({
+  answers,
+  zoomIn,
+  className,
+}: BodyLabelProps) => {
   return (
     <g className={className}>
       <g

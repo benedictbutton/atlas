@@ -19,7 +19,7 @@ export interface InputProps {
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   answers: { [key: string]: number | boolean | null | undefined };
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
-  cribData: { [key: string]: number | null };
+  cribData?: { [key: string]: number | null };
   regionHeader: string;
   labelName: string;
   labelType: string;

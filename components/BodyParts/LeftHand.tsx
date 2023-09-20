@@ -1,4 +1,4 @@
-const LeftHand = ({ handleZoom }) => {
+const LeftHand = ({ handleZoom }: Partial<BodyPartProps>) => {
   return (
     <g id="hand" onClick={handleZoom}>
       <path

@@ -1,4 +1,8 @@
-const ArmLabels = ({ answers, zoomIn, className }) => {
+const ArmLabels = ({
+  answers,
+  zoomIn,
+  className,
+}: BodyLabelProps) => {
   return (
     <g className={className}>
       <g

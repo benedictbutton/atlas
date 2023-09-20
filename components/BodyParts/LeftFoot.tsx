@@ -1,22 +1,18 @@
 import Heel from './Heel';
 import useDelayedUnmounting from '../../utils/useDelayedUnmounting';
-import styles from '../../styles/Foot.module.css';
 
-const LeftFoot = ({ answers, zoomIn, handleZoom }) => {
+const LeftFoot = ({
+  answers,
+  zoomIn,
+  handleZoom,
+  className,
+}: BodyPartProps & AnswersObject) => {
   const shouldRender = useDelayedUnmounting(zoomIn !== 'foot', 5000);
 
   return (
     <>
       {shouldRender && (
-        <g
-          id="foot"
-          className={
-            zoomIn !== 'foot'
-              ? styles.left_foot__zoom__out
-              : styles.left_foot__zoom__in
-          }
-          onClick={handleZoom}
-        >
+        <g id="foot" className={className} onClick={handleZoom}>
           {!zoomIn && <Heel answers={answers} zoomIn={zoomIn} />}
           <path
             d="m217.04 780.8c-2.924 1.405-6.044 2.717-8.892 4.228-0.887 0.47-1.203 1.455-2.353 1.136-0.851-0.234-1.562-1.153-2.252-1.616-0.659-0.442-0.825-0.544-0.941-1.492-0.305-2.5 0.474-5.105 1.049-7.494 0.491-2.031-1.36-3.985-1.25-6.007 0.092-1.667 2.545-3.426 3.721-4.269 4.123-2.948 9.158-4.122 13.616-6.319 2.478-1.221 2.877-2.361 5.741-1.08 2.166 0.969 3.887 1.625 3.477 3.965 0.062-0.354 1.061 0.673 1.12 0.814 0.243 0.576-0.147 1.429-0.322 1.968-0.595 1.834-1.233 3.017-0.8 5.057 0.301 1.414 1.452 3.115 0.825 4.576-0.805 1.882-3.639 2.319-5.324 2.938-2.529 0.93-4.971 2.419-7.415 3.595z"

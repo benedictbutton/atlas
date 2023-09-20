@@ -7,6 +7,7 @@ const Africa = ({
   countryId,
   answers,
 }: RegionProps) => {
+  console.log(answers);
   return (
     <>
       <g

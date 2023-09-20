@@ -32,7 +32,7 @@ const SignInPage = ({ providers, csrfToken }: Props) => {
       <h1 className="z-10 py-5 text-9xl text-[#80b6ec] text-center font-serif font-semi-bold max-md:text-7xl">
         BEN&apos;S <span className="atlas">ATLAS</span>
       </h1>
-      <div className="flex w-1/2 mx-auto max-xl:w-full max-sm:flex-col max-sm:h-full">
+      <div className="flex w-1/2 mx-auto bg-black max-xl:w-full max-sm:flex-col max-sm:h-full">
         <div className="flex-1 relative z-[5000]">
           <Image
             src="/birdseye-globe.png"

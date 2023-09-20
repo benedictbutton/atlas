@@ -49,12 +49,12 @@ const HumanBones = () => {
   };
   const [regionHeader, zoomIn, setZoomIn] = useZoom();
   const { answers, setAnswers, createGame, handleSaveGame, game } =
-    useAnswers(initializeBoneAnswers);
+    useAnswers(initializeBoneAnswers());
   const [bone, setBone] = useState('');
   const [searchValue, setSearchValue] = useState('');
   const formInput = useRef<HTMLInputElement | null>(null);
   const total = 206;
-  // test
+
   const handleZoom = (
     e:
       | {
@@ -218,6 +218,7 @@ const HumanBones = () => {
               answers={answers}
               zoomIn={zoomIn}
               handleZoom={handleZoom}
+              className={footStyles.left_foot__zoom__out}
             />
           )}
           {zoomIn !== 'hand' && (
@@ -344,7 +345,7 @@ const HumanBones = () => {
         )}
         {zoomIn === 'foot' && (
           <LeftFoot
-            bone={bone}
+            answers={answers}
             zoomIn={zoomIn}
             handleZoom={handleZoom}
             className={footStyles.left_foot__zoom__in}

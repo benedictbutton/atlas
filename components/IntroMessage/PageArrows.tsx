@@ -1,4 +1,18 @@
-const PageArrows = ({ width, page, setPage, close }) => {
+import { Dispatch, ReactElement, SetStateAction } from 'react';
+
+type PageArrowsProps = {
+  width: number | undefined;
+  page: number;
+  setPage: Dispatch<SetStateAction<number>>;
+  close: ReactElement;
+};
+
+const PageArrows = ({
+  width,
+  page,
+  setPage,
+  close,
+}: PageArrowsProps) => {
   return (
     <>
       {width && width < 640 && page === 1 && (

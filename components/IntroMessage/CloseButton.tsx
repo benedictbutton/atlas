@@ -1,4 +1,10 @@
-const CloseButton = ({ page, closeDisplayIntro }) => {
+const CloseButton = ({
+  page,
+  closeDisplayIntro,
+}: {
+  page: number;
+  closeDisplayIntro: () => void;
+}) => {
   return (
     <button
       onClick={closeDisplayIntro}

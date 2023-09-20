@@ -12,7 +12,13 @@ import legStyles from '../../styles/Leg.module.css';
 import pelvisStyles from '../../styles/Pelvis.module.css';
 import upperBodyStyles from '../../styles/UpperBody.module.css';
 
-const BodyLabels = ({ answers, zoomIn }) => {
+const BodyLabels = ({
+  answers,
+  zoomIn,
+}: {
+  answers: AnswersObject;
+  zoomIn: string;
+}) => {
   return (
     <>
       {zoomIn === 'skull' && (

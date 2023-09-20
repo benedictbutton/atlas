@@ -1,4 +1,4 @@
-const RightLeg = ({ handleZoom }) => {
+const RightLeg = ({ handleZoom }: Partial<BodyPartProps>) => {
   return (
     <g id="leg" onClick={handleZoom}>
       <g id="femur">

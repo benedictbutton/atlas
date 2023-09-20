@@ -1,4 +1,8 @@
-const UpperBodyLabels = ({ answers, zoomIn, className }) => {
+const UpperBodyLabels = ({
+  answers,
+  zoomIn,
+  className,
+}: BodyLabelProps) => {
   return (
     <g className={className}>
       <g
@@ -133,7 +137,7 @@ const UpperBodyLabels = ({ answers, zoomIn, className }) => {
             <circle
               cx="200.77"
               cy="96.547"
-              r={zoomIn === 'hand' ? '.566' : '1.166'}
+              r={zoomIn === 'upperBody' ? '.566' : '1.166'}
               fill="#003cff"
             />
           </>

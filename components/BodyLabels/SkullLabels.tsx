@@ -1,4 +1,8 @@
-const SkullLabels = ({ answers, zoomIn, className }) => {
+const SkullLabels = ({
+  answers,
+  zoomIn,
+  className,
+}: BodyLabelProps) => {
   return (
     <g className={className}>
       <g

@@ -32,7 +32,7 @@ const SignUp = ({ providers, csrfToken }: Props) => {
   const [password, setPassword] = useState('');
 
   return (
-    <div className="flex-1 bg-black">
+    <div className="flex-1">
       <div className="p-4 py-16 flex flex-col justify-center bg-blueGray-100 h-full max-lg:pt-0">
         <form
           className="md:max-w-lg mx-auto"
