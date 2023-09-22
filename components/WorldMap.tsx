@@ -19,7 +19,6 @@ import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
 import { countries, sampleGame } from '../data/countries';
-import styles from '../styles/Regions.module.css';
 
 export interface RegionProps extends CountryProps {
   countryId: string;

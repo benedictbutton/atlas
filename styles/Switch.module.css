@@ -1,7 +1,6 @@
 .switch {
   display: inline-block;
   flex: initial;
-  height: 24px;
   margin-bottom: 0.25rem;
   text-align: left;
   /* position: relative;

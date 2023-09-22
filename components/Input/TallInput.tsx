@@ -34,83 +34,71 @@ const TallInput = ({
     <div
       className={`input ${
         !zoomIn ? 'collapse' : ''
-      } absolute top-1/2 right-[4%] -translate-y-1/2 w-1/5 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double z-50`}
+      } absolute top-1/2 right-[4%] -translate-y-1/2 z-50 flex flex-col w-1/5 h-5/6 overflow-hidden bg-black border-[10px] border-indigo-300/100 border-double`}
     >
-      <div className="flex column flex-col h-full">
-        <div className="flex flex-wrap content-start px-5 pt-5">
-          <p
-            className={`text ${
-              !zoomIn ? 'collapse' : ''
-            } w-full mb-3 text-3xl text-[#80b6ec]`}
-          >
-            {regionHeader}
+      <p
+        className={`${
+          !zoomIn ? 'collapse' : ''
+        } text-3xl text-[#80b6ec] pt-5 px-5`}
+      >
+        {regionHeader}
+      </p>
+      <form className="mb-2 p-5" onSubmit={handleSubmit}>
+        <label className="w-full">
+          <p className="mb-2 text-[#1b83ff] font-semibold leading-normal capitalize">
+            {labelType}
           </p>
-          <form className="w-full" onSubmit={handleSubmit}>
-            <label className="inline-block w-full mt-2 mb-4">
-              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal capitalize">
-                {labelType}
-              </p>
-              <input
-                className="px-4 py-3.5 w-full text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                id="signInInput1-1"
-                type="text"
-                placeholder={capitalLabelType + ' Name'}
-                name={labelType}
-                ref={forwardRef}
-                onChange={handleSearchValue}
-              />
-            </label>
-            <button
-              className="flex-initial w-full h-8 mt-3 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
-              disabled={
-                answers[`${searchValue}`] === undefined || !labelName
-              }
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-        {searchValue && labelName && (
-          <ul className="h-full overflow-auto p-3">
-            <SearchList
-              searchValue={searchValue}
-              handleSelectValue={handleSelectValue}
-              answers={answers}
-            />
-          </ul>
-        )}
-        {searchValue && !labelName && (
-          <p className="p-5 text-[#df001d] text-xl">
-            Select a {labelType} before guessing
-          </p>
-        )}
-        {!searchValue && (
-          <>
-            <TallScore
-              correct={correct}
-              incorrect={incorrect}
-              total={total}
-            />
-            {/* <GameButton
-              createGame={createGame}
-              saveGame={handleSaveGame}
-              game={game}
-            /> */}
-            <div className="flex flex-wrap-reverse justify-between items-start mt-auto p-2">
-              <Switch
-                answers={answers}
-                setAnswers={setAnswers}
-                cribData={cribData}
-                labelPlural={labelPlural}
-              />
-              <Reset
-                correct={correct}
-                incorrect={incorrect}
-                handleResetAnswers={handleResetAnswers}
-              />
-            </div>
-          </>
-        )}
+          <input
+            className="w-full p-3 mb-3 text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+            type="text"
+            placeholder={capitalLabelType + ' Name'}
+            name={labelType}
+            ref={forwardRef}
+            onChange={handleSearchValue}
+          />
+        </label>
+        <button
+          className="w-full h-8 bg-indigo-600 text-white rounded-md disabled:opacity-50"
+          disabled={
+            answers[`${searchValue}`] === undefined || !labelName
+          }
+        >
+          Submit
+        </button>
+      </form>
+      {searchValue && labelName && (
+        <ul className="overflow-auto">
+          <SearchList
+            searchValue={searchValue}
+            handleSelectValue={handleSelectValue}
+            answers={answers}
+          />
+        </ul>
+      )}
+      {searchValue && !labelName && (
+        <p className="p-5 text-[#df001d] text-xl">
+          Select a {labelType} before guessing
+        </p>
+      )}
+      {!searchValue && (
+        <TallScore
+          correct={correct}
+          incorrect={incorrect}
+          total={total}
+        />
+      )}
+      <div className="flex flex-wrap-reverse justify-between items-start mt-auto p-2">
+        <Switch
+          answers={answers}
+          setAnswers={setAnswers}
+          cribData={cribData}
+          labelPlural={labelPlural}
+        />
+        <Reset
+          correct={correct}
+          incorrect={incorrect}
+          handleResetAnswers={handleResetAnswers}
+        />
       </div>
     </div>
   );
