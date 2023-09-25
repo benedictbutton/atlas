@@ -1,0 +1,31 @@
+.face__zoom__in {
+  animation: face__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.face__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes face__zoom__in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(4.5) translate(-39%, -1%);
+  }
+}
+
+.face__zoom__out {
+  animation: face__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes face__zoom__out {
+  from {
+    transform: scale(4.5) translate(-39%, -1%);
+  }
+  to {
+    transform: scale(1);
+  }
+}

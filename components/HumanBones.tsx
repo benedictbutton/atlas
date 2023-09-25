@@ -16,6 +16,8 @@ import BackFoot from './BodyParts/BackFoot';
 import BodyLabels from './BodyLabels';
 import ClavicleLeft from './BodyParts/ClavicleLeft';
 import ClavicleRight from './BodyParts/ClavicleRight';
+import Face from './BodyParts/Face';
+import InnerEar from './BodyParts/InnerEar';
 import Ischium from './BodyParts/Ischium';
 import LeftFoot from './BodyParts/LeftFoot';
 import LeftLeg from './BodyParts/LeftLeg';
@@ -28,10 +30,13 @@ import Skull from './BodyParts/Skull';
 import UpperBody from './BodyParts/UpperBody';
 import { boneData, boneValues } from '../data/bones';
 import armStyles from '../styles/Arm.module.css';
+import faceStyles from '../styles/Face.module.css';
 import footStyles from '../styles/Foot.module.css';
 import handStyles from '../styles/Hand.module.css';
+import innerEarStyles from '../styles/InnerEar.module.css';
 import legStyles from '../styles/Leg.module.css';
 import pelvisStyles from '../styles/Pelvis.module.css';
+import skullStyles from '../styles/Skull.module.css';
 import upperBodyStyles from '../styles/UpperBody.module.css';
 import useAnswers from '../utils/useAnswers';
 
@@ -191,7 +196,6 @@ const HumanBones = () => {
         {/* <g>
           <rect width="435.69" height="841.89" fill="#fff" />
         </g> */}
-
         <g
           style={{
             fillOpacity: zoomIn ? '0.2' : '1',
@@ -298,7 +302,35 @@ const HumanBones = () => {
               />
             </g>
           )}
-
+          {zoomIn !== 'face' && (
+            <Face
+              bone={bone}
+              zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={faceStyles.face__zoom__out}
+            />
+          )}
+          {zoomIn !== 'skull' && zoomIn !== 'inner_ear' && (
+            <>
+              <InnerEar
+                bone={bone}
+                zoomIn={zoomIn}
+                handleZoom={handleZoom}
+                classNameBones={
+                  innerEarStyles.inner_ear_bones__zoom__out
+                }
+                classNameDiagram={
+                  innerEarStyles.inner_ear_diagram__zoom__out
+                }
+              />
+              <Skull
+                bone={bone}
+                zoomIn={zoomIn}
+                handleZoom={handleZoom}
+                className={skullStyles.skull__zoom__out}
+              />
+            </>
+          )}
           <path
             d="m282.67 186.58c-1.676 0.201-3.191 0.351-4.812 0.048 0.172 0.125 0.486 0.517 0.707 0.704-0.725 0.186-1.733 0.439-2.332 0.925-1.366 1.106-0.387 0.743-1.107 2.335-1.723 3.8-4.822 8.021-7.386 11.318 2.275-1.542 4.248-4.403 6.15-6.424 1.5-1.593 2.95-3.27 4.474-4.821 0.961-0.981 4.646-3.311 3.77-4.352"
             fill="#ccb25c"
@@ -315,7 +347,6 @@ const HumanBones = () => {
               fill="#ccb25c"
             />
           </g>
-          <Skull />
           <LeftHand handleZoom={handleZoom} />
           <RightLeg handleZoom={handleZoom} />
           {/* <g id="sternum">
@@ -327,6 +358,35 @@ const HumanBones = () => {
             />
           </g> */}
         </g>
+        {zoomIn === 'face' && (
+          <Face
+            bone={bone}
+            zoomIn={zoomIn}
+            handleZoom={handleZoom}
+            className={faceStyles.face__zoom__in}
+          />
+        )}
+        {(zoomIn === 'skull' || zoomIn === 'inner_ear') && (
+          <>
+            <InnerEar
+              bone={bone}
+              zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              classNameBones={
+                innerEarStyles.inner_ear_bones__zoom__in
+              }
+              classNameDiagram={
+                innerEarStyles.inner_ear_diagram__zoom__in
+              }
+            />
+            <Skull
+              bone={bone}
+              zoomIn={zoomIn}
+              handleZoom={handleZoom}
+              className={skullStyles.skull__zoom__in}
+            />
+          </>
+        )}
         {zoomIn === 'foot' && (
           <RightFoot
             bone={bone}

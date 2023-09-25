@@ -1,0 +1,63 @@
+.skull__zoom__in {
+  animation: skull__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.skull__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes skull__zoom__in {
+  from {
+    transform: scale(0.2) translate(-130%, 2%);
+  }
+  to {
+    transform: scale(0.9) translate(0%, 0%);
+  }
+}
+
+.skull__zoom__out {
+  animation: skull__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skull__zoom__out {
+  from {
+    transform: scale(0.9) translate(0%, 2%);
+  }
+  to {
+    transform: scale(0.2) translate(-130%, 2%);
+  }
+}
+
+.skull_labels__zoom__in {
+  animation: skull_labels__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.skull_labels__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes skull_labels__zoom__in {
+  from {
+    transform: scale(1) translate(0%, 0%);
+  }
+  to {
+    transform: scale(4) translate(26%, 1%);
+  }
+}
+
+.skull_labels__zoom__out {
+  animation: skull_labels__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skull_labels__zoom__out {
+  from {
+    transform: scale(4) translate(26%, 1%);
+  }
+  to {
+    transform: scale(1) translate(0%, 0%);
+  }
+}

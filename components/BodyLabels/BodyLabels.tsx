@@ -1,15 +1,18 @@
 import ArmLabels from './ArmLabels';
 import FootLabels from './FootLabels';
 import HandLabels from './HandLables';
+import FaceLabels from './FaceLabels';
 import LegLabels from './LegLabels';
 import PelvisLabels from './PelvisLabels';
 import SkullLabels from './SkullLabels';
 import UpperBodyLabels from './UpperBodyLabels';
 import armStyles from '../../styles/Arm.module.css';
+import faceStyles from '../../styles/Face.module.css';
 import footStyles from '../../styles/Foot.module.css';
 import handStyles from '../../styles/Hand.module.css';
 import legStyles from '../../styles/Leg.module.css';
 import pelvisStyles from '../../styles/Pelvis.module.css';
+import skullStyles from '../../styles/Skull.module.css';
 import upperBodyStyles from '../../styles/UpperBody.module.css';
 
 const BodyLabels = ({
@@ -21,20 +24,6 @@ const BodyLabels = ({
 }) => {
   return (
     <>
-      {zoomIn === 'skull' && (
-        <SkullLabels
-          answers={answers}
-          zoomIn={zoomIn}
-          // className={armStyles.arm__zoom__in}
-        />
-      )}
-      {zoomIn !== 'skull' && (
-        <SkullLabels
-          answers={answers}
-          zoomIn={zoomIn}
-          // className={armStyles.arm__zoom__in}
-        />
-      )}
       {zoomIn === 'arm' && (
         <ArmLabels
           answers={answers}
@@ -120,6 +109,34 @@ const BodyLabels = ({
           answers={answers}
           zoomIn={zoomIn}
           className={pelvisStyles.pelvis__zoom__out}
+        />
+      )}
+      {(zoomIn === 'skull' || zoomIn === 'inner_ear') && (
+        <SkullLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={skullStyles.skull_labels__zoom__in}
+        />
+      )}
+      {zoomIn !== 'skull' && (
+        <SkullLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={skullStyles.skull_labels__zoom__out}
+        />
+      )}
+      {zoomIn === 'face' && (
+        <FaceLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={faceStyles.face__zoom__in}
+        />
+      )}
+      {zoomIn !== 'face' && (
+        <FaceLabels
+          answers={answers}
+          zoomIn={zoomIn}
+          className={faceStyles.face__zoom__out}
         />
       )}
     </>
