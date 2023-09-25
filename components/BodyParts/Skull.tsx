@@ -520,9 +520,13 @@ const Skull = ({ bone, zoomIn, handleZoom, className }) => {
       />
       <line
         x1="180"
-        x2="100"
+        x2={
+          zoomIn === 'skull' || zoomIn === 'inner_ear' ? '110' : '100'
+        }
         y1="370"
-        y2="727"
+        y2={
+          zoomIn === 'skull' || zoomIn === 'inner_ear' ? '550' : '727'
+        }
         fill="none"
         stroke="#df001d"
         stroke-width="5.546"

@@ -2,6 +2,7 @@ import ArmLabels from './ArmLabels';
 import FootLabels from './FootLabels';
 import HandLabels from './HandLables';
 import FaceLabels from './FaceLabels';
+import InnerEarLabels from './InnerEarLabels';
 import LegLabels from './LegLabels';
 import PelvisLabels from './PelvisLabels';
 import SkullLabels from './SkullLabels';
@@ -10,6 +11,7 @@ import armStyles from '../../styles/Arm.module.css';
 import faceStyles from '../../styles/Face.module.css';
 import footStyles from '../../styles/Foot.module.css';
 import handStyles from '../../styles/Hand.module.css';
+import innerEarStyles from '../../styles/InnerEar.module.css';
 import legStyles from '../../styles/Leg.module.css';
 import pelvisStyles from '../../styles/Pelvis.module.css';
 import skullStyles from '../../styles/Skull.module.css';
@@ -112,18 +114,32 @@ const BodyLabels = ({
         />
       )}
       {(zoomIn === 'skull' || zoomIn === 'inner_ear') && (
-        <SkullLabels
-          answers={answers}
-          zoomIn={zoomIn}
-          className={skullStyles.skull_labels__zoom__in}
-        />
+        <>
+          <InnerEarLabels
+            answers={answers}
+            zoomIn={zoomIn}
+            className={innerEarStyles.inner_ear_labels__zoom__in}
+          />
+          <SkullLabels
+            answers={answers}
+            zoomIn={zoomIn}
+            className={skullStyles.skull_labels__zoom__in}
+          />
+        </>
       )}
-      {zoomIn !== 'skull' && (
-        <SkullLabels
-          answers={answers}
-          zoomIn={zoomIn}
-          className={skullStyles.skull_labels__zoom__out}
-        />
+      {zoomIn !== 'skull' && zoomIn !== 'inner_ear' && (
+        <>
+          <InnerEarLabels
+            answers={answers}
+            zoomIn={zoomIn}
+            className={innerEarStyles.inner_ear_labels__zoom__out}
+          />
+          <SkullLabels
+            answers={answers}
+            zoomIn={zoomIn}
+            className={skullStyles.skull_labels__zoom__out}
+          />
+        </>
       )}
       {zoomIn === 'face' && (
         <FaceLabels

@@ -55,6 +55,9 @@ export const boneData: {
   temporal: { value: null, points: 2 },
   parietal: { value: null, points: 2 },
   occipital: { value: null, points: 1 },
+  malleus: { value: null, points: 2 },
+  incus: { value: null, points: 2 },
+  stapes: { value: null, points: 2 },
 };
 
 export const boneValues = {
@@ -112,4 +115,7 @@ export const boneValues = {
   temporal: 2,
   parietal: 2,
   occipital: 1,
+  malleus: 2,
+  incus: 2,
+  stapes: 2,
 };

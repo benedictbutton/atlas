@@ -23,7 +23,7 @@
 
 @keyframes inner_ear_bones__zoom__out {
   from {
-    transform: scale(5) translate(-15%, -47%);
+    transform: scale(5) translate(-10%, 5%);
   }
   to {
     transform: scale(3) translate(-21%, -19%);
@@ -33,10 +33,6 @@
 .inner_ear_diagram__zoom__in {
   animation: inner_ear_diagram__zoom__in ease-in 1s;
   animation-fill-mode: forwards;
-}
-
-.inner_ear_diagram__zoom__in text {
-  font-size: 5px;
 }
 
 @keyframes inner_ear_diagram__zoom__in {
@@ -59,5 +55,37 @@
   }
   to {
     transform: scale(1) translate(-33%, 0%);
+  }
+}
+
+.inner_ear_labels__zoom__in {
+  animation: inner_ear_labels__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.inner_ear_labels__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes inner_ear_labels__zoom__in {
+  from {
+    transform: scale(1) translate(0%, 0%);
+  }
+  to {
+    transform: scale(4) translate(25%, -5%);
+  }
+}
+
+.inner_ear_labels__zoom__out {
+  animation: inner_ear_labels__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes inner_ear_labels__zoom__out {
+  from {
+    transform: scale(5) translate(-10%, 5%);
+  }
+  to {
+    transform: scale(1) translate(0%, 0%);
   }
 }
