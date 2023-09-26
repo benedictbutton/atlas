@@ -150,6 +150,57 @@ const SkullLabels = ({
       >
         <text
           x="-190"
+          y="52"
+          dx={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '4.9%' : ''
+          }
+          dy={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '-.15%'
+              : ''
+          }
+          fill="#000000"
+          font-family="Arial"
+          font-size="11px"
+          stroke-width="1px"
+          style={{ lineHeight: '125%' }}
+          xmlSpace="preserve"
+        >
+          <tspan x="-190" y="52">
+            ethmoid
+          </tspan>
+        </text>
+        <line
+          x1="-150"
+          x2="-111"
+          y1="50"
+          y2={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '56' : '60'
+          }
+          fill="none"
+          stroke="#003cff"
+          stroke-width=".546"
+        />
+        <circle
+          cx="-111"
+          cy={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '56' : '60'
+          }
+          r=".75"
+          fill="#003cff"
+        />
+      </g>
+      <g
+        style={{
+          display:
+            (answers['sphenoid'] ?? 0) < 1 ||
+            (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
+              ? 'none'
+              : '',
+        }}
+      >
+        <text
+          x="-190"
           y="67"
           dx={
             zoomIn === 'skull' || zoomIn === 'inner_ear' ? '5.5%' : ''
@@ -170,14 +221,14 @@ const SkullLabels = ({
         </text>
         <line
           x1="-144"
-          x2="-100"
+          x2="-101"
           y1="63"
           y2="63"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="-100" cy="63" r="1.16" fill="#003cff" />
+        <circle cx="-101" cy="63" r=".75" fill="#003cff" />
       </g>
       <g
         style={{

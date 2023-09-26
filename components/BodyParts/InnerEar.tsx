@@ -522,18 +522,59 @@ const InnerEar = ({
           />
         </g>
         <line
-          x1="330"
-          x2="367"
-          y1="-235"
-          y2="245"
+          x1={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '360'
+              : '330'
+          }
+          x2={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '560'
+              : '367'
+          }
+          y1={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '245'
+              : '-235'
+          }
+          y2={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '450'
+              : '245'
+          }
           fill="none"
           stroke="#df001d"
           stroke-width="5.546"
         />
-        <circle cx="367" cy="245" r="5.16" fill="#df001d" />
+        {(zoomIn === 'skull' || zoomIn === 'inner_ear') && (
+          <line
+            x1="560"
+            x2="1295"
+            y1="450"
+            y2="250"
+            fill="none"
+            stroke="#df001d"
+            stroke-width="7.546"
+          />
+        )}
+        <circle
+          cx={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '360'
+              : '367'
+          }
+          cy="245"
+          r="5.16"
+          fill="#df001d"
+        />
       </g>
     </svg>
   );
 };
 
 export default InnerEar;
+
+// x1="330"
+//           x2="367"
+//           y1="-235"
+//           y2="245"

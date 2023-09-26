@@ -266,42 +266,6 @@ const FaceLabels = ({
       <g
         style={{
           display:
-            (answers['ethmoid'] ?? 0) < 1 ||
-            (zoomIn && zoomIn !== 'face')
-              ? 'none'
-              : '',
-        }}
-      >
-        <text
-          x="88"
-          y="68"
-          dx={zoomIn === 'face' ? '4.3%' : ''}
-          dy={zoomIn === 'face' ? '-.2%' : ''}
-          fill="#000000"
-          font-family="Arial"
-          font-size="10px"
-          stroke-width="1px"
-          style={{ lineHeight: '125%' }}
-          xmlSpace="preserve"
-        >
-          <tspan x="88" y="68">
-            ethmoid
-          </tspan>
-        </text>
-        <line
-          x1="125"
-          x2="196"
-          y1="65"
-          y2="73"
-          fill="none"
-          stroke="#003cff"
-          stroke-width=".546"
-        />
-        <circle cx="196" cy="73" r="0.566" fill="#003cff" />
-      </g>
-      <g
-        style={{
-          display:
             (answers['lacrimal'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'face')
               ? 'none'

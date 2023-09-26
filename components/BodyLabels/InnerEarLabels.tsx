@@ -225,8 +225,3 @@ const InnerEarLabels = ({
 };
 
 export default InnerEarLabels;
-
-// x1="-52"
-// x2="-74"
-// y1="170"
-// y2="184"
