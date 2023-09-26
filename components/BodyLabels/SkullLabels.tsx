@@ -142,7 +142,7 @@ const SkullLabels = ({
       <g
         style={{
           display:
-            (answers['sphenoid'] ?? 0) < 1 ||
+            (answers['ethmoid'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
               ? 'none'
               : '',
