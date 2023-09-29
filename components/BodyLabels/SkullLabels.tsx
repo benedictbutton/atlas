@@ -150,13 +150,13 @@ const SkullLabels = ({
       >
         <text
           x="-190"
-          y="52"
+          y="63"
           dx={
             zoomIn === 'skull' || zoomIn === 'inner_ear' ? '4.9%' : ''
           }
           dy={
             zoomIn === 'skull' || zoomIn === 'inner_ear'
-              ? '-.15%'
+              ? '-.75%'
               : ''
           }
           fill="#000000"
@@ -166,14 +166,16 @@ const SkullLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="-190" y="52">
+          <tspan x="-190" y="63">
             ethmoid
           </tspan>
         </text>
         <line
           x1="-150"
           x2="-111"
-          y1="50"
+          y1={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '56' : '60'
+          }
           y2={
             zoomIn === 'skull' || zoomIn === 'inner_ear' ? '56' : '60'
           }
@@ -201,9 +203,9 @@ const SkullLabels = ({
       >
         <text
           x="-190"
-          y="67"
+          y="90"
           dx={
-            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '5.5%' : ''
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '5.6%' : ''
           }
           dy={
             zoomIn === 'skull' || zoomIn === 'inner_ear' ? '-.3%' : ''
@@ -215,14 +217,14 @@ const SkullLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="-190" y="67">
+          <tspan x="-190" y="90">
             sphenoid
           </tspan>
         </text>
         <line
           x1="-144"
           x2="-101"
-          y1="63"
+          y1="86"
           y2="63"
           fill="none"
           stroke="#003cff"
@@ -269,6 +271,57 @@ const SkullLabels = ({
           stroke-width=".546"
         />
         <circle cx="-110" cy="34" r="1.16" fill="#003cff" />
+      </g>
+      <g
+        style={{
+          display:
+            (answers['lacrimal'] ?? 0) < 1 ||
+            (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
+              ? 'none'
+              : '',
+        }}
+      >
+        <text
+          x="-207"
+          y="76"
+          dx={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '7%' : ''
+          }
+          dy={
+            zoomIn === 'skull' || zoomIn === 'inner_ear'
+              ? '-.25%'
+              : ''
+          }
+          fill="#000000"
+          font-family="Arial"
+          font-size="11px"
+          stroke-width="1px"
+          style={{ lineHeight: '125%' }}
+          xmlSpace="preserve"
+        >
+          <tspan x="-207" y="76">
+            lacrimal (2)
+          </tspan>
+        </text>
+        <line
+          x1="-151"
+          x2="-114"
+          y1="73"
+          y2={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '59' : '63'
+          }
+          fill="none"
+          stroke="#003cff"
+          stroke-width=".546"
+        />
+        <circle
+          cx="-114"
+          cy={
+            zoomIn === 'skull' || zoomIn === 'inner_ear' ? '59' : '63'
+          }
+          r=".75"
+          fill="#003cff"
+        />
       </g>
     </g>
   );

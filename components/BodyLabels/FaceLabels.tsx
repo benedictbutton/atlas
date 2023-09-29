@@ -38,7 +38,7 @@ const FaceLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="206.84" cy="118.84" r="1.166" fill="#003cff" />
+        <circle cx="206.84" cy="118.84" r=".7" fill="#003cff" />
       </g>
       <g
         style={{
@@ -74,7 +74,7 @@ const FaceLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="210.84" cy="97" r="1.166" fill="#003cff" />
+        <circle cx="210.84" cy="97" r=".7" fill="#003cff" />
       </g>
       <g
         style={{
@@ -144,7 +144,7 @@ const FaceLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="230" cy="86" r="0.766" fill="#003cff" />
+        <circle cx="230" cy="86" r="0.7" fill="#003cff" />
       </g>
       <g
         style={{
@@ -261,42 +261,7 @@ const FaceLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="204" cy="70" r="0.566" fill="#003cff" />
-      </g>
-      <g
-        style={{
-          display:
-            (answers['lacrimal'] ?? 0) < 1 ||
-            (zoomIn && zoomIn !== 'face')
-              ? 'none'
-              : '',
-        }}
-      >
-        <text
-          x="88"
-          y="58"
-          dx={zoomIn === 'face' ? '5.5%' : ''}
-          fill="#000000"
-          font-family="Arial"
-          font-size="10px"
-          stroke-width="1px"
-          style={{ lineHeight: '125%' }}
-          xmlSpace="preserve"
-        >
-          <tspan x="88" y="58">
-            lacrimal (2)
-          </tspan>
-        </text>
-        <line
-          x1="138"
-          x2="197"
-          y1="57"
-          y2="70"
-          fill="none"
-          stroke="#003cff"
-          stroke-width=".546"
-        />
-        <circle cx="197" cy="70" r="0.566" fill="#003cff" />
+        <circle cx="204" cy="70" r=".7" fill="#003cff" />
       </g>
     </g>
   );
