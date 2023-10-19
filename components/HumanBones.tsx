@@ -9,7 +9,11 @@ import { debounce } from 'lodash';
 import useZoom from '../utils/useZoom';
 import LeftArm from './BodyParts/LeftArm';
 import CloseButton from './Input/Close';
+import HelperText from './Input/HelperText';
 import Input from './Input/Input';
+import InputForm from './Input/InputForm';
+import SubmitButton from './Input/SubmitButton';
+import TextField from './Input/TextField';
 import LeftHand from './BodyParts/LeftHand';
 import Profile from './Profile';
 import BackFoot from './BodyParts/BackFoot';
@@ -154,26 +158,39 @@ const HumanBones = () => {
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
       <Input
         searchValue={searchValue}
-        handleSearchValue={handleSearchValue}
         handleSelectValue={handleSelectValue}
         zoomIn={zoomIn}
-        handleSubmit={handleSubmit}
         answers={answers}
         setAnswers={setAnswers}
-        cribData={boneValues}
         regionHeader={regionHeader}
         labelName={bone}
-        labelType="bone"
         labelPlural="Bones"
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}
         handleResetAnswers={handleResetAnswers}
-        forwardRef={(el: HTMLInputElement) =>
-          (formInput.current = el)
-        }
         total={total}
-      />
+      >
+        <InputForm handleSubmit={handleSubmit}>
+          <TextField
+            className="w-full px-2 py-2.5 mb-0 lg:p-3 lg:mb-3 text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+            placeholder="Bone Name"
+            name="bone"
+            handleChange={handleSearchValue}
+            forwardRef={(el: HTMLInputElement) =>
+              (formInput.current = el)
+            }
+          />
+          <SubmitButton
+            disabled={
+              answers[`${searchValue}`] === undefined || !bone
+            }
+          />
+        </InputForm>
+        {searchValue && !bone && (
+          <HelperText message="Select a bone before guessing" />
+        )}
+      </Input>
       <svg
         overflow="visible"
         version="1.0"

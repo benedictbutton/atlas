@@ -7,24 +7,19 @@ import useScore from '../../utils/useScore';
 
 const WideInput = ({
   searchValue,
-  handleSearchValue,
   handleSelectValue,
   zoomIn,
-  handleSubmit,
   answers,
   setAnswers,
   answerData,
   regionHeader,
   labelName,
-  labelType,
   labelPlural,
   handleResetAnswers,
-  forwardRef,
   total,
+  children,
 }: InputProps) => {
   const [correct, incorrect] = useScore(answers);
-  const placeholderLabelType =
-    labelType.charAt(0).toUpperCase() + labelType.slice(1);
 
   return (
     <div
@@ -41,29 +36,7 @@ const WideInput = ({
           >
             {regionHeader}
           </p>
-          <form onSubmit={handleSubmit}>
-            <label className="inline-block w-3/4 mt-1 mb-4">
-              <p className="mb-2 text-[#1b83ff] font-semibold leading-normal capitalize">
-                {labelType}
-              </p>
-              <input
-                className="w-full px-2 py-2.5 text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                type="text"
-                placeholder={placeholderLabelType + ' Name'}
-                name={labelType}
-                ref={forwardRef}
-                onChange={handleSearchValue}
-              />
-            </label>
-            <button
-              className="w-3/4 h-8 mb-5 bg-indigo-600 text-white rounded-md disabled:opacity-50"
-              disabled={
-                answers[`${searchValue}`] === undefined || !labelName
-              }
-            >
-              Submit
-            </button>
-          </form>
+          {children[0]}
         </div>
         {!searchValue && (
           <div className="relative w-1/2 h-full text-center">
@@ -98,11 +71,7 @@ const WideInput = ({
             />
           </ul>
         )}
-        {searchValue && !labelName && (
-          <p className="p-5 text-[#df001d] text-xl">
-            Select a {labelType} before guessing
-          </p>
-        )}
+        {children[1]}
       </div>
     </div>
   );

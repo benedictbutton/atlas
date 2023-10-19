@@ -11,10 +11,14 @@ import CloseButton from './Input/Close';
 import Countries from './Countries';
 import CountriesZoomOut from './CountriesZoomOut';
 import CountriesZoomIn from './CountriesZoomIn';
+import HelperText from './Input/HelperText';
+import Input from './Input/Input';
+import InputForm from './Input/InputForm';
+import SubmitButton from './Input/SubmitButton';
+import TextField from './Input/TextField';
 import IslandTerritories from './Regions/IslandTerritories';
 import IntroMessage from './IntroMessage/IntroMessage';
 import Profile from './Profile';
-import Input from './Input/Input';
 import useAnswers from '../utils/useAnswers';
 import useIntroMessage from '../utils/useIntroMessage';
 import useZoom from '../utils/useZoom';
@@ -158,25 +162,39 @@ const WorldMap = () => {
       )}
       <Input
         searchValue={searchValue}
-        handleSearchValue={handleSearchValue}
         handleSelectValue={handleSelectValue}
         zoomIn={zoomIn}
-        handleSubmit={handleSubmit}
         answers={answers}
         setAnswers={setAnswers}
         regionHeader={regionHeader}
         labelName={countryName}
-        labelType="country"
         labelPlural="Countries"
         game={game}
         createGame={createGame}
         handleSaveGame={handleSaveGame}
         handleResetAnswers={handleResetAnswers}
-        forwardRef={(el: HTMLInputElement) =>
-          (formInput.current = el)
-        }
         total={total}
-      />
+      >
+        <InputForm handleSubmit={handleSubmit}>
+          <TextField
+            className="w-full px-2 py-2.5 mb-0 lg:p-3 lg:mb-3 text-[#434343] font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+            placeholder="Country Name"
+            name="country"
+            handleChange={handleSearchValue}
+            forwardRef={(el: HTMLInputElement) =>
+              (formInput.current = el)
+            }
+          />
+          <SubmitButton
+            disabled={
+              answers[`${searchValue}`] === undefined || !countryName
+            }
+          />
+        </InputForm>
+        {searchValue && !countryName && (
+          <HelperText message="Select a country before guessing" />
+        )}
+      </Input>
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
       {/* <Countries> */}
       <svg
