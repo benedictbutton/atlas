@@ -1,3 +1,4 @@
+import { PropsWithChildren, ReactNode } from 'react';
 import TallInput from './TallInput';
 import WideInput from './WideInput';
 import useViewport from '../../utils/useViewport';
@@ -9,30 +10,25 @@ type Answers = {
 
 export interface InputProps {
   searchValue: string;
-  handleSearchValue: (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) => void;
   handleSelectValue: (
     event: React.ChangeEvent<HTMLInputElement>,
   ) => void;
   zoomIn: string;
-  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   answers: { [key: string]: number | boolean | null | undefined };
   setAnswers: Dispatch<SetStateAction<AnswersObject>>;
   cribData?: { [key: string]: number | null };
   regionHeader: string;
   labelName: string;
-  labelType: string;
   labelPlural: string;
   game: string | null | undefined;
   createGame: () => void;
   handleSaveGame: () => void;
   handleResetAnswers: () => void;
-  forwardRef: (el: HTMLInputElement) => HTMLInputElement;
   total: number;
+  children: ReactNode[];
 }
 
-const Input = ({ ...props }: InputProps) => {
+const InputPanel = ({ ...props }: PropsWithChildren<InputProps>) => {
   const { width } = useViewport();
 
   return (
@@ -43,4 +39,4 @@ const Input = ({ ...props }: InputProps) => {
   );
 };
 
-export default Input;
+export default InputPanel;

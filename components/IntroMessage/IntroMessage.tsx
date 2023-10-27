@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MutationFunction } from '@apollo/client';
 import CloseButton from './CloseButton';
 import PageArrows from './PageArrows';
-import Tracker from '../Tracker';
+import Tracker from './Tracker';
 import useDelayedUnmounting from '../../utils/useDelayedUnmounting';
 import useViewport from '../../utils/useViewport';
 import styles from '../../styles/IntroMessage.module.css';

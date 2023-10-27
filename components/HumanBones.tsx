@@ -8,12 +8,12 @@ import {
 import { debounce } from 'lodash';
 import useZoom from '../utils/useZoom';
 import LeftArm from './BodyParts/LeftArm';
-import CloseButton from './Input/Close';
-import HelperText from './Input/HelperText';
-import Input from './Input/Input';
-import InputForm from './Input/InputForm';
-import SubmitButton from './Input/SubmitButton';
-import TextField from './Input/TextField';
+import CloseButton from './InputPanel/Close';
+import HelperText from './InputPanel/HelperText';
+import InputPanel from './InputPanel/InputPanel';
+import InputForm from './InputPanel/InputForm';
+import SubmitButton from './InputPanel/SubmitButton';
+import TextField from './InputPanel/TextField';
 import LeftHand from './BodyParts/LeftHand';
 import Profile from './Profile';
 import BackFoot from './BodyParts/BackFoot';
@@ -156,7 +156,7 @@ const HumanBones = () => {
         zoomIn={zoomIn}
       />
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
-      <Input
+      <InputPanel
         searchValue={searchValue}
         handleSelectValue={handleSelectValue}
         zoomIn={zoomIn}
@@ -190,7 +190,7 @@ const HumanBones = () => {
         {searchValue && !bone && (
           <HelperText message="Select a bone before guessing" />
         )}
-      </Input>
+      </InputPanel>
       <svg
         overflow="visible"
         version="1.0"

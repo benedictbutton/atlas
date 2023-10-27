@@ -7,15 +7,15 @@ import {
   MouseEvent,
 } from 'react';
 import { debounce } from 'lodash';
-import CloseButton from './Input/Close';
+import CloseButton from './InputPanel/Close';
 import Countries from './Countries';
 import CountriesZoomOut from './CountriesZoomOut';
 import CountriesZoomIn from './CountriesZoomIn';
-import HelperText from './Input/HelperText';
-import Input from './Input/Input';
-import InputForm from './Input/InputForm';
-import SubmitButton from './Input/SubmitButton';
-import TextField from './Input/TextField';
+import HelperText from './InputPanel/HelperText';
+import InputPanel from './InputPanel/InputPanel';
+import InputForm from './InputPanel/InputForm';
+import SubmitButton from './InputPanel/SubmitButton';
+import TextField from './InputPanel/TextField';
 import IslandTerritories from './Regions/IslandTerritories';
 import IntroMessage from './IntroMessage/IntroMessage';
 import Profile from './Profile';
@@ -160,7 +160,7 @@ const WorldMap = () => {
           setIntroMessage={setIntroMessage}
         />
       )}
-      <Input
+      <InputPanel
         searchValue={searchValue}
         handleSelectValue={handleSelectValue}
         zoomIn={zoomIn}
@@ -194,7 +194,7 @@ const WorldMap = () => {
         {searchValue && !countryName && (
           <HelperText message="Select a country before guessing" />
         )}
-      </Input>
+      </InputPanel>
       {zoomIn && <CloseButton handleZoom={handleZoom} />}
       {/* <Countries> */}
       <svg

@@ -1,4 +1,4 @@
-import { InputProps } from './Input';
+import { InputProps } from './InputPanel';
 import Reset from './Reset';
 import SearchList from './SearchList';
 import Switch from './Switch';
@@ -11,7 +11,6 @@ const WideInput = ({
   zoomIn,
   answers,
   setAnswers,
-  answerData,
   regionHeader,
   labelName,
   labelPlural,
@@ -51,7 +50,6 @@ const WideInput = ({
               <Switch
                 answers={answers}
                 setAnswers={setAnswers}
-                answerData={answerData}
                 labelPlural={labelPlural}
               />
               <Reset

@@ -1,4 +1,4 @@
-import { InputProps } from './Input';
+import { InputProps } from './InputPanel';
 import Reset from './Reset';
 import Switch from './Switch';
 import TallScore from './TallScore';
@@ -12,7 +12,6 @@ const TallInput = ({
   zoomIn,
   answers,
   setAnswers,
-  cribData,
   regionHeader,
   labelName,
   labelPlural,
@@ -59,7 +58,6 @@ const TallInput = ({
         <Switch
           answers={answers}
           setAnswers={setAnswers}
-          cribData={cribData}
           labelPlural={labelPlural}
         />
         <Reset

@@ -8,7 +8,6 @@ import {
 const useShowAllCountries = (
   answers: AnswersObject,
   setAnswers: Dispatch<SetStateAction<AnswersObject>>,
-  cribData,
 ) => {
   const [showAll, setShowAll] = useState(true);
   const [currentGame, setCurrentGame] = useState({});
@@ -16,12 +15,10 @@ const useShowAllCountries = (
   const showAllCountries = useCallback(() => {
     setCurrentGame(answers);
     const correctAnswers: AnswersObject = {};
-    Object.keys(answers).map(
-      (key) => (correctAnswers[key] = cribData?.[key] || 1),
-    );
+    Object.keys(answers).map((key) => (correctAnswers[key] = 1));
     setAnswers({ ...answers, ...correctAnswers });
     setShowAll(!showAll);
-  }, [cribData, answers, setAnswers, showAll]);
+  }, [answers, setAnswers, showAll]);
 
   const hideAllCountries = useCallback(() => {
     setAnswers({ ...answers, ...currentGame });

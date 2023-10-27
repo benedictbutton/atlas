@@ -14,11 +14,7 @@ const InnerEar = ({
       xmlns="http://www.w3.org/2000/svg"
       style={{ overflow: 'visible' }}
     >
-      <g
-        id="innerEar"
-        className={classNameBones}
-        onClick={handleZoom}
-      >
+      <g id="skull" className={classNameBones} onClick={handleZoom}>
         <path
           d="m371.73 253.93c-6.1058 3.8143-4.1346 13.491-0.0625 18.156 4.1793 4.3972 4.8368 15.002 4.9688 26.687 4.7302 5.2769 28.706 28.732 33.244 32.043 0.63432 0.94789 4.1817-2.5296 1.7471-4.7068-8.7914-7.8621-21.626-26.318-22.741-30.711 1.1056-9.7489-1.0715-3.3358 6.8125-17.687 3.8414-7.9365-3.6674-16.312-9.0938-20.719-4.0236-4.7619-10.364-4.3784-14.875-3.0625z"
           fill="#e6e6e6"
@@ -445,7 +441,7 @@ const InnerEar = ({
             fill="none"
             image-rendering="auto"
             shape-rendering="auto"
-            solid-color="#000000"
+            solid-color="x#000000"
             stroke="#008000"
             stroke-width="1.985"
           />
