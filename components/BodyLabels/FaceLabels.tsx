@@ -53,7 +53,7 @@ const FaceLabels = ({
           x="259"
           y="115"
           dx={zoomIn === 'face' ? '-.2%' : ''}
-          dy={zoomIn === 'face' ? '-.2%' : ''}
+          dy={zoomIn === 'face' ? '-.3%' : ''}
           fill="#000000"
           font-family="Arial"
           font-size="11px"
@@ -61,20 +61,20 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259" y="115">
+          <tspan x="259" y="102">
             maxilla (2)
           </tspan>
         </text>
         <line
           x1="210.84"
           x2="257"
-          y1="97"
-          y2="112"
+          y1="98"
+          y2="98"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="210.84" cy="97" r=".7" fill="#003cff" />
+        <circle cx="210.84" cy="98" r=".7" fill="#003cff" />
       </g>
       <g
         style={{
@@ -96,20 +96,20 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259.1376" y="101">
+          <tspan x="259.1376" y="89">
             vomer
           </tspan>
         </text>
         <line
           x1="202.84"
           x2="258"
-          y1="88"
-          y2="98"
+          y1="86"
+          y2="86"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="202.84" cy="88" r="0.766" fill="#003cff" />
+        <circle cx="202.84" cy="86" r="0.766" fill="#003cff" />
       </g>
       <g
         style={{
@@ -123,6 +123,7 @@ const FaceLabels = ({
         <text
           x="259.1376"
           y="89"
+          dx={zoomIn === 'face' ? '.2%' : ''}
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -131,20 +132,20 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259.1376" y="89">
+          <tspan x="259.1376" y="76">
             zygomatic (2)
           </tspan>
         </text>
         <line
-          x1="230"
+          x1="233"
           x2="259"
-          y1="86"
-          y2="86"
+          y1="82"
+          y2="73"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
         />
-        <circle cx="230" cy="86" r="0.7" fill="#003cff" />
+        <circle cx="233" cy="82" r="0.7" fill="#003cff" />
       </g>
       <g
         style={{
@@ -205,6 +206,7 @@ const FaceLabels = ({
         <text
           x="259"
           y="78"
+          dx={zoomIn === 'face' ? '-.2%' : ''}
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -213,14 +215,14 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259" y="78">
+          <tspan x="259" y="64">
             palatine (2)
           </tspan>
         </text>
         <line
           x1="257"
           x2="206"
-          y1="75"
+          y1="61"
           y2="82"
           fill="none"
           stroke="#003cff"
@@ -248,14 +250,14 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259" y="67">
+          <tspan x="259" y="50">
             nasal (2)
           </tspan>
         </text>
         <line
           x1="258"
           x2="204"
-          y1="64"
+          y1="47"
           y2="70"
           fill="none"
           stroke="#003cff"
