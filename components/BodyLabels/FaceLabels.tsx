@@ -15,8 +15,9 @@ const FaceLabels = ({
         }}
       >
         <text
-          x="259.1376"
-          y="124.91109"
+          x="259"
+          y="115"
+          dx={zoomIn === 'face' ? '-.2%' : ''}
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -25,15 +26,15 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="261.1376" y="127.91109">
+          <tspan x="259" y="115">
             mandible
           </tspan>
         </text>
         <line
           x1="206.84"
-          x2="260.35"
+          x2="257"
           y1="118.84"
-          y2="124.84"
+          y2="112"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
@@ -51,7 +52,7 @@ const FaceLabels = ({
       >
         <text
           x="259"
-          y="115"
+          y="102"
           dx={zoomIn === 'face' ? '-.2%' : ''}
           dy={zoomIn === 'face' ? '-.3%' : ''}
           fill="#000000"
@@ -86,8 +87,8 @@ const FaceLabels = ({
         }}
       >
         <text
-          x="259.1376"
-          y="101"
+          x="259"
+          y="89"
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -96,7 +97,7 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259.1376" y="89">
+          <tspan x="259" y="89">
             vomer
           </tspan>
         </text>
@@ -121,8 +122,8 @@ const FaceLabels = ({
         }}
       >
         <text
-          x="259.1376"
-          y="89"
+          x="259"
+          y="76"
           dx={zoomIn === 'face' ? '.2%' : ''}
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
@@ -132,7 +133,7 @@ const FaceLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="259.1376" y="76">
+          <tspan x="259" y="76">
             zygomatic (2)
           </tspan>
         </text>
@@ -157,7 +158,7 @@ const FaceLabels = ({
         }}
       >
         <text
-          x="85"
+          x="88"
           y="79"
           fill="#000000"
           font-family="Arial"
@@ -205,7 +206,7 @@ const FaceLabels = ({
       >
         <text
           x="259"
-          y="78"
+          y="64"
           dx={zoomIn === 'face' ? '-.2%' : ''}
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
@@ -241,7 +242,7 @@ const FaceLabels = ({
       >
         <text
           x="259"
-          y="67"
+          y="50"
           dy={zoomIn === 'face' ? '-.2%' : ''}
           fill="#000000"
           font-family="Arial"

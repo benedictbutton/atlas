@@ -12,6 +12,7 @@ const TallInput = ({
   zoomIn,
   answers,
   setAnswers,
+  cribData,
   regionHeader,
   labelName,
   labelPlural,
@@ -58,6 +59,7 @@ const TallInput = ({
         <Switch
           answers={answers}
           setAnswers={setAnswers}
+          cribData={cribData}
           labelPlural={labelPlural}
         />
         <Reset

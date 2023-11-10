@@ -11,6 +11,7 @@ const WideInput = ({
   zoomIn,
   answers,
   setAnswers,
+  cribData,
   regionHeader,
   labelName,
   labelPlural,
@@ -50,6 +51,7 @@ const WideInput = ({
               <Switch
                 answers={answers}
                 setAnswers={setAnswers}
+                cribData={cribData}
                 labelPlural={labelPlural}
               />
               <Reset

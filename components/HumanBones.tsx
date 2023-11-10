@@ -162,6 +162,7 @@ const HumanBones = () => {
         zoomIn={zoomIn}
         answers={answers}
         setAnswers={setAnswers}
+        cribData={boneValues}
         regionHeader={regionHeader}
         labelName={bone}
         labelPlural="Bones"
