@@ -8,7 +8,7 @@ const FootLabels = ({
       <g
         style={{
           display:
-            (answers['foot distal'] ?? 0) < 1 ||
+            (answers['distal phalanx (pedal)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'foot')
               ? 'none'
               : '',
@@ -51,7 +51,7 @@ const FootLabels = ({
       <g
         style={{
           display:
-            (answers['foot middle'] ?? 0) < 1 ||
+            (answers['middle phalanx (pedal)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'foot')
               ? 'none'
               : '',
@@ -94,7 +94,7 @@ const FootLabels = ({
       <g
         style={{
           display:
-            (answers['foot proximal'] ?? 0) < 1 ||
+            (answers['proximal phalanx (pedal)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'foot')
               ? 'none'
               : '',

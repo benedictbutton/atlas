@@ -1,9 +1,12 @@
 export const boneData: {
   [key: string]: { value: null | number; points: number };
 } = {
-  'distal phalanx': { value: null, points: 10 },
-  'middle phalanx': { value: null, points: 10 },
-  'proximal phalanx': { value: null, points: 8 },
+  'distal phalanx (manual)': { value: null, points: 10 },
+  'distal phalanx (pedal)': { value: null, points: 10 },
+  'middle phalanx (manual)': { value: null, points: 10 },
+  'middle phalanx (pedal)': { value: null, points: 10 },
+  'proximal phalanx (manual)': { value: null, points: 8 },
+  'proximal phalanx (pedal)': { value: null, points: 8 },
   metacarpal: { value: null, points: 10 },
   harnate: { value: null, points: 2 },
   capitate: { value: null, points: 2 },
@@ -31,9 +34,6 @@ export const boneData: {
   tibia: { value: null, points: 2 },
   fibula: { value: null, points: 2 },
   patella: { value: null, points: 2 },
-  'foot distal': { value: null, points: 10 },
-  'foot middle': { value: null, points: 8 },
-  'foot proximal': { value: null, points: 10 },
   metatarsal: { value: null, points: 10 },
   cuboid: { value: null, points: 2 },
   'lateral cuneiform': { value: null, points: 2 },
@@ -61,9 +61,12 @@ export const boneData: {
 };
 
 export const boneValues = {
-  'distal phalanx': 10,
-  'middle phalanx': 10,
-  'proximal phalanx': 8,
+  'distal phalanx (manual)': 10,
+  'distal phalanx (pedal)': 10,
+  'middle phalanx (manual)': 10,
+  'middle phalanx (pedal)': 10,
+  'proximal phalanx (manual)': 8,
+  'proximal phalanx (pedal)': 8,
   metacarpal: 10,
   harnate: 2,
   capitate: 2,
@@ -91,9 +94,6 @@ export const boneValues = {
   tibia: 2,
   fibula: 2,
   patella: 2,
-  'foot distal': 10,
-  'foot middle': 8,
-  'foot proximal': 10,
   metatarsal: 10,
   cuboid: 2,
   'lateral cuneiform': 2,

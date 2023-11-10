@@ -8,7 +8,7 @@ const HandLabels = ({
       <g
         style={{
           display:
-            (answers['distal phalanx'] ?? 0) < 1 ||
+            (answers['distal phalanx (manual)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'hand')
               ? 'none'
               : '',
@@ -51,7 +51,7 @@ const HandLabels = ({
       <g
         style={{
           display:
-            (answers['middle phalanx'] ?? 0) < 1 ||
+            (answers['middle phalanx (manual)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'hand')
               ? 'none'
               : '',
@@ -94,7 +94,7 @@ const HandLabels = ({
       <g
         style={{
           display:
-            (answers['proximal phalanx'] ?? 0) < 1 ||
+            (answers['proximal phalanx (manual)'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'hand')
               ? 'none'
               : '',
