@@ -3,8 +3,8 @@
   animation-fill-mode: forwards;
 }
 
-.arm__zoom__in > text {
-  font-size: 9px;
+.arm__zoom__in text {
+  fill: white;
 }
 
 @keyframes arm__zoom__in {

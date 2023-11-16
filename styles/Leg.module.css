@@ -3,9 +3,10 @@
   animation-fill-mode: forwards;
 }
 
-/* .leg__zoom__in text {
-  font-size: 8px;
-} */
+.leg__zoom__in text {
+  /* font-size: 8px; */
+  fill: white;
+}
 
 @keyframes leg__zoom__in {
   from {

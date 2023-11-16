@@ -5,6 +5,7 @@
 
 .face__zoom__in text {
   font-size: 5px;
+  fill: white;
 }
 
 @keyframes face__zoom__in {

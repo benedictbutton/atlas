@@ -5,6 +5,7 @@
 
 .pelvis__zoom__in text {
   font-size: 7px;
+  fill: white;
 }
 
 @keyframes pelvis__zoom__in {

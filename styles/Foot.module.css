@@ -5,6 +5,7 @@
 
 .front_foot__zoom__in text {
   font-size: 5px;
+  fill: white;
 }
 
 @keyframes front_foot__zoom__in {

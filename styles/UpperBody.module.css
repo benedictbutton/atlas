@@ -5,6 +5,7 @@
 
 .upper_body__zoom__in text {
   font-size: 8px;
+  fill: white;
 }
 
 @keyframes upper_body__zoom__in {
