@@ -1,3 +1,5 @@
+import Hyoid from './Hyoid';
+
 const Face = ({ bone, zoomIn, handleZoom, className }) => {
   return (
     <g id="face" className={className} onClick={handleZoom}>

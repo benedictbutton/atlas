@@ -18,9 +18,11 @@ import LeftHand from './BodyParts/LeftHand';
 import Profile from './Profile';
 import BackFoot from './BodyParts/BackFoot';
 import BodyLabels from './BodyLabels';
+import BonesZoomIn from './BonesZoomIn';
 import ClavicleLeft from './BodyParts/ClavicleLeft';
 import ClavicleRight from './BodyParts/ClavicleRight';
 import Face from './BodyParts/Face';
+import Hyoid from './BodyParts/Hyoid';
 import InnerEar from './BodyParts/InnerEar';
 import Ischium from './BodyParts/Ischium';
 import LeftFoot from './BodyParts/LeftFoot';
@@ -36,6 +38,7 @@ import { boneData, boneValues } from '../data/bones';
 import armStyles from '../styles/Arm.module.css';
 import faceStyles from '../styles/Face.module.css';
 import footStyles from '../styles/Foot.module.css';
+import hyoidStyles from '../styles/Hyoid.module.css';
 import handStyles from '../styles/Hand.module.css';
 import innerEarStyles from '../styles/InnerEar.module.css';
 import legStyles from '../styles/Leg.module.css';
@@ -321,12 +324,20 @@ const HumanBones = () => {
             </g>
           )}
           {zoomIn !== 'face' && (
-            <Face
-              bone={bone}
-              zoomIn={zoomIn}
-              handleZoom={handleZoom}
-              className={faceStyles.face__zoom__out}
-            />
+            <>
+              <Hyoid
+                bone={bone}
+                zoomIn={zoomIn}
+                handleZoom={handleZoom}
+                className={hyoidStyles.hyoid__zoom__out}
+              />
+              <Face
+                bone={bone}
+                zoomIn={zoomIn}
+                handleZoom={handleZoom}
+                className={faceStyles.face__zoom__out}
+              />
+            </>
           )}
           {zoomIn !== 'skull' && zoomIn !== 'inner_ear' && (
             <>
@@ -376,134 +387,6 @@ const HumanBones = () => {
             />
           </g> */}
         </g>
-        {zoomIn === 'face' && (
-          <Face
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={faceStyles.face__zoom__in}
-          />
-        )}
-        {(zoomIn === 'skull' || zoomIn === 'inner_ear') && (
-          <>
-            <InnerEar
-              bone={bone}
-              zoomIn={zoomIn}
-              handleZoom={handleZoom}
-              classNameBones={
-                innerEarStyles.inner_ear_bones__zoom__in
-              }
-              classNameDiagram={
-                innerEarStyles.inner_ear_diagram__zoom__in
-              }
-            />
-            <Skull
-              bone={bone}
-              zoomIn={zoomIn}
-              handleZoom={handleZoom}
-              className={skullStyles.skull__zoom__in}
-            />
-          </>
-        )}
-        {zoomIn === 'foot' && (
-          <RightFoot
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={footStyles.front_foot__zoom__in}
-          />
-        )}
-        {zoomIn === 'foot' && (
-          <BackFoot
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={footStyles.back_foot__zoom__in}
-          />
-        )}
-        {zoomIn === 'foot' && (
-          <LeftFoot
-            answers={answers}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={footStyles.left_foot__zoom__in}
-          />
-        )}
-        {zoomIn === 'hand' && (
-          <RightHand
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={handStyles.hand__zoom__in}
-          />
-        )}
-        {zoomIn === 'arm' && (
-          <LeftArm
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={armStyles.arm__zoom__in}
-          />
-        )}
-        {zoomIn === 'upperBody' && (
-          <UpperBody
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={upperBodyStyles.upper_body__zoom__in}
-          />
-        )}
-        {zoomIn === 'arm' && (
-          <ClavicleLeft
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={armStyles.arm__zoom__in}
-          />
-        )}
-        {zoomIn === 'pelvis' && (
-          <Ischium
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={pelvisStyles.pelvis__zoom__in}
-          />
-        )}
-        {zoomIn === 'leg' && (
-          <LeftLeg
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={legStyles.leg__zoom__in}
-          />
-        )}
-        {zoomIn === 'pelvis' && (
-          <Pelvis
-            bone={bone}
-            zoomIn={zoomIn}
-            handleZoom={handleZoom}
-            className={pelvisStyles.pelvis__zoom__in}
-          />
-        )}
-        {zoomIn === 'upperBody' && (
-          <g
-            style={{
-              display:
-                (answers['cervical vertebrae'] ?? 0) < 1 ||
-                (zoomIn && zoomIn !== 'upperBody')
-                  ? 'none'
-                  : '',
-            }}
-          >
-            <polyline
-              className={upperBodyStyles.upper_body__zoom__in}
-              points="85.795 115.27 145.53 115.27 145.53 96.547 200.77 96.547"
-              fill="none"
-              stroke="#003cff"
-              stroke-width=".546"
-            />
-          </g>
-        )}
         <BodyLabels answers={answers} zoomIn={zoomIn} />
         <g className={zoomIn ? 'opaque' : ''}>
           {/* <rect
@@ -731,6 +614,12 @@ const HumanBones = () => {
           </text>
         </g>
       </svg>
+      <BonesZoomIn
+        bone={bone}
+        zoomIn={zoomIn}
+        handleZoom={handleZoom}
+        answers={answers}
+      />
     </>
   );
 };

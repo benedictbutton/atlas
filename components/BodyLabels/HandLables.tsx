@@ -58,9 +58,9 @@ const HandLabels = ({
         }}
       >
         <text
-          x="-50"
+          x="-43"
           y="479.99307"
-          dx={zoomIn === 'hand' ? '12.5%' : ''}
+          dx={zoomIn === 'hand' ? '11.5%' : ''}
           dy={zoomIn === 'hand' ? '-.25%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -71,8 +71,8 @@ const HandLabels = ({
             lineHeight: '125%',
           }}
         >
-          <tspan x="-50" y="479.99307">
-            middle phalanx (10)
+          <tspan x="-43" y="479.99307">
+            middle phalanx (8)
           </tspan>
         </text>
         <line
@@ -101,9 +101,9 @@ const HandLabels = ({
         }}
       >
         <text
-          x="-53"
+          x="-58"
           y="466.99307"
-          dx={zoomIn === 'hand' ? '12.75%' : ''}
+          dx={zoomIn === 'hand' ? '13.3%' : ''}
           dy={zoomIn === 'hand' ? '-.25%' : ''}
           fill="#000000"
           font-family="Arial"
@@ -114,8 +114,8 @@ const HandLabels = ({
             lineHeight: '125%',
           }}
         >
-          <tspan x="-53" y="466.99307">
-            proximal phalanx (8)
+          <tspan x="-58" y="466.99307">
+            proximal phalanx (10)
           </tspan>
         </text>
         <line
@@ -146,7 +146,7 @@ const HandLabels = ({
         <text
           x="-30"
           y="454.99307"
-          dx={zoomIn === 'hand' ? '9.5%' : ''}
+          dx={zoomIn === 'hand' ? '9.7%' : ''}
           dy={zoomIn === 'hand' ? '-.25%' : ''}
           fill="#000000"
           font-family="Arial"

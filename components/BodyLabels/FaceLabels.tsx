@@ -266,6 +266,42 @@ const FaceLabels = ({
         />
         <circle cx="204" cy="70" r=".7" fill="#003cff" />
       </g>
+      <g
+        style={{
+          display:
+            (answers['nasal'] ?? 0) < 1 ||
+            (zoomIn && zoomIn !== 'face')
+              ? 'none'
+              : '',
+        }}
+      >
+        <text
+          x="330"
+          y="107"
+          dx={zoomIn === 'face' ? '-15%' : ''}
+          dy={zoomIn === 'face' ? '1.7%' : ''}
+          fill="#000000"
+          font-family="Arial"
+          font-size="11px"
+          stroke-width="1px"
+          style={{ lineHeight: '125%' }}
+          xmlSpace="preserve"
+        >
+          <tspan x="330" y="107">
+            hyoid
+          </tspan>
+        </text>
+        <line
+          x1={zoomIn === 'face' ? '252' : '310'}
+          x2={zoomIn === 'face' ? '264' : '329'}
+          y1={zoomIn === 'face' ? '126' : '118'}
+          y2={zoomIn === 'face' ? '120' : '104'}
+          fill="none"
+          stroke="#003cff"
+          stroke-width=".546"
+        />
+        <circle cx="204" cy="70" r=".7" fill="#003cff" />
+      </g>
     </g>
   );
 };

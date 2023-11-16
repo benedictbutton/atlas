@@ -1,0 +1,31 @@
+.hyoid__zoom__in {
+  animation: hyoid__zoom__in ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.hyoid__zoom__in text {
+  font-size: 5px;
+}
+
+@keyframes hyoid__zoom__in {
+  from {
+    transform: scale(1) translate(46.2%, 0%);
+  }
+  to {
+    transform: scale(3) translate(10%, 25%);
+  }
+}
+
+.hyoid__zoom__out {
+  animation: hyoid__zoom__out ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hyoid__zoom__out {
+  from {
+    transform: scale(4.5) translate(-39%, -1%);
+  }
+  to {
+    transform: scale(1) translate(46.2%, 0%);
+  }
+}

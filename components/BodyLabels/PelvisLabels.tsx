@@ -8,16 +8,16 @@ const PelvisLabels = ({
       <g
         style={{
           display:
-            (answers['pelvic girdle'] ?? 0) < 1 ||
+            (answers['hip'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'pelvis')
               ? 'none'
               : '',
         }}
       >
         <text
-          x="360.88937"
+          x="280"
           y="372.05472"
-          dx={zoomIn === 'pelvis' ? '-5%' : ''}
+          dx={zoomIn === 'hip' ? '5%' : ''}
           fill="#000000"
           font-family="Arial"
           font-size="11px"
@@ -27,13 +27,13 @@ const PelvisLabels = ({
           }}
           xmlSpace="preserve"
         >
-          <tspan x="360.88937" y="372.05472">
-            pelvic girdle
+          <tspan x="280" y="372.05472">
+            hip (2)
           </tspan>
         </text>
         <line
-          x1="250.89"
-          x2={zoomIn === 'pelvis' ? '350' : '380'}
+          x1="250"
+          x2={zoomIn === 'hip' ? '280' : '285'}
           y1="375.15"
           y2="375.15"
           fill="none"

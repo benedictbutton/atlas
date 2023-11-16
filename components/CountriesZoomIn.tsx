@@ -27,7 +27,7 @@ const CountriesZoomIn = ({
           stroke-linecap="round"
           stroke-linejoin="round"
           id="map"
-          xmlns="http:/'/',ww.w3.org/2000/sg"
+          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 895.92 471.76"
         >
           {zoomIn === 'africa' && (
