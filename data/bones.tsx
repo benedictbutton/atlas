@@ -19,7 +19,7 @@ export const boneData: {
   ulna: { value: null, points: 2 },
   radius: { value: null, points: 2 },
   humerus: { value: null, points: 2 },
-  hip: { value: null, points: 2 },
+  hip: { value: null, points: 1 },
   sacrum: { value: null, points: 1 },
   coccyx: { value: null, points: 1 },
   clavicle: { value: null, points: 2 },
@@ -27,7 +27,7 @@ export const boneData: {
   ribs: { value: null, points: 24 },
   'cervical vertebrae': { value: null, points: 7 },
   'thoracic vertebrae': { value: null, points: 12 },
-  manubrium: { value: null, points: 1 },
+  // manubrium: { value: null, points: 1 },
   sternum: { value: null, points: 1 },
   'lumbar vertebrae': { value: null, points: 5 },
   femur: { value: null, points: 2 },
@@ -59,6 +59,7 @@ export const boneData: {
   incus: { value: null, points: 2 },
   stapes: { value: null, points: 2 },
   hyoid: { value: null, points: 1 },
+  talus: { value: null, points: 2 },
 };
 
 export const boneValues = {
@@ -80,7 +81,7 @@ export const boneValues = {
   ulna: 2,
   radius: 2,
   humerus: 2,
-  hip: 2,
+  hip: 1,
   sacrum: 1,
   coccyx: 1,
   clavicle: 2,
@@ -88,7 +89,7 @@ export const boneValues = {
   ribs: 24,
   'cervical vertebrae': 7,
   'thoracic vertebrae': 12,
-  manubrium: 1,
+  // manubrium: 1,
   sternum: 1,
   'lumbar vertebrae': 5,
   femur: 2,
@@ -120,4 +121,5 @@ export const boneValues = {
   incus: 2,
   stapes: 2,
   hyoid: 1,
+  talus: 2,
 };

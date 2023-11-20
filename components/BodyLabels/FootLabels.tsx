@@ -41,12 +41,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="130"
-          cy="809"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="130" cy="809" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -84,12 +79,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="133"
-          cy="803.5"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="133" cy="803.5" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -126,12 +116,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="140"
-          cy="797"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="140" cy="797" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -169,17 +154,12 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="154"
-          cy="781"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="154" cy="781" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
           display:
-            (answers['metatarsal'] ?? 0) < 1 ||
+            (answers['cuboid'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'foot')
               ? 'none'
               : '',
@@ -212,17 +192,12 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="168"
-          cy="772"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="168" cy="772" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
           display:
-            (answers['metatarsal'] ?? 0) < 1 ||
+            (answers['talus'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'foot')
               ? 'none'
               : '',
@@ -255,12 +230,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="171"
-          cy="768"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="171" cy="768" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -288,20 +258,15 @@ const FootLabels = ({
           </tspan>
         </text>
         <line
-          x1="180"
-          x2="180"
+          x1="187"
+          x2="187"
           y1="756"
-          y2="768"
+          y2="776.5"
           fill="none"
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="180"
-          cy="768"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="187" cy="776.5" r=".566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -338,12 +303,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="172"
-          cy="775"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="172" cy="775" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -380,12 +340,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="180"
-          cy="776"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="180" cy="776" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -421,12 +376,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="184"
-          cy="780"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="184" cy="780" r="0.566" fill="#003cff" />
       </g>
       <g
         style={{
@@ -458,12 +408,7 @@ const FootLabels = ({
           stroke="#003cff"
           stroke-width=".546"
         ></line>
-        <circle
-          cx="125"
-          cy="857"
-          r={zoomIn === 'foot' ? '.566' : '.566'}
-          fill="#003cff"
-        />
+        <circle cx="125" cy="857" r="0.566" fill="#003cff" />
       </g>
     </g>
   );

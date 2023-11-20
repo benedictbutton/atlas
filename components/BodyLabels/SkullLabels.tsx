@@ -28,7 +28,7 @@ const SkullLabels = ({
           xmlSpace="preserve"
         >
           <tspan x="-15" y="79">
-            occipatal
+            occipital
           </tspan>
         </text>
         <line

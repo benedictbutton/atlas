@@ -16,7 +16,7 @@ const HandLabels = ({
       >
         <text
           x="-45"
-          y="495.99307"
+          y="495"
           fill="#000000"
           font-family="Arial"
           font-size="11px"
@@ -28,7 +28,7 @@ const HandLabels = ({
             lineHeight: '125%',
           }}
         >
-          <tspan x="-45" y="494.99307">
+          <tspan x="-45" y="495">
             distal phalanx (10)
           </tspan>
         </text>
@@ -44,10 +44,28 @@ const HandLabels = ({
         <circle
           cx="69"
           cy="482"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
+      {/* <g>
+        <text
+          x="68"
+          y="490"
+          fill="#000000"
+          font-family="Arial"
+          font-size="5px"
+          stroke-width="1px"
+          xmlSpace="preserve"
+          style={{
+            lineHeight: '125%',
+          }}
+        >
+          <tspan x="68" y="490">
+            V
+          </tspan>
+        </text>
+      </g> */}
       <g
         style={{
           display:
@@ -87,7 +105,7 @@ const HandLabels = ({
         <circle
           cx="68"
           cy="473"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -130,7 +148,7 @@ const HandLabels = ({
         <circle
           cx="65"
           cy="463"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -173,7 +191,7 @@ const HandLabels = ({
         <circle
           cx="64.5"
           cy="445"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -216,7 +234,7 @@ const HandLabels = ({
         <circle
           cx="69"
           cy="427"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -259,7 +277,7 @@ const HandLabels = ({
         <circle
           cx="65.5"
           cy="425"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -301,7 +319,7 @@ const HandLabels = ({
         <circle
           cx="80"
           cy="426"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -340,7 +358,7 @@ const HandLabels = ({
         <circle
           cx="86.5"
           cy="426.27"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -377,7 +395,7 @@ const HandLabels = ({
         <circle
           cx="90"
           cy="425"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -408,18 +426,18 @@ const HandLabels = ({
           </tspan>
         </text>
         <line
-          x1="84"
-          y1="419.5"
+          x1="86"
+          y1="420"
           x2="100"
-          y2="407"
+          y2="405"
           fill="none"
           stroke="#003cff"
           stroke-width="0.546"
         />
         <circle
-          cx="84"
-          cy="419.5"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          cx="86"
+          cy="420"
+          r={zoomIn === 'hand' ? '.566' : '.75'}
           fill="#003cff"
         />
       </g>
@@ -461,7 +479,7 @@ const HandLabels = ({
         <circle
           cx="77"
           cy="416"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>
@@ -504,7 +522,7 @@ const HandLabels = ({
         <circle
           cx="71"
           cy="419"
-          r={zoomIn === 'hand' ? '.566' : '1.166'}
+          r={zoomIn === 'hand' ? '.566' : '0.75'}
           fill="#003cff"
         />
       </g>

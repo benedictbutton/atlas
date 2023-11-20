@@ -397,7 +397,7 @@ const HumanBones = () => {
             fill="#dff3f4"
           /> */}
 
-          <polyline
+          {/* <polyline
             points="224.63 761.88 247.11 761.88 247.11 769 289.11 769"
             fill="none"
             stroke="#003cff"
@@ -477,7 +477,7 @@ const HumanBones = () => {
             fill="none"
             stroke="#003cff"
             stroke-width=".546"
-          />
+          /> */}
 
           {/* <rect
             x="254.33"
@@ -523,7 +523,7 @@ const HumanBones = () => {
             </tspan>
           </text> */}
 
-          <text
+          {/* <text
             x="284.81116"
             y="413.27896"
             fill="#000000"
@@ -611,7 +611,7 @@ const HumanBones = () => {
             <tspan x="281.43536" y="813.80206">
               Phalanges
             </tspan>
-          </text>
+          </text> */}
         </g>
       </svg>
       <BonesZoomIn

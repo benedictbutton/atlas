@@ -5,7 +5,7 @@ const UpperBodyLabels = ({
 }: BodyLabelProps) => {
   return (
     <g className={className}>
-      <g
+      {/* <g
         style={{
           display:
             (answers['manubrium'] ?? 0) < 1 ||
@@ -44,7 +44,7 @@ const UpperBodyLabels = ({
           r={zoomIn === 'hand' ? '.566' : '1.166'}
           fill="#f00"
         />
-      </g>
+      </g> */}
       <g
         style={{
           display:

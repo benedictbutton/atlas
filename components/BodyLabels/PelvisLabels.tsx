@@ -28,7 +28,7 @@ const PelvisLabels = ({
           xmlSpace="preserve"
         >
           <tspan x="280" y="372.05472">
-            hip (2)
+            hip
           </tspan>
         </text>
         <line
@@ -57,7 +57,7 @@ const PelvisLabels = ({
         }}
       >
         <text
-          x="14.22386"
+          x="100"
           y="370.29971"
           dx={zoomIn === 'pelvis' ? '1.5%' : ''}
           fill="#000000"
@@ -67,12 +67,12 @@ const PelvisLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="14.22386" y="370.29971">
+          <tspan x="100" y="370.29971">
             sacrum
           </tspan>
         </text>
         <line
-          x1="32.625"
+          x1="119"
           x2="197.04"
           y1="372.25"
           y2="372.25"
@@ -92,7 +92,7 @@ const PelvisLabels = ({
         }}
       >
         <text
-          x="3.395149"
+          x="100"
           y="385.20505"
           dx={zoomIn === 'pelvis' ? '1.5%' : ''}
           fill="#000000"
@@ -102,12 +102,12 @@ const PelvisLabels = ({
           style={{ lineHeight: '125%' }}
           xmlSpace="preserve"
         >
-          <tspan x="3.395149" y="385.20505">
+          <tspan x="100" y="385.20505">
             coccyx
           </tspan>
         </text>
         <line
-          x1="21.059"
+          x1="119"
           x2="202.09"
           y1="386.61"
           y2="386.61"

@@ -269,7 +269,7 @@ const FaceLabels = ({
       <g
         style={{
           display:
-            (answers['nasal'] ?? 0) < 1 ||
+            (answers['hyoid'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'face')
               ? 'none'
               : '',
@@ -297,7 +297,7 @@ const FaceLabels = ({
           y1={zoomIn === 'face' ? '126' : '118'}
           y2={zoomIn === 'face' ? '120' : '104'}
           fill="none"
-          stroke="#003cff"
+          stroke="#df001d"
           stroke-width=".546"
         />
         <circle cx="204" cy="70" r=".7" fill="#003cff" />
