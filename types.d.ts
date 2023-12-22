@@ -42,6 +42,8 @@ type BodyPartProps = {
     close?: string | undefined,
   ) => void;
   className?: string;
+  classNameBones?: string;
+  classNameDiagram?: string;
 };
 
 type BodyLabelProps = {
