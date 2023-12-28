@@ -8,7 +8,7 @@ const InnerEarLabels = ({
       <g
         style={{
           display:
-            (answers['temporal'] ?? 0) < 1 ||
+            (answers['malleus'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
               ? 'none'
               : '',
@@ -80,7 +80,7 @@ const InnerEarLabels = ({
       <g
         style={{
           display:
-            (answers['temporal'] ?? 0) < 1 ||
+            (answers['incus'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
               ? 'none'
               : '',
@@ -154,7 +154,7 @@ const InnerEarLabels = ({
       <g
         style={{
           display:
-            (answers['temporal'] ?? 0) < 1 ||
+            (answers['stapes'] ?? 0) < 1 ||
             (zoomIn && zoomIn !== 'skull' && zoomIn !== 'inner_ear')
               ? 'none'
               : '',
