@@ -2389,7 +2389,7 @@ const Africa = ({
             }}
             id="Malawi_label"
             y="339.983"
-            x="505.548"
+            x="510"
             fontSize="1.762"
             strokeWidth=".144"
             font-style="normal"
@@ -2401,7 +2401,7 @@ const Africa = ({
           >
             <tspan
               y="339.983"
-              x="505.548"
+              x="510"
               id="tspan170"
               font-style="normal"
               font-variant="normal"
@@ -2412,10 +2412,7 @@ const Africa = ({
               fill-opacity="1"
               strokeWidth=".144"
               style={{
-                fill:
-                  countryId && countryId !== 'g3496'
-                    ? '#fff'
-                    : '#000',
+                fill: '#fff',
               }}
             >
               MALAWI
@@ -2544,7 +2541,10 @@ const Africa = ({
             stroke-opacity="1"
             data-originalStrokeWidth="0.15"
             style={{
-              fill: '#df001d',
+              fill:
+                countryId && countryId !== 'g4264'
+                  ? '#36454f'
+                  : '#df001d',
               stroke: 'rgb(0, 0, 0)',
             }}
           ></path>
@@ -2580,7 +2580,7 @@ const Africa = ({
               fill-opacity="1"
               strokeWidth=".144"
               style={{
-                fill: zoomIn === 'africa' ? '#fff' : '#000',
+                fill: '#fff',
               }}
             >
               CAPE VERDE
